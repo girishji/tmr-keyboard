@@ -1,3 +1,9 @@
+https://www.waveshare.com/wiki/RP2040-Tiny
+
+https://jlccnc.com/help/article/CNC-Machining-Design-Guideline
+
+======================================================================
+
 https://www.youtube.com/watch?v=wz2ZO3kSfNE
 
 omnipolar response: sensor responds to N or S pole with equally magnitude.
