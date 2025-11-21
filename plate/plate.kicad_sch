@@ -4505,7 +4505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
 			(at 102.87 91.44 0)
 			(effects
 				(font

@@ -80,15 +80,21 @@ def place_switches():
     # place(switches[62], (offs + dim / 4 + 0.7, 4 * dim + 1))
     # orient(switches[62], -5)
     #
-    place(switches[62], (offs + dim / 4 + 1.0, 4 * dim + 2))
-    orient(switches[62], -10)
+    place(switches[62], (offs + dim / 4, 4 * dim))
+    #
+    # place(switches[62], (offs + dim / 4 + 1.0, 4 * dim + 2))
+    # orient(switches[62], -10)
 
     # rotated
+    # offs += dim * (1 + 1 / 4 + 1 / 8)
+    # place(switches[63], (offs + 1.35, 4 * dim + 7.8))
+    # orient(switches[63], -20 + 90)
+    #
     offs += dim * (1 + 1 / 4 + 1 / 8)
-    place(switches[63], (offs + 1.35, 4 * dim + 7.8))
-    orient(switches[63], -20 + 90)
-    offs += dim
+    place(switches[63], (offs + 0.6, 4 * dim + 10))
+    orient(switches[63], -20)
 
+    offs += dim
     place(switches[64], (offs - 0.6, 4.5 * dim + 7))
     orient(switches[64], -20 + 90)
 
@@ -103,8 +109,19 @@ def place_switches():
     # place(switches[68], (offs + 2 * dim - 0.7, 4 * dim + 1))
     # orient(switches[68], 5)
     #
-    place(switches[68], (offs + 2 * dim - 1.2, 4 * dim + 1.7))
-    orient(switches[68], 10)
+    place(switches[68], (offs + 2 * dim, 4 * dim + 0))
+    #
+    # rot = 18
+    # place(switches[66], (offs + dim + dim / 4 + 0.0, 4.5 * dim + 5.8))
+    # orient(switches[66], rot + 90 + 180)
+    # offs += dim * 1.25
+    # place(switches[67], (offs + dim - 1.0, 4 * dim + 9.4))
+    # orient(switches[67], rot)
+    # place(switches[68], (offs + 2 * dim - 2, 4 * dim + 3.6))
+    # orient(switches[68], rot)
+    #
+    # place(switches[68], (offs + 2 * dim - 1.2, 4 * dim + 1.7))
+    # orient(switches[68], 10)
     #
     # place(switches[66], (offs + dim + dim / 4 + 0.0, 4.5 * dim + 5))
     # orient(switches[66], 18 + 90 + 180)
