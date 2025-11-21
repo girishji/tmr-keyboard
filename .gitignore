@@ -6,6 +6,7 @@
 .DS_Store
 
 *.step
+*.lck
 
 **/jlcpcb/
 */jlcpcb/
