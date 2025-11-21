@@ -58,4 +58,14 @@ creating simple switches, like turning a fan on when a temperature gets too
 high.
 
 ======================================================================
+
+The battery life is very good - I'm using full RGB and used it heavily for at
+least 8 hrs a day, and it was lasting up to a week. But if you want to max it
+out, turn off the RGB. It also decreases latency (RGB increases latency). Then
+it can last even 2 weeks.
+
+Now I'm testing a TMR with an 8000 mAh battery unit, and I can see it will be
+doubled.
+
+======================================================================
 vim:tw=78:ts=4:ft=help:norl:ma:noro:ai:lcs=tab\:\ \ ,trail\:~:
