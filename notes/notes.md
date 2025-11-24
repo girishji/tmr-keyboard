@@ -1,5 +1,3 @@
-5.85 , 12.4
-
 https://www.waveshare.com/wiki/RP2040-Tiny
 
 https://jlccnc.com/help/article/CNC-Machining-Design-Guideline
@@ -68,6 +66,16 @@ it can last even 2 weeks.
 
 Now I'm testing a TMR with an 8000 mAh battery unit, and I can see it will be
 doubled.
+
+======================================================================
+
+Travel distance of low profile switches:
+Keychron optical: 2.5 mm
+Kailh choc: 3 mm
+Kailh magnetic: 2.8 mm
+Gateron magnetic: 3.5 mm
+
+Use o-ring inside the shaft of the switch to reduce travel.
 
 ======================================================================
 vim:tw=78:ts=4:ft=help:norl:ma:noro:ai:lcs=tab\:\ \ ,trail\:~:
