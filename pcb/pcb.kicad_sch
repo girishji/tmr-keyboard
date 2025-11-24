@@ -821,7 +821,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "tmr-lib:sw_lowpro_combo_MDT"
+		(property "Footprint" "tmr-lib:sw_lowpro_combo_2u_MDT"
 			(at 132.08 147.32 0)
 			(effects
 				(font
@@ -4325,7 +4325,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "tmr-lib:sw_lowpro_combo_MDT"
+		(property "Footprint" "tmr-lib:sw_lowpro_combo_2u_MDT"
 			(at 172.72 147.32 0)
 			(effects
 				(font

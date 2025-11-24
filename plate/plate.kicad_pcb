@@ -78,7 +78,7 @@
 		)
 	)
 	(net 0 "")
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "0166bb7a-e655-477e-9715-8772cbf0ebc3")
 		(at 256.5 19)
@@ -135,17 +135,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "17db753e-f2ea-4b09-b2cb-5bfc0041c876")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -154,7 +143,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7b5bdfa3-8510-4f9e-9a37-524abe07a70e")
+			(uuid "f270ec0a-263b-42a3-a62a-8bc5e18b416f")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -164,7 +153,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8ee0ac81-9629-43b1-be5c-07abd8e12102")
+			(uuid "dce731db-5c31-449e-b985-00f8d88b03f6")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -174,7 +163,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c1d89ef0-7b97-42a3-85be-0d5a48b69e94")
+			(uuid "f4002ad0-3cca-4ed1-aba1-bc1bd51fc687")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -184,7 +173,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "638bda98-9fbd-42e6-8090-abc09b781719")
+			(uuid "014ba508-aa5b-4aff-8dac-90c8eb01a9e4")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -195,7 +184,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "673f0e91-3b67-4d19-a5b2-5c82b60d04a0")
+			(uuid "c64bacef-6dea-4fcb-9e69-9801b9282fa5")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -206,7 +195,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "40605b1c-026e-48c0-87b5-23d3e57e342f")
+			(uuid "37bdfb94-cf66-48db-a3da-1e3cedc14f10")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -217,7 +206,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "23d6f764-c072-4134-9765-5e35c618dd47")
+			(uuid "8ef0de01-d0e2-4130-99a3-257a4afe1e0a")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -228,7 +217,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "41ebb6c6-a513-4267-95d3-0f44da1af496")
+			(uuid "3ec84231-dac8-4e09-a840-e72015d60bd8")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "c335fbf4-600b-4d38-b53a-178707fb6d2a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -243,7 +243,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "0416e4e2-5235-4bcc-88da-5a9d1ca09d49")
 		(at 19 0)
@@ -300,17 +300,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "677b1ad6-b9b5-4594-9593-530514933336")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -319,7 +308,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5476333f-7af6-48ad-ba77-c35dde72c093")
+			(uuid "3b4bf9d4-d4c4-4b3e-b6bf-eff811d916de")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -329,7 +318,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e8e85ca0-c83c-48d2-bedc-a04aca79a9f5")
+			(uuid "4109072e-3375-4d08-96b5-37ed2840f6ed")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -339,7 +328,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "46a0b19b-a2e8-410b-b8b0-2c0876218456")
+			(uuid "5d629351-21e0-4825-a0fd-424587f5983a")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -349,7 +338,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dd26c7c0-55eb-480d-81df-89075a25926a")
+			(uuid "adc6fc9f-77b4-49fd-914f-68a89458d7a1")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -360,7 +349,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c399c7ae-b108-4353-905f-17fff6b1f51e")
+			(uuid "5d98ce10-514d-46f0-a8ea-90f611dd7abb")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -371,7 +360,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "aa6ad4de-3727-4a57-bcda-8c38e1371d57")
+			(uuid "9ce55dc4-83ed-4b29-a08e-5c935f366531")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -382,7 +371,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4db0f0d1-fd89-4f6d-ad5d-3aef1a865ec2")
+			(uuid "10aff9f2-a00b-44ce-838e-dfcac057afaf")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -393,7 +382,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9069db60-27ff-424f-899a-74fe42cd6981")
+			(uuid "bf30b888-bf84-4ea5-9ac6-69633374437c")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "6507141a-67de-4400-b132-099cc9a7b592")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -408,7 +408,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_2u"
+	(footprint "tmr-lib:Switch_Cutout_2u"
 		(layer "F.Cu")
 		(uuid "09d91f32-29ed-4689-aab0-d0126a4d6a24")
 		(at 113.4 92.5 70)
@@ -465,17 +465,75 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_poly
-			(pts
-				(xy 9.5 -9.5) (xy -9.5 -9.5) (xy -9.5 9.5) (xy 9.5 9.5)
-			)
+		(fp_line
+			(start -12.45 -8.3)
+			(end -11.55 -8.299999)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "127a37a3-d026-47ab-9c7d-dfe6cf3cceca")
+			(layer "Edge.Cuts")
+			(uuid "2976cc4b-bae6-4ced-8f83-f348faed631a")
+		)
+		(fp_line
+			(start -12.85 -7.9)
+			(end -12.85 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e61a1538-5688-4da4-8b8a-7ba52cb80878")
+		)
+		(fp_line
+			(start -11.15 -7.899999)
+			(end -11.15 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b61e15bb-b1b3-46aa-9bb8-77377e74d160")
+		)
+		(fp_line
+			(start -15 -6.37)
+			(end -15 5.330001)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4b77a990-53c1-409d-87d3-a3408b3f2117")
+		)
+		(fp_line
+			(start -12.85 -6.77)
+			(end -14.6 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "fe67a0a5-2431-4c32-8daf-70334fa62fbc")
+		)
+		(fp_line
+			(start -9.4 -6.77)
+			(end -11.15 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6089661f-b882-4f00-a9b9-d4a4d72426e1")
+		)
+		(fp_line
+			(start -9 -6.37)
+			(end -9 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e16ecb53-b803-43c7-9ddc-d7cf2c175ee1")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -485,27 +543,187 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "de1ff0ee-374f-490b-9d4a-dfbd4eed78da")
+			(uuid "c407186b-afdc-4535-96b0-2d051e0fad55")
 		)
 		(fp_line
 			(start -7 -6.6)
-			(end -7 6.6)
+			(end -7 -2.3)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a3242822-71ee-47db-9279-75c55a5b64d1")
+			(uuid "047f169c-0999-4948-90f8-c9db1eb756b1")
+		)
+		(fp_line
+			(start -7 -2.3)
+			(end -9 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2df593da-2308-47e2-a504-f4f7606539c6")
+		)
+		(fp_line
+			(start 11.55 -8.3)
+			(end 12.45 -8.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d53316ac-0e8c-4431-aa0e-e30916b86efa")
 		)
 		(fp_line
 			(start 7 -6.6)
+			(end 7 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "646cae0b-b00f-4231-9e94-1c657c2bd497")
+		)
+		(fp_line
+			(start 11.15 -7.9)
+			(end 11.15 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6dde682b-5318-4332-90ab-d6b46727ba32")
+		)
+		(fp_line
+			(start -9 0)
+			(end -9 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b23b1970-41c7-456b-a26f-4b16b222c4f1")
+		)
+		(fp_line
+			(start 12.85 -7.9)
+			(end 12.85 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6959dbca-7968-4bc4-b938-83dea06ea6ca")
+		)
+		(fp_line
+			(start 9 -6.37)
+			(end 9 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "118a2d2d-849d-42d6-9124-851c4b117f52")
+		)
+		(fp_line
+			(start 11.15 -6.77)
+			(end 9.4 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "af78c078-4e12-4407-b0fa-23dec75ba5a5")
+		)
+		(fp_line
+			(start -7 0)
+			(end -9 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2879cd07-13d6-4bee-a66d-ba44db2d9640")
+		)
+		(fp_line
+			(start 14.6 -6.77)
+			(end 12.85 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "505bf78e-419e-4238-8391-a7039ec12ef8")
+		)
+		(fp_line
+			(start 15 -6.37)
+			(end 15 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0ed53a4a-761f-4d17-9cd7-7b1c50af96fa")
+		)
+		(fp_line
+			(start -14.6 5.73)
+			(end -9.4 5.73)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "355de211-71cf-428c-912c-84a2ced36923")
+		)
+		(fp_line
+			(start 9 -2.3)
+			(end 7 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2feb5506-c989-431f-8665-74d20cfc356b")
+		)
+		(fp_line
+			(start 7 0)
 			(end 7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "17cfbf85-7d47-483f-9e81-8b1674fd00df")
+			(uuid "4b9bd1c5-688b-4303-8a5a-a7151af00e89")
+		)
+		(fp_line
+			(start 9 0)
+			(end 7 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "3a7b8b2f-058d-4e53-b388-792f12101468")
+		)
+		(fp_line
+			(start 9 0)
+			(end 9 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "148804fd-269a-4680-8850-9dc47c496b58")
+		)
+		(fp_line
+			(start -7 6.6)
+			(end -7 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "89374102-ac40-4a95-929e-29baf739e3c6")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -515,7 +733,61 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "78f80dfc-1079-4acb-bf94-392e2bdf6d98")
+			(uuid "507b4140-1d26-4fae-ac76-e521b5e19e29")
+		)
+		(fp_line
+			(start 9.4 5.73)
+			(end 14.6 5.73)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "24352caf-5e33-42a1-b177-e4ee3e475100")
+		)
+		(fp_arc
+			(start -12.85 -7.9)
+			(mid -12.732843 -8.182843)
+			(end -12.45 -8.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "377bd673-a975-49e9-a026-4dbf2bbffd52")
+		)
+		(fp_arc
+			(start -11.55 -8.299999)
+			(mid -11.267157 -8.182842)
+			(end -11.15 -7.899999)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2afede1c-abac-4d40-a7d0-746fb7966dae")
+		)
+		(fp_arc
+			(start -15 -6.37)
+			(mid -14.882843 -6.652844)
+			(end -14.6 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "00d274ee-7541-4278-8010-5ff962283dd0")
+		)
+		(fp_arc
+			(start -9.4 -6.77)
+			(mid -9.117157 -6.652843)
+			(end -9 -6.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "db9e9fc8-b177-4b49-9b6d-8449b4ec9d5e")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -526,7 +798,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "728a4c94-93d2-4227-83fc-e11ba43df047")
+			(uuid "ecc0b296-e57e-45b6-b0c8-f3bb6add2d6f")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -537,7 +809,73 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ede553a8-28d2-42d8-8dd9-a312c4a62592")
+			(uuid "0658c81e-e903-4187-a850-cf088329f83f")
+		)
+		(fp_arc
+			(start 11.15 -7.9)
+			(mid 11.267156 -8.182843)
+			(end 11.55 -8.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "a218441c-b4a5-4710-964a-8929e08c58fc")
+		)
+		(fp_arc
+			(start 12.45 -8.3)
+			(mid 12.732843 -8.182843)
+			(end 12.85 -7.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4f9ba05a-1c2d-4b3f-93db-34f9a03cac5d")
+		)
+		(fp_arc
+			(start 9 -6.37)
+			(mid 9.117157 -6.652843)
+			(end 9.4 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "b390b1d8-47e4-421e-93b4-315ca676d65b")
+		)
+		(fp_arc
+			(start 14.6 -6.77)
+			(mid 14.882843 -6.652843)
+			(end 15 -6.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "08f05b55-35d6-4446-95b3-0e2108159456")
+		)
+		(fp_arc
+			(start -14.6 5.73)
+			(mid -14.882843 5.612843)
+			(end -15 5.330001)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6f15d305-7f9c-4ff1-bda2-9de3d4c08204")
+		)
+		(fp_arc
+			(start -9 5.33)
+			(mid -9.117157 5.612843)
+			(end -9.4 5.73)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "81c9ea4f-4d74-4ab6-8c94-2370954d6038")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -548,7 +886,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4cd3273e-58bf-4540-9b7d-1594bf0bc715")
+			(uuid "18c0b978-d1f8-422c-b302-b54b08b2ad37")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -559,7 +897,29 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "031a0703-c862-40a5-9f38-ecf685c7bc6b")
+			(uuid "2309883b-ba60-4b9d-811b-7a1acdbcb0db")
+		)
+		(fp_arc
+			(start 9.4 5.73)
+			(mid 9.117157 5.612842)
+			(end 9 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "eae9d35c-f9e6-4641-98dc-b3c2cf4e82c5")
+		)
+		(fp_arc
+			(start 15 5.33)
+			(mid 14.882843 5.612843)
+			(end 14.6 5.73)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "1da0ad33-d214-4b51-b387-823809472d0c")
 		)
 		(fp_poly
 			(pts
@@ -571,7 +931,19 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "41694a5e-9a3d-4d17-af38-c71320528c83")
+			(uuid "41b5c79b-c9db-461c-ac69-8ca1a2517587")
+		)
+		(fp_poly
+			(pts
+				(xy 9.5 -9.5) (xy -9.5 -9.5) (xy -9.5 9.5) (xy 9.5 9.5)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "8e532e75-30e6-4e16-999e-1d5846f23b6a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.199999 70)
@@ -586,7 +958,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "0a213ab3-c125-4681-a92c-e7c4faaa081b")
 		(at 213.75 57)
@@ -643,17 +1015,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "eb3546dc-91c4-4733-a566-dc5abeb7d6e0")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -662,7 +1023,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f9fa56e7-c182-43d1-920d-468356154093")
+			(uuid "b3684ced-df1a-4422-abfd-d9765dd07d06")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -672,7 +1033,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7dc9755b-4b55-48ce-ab7e-d59ad3faeea2")
+			(uuid "bfc1cef7-290f-4870-b9ec-4dcf1818a5c1")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -682,7 +1043,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "01d4e84a-3908-4b5e-8e42-4786d56a59b7")
+			(uuid "9972129d-f5d7-4c8b-8cf5-e16e30d339e0")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -692,7 +1053,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6ef9d05e-1cc4-4b19-8b27-d6299916f17b")
+			(uuid "6990279b-0d9e-4bc6-a28f-1d0c8b1af0fd")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -703,7 +1064,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8656138a-bc37-4068-a58e-7919780d5bf0")
+			(uuid "e91096cd-7736-4dc1-a386-37af17e652b5")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -714,7 +1075,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f8a4618c-40e6-4496-9800-d38a38a1f801")
+			(uuid "223ed8b6-a1bc-41a1-a7c0-3f8cd62c30ec")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -725,7 +1086,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2b0857c1-8ddf-42a8-89dc-6bd4b5de181f")
+			(uuid "a87e03dd-9f20-406e-a346-7b398baf9d82")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -736,7 +1097,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3f2953f2-045d-46da-b8c6-864e53f89a6f")
+			(uuid "bf8292d4-565a-4211-bd3f-857baaf2b675")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "af277e0e-7d1f-4fcd-9350-95a6302adb1a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -751,7 +1123,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "0abe9653-b45b-4d6e-a756-5230d7d1d1fc")
 		(at 179.9 86 20)
@@ -808,104 +1180,104 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_poly
-			(pts
-				(xy 9.499999 -9.5) (xy -9.5 -9.499999) (xy -9.499999 9.5) (xy 9.5 9.499999)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "1cd220b2-8583-4d50-94b6-bc74a81bc826")
-		)
 		(fp_line
-			(start -7 -6.600001)
+			(start -7 -6.6)
 			(end -7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dbb2ba16-e80c-40d5-afba-47629ce03c9c")
+			(uuid "cc875c5d-f40f-47b3-828b-b1877d3130e6")
 		)
 		(fp_line
 			(start -6.6 -7)
-			(end 6.600001 -7)
+			(end 6.6 -7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b2cf1acb-df55-4e8b-b4a5-d5b607d86341")
+			(uuid "6a8732bd-5b7e-45d0-8a24-eeff2d1b90b8")
 		)
 		(fp_line
-			(start -6.600001 7)
+			(start -6.6 7)
 			(end 6.6 7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d709d88f-a45d-4354-8399-2527b2295f08")
+			(uuid "40e104ef-b5e8-459f-a499-73b211c01b56")
 		)
 		(fp_line
 			(start 7 -6.6)
-			(end 7 6.600001)
+			(end 7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "aa08cb0a-b446-47d5-a522-5a34b17faf99")
+			(uuid "5575ff8c-c3f6-4ce8-8dcf-040c4cecab61")
 		)
 		(fp_arc
-			(start -7 -6.600001)
-			(mid -6.882843 -6.882842)
+			(start -7 -6.6)
+			(mid -6.882843 -6.882843)
 			(end -6.6 -7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "060b24b2-ca31-4c65-8488-c8ae680ac03f")
+			(uuid "eedaef9d-6ea2-4f8f-af78-e1110b9b4497")
 		)
 		(fp_arc
-			(start -6.600001 7)
-			(mid -6.882842 6.882843)
+			(start -6.6 7)
+			(mid -6.882843 6.882843)
 			(end -7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "98d5dce2-d146-407e-b0c1-f0f71753951f")
+			(uuid "9d272564-7112-45d0-bfb3-7e1d3fe99d00")
 		)
 		(fp_arc
-			(start 6.600001 -7)
-			(mid 6.882842 -6.882843)
+			(start 6.6 -7)
+			(mid 6.882843 -6.882843)
 			(end 7 -6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "75da8b54-64c2-4b80-a6c1-061f33414baa")
+			(uuid "c480212b-1640-4124-9779-052dccd6685a")
 		)
 		(fp_arc
-			(start 7 6.600001)
-			(mid 6.882843 6.882842)
+			(start 7 6.6)
+			(mid 6.882843 6.882843)
 			(end 6.6 7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8b039d51-d52d-4268-9691-a5bc810bce95")
+			(uuid "33172bc7-694d-4a82-a259-24930c020c7b")
+		)
+		(fp_poly
+			(pts
+				(xy 9.5 -9.5) (xy -9.5 -9.5) (xy -9.5 9.5) (xy 9.5 9.5)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "2e3e360c-e105-43ac-8b56-8287194e1c03")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 -8.199999 20)
+			(at 0 -8.199999 20)
 			(layer "F.Fab")
 			(uuid "433f96aa-cc6a-4224-8ac4-5a1b5ce3a1bc")
 			(effects
@@ -917,7 +1289,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "0c0e5640-aaf6-47db-9458-8d1f0bff5ef9")
 		(at 95.6 86 -20)
@@ -974,18 +1346,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_poly
-			(pts
-				(xy 9.5 -9.5) (xy -9.5 -9.5) (xy -9.5 9.5) (xy 9.5 9.5)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "da082f7e-f076-4a07-a6a4-eb10e0f36a93")
-		)
 		(fp_line
 			(start -6.6 7)
 			(end 6.6 7)
@@ -994,7 +1354,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d5555a50-c183-4e39-ae6f-e54108ff4408")
+			(uuid "bf9746df-bf74-4610-a669-98332d51c277")
 		)
 		(fp_line
 			(start -7 -6.6)
@@ -1004,7 +1364,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "49e849b9-6bc9-4bdf-88c6-2157724b8ce6")
+			(uuid "ffea09da-42c2-4d56-ad14-9e287466907c")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -1014,7 +1374,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "93085358-5afb-4012-a5a0-8aa25a0cb00f")
+			(uuid "c49ee267-6b1e-419f-aae1-1a7251262199")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -1024,7 +1384,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9e0697a8-2227-40ff-bbd8-8d19ac06e83d")
+			(uuid "bc26003e-f7f7-4823-abd8-411e62e930be")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -1035,7 +1395,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3d9c9a65-548a-4d81-8327-e6ffec5a6ff3")
+			(uuid "37e1890c-115d-4dcc-ab90-3ea0a80e46d7")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -1046,7 +1406,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bd363fea-392b-45ee-8ced-29da172096f1")
+			(uuid "25f409b6-b939-4278-a137-186fafb50a39")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -1057,7 +1417,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "991fc91b-f041-428f-b3c4-0237b32828d8")
+			(uuid "ee2819a2-b125-41b9-8bb9-b646c5fc9eb2")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -1068,7 +1428,19 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8e9485ae-0613-4da6-9ee3-490be7148e12")
+			(uuid "83ca709c-96ca-4ebd-af7d-bdd45a968e9c")
+		)
+		(fp_poly
+			(pts
+				(xy 9.5 -9.5) (xy -9.5 -9.5) (xy -9.5 9.5) (xy 9.5 9.5)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "bd7b736f-780f-480c-8a2a-f77c553445be")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.199999 340)
@@ -1083,7 +1455,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "0cf5eb6a-5c82-4c32-9fc0-c8fc0f8e22b0")
 		(at 47.5 19)
@@ -1140,17 +1512,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "c38be54c-d9ef-48b2-b7cc-0051c453e318")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -1159,7 +1520,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "506c71f8-fe8c-4eeb-820d-057314d902db")
+			(uuid "c79e221f-6c9d-480b-a62d-6c60a06e98ff")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -1169,7 +1530,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "07e1a1de-c34c-480f-a392-01af91a8938d")
+			(uuid "f627cc82-f192-4ab3-b96b-f73ecd8c8c36")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -1179,7 +1540,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b6a65fdb-f26d-45b9-80e2-47bfb9aec040")
+			(uuid "80c6c131-725c-4213-abe6-08577d66abd5")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -1189,7 +1550,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4b819b44-0fd0-4492-a3b9-1a5921a90c31")
+			(uuid "b592790b-0495-4961-877e-07ed94fb637b")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -1200,7 +1561,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8c9abfbd-7dc7-40bc-a344-67c7dab37fd2")
+			(uuid "257816b0-bcde-486d-be04-22d2f752958f")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -1211,7 +1572,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "654bb2e3-06a8-4f4c-b322-091f97c29e4f")
+			(uuid "2f8e6ff4-1229-4d8e-bab8-11a749b3f3f1")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -1222,7 +1583,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e2fcc787-b15e-4c2c-b122-c3917c1049c1")
+			(uuid "53b03e7e-d286-4e7d-af3d-0190f84b43cd")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -1233,7 +1594,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "310aec0c-5dec-4949-95d5-bdc1dfb24503")
+			(uuid "d4f926b1-1de0-4d03-9754-84497c0af779")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "7820cf45-5c65-441b-981e-d6f781705c94")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -1248,7 +1620,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "10c8cae2-ca42-4a49-b58f-ee7bd6442d8f")
 		(at 285 0)
@@ -1305,17 +1677,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "b57d06c0-af1d-4842-b65b-993a44b6d333")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -1324,7 +1685,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "05272a39-5128-44d6-9b22-0fea972edc20")
+			(uuid "b7157f88-4d68-4348-adb2-b0918cb788f9")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -1334,7 +1695,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8474217b-ab9b-4978-a34d-20aeefef9d45")
+			(uuid "f69b91dd-7e48-4cd3-a950-e1f8f9ecc0f5")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -1344,7 +1705,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f9f6dee3-0f2a-4a38-b073-a59933092575")
+			(uuid "10aba09b-66b7-42d1-8342-f91d2b5b9810")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -1354,7 +1715,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "970d1dec-6da9-4ea7-a4bb-3066254f9011")
+			(uuid "089648ce-5d05-468a-bd54-5c53014f82e4")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -1365,7 +1726,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a13b5959-3a77-47d5-b2b5-bb2a57d02d3c")
+			(uuid "b3c061fb-5738-4023-80ec-e181d1864748")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -1376,7 +1737,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "00e65829-f299-465d-ac1c-fa652f2f8740")
+			(uuid "efe423ac-6354-4b3b-973c-8e985a107877")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -1387,7 +1748,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bcd3773c-c280-4445-885f-8b45c7f5f7ff")
+			(uuid "02aade03-69d5-45d6-8544-6fde1b4e9742")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -1398,7 +1759,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3482e446-7118-4d34-9bfc-82f8a6bd3d03")
+			(uuid "70344494-f28d-48bf-abf0-36908191d238")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "6396ad37-31e6-4e77-93e8-ddf6e3a7f190")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -1413,7 +1785,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "15ebba95-77e2-40c2-af9e-82cd80da14d4")
 		(at 57 0)
@@ -1470,17 +1842,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "60bb75bf-11f0-4e8a-8d85-1f57d3181fc0")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -1489,7 +1850,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7017cfd1-1377-4c73-ae64-eed2fbe2852b")
+			(uuid "f16a0959-c1f3-4ba4-b340-28a26f0ad06a")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -1499,7 +1860,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "732e2fee-1143-4184-93c2-c470a0f2a546")
+			(uuid "a4c9c590-da9d-472a-9ad6-6a9788a5782e")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -1509,7 +1870,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5c436636-922f-4f06-b001-86d32247b037")
+			(uuid "4b8942c1-29e3-43fe-871f-9b7edc9d5a5e")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -1519,7 +1880,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "15171ed2-99ba-4cdc-8b15-8e3a3c1e9a60")
+			(uuid "ac652a6a-27fd-4f4d-8127-359fa5dd945a")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -1530,7 +1891,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "476d291b-98c7-451d-9b2a-e3570bfa15fa")
+			(uuid "3a6f0d3c-0ed2-4e1a-894c-3f52b12a7b04")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -1541,7 +1902,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ce0c7a3d-28e9-407b-9c87-4124f39c759f")
+			(uuid "8ae42b48-3f30-4ff7-b653-8d89b2318475")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -1552,7 +1913,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5044ea7c-ceb6-44ab-be59-bfebb1f2f141")
+			(uuid "0a09f81a-16e8-401e-99c6-4aa3492a3065")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -1563,7 +1924,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "669be2fd-c760-4afb-9175-c74e26f7fb43")
+			(uuid "23997717-b8c9-4e9a-9805-5bb36145d0b0")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "2a13225f-406f-45c3-9f59-df809770528f")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -1578,7 +1950,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "208ba8ca-f0f3-4a96-8232-64078e7cd3a4")
 		(at 137.75 57)
@@ -1635,17 +2007,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "f635271d-df23-4054-a0a4-bc092ef79cb5")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -1654,7 +2015,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "540081cd-1005-4d7f-b218-8d84a55590de")
+			(uuid "8a4ed452-d68f-446c-a6aa-897ef6746d9e")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -1664,7 +2025,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c802ae67-4a1e-4a44-9fe4-a82a48b3afb2")
+			(uuid "f91d3bb8-cfed-4106-9f6e-8a2435cad9d8")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -1674,7 +2035,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9a1a2b86-02e3-4d55-be44-ce5cf4f91526")
+			(uuid "ab9fc595-d773-4ab9-aaa8-ba22814c1f42")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -1684,7 +2045,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2dbf1183-fead-4a7b-ad8a-5118d97b24fc")
+			(uuid "054b9e4f-b260-4507-b7ba-23d4a552cace")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -1695,7 +2056,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "257da387-1966-424f-b956-40dd638a1cb6")
+			(uuid "8a8c040d-58c2-4549-963a-7e92413f0907")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -1706,7 +2067,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fe59108a-a0b8-44cc-a00f-2252e490447d")
+			(uuid "b5ed3e1a-b2d0-4a20-a066-68ef9f0eba37")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -1717,7 +2078,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b0a28529-006e-448f-9488-ce20244008e0")
+			(uuid "ce02389d-18d8-4988-a65c-f01773a7940e")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -1728,7 +2089,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "95fe9547-7b1a-4e8b-b53c-12f2e01e032e")
+			(uuid "d8e1c977-3b0d-44fd-9ec3-4d106cb83065")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "16c60489-73ff-4f44-bd3c-87e58186d51e")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -1743,7 +2115,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "2cc68138-0a7d-4539-9d77-964bef9ff5ef")
 		(at 90.25 38)
@@ -1800,17 +2172,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "4282b9db-687e-495a-b1f5-86a2b4652ad1")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -1819,7 +2180,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1d98da3f-2591-4b7f-a11a-700f0eb5d183")
+			(uuid "f8fb3a23-1216-40a1-8d9f-d57486af400a")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -1829,7 +2190,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "09d32776-4651-4ec6-8e7b-b35c8768576e")
+			(uuid "a0e44035-efa5-41fb-a49f-50784c64ba59")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -1839,7 +2200,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "542e9e2b-ec8d-4924-8957-3def133db156")
+			(uuid "ac50a3c9-2b37-42c7-9909-a0f35b77778c")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -1849,7 +2210,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b20a4a26-b039-476c-aec1-8ecc318acdd0")
+			(uuid "1ba813cb-bbd5-4d60-9d98-b36bd0e68960")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -1860,7 +2221,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "696cbb20-8093-4705-b379-06440e859eb4")
+			(uuid "b80e10e9-6d5b-4114-a4c5-1d17d15fa4ab")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -1871,7 +2232,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "aad36a32-919b-41ef-9760-343dbf318b5f")
+			(uuid "8a37e0de-d168-45b2-997c-e2b37d0026b9")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -1882,7 +2243,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "98a8d7a1-5d41-4ba7-9f74-4d6bb87645fd")
+			(uuid "97701a1f-d25d-472b-a95b-1b42bbbbed16")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -1893,7 +2254,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bd8c3231-bd10-48d5-98fa-2f75bf52e8b2")
+			(uuid "d118585c-5a24-480c-8bdb-418aaaaf4098")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "4ea6d9a7-b2bf-4397-9cfc-e56512ca7bde")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -1908,7 +2280,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "33ed20e6-6fff-49bb-ad42-c49541422458")
 		(at 80.75 57)
@@ -1965,17 +2337,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "e0936fd6-58f0-4c20-9e71-9dcd634ce609")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -1984,7 +2345,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e4645a97-b15f-43a0-aea3-104c125e3a5a")
+			(uuid "31988d64-5056-4730-bfd3-c1e900e1e5f5")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -1994,7 +2355,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c8ef9a9f-ff02-47bc-a1ea-53ce0fbf95aa")
+			(uuid "da636428-7526-4e11-935f-96f8f47d4438")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -2004,7 +2365,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "52de73d8-1503-44e3-adda-477e7666badb")
+			(uuid "8a38a8e9-61d0-4454-b2ed-90c5a28cfdf2")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -2014,7 +2375,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1eb22d4f-af77-48fe-8559-5c28ad1ab9a6")
+			(uuid "0f7d9387-f64b-4302-bddd-0c7c86b93749")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -2025,7 +2386,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0b76846b-3526-45d8-9caa-98d9f5269716")
+			(uuid "2b876510-a68e-4d16-bbff-ad2933feb8ba")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -2036,7 +2397,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5b9a0351-d98c-4d70-b36c-c173d6c78b91")
+			(uuid "dba6db11-c6c7-41b1-91fa-6c37fe213a34")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -2047,7 +2408,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8e9b39fd-433e-4d97-adfe-e0079d8c21ae")
+			(uuid "4c00edd9-521b-4a59-b7cc-ea22858e734e")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -2058,7 +2419,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cb694065-63bb-43f2-af0b-c65eef919e19")
+			(uuid "93357980-afb5-4106-89d3-0ee332a6925d")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "e329eec5-52ee-4d03-a362-b3fdf7fdfadc")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -2073,7 +2445,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "34471ef9-cf90-401e-8d51-330bc0d1273a")
 		(at 166.25 38)
@@ -2130,17 +2502,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "15d24722-3911-4bb9-9cf9-a40cf5e85a16")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -2149,7 +2510,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c4cc7c2b-30fb-4b16-8cf3-2b5ae2438baa")
+			(uuid "187a53c3-77cf-4f8e-8428-91ba28848c43")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -2159,7 +2520,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a7f94d29-3439-419c-8155-87fe88d63223")
+			(uuid "7af46076-66fe-4e13-8ffc-d51644cefcbc")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -2169,7 +2530,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cfb8ff75-706d-4549-8a54-fa84ffe77f98")
+			(uuid "11920f90-dec7-4f12-8cca-d375dfcba936")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -2179,7 +2540,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b57cdc33-1e4e-49cc-8d5b-d64b77649a16")
+			(uuid "986d98e0-e1e7-40a6-aeb7-6de486598c37")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -2190,7 +2551,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ecf86947-eb25-4e62-9495-b5bd0c856da0")
+			(uuid "78b8ac7c-b468-4603-b3ce-bd3cb708902d")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -2201,7 +2562,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8ffbb6c9-d131-44ab-93ef-6774ad7da7c4")
+			(uuid "21243ae2-b4d1-44d0-9603-b76b7d3539e7")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -2212,7 +2573,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c224b104-e2a1-4c04-b1d6-8580487ce3db")
+			(uuid "90a0dce2-6269-47ea-afee-b7f201da87a6")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -2223,7 +2584,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "07860f4d-5b7d-4bc7-84ef-3e74d57677e7")
+			(uuid "01da5677-1ff6-4f1e-9f55-4c9772723c66")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "842f49cc-88c9-4cc9-902e-33aa04a1d656")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -2238,7 +2610,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.75u"
+	(footprint "tmr-lib:Switch_Cutout_1.75u"
 		(layer "F.Cu")
 		(uuid "346516b4-7bef-438c-b6e9-7465309089a3")
 		(at 258.875 57)
@@ -2295,17 +2667,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "51b1a441-ce8b-452b-8462-86be1954beae")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -2314,7 +2675,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cac0594b-f6a5-4eb1-8013-51ecb06ee52a")
+			(uuid "2bc591ce-4472-4317-952c-f65d74f7fdad")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -2324,7 +2685,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ae135b9b-fb1a-4f22-a371-51e88263a6e7")
+			(uuid "9c353f93-d5c4-423f-b7fb-de2fdbe89284")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -2334,7 +2695,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "84be3c3e-3c5f-4959-90aa-c2a4ce79a144")
+			(uuid "b37b6700-cd25-4dcd-a221-4cfb9f84f42e")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -2344,7 +2705,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "55f075f0-fe7f-41f2-bedb-fcbd1bf86ae4")
+			(uuid "84d535a3-84c0-445d-a78a-5713b6087f72")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -2355,7 +2716,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2cdae2d1-637d-4825-bc75-d1d1a68a5173")
+			(uuid "e988a4fd-deb3-4a34-aa87-0cb583fafdaa")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -2366,7 +2727,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a2ba9759-abde-4359-86ac-5125919f235c")
+			(uuid "09b770c0-57d7-43bd-94bb-24c0dd32bbee")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -2377,7 +2738,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f90a4860-0c2c-4441-9306-3bca9becfb5b")
+			(uuid "69184e72-46dc-4a8b-ae18-fad084a98398")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -2388,7 +2749,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c9d1aa55-0acb-409c-a8a1-057976778047")
+			(uuid "3746726c-cf26-48a4-bb8c-b021c73d8362")
 		)
 		(fp_rect
 			(start -16.625 -9.5)
@@ -2399,7 +2760,18 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "e859b887-376d-48a9-83ca-67050f26035e")
+			(uuid "dec0b5b1-ff51-4656-ad61-6998bf1e68b4")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "43115db7-2031-4a6b-a1e8-ed45b46f601f")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -2414,7 +2786,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "3b8abc1a-c76c-4409-93db-e43bcc2804b5")
 		(at 223.25 38)
@@ -2471,17 +2843,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "c0096546-c0f0-45d0-bb1d-db84c0f00f0d")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -2490,7 +2851,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "df24b3d3-a093-4cfc-ac20-eed37d4db2b2")
+			(uuid "8a382934-3b40-469e-940b-afc462e9fa96")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -2500,7 +2861,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2baf8e07-2ea2-4749-aaa2-9fbe54adc228")
+			(uuid "45c97aac-6ddc-45cb-bf28-a16fcb6a05ca")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -2510,7 +2871,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8829aed6-f782-41ef-a04d-db89841aaffc")
+			(uuid "477a3cbd-c91f-4401-b779-03fa4a443aba")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -2520,7 +2881,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "24634163-f466-4439-9734-825f7446100d")
+			(uuid "266b6ca3-adf8-4822-b6b7-039be1eaf6d7")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -2531,7 +2892,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ba536c14-0896-46ef-bc41-56159d99b223")
+			(uuid "664505dd-fc3d-464b-a356-acb31e8e86a8")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -2542,7 +2903,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d40ac4ca-eb58-42b9-bea4-c4161bae14cc")
+			(uuid "4627cb80-54db-4cfd-8a4f-0a8bf3572aaf")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -2553,7 +2914,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "18084f3d-950e-4e0d-8b34-7747e9975da1")
+			(uuid "61c73d4c-e59d-496e-b5b1-e77daaaed13a")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -2564,7 +2925,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "00de61eb-587b-48d7-b6fa-a624d59b273f")
+			(uuid "7b26b133-9a8a-4c42-885b-286b372b980f")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "57a8eecb-2333-462e-a1ba-439cb3829adb")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -2579,7 +2951,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "3d984e7e-ca0c-480a-bed7-aae56aafa2e3")
 		(at 147.25 38)
@@ -2636,17 +3008,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "286d2501-1d07-410a-a1af-34bcfbd672a2")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -2655,7 +3016,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1ffae74c-02fd-4337-9af6-c7be786c0d3a")
+			(uuid "c2eae885-d888-4d10-9167-c06f44a784c2")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -2665,7 +3026,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "634720dc-f9a3-4b93-9499-1e825c05aee2")
+			(uuid "9989b94e-3027-45d9-92d9-d1aae089c40e")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -2675,7 +3036,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3fb27a5c-133c-4646-a524-7abc85ce6b57")
+			(uuid "cbcb812b-ad2c-46b0-a8e0-397cb7eae90a")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -2685,7 +3046,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7ac7139f-53ec-487c-bc95-a246444bb9e0")
+			(uuid "f0620e03-f328-4e5a-a75d-f7a5b650c86d")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -2696,7 +3057,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e4c4d0bf-fe17-4224-8dd1-f0317a40cfa2")
+			(uuid "55807977-e629-4a0e-b42f-22eb84527a45")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -2707,7 +3068,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3c4b0124-3847-4ab4-83af-ffb937b6ed1c")
+			(uuid "7c88e846-1d5a-4310-887f-6611137c34d3")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -2718,7 +3079,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8f820af4-cecd-455e-b31f-0d2bd7b937b4")
+			(uuid "1f22baba-c959-4928-818a-fe294785f4cc")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -2729,7 +3090,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fab5947f-fca0-49be-97e2-1cadbf990de7")
+			(uuid "c4f9cf98-f7d8-4dbe-bbe5-3d30f2d9f803")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "59bf1b98-a471-4207-96fb-9ed752b19790")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -2744,7 +3116,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "3fab0161-8518-4f9b-b1c0-4430a77d724a")
 		(at 52.25 76)
@@ -2801,17 +3173,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "a06e7561-9bf9-4da4-8761-26263b51c927")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -2820,7 +3181,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9211eaa1-a8c6-4ef3-ad09-c07149ed249b")
+			(uuid "674b4b4e-966b-4743-8a91-7ec6a4951584")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -2830,7 +3191,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "778f9ee9-31cf-4566-b984-de132bb72d95")
+			(uuid "7867f64c-8709-4ae9-81b9-1d6b069a0108")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -2840,7 +3201,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1e9b9d15-b53c-43a1-8ad5-5c4ad89c2afe")
+			(uuid "591b42fe-c548-42df-8b03-3a69403bb971")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -2850,7 +3211,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a99da27c-f8d3-4a17-a51b-e8eb2068ff66")
+			(uuid "85c6d6de-a2e1-45ab-9c77-0835a0052138")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -2861,7 +3222,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dc729251-9191-478d-94a9-993eacd8630c")
+			(uuid "e8b65176-4fbc-4621-8005-f070214264b8")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -2872,7 +3233,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "88edef48-b024-4503-86ae-7341318dfcc8")
+			(uuid "6c98410a-ee5d-48f6-bb74-572cb413c603")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -2883,7 +3244,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e4efe917-78eb-46f0-ad90-0764a284e10f")
+			(uuid "d211e937-5b49-4ec7-8051-890ff1fc5272")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -2894,7 +3255,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fe2c75ed-6f63-40cd-b5c4-37ffead4b3e1")
+			(uuid "61547113-a321-4fef-b541-6d9711bf976e")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "2df337bb-81cb-4739-884f-76c4e382cc57")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -2909,7 +3281,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "3fd23b9f-1885-439e-8016-ba746ba6588e")
 		(at 156.75 57)
@@ -2966,17 +3338,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "17ad1578-dc60-4185-b7a2-342a1eeefd47")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -2985,7 +3346,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "89cb644a-d65c-478a-8e3e-a38dbef1eb47")
+			(uuid "8dd946fe-0bda-47e7-8ee4-cb6746606d0a")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -2995,7 +3356,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d747af19-9303-4d32-b402-81d235a04a05")
+			(uuid "1841bdb2-990a-4d6f-9f86-e3e090cb24be")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -3005,7 +3366,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c41bf491-e9ce-4968-94b6-b02acef592fa")
+			(uuid "26786f7b-b8c8-4e20-9a0c-9bc0653354a2")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -3015,7 +3376,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "de86ddaa-8e8b-46c0-9e2d-2f3d8f130d85")
+			(uuid "96f69ee3-da65-4431-bdbe-e21a168d3f5f")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -3026,7 +3387,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "21fe0376-41bc-4fe8-bb4a-cafb0b0bff76")
+			(uuid "a1637111-e522-4bf6-bdc7-287457c8f09c")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -3037,7 +3398,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d9ef5c24-a4fb-4ded-a236-feb31bb37bb6")
+			(uuid "f7404668-8261-4a36-9513-c5aeeeec21e9")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -3048,7 +3409,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7fb87582-ec21-4878-801f-beea86533cd0")
+			(uuid "5ef8b962-27ac-4ccc-8930-047d31651531")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -3059,7 +3420,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "885dd412-f036-4ae6-85a8-aa37416a0bf7")
+			(uuid "4b7d50de-8f9c-4f59-96d7-d946537419e6")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "129398f4-6ed5-4add-951e-58017c2c70f7")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -3074,7 +3446,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "3fffc3a8-6ae0-4ad8-b39c-c79e9072a7bf")
 		(at 128.25 38)
@@ -3131,17 +3503,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "012e4888-0ab5-4e3a-bc02-0970169d9fe6")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -3150,7 +3511,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a732c4e9-16ac-4d32-9ce7-1c160bf1327f")
+			(uuid "033b8a1a-c733-461b-9e2a-25a0f75102b4")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -3160,7 +3521,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ce921ebc-1d28-43c2-8eb4-5d478ecab9f2")
+			(uuid "26cb862c-e32f-4769-ab5f-dcfb78ab3d66")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -3170,7 +3531,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "925d8f25-6bf6-4ec7-b873-4cad5a5e8487")
+			(uuid "f6c377f5-bf38-4a5d-a7d8-d1106fb2e3b3")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -3180,7 +3541,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4e7c8fcd-8398-47dd-968a-0392f6ff49b5")
+			(uuid "0696cd90-f3c9-4a61-8bcd-b8d0b13d1df1")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -3191,7 +3552,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "91c602da-1a88-475d-a752-ee209b3edcac")
+			(uuid "36f4d9b5-2e33-4993-b021-ae188646b03f")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -3202,7 +3563,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1b8aa043-8be0-4c0d-9fc6-ee8d5545c132")
+			(uuid "ffd80c5d-796a-4b3d-a62d-562a6ad7b7df")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -3213,7 +3574,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bfc96a04-8678-4af0-875b-2a1382786859")
+			(uuid "20a02694-d6c1-450f-b505-702def33cb29")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -3224,7 +3585,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "57f0299b-a15d-44be-86ee-660053d7a758")
+			(uuid "f6021a51-9825-4826-9b33-06c33c1acd7f")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "fb8cac73-8db1-46b0-9218-6bd71795350c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -3239,7 +3611,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.25u"
+	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
 		(uuid "4c3112b2-5fd9-4cf0-9492-ff2b5c928d97")
 		(at 7.125 76)
@@ -3296,17 +3668,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "d398d39d-5ef3-4414-aaa5-43403c953e03")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -3315,7 +3676,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4ac81841-5a66-4e3b-a3ca-c8e6c5469386")
+			(uuid "088ff64e-9a2c-4033-b22c-c141921a523c")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -3325,7 +3686,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7516af3d-dce4-4732-85ed-81a0ad86e197")
+			(uuid "a4e32787-f453-4144-9470-d41ffd2ec606")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -3335,7 +3696,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d71b1c0b-778f-41ea-b9e8-2d90d9494127")
+			(uuid "058e836d-355b-465e-85c8-1540fd9436a7")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -3345,7 +3706,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "854f6072-2676-4a92-9746-898d36df482f")
+			(uuid "6ca27556-3aa0-487b-a6ab-6fd81b413599")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -3356,7 +3717,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "53508c1e-75a8-4c0b-a6b7-bd8d6cfef01a")
+			(uuid "4890129e-791e-456c-9a61-c53d304c312b")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -3367,7 +3728,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "39cd8d66-4572-4998-abf0-011cc7a550d8")
+			(uuid "370a6257-d141-462e-8259-d45474db1abf")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -3378,7 +3739,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7553ce02-5a88-4316-9047-d6d60a23cc03")
+			(uuid "c3f1ea50-be62-4516-90d3-e4f13bfa4bd1")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -3389,7 +3750,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "861651df-13dc-48d4-a664-885c81e42fa0")
+			(uuid "c15f423c-7ea2-4552-a911-54bdae48b886")
 		)
 		(fp_rect
 			(start 11.875 -9.5)
@@ -3400,7 +3761,18 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "80d99609-d786-4090-b217-af5c651c6933")
+			(uuid "875109a1-7768-4bc2-aefc-facae148dd2c")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "75e04d61-24a7-42af-8e95-14ed66c21717")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -3415,14 +3787,14 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.25u"
+	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
 		(uuid "4d9d4464-700c-4ad3-b05e-d423e6ac5527")
 		(at 73.625 76)
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S62"
-			(at 0.100001 -6.1 0)
+			(at 0.1 -6.1 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "38068594-df1d-4d27-a2c9-d7419735b37a")
@@ -3472,18 +3844,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_poly
-			(pts
-				(xy 9.5 -9.5) (xy -9.5 -9.5) (xy -9.5 9.5) (xy 9.5 9.5)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "debd8cca-478b-49e3-891e-7d62eb9cda7f")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -3492,7 +3852,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6bd35803-0706-48f1-834f-6e78276b5b5b")
+			(uuid "174e86bc-f5ff-4980-8626-d0aff99ec984")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -3502,7 +3862,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "12ba453a-2866-4d2f-9a78-fa0c9f20ff1e")
+			(uuid "e1178ada-4d0a-4437-bc3c-10efca54bad6")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -3512,7 +3872,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "881a03ff-fa1d-48cb-b014-6caca3ebdb42")
+			(uuid "61508c83-e155-42b8-93e6-a767ac8a5101")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -3522,7 +3882,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "da180315-577e-4073-9f27-b6ba4b528ce5")
+			(uuid "a656d559-731a-4fd8-95af-5667b9a33505")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -3533,7 +3893,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d6301777-6313-46b9-913d-9813b152f791")
+			(uuid "21c5f594-7e47-4e4d-8f1b-0a0e791efc88")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -3544,7 +3904,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2dd62381-af22-48ae-88c3-847dd158aaeb")
+			(uuid "1b81ddfb-f081-4a3d-9421-dc40e1e759fd")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -3555,7 +3915,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a3bed054-7dd7-450a-a683-20c0311da089")
+			(uuid "d17f8f52-26fb-4374-9dee-e4458e115490")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -3566,19 +3926,29 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "05912629-126f-4f58-9621-878f27ebf0f2")
+			(uuid "7737e908-ae1e-442d-a40a-c75dcb7b9c37")
 		)
-		(fp_poly
-			(pts
-				(xy 11.875 -9.5) (xy -11.875 -9.5) (xy -11.875 9.5) (xy 11.875 9.5)
-			)
+		(fp_rect
+			(start 11.875 -9.5)
+			(end -11.875 9.5)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "a5667017-994b-4292-b37b-2d4b13e7e32f")
+			(uuid "1bd0cc47-e136-46ba-b132-49b8b73155de")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "63394d70-0136-4eb3-a341-38d99849db80")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -3593,7 +3963,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "5288165e-f1fc-4f5a-b67d-b82b39a24790")
 		(at 118.75 57)
@@ -3650,17 +4020,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "df9802e2-6852-49ef-975d-79576c3e08ed")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -3669,7 +4028,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fd3ed8a3-35aa-4e61-a133-6bcace9932d2")
+			(uuid "cfad4398-5cf8-4f14-a2e5-061f1958c312")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -3679,7 +4038,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "266bd181-04f1-42a3-a095-9d1128a35dd6")
+			(uuid "6cb9c8e2-8d54-48fa-b5af-4695d84ec927")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -3689,7 +4048,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "26008d5f-4633-4b1f-b280-2933ecbed6ce")
+			(uuid "6870eaf3-7aea-4106-8c0a-905ba286d8a2")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -3699,7 +4058,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f86dc74c-dd02-426d-a3af-9d0195572ccb")
+			(uuid "4147f308-f415-407c-b637-a4adab1d8a7d")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -3710,7 +4069,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "49ef7fc1-179d-4826-9959-9811f4d69915")
+			(uuid "a59a5bf9-197a-45fd-8652-3056a137ac7d")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -3721,7 +4080,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9cd9867f-12e6-4d4a-ad20-10c598523f53")
+			(uuid "4bf85543-d852-4082-bba9-54d6fc4d3245")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -3732,7 +4091,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c06741a5-4d57-427f-8440-cec86b74ad87")
+			(uuid "8069dada-1534-48e4-aa08-296fc27a5a14")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -3743,7 +4102,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "20c53458-d47b-4237-b324-e190fc3ebded")
+			(uuid "4934c6a0-8325-4910-a54e-f40cf4a24c07")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "defaf8b2-ced7-4c39-bed8-8d7c546d66ee")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -3758,7 +4128,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "53d23a65-ae4d-423f-8bf8-87d6a680bf09")
 		(at 199.5 76)
@@ -3815,104 +4185,103 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_poly
-			(pts
-				(xy 9.499999 -9.5) (xy -9.5 -9.499999) (xy -9.499999 9.5) (xy 9.5 9.499999)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "32021718-a31a-4bfe-87a7-bf8fb9e04f1c")
-		)
 		(fp_line
-			(start -7 -6.600001)
+			(start -7 -6.6)
 			(end -7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1ca2e885-8599-4311-b228-691b907957f8")
+			(uuid "df82a104-f427-40c8-a68e-8ddd9bde51b4")
 		)
 		(fp_line
-			(start -6.600001 7)
+			(start -6.6 -7)
+			(end 6.6 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "09e08330-98c6-4b5a-8b24-4d2bae245b19")
+		)
+		(fp_line
+			(start -6.6 7)
 			(end 6.6 7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "eb4ae42f-534a-4e65-bff9-eb9559b19753")
-		)
-		(fp_line
-			(start -6.6 -7)
-			(end 6.600001 -7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "910f4464-1d49-4aa9-a3cf-06676176b74f")
+			(uuid "8422b3d1-2659-466d-8384-c298ec46420d")
 		)
 		(fp_line
 			(start 7 -6.6)
-			(end 7 6.600001)
+			(end 7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ce1c682c-f8fc-451b-8d0f-55f63084d513")
+			(uuid "73dd8e2c-2f47-400d-8131-a89431bddb9e")
 		)
 		(fp_arc
-			(start -7 -6.600001)
-			(mid -6.882843 -6.882842)
+			(start -7 -6.6)
+			(mid -6.882843 -6.882843)
 			(end -6.6 -7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a962d2a9-c5e0-471d-a1d7-ddf63fa6ab5a")
+			(uuid "8362c50a-91ec-4fb0-aac1-db7103b7c1d6")
 		)
 		(fp_arc
-			(start -6.600001 7)
-			(mid -6.882842 6.882843)
+			(start -6.6 7)
+			(mid -6.882843 6.882843)
 			(end -7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bc2161f7-df7b-418a-b861-8c1ef17a3319")
+			(uuid "f41e7f7f-4ebb-48b7-a054-46c323c3f15f")
 		)
 		(fp_arc
-			(start 6.600001 -7)
-			(mid 6.882842 -6.882843)
+			(start 6.6 -7)
+			(mid 6.882843 -6.882843)
 			(end 7 -6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f59a3aad-3a02-4ef8-8834-6aae2512aea8")
+			(uuid "efad3597-144b-43b2-979a-c8e952925599")
 		)
 		(fp_arc
-			(start 7 6.600001)
-			(mid 6.882843 6.882842)
+			(start 7 6.6)
+			(mid 6.882843 6.882843)
 			(end 6.6 7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bb5aa4fd-9909-4de3-9d8e-2d7813c9ac98")
+			(uuid "bd3ae670-67f3-4112-ad29-39825d845b56")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "85ef7a2d-205c-4965-96c3-499ade804789")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 -8.199999 0)
+			(at 0 -8.2 0)
 			(layer "F.Fab")
 			(uuid "4e8b7e38-2bd0-4046-b074-d6eb53ff3b0e")
 			(effects
@@ -3924,7 +4293,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "546a309a-ff21-4afe-9f07-837b8f97891e")
 		(at 266 0)
@@ -3981,17 +4350,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "577931ee-608b-462d-9737-12082f14500c")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -4000,7 +4358,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "08a37b6b-f85a-4d98-af14-764d0dd0f30d")
+			(uuid "66fcc426-56a1-42e2-bf09-c35a42a6d032")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -4010,7 +4368,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d1e050a4-67f9-4bba-ab2c-da63199b7643")
+			(uuid "a39a6973-040a-41ad-aaaf-05e810a8855a")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -4020,7 +4378,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cdd1a4c1-0743-42b9-afdd-6cacd3c7a85a")
+			(uuid "2d39ebc3-64e3-4ac7-83dd-35272755496d")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -4030,7 +4388,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "af19d31b-0641-4374-850d-f10dab2da0a4")
+			(uuid "92afc213-6cdc-40cf-9048-c38f10362a84")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -4041,7 +4399,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1e0cff88-0f65-4c76-a340-396031ba54f3")
+			(uuid "d255b043-ee03-480f-b765-a476141f4f37")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -4052,7 +4410,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "16852246-157e-420e-9b7e-2879190f23ba")
+			(uuid "03efea6c-7c5a-42fa-bbf6-1230c7f1ab79")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -4063,7 +4421,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "019e4b51-da6c-4b5e-9b8e-09c389c38de3")
+			(uuid "61219140-173d-4da0-89f8-5e5a57ffcfb4")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -4074,7 +4432,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4038ab0a-0488-48db-b56a-7c14ce78cbfa")
+			(uuid "b7da3187-a43d-4fde-89b5-73def3b74727")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "f1d29f12-efe9-4810-ab8b-6626e93a40ef")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -4089,7 +4458,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "59319559-9431-4faf-b513-62526524a329")
 		(at 142.5 19)
@@ -4146,17 +4515,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "a2b0b16d-31f8-491d-94db-ca4b02f86c6a")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -4165,7 +4523,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7f318d1d-9554-4a49-8422-c0c5c49f71b5")
+			(uuid "3d7e3d54-e450-4a28-bfd4-f42fd377bf1b")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -4175,7 +4533,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d8d4c2e5-b491-41d6-be4d-c5a6604f3553")
+			(uuid "3974e92e-115b-4e3c-ab59-fe276d3f298b")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -4185,7 +4543,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7efce75d-9b69-4c2a-81fa-94ec51ae1729")
+			(uuid "cd8a3b5d-9046-4030-9dfe-55082a3178a4")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -4195,7 +4553,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b651d195-2f14-457a-9d9f-91e10932846e")
+			(uuid "ac759ceb-4709-49fd-918b-1399fce6df08")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -4206,7 +4564,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ede4e27d-292d-4ef2-a89f-82d4cbdea3e0")
+			(uuid "ba7e93c8-4798-4068-a487-b765e3d16dc0")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -4217,7 +4575,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fef3a181-8a61-4756-99ff-fc76bbdb60d9")
+			(uuid "0a33c27e-68b9-4bca-98ec-19f86548426d")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -4228,7 +4586,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f0a5a0f0-d8ed-486b-86b6-ccd8dfe4e09c")
+			(uuid "c4be1160-07a6-4c60-ac29-1c1ac028ca08")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -4239,7 +4597,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "269c6463-b071-4b81-a0d0-6502b850fe37")
+			(uuid "d73f7f1a-d241-4fa1-814d-0bd83f97fe0c")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "ed5f882b-fd3c-4804-b979-d122f9bf6914")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -4254,7 +4623,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "5f2bc321-7e63-4306-9332-dd760933ac68")
 		(at 261.25 76)
@@ -4311,17 +4680,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "689065f6-df3a-49ed-89fa-248cbc2a790e")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -4330,7 +4688,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "22348cf2-8586-419f-8156-9d8e59c74394")
+			(uuid "d37e38b4-8173-491f-8088-0872cb708bd3")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -4340,7 +4698,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "060a684d-4665-4caa-8a54-1cb5314c300a")
+			(uuid "b0c84cc7-d1e5-4448-8cfe-8fd2b93e26a5")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -4350,7 +4708,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "751285eb-a955-4460-b828-44953ac89256")
+			(uuid "94ef477f-3482-4d3b-bd02-89b6ea862319")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -4360,7 +4718,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "54c8011e-3fd6-4ba3-b315-9abd715e3ff0")
+			(uuid "df81409c-a3e5-4fd8-a30c-d0e0c64a288b")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -4371,7 +4729,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a936ce6c-75b4-438e-a034-38f2d841dff7")
+			(uuid "b38434e0-c080-4266-8b59-17214c4ff41a")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -4382,7 +4740,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cda1ab7c-f24f-4977-8c17-9a51e2d0e933")
+			(uuid "334a4870-63b4-457b-aea1-a41843d2009f")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -4393,7 +4751,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4e258774-0d04-45b8-9d0e-79bd350bc36a")
+			(uuid "496d8d48-fa48-4b6d-ad9f-d57a14ae699b")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -4404,7 +4762,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1d56fe88-9536-4226-8eee-d93e89b5e6ff")
+			(uuid "bed95ba0-24b6-440f-bc69-55e93d6e3306")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "b98a5acd-1955-4599-8e97-f4aee681b376")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -4419,7 +4788,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "6021527a-9838-481e-b7f6-5d9a3a96b59a")
 		(at 280.25 19)
@@ -4476,17 +4845,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "8366bcba-8554-4d03-aa2d-580a0333f66f")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -4495,7 +4853,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3e91bfac-7830-4659-a5ec-56a07a622a3b")
+			(uuid "d7294499-4dc2-42f1-bbd2-236f5cc942fc")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -4505,7 +4863,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "37db1ee4-126e-4f1e-9d83-daf876309502")
+			(uuid "458cc328-3f96-42f2-89b8-82433b61f4fa")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -4515,7 +4873,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "823ac9cb-3a89-497f-b637-90ce0522857a")
+			(uuid "010a60d8-51c1-435f-9712-47091a69fe97")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -4525,7 +4883,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cb1b5dfa-2574-4bee-8e93-d730d30181bd")
+			(uuid "53467dfe-a357-4d41-9b13-bb6f9207cc92")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -4536,7 +4894,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "94c5ec5c-948b-4243-8bf0-5dda13d68aa0")
+			(uuid "0009faef-31c5-4509-ace8-74ca33f622eb")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -4547,7 +4905,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "20cf7022-9e43-42ef-a619-99992f9433b4")
+			(uuid "dd896537-9444-4c34-a398-e48fe3704c2e")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -4558,7 +4916,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b4a981ea-fa6b-4ab0-bcb3-7e1d4aa858b2")
+			(uuid "8d36a4c0-bfd7-4645-b2bb-a4c894e0b14d")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -4569,7 +4927,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cebc0462-4846-4634-a44e-f0ea0fbc9fe3")
+			(uuid "7f375bd9-f1b6-4a49-9b93-62f36ba6d5ee")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "3a899a08-2bf1-4130-bbaf-78b983aa12b8")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -4584,7 +4953,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "62b13208-2740-459e-bf6b-b8691fca0567")
 		(at 228 0)
@@ -4641,17 +5010,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "512bdd38-1383-4b03-8c70-fbbb47209b2f")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -4660,7 +5018,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4e0eba46-630a-47c0-b795-41874e001ffd")
+			(uuid "1f7fac63-7a09-4cba-8295-fce0a0dce4df")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -4670,7 +5028,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3dec9174-7d61-4c12-971c-dcd7aa8c1752")
+			(uuid "af44fc47-8c0c-44b0-a156-75b0cb3463a7")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -4680,7 +5038,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2131cf7a-32b7-405b-a554-6c9426f9cde2")
+			(uuid "4d415776-b712-4280-bc0d-81ba6f59856d")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -4690,7 +5048,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "aac95746-d30f-4bbb-b26f-b5cd59618279")
+			(uuid "e01b34b6-1379-4046-b759-503a692856ef")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -4701,7 +5059,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "983a8e2c-af70-475a-a5c1-92aa0c072eb2")
+			(uuid "69492490-463a-497f-adad-f21e103b1b94")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -4712,7 +5070,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "126e1652-4e8c-4d03-80b5-0d7222127086")
+			(uuid "c655c10c-8cc7-42e6-b4d2-c300f6222ba1")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -4723,7 +5081,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b29b123d-0386-4c3d-95bf-444fc6dc5e60")
+			(uuid "f0d587c6-e12e-4c06-a55c-cbcb797e7e7f")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -4734,7 +5092,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dd704e3d-21df-493c-88fe-2e1cf7158377")
+			(uuid "909f891e-7c42-4b8f-b145-bd6d3ece5c47")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "c92f3bc3-e939-4a57-ad5d-94970b365ee9")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -4749,7 +5118,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "64684e31-8ba3-4fa0-b008-915d76100806")
 		(at 218.5 76)
@@ -4806,17 +5175,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "ac255812-aae3-41e7-a8bc-e2bec68f4abd")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -4825,7 +5183,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9a593b9d-1ad2-4119-bd3a-33a28ab8acea")
+			(uuid "5d46c818-8da1-433b-bf16-3b239b2d4383")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -4835,7 +5193,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8a641e01-f05b-417a-bec3-13385bcdda2a")
+			(uuid "c0e75233-979a-42d7-a1dd-352f7af5bf6f")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -4845,7 +5203,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f719d3aa-6ddb-449c-97ae-f3bcbf9ce197")
+			(uuid "c0f4eb62-78ad-4b41-87a4-4b790e69d964")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -4855,7 +5213,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0964da5e-ce87-4ea9-bf73-3131596321b4")
+			(uuid "383bd52c-186f-4084-bef4-9ef59b8bae9a")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -4866,7 +5224,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a00d54c3-0757-40fc-a413-8f701ccad5a3")
+			(uuid "ef3bb87b-2a1c-4598-a959-d3a24ce97ebc")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -4877,7 +5235,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "947ea4a7-94e4-48e8-aa36-2616438909b3")
+			(uuid "7973b47f-9337-49ed-b912-fadd91d598ba")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -4888,7 +5246,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c2b70786-b5ae-47a5-98b9-0b45fb590568")
+			(uuid "68bd3848-ac02-4b5f-8474-d6999bfe54a3")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -4899,7 +5257,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "69b8967b-31fd-4b0c-ba89-273df780425f")
+			(uuid "98b85daf-6fba-4dfd-b2f7-cd3ec322ea46")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "b05fab08-5da7-444f-ad1b-f3f045b2c89c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -4914,7 +5283,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "657eeed3-11f5-4652-9d7f-41636827f917")
 		(at 66.5 19)
@@ -4971,17 +5340,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "944bd2b7-9f55-4fe0-91c2-38edaa07854f")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -4990,7 +5348,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "16a752ea-5ad7-453e-a437-21c53b295de0")
+			(uuid "a1dff8d9-9f3a-4ca7-9f42-57724320faf7")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -5000,7 +5358,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9aa9fb3a-8647-41f7-8aa6-bc98aa55989c")
+			(uuid "047bb8f2-304b-43d9-9c02-1c511e79be57")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -5010,7 +5368,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "78e20dae-b132-49fd-86d7-10565a33dd65")
+			(uuid "19403d93-375d-418b-b9e6-23ebabc0900e")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -5020,7 +5378,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d2911d3c-fd4d-4c75-9d40-db34e2a38eae")
+			(uuid "37767008-189b-403c-b5d1-d40f7a641e6c")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -5031,7 +5389,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "06458c3f-db42-46a0-a82e-8f751b206749")
+			(uuid "16420acd-76f7-4321-9d06-aae0e2c79574")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -5042,7 +5400,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b0415f6e-422e-496e-91fe-70e47c802b02")
+			(uuid "808142c3-0df6-4e69-99d2-85975d02986f")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -5053,7 +5411,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "edee2bee-a4f9-4ee7-89b2-d55813bf2606")
+			(uuid "19c62a15-23f6-4e93-9294-7d3bef788779")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -5064,7 +5422,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0356f54b-10af-42b3-95b1-5e2dbe2e8c60")
+			(uuid "123745e2-b4af-48d2-9d5c-3f10f86db1f3")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "9a5c0f4c-a709-46d5-9fa5-0acfdc0bab38")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -5079,7 +5448,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "6670ed17-0309-44e4-9f9b-f76c30d8f53a")
 		(at 194.75 57)
@@ -5136,17 +5505,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "719a3f70-89ec-4f2c-a038-06db48ff6b29")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -5155,7 +5513,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "870150f3-efde-41bc-b0e7-01affaf2c6f7")
+			(uuid "33ecb94f-a986-435e-89cb-d3651564c755")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -5165,7 +5523,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4e70cd3e-1a78-49b4-ba9d-17619e21f110")
+			(uuid "f2c7c63f-1716-4a8b-be25-293d5bada9ae")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -5175,7 +5533,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "254ca77c-2ac1-4119-8841-e4fef8e51981")
+			(uuid "72636d7e-cc9a-4a38-bb16-048948f2c853")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -5185,7 +5543,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "be329972-4e4c-4354-a538-fbaca12b55c0")
+			(uuid "516730df-3649-40bf-97a8-c50d00f098eb")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -5196,7 +5554,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ac6e12c3-5885-413d-8635-35cd3eee7fd6")
+			(uuid "2d3e5667-dae7-487f-9105-c7745feb0b85")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -5207,7 +5565,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0d215010-8903-489b-97a7-710131cafeeb")
+			(uuid "0a8264b6-bf7f-40a2-8e2a-76facf43165c")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -5218,7 +5576,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0d9f73e8-acff-4dc0-b162-7ef64ec1dde3")
+			(uuid "06f0da49-4025-4691-a4f9-b38d303f6e03")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -5229,7 +5587,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9ec72c66-7784-42f5-b6f7-1a1d09141862")
+			(uuid "2bd96ead-a896-4dda-b9ae-1517405ab97b")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "e86fdc83-bcb1-4d17-8ca1-18cdce3d8dee")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -5244,7 +5613,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "6a4a5f7f-7b98-410a-a629-fc2f982632c9")
 		(at 204.25 38)
@@ -5301,17 +5670,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "18505c4b-08ed-4ecc-9a79-7639b3d8a722")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -5320,7 +5678,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b5b89224-a4eb-48f7-8392-9fc7c8686f2e")
+			(uuid "f8c067cf-684a-4e7f-a961-04a62562b57b")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -5330,7 +5688,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9ac99a8f-cc0a-4867-8d3a-88c5182f801a")
+			(uuid "b2f02ae2-55b2-498c-b21a-bfef8ed0f8f6")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -5340,7 +5698,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "88972750-d0ef-4600-8c2a-a2cc4acb6856")
+			(uuid "fc974d34-8bb0-4be0-a9d2-0ec82544331c")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -5350,7 +5708,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e8ce77df-bede-4f57-82e7-8537fee04880")
+			(uuid "e4496df1-b740-4401-80e4-346508e6b7eb")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -5361,7 +5719,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1529a20d-c78d-4bfa-b342-2bd3530efa17")
+			(uuid "a61b7ef6-8ee3-400d-9ed5-1dcd9ef556f8")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -5372,7 +5730,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "487edcc7-0684-4811-bc38-33738de45fe6")
+			(uuid "649f0837-efef-4c02-946b-b209ac4d6f68")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -5383,7 +5741,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ba78b797-9946-4f85-863f-a19d22bb2f06")
+			(uuid "1e792e3b-d426-44d0-8693-3d3da2569c5a")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -5394,7 +5752,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "703710f1-f6ee-4578-b2da-70d54ee0d0fd")
+			(uuid "33f6dabb-3088-49f2-873d-fe37102677d5")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "0599b404-727c-49d9-959f-0e9d7158a8a3")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -5409,7 +5778,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "6b177aec-fbbc-4984-ba3b-8868be91a4fe")
 		(at 38 0)
@@ -5466,17 +5835,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "e07cb758-6c7e-48ed-ad5c-26b658985748")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -5485,7 +5843,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c084aec4-1f39-4013-bff6-17fd23223635")
+			(uuid "a67a43a9-ae06-4353-93be-ee5775db555c")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -5495,7 +5853,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "378d07c5-1ea5-4154-9b94-60b2fd826a8a")
+			(uuid "27ac8f66-258e-4a5d-b1db-7761650eddb2")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -5505,7 +5863,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c830968f-dc60-4317-9866-86b1471642be")
+			(uuid "f7a2978a-0ccc-4994-83b1-d0e0f61660d0")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -5515,7 +5873,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "80640dae-a257-4302-98bb-30627efac941")
+			(uuid "3246e107-93ae-4c66-afdc-ee4a80d780e2")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -5526,7 +5884,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5a934b35-d77d-433f-9c8b-d0e986ee4650")
+			(uuid "4a0cb154-99ad-4bda-ad3a-0db68b81c7cd")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -5537,7 +5895,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8b653224-7d78-42fe-99c6-467e26da0570")
+			(uuid "2ad2ffc2-80d3-43fe-9e47-b608ed56e6db")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -5548,7 +5906,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4546c451-c432-4169-9994-a711d9bc33f1")
+			(uuid "267b1de9-89a9-45fc-89b6-1a14ca9802b4")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -5559,7 +5917,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0ff20944-c0c8-4231-8248-160251e20378")
+			(uuid "9e08024d-d3e2-4e8c-9260-8c1c29d2db9e")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "2c4711df-80ba-4bd8-a78b-8e1e9a147636")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -5574,7 +5943,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "6e474fec-e251-4208-b063-90eae908336e")
 		(at 180.5 19)
@@ -5631,17 +6000,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "aec0021b-63e9-49fa-8ebb-26d0f5703403")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -5650,7 +6008,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e732d764-9461-465c-989d-98bcfa8709d8")
+			(uuid "4ca3df96-5b47-486a-9fdb-b4578f2fbd5f")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -5660,7 +6018,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "33f9a0db-ce59-4cf5-b357-929b72e99a73")
+			(uuid "92b77f7d-3f20-4c78-b988-b4e3c823ce45")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -5670,7 +6028,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7c5ed762-defe-4ae4-bb23-edc5b92867fb")
+			(uuid "b6c5014e-311d-4329-95a1-66bf1d75717d")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -5680,7 +6038,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "735900c0-9f0a-4c9e-84a3-107d00724141")
+			(uuid "e9b8f1c8-7ac1-4d0e-ab2c-a527409a1221")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -5691,7 +6049,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c6172f5c-ba68-4cd6-9d88-f62ff08ca1d6")
+			(uuid "26167dcc-d538-4d40-9b66-89ee944f58c1")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -5702,7 +6060,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "150e746d-5a3e-4318-b1b7-d4a4aff4c0e3")
+			(uuid "770d3429-71bb-45d7-9192-d00f0a00a611")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -5713,7 +6071,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ade236ac-0626-4dfc-bfe1-6de0421c695a")
+			(uuid "f35dd2b8-9fbf-4b35-93bc-d6ca6a994083")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -5724,7 +6082,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5f9cc2ad-7398-44de-b43a-b1db25a78fb6")
+			(uuid "dad4d132-9d78-428d-b335-430838b6349c")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "3b1a1b5c-5019-4eec-9400-945d10edf562")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -5739,7 +6108,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.25u"
+	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
 		(uuid "6e6c2ca6-2e64-4d40-b974-b8ea48d4c19f")
 		(at 30.875 76)
@@ -5796,17 +6165,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "e97e535a-bf54-49d0-ad88-d53d74842147")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -5815,7 +6173,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f67946a4-057e-4afa-8675-71c5863d2219")
+			(uuid "d394710f-f914-4534-b93b-040e8f44a322")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -5825,7 +6183,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d8048c6c-182b-425d-8cb1-33683ff594bb")
+			(uuid "dd93382f-4ba3-471c-a4ed-1c4bd3489554")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -5835,7 +6193,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "63299e94-5aeb-4782-a9ea-bb80ffa10e4b")
+			(uuid "4c903a22-2139-40b3-907c-173573626e6f")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -5845,7 +6203,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "93f1de83-b882-4c9c-a08a-b7837be42861")
+			(uuid "d2e97e68-f092-421a-b89f-087b22b0dfaf")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -5856,7 +6214,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1a149897-c762-43d8-8f19-cdf128e0acd4")
+			(uuid "f52d0f8d-95bb-4d89-8a80-ff691287ef7a")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -5867,7 +6225,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b4b2004a-4c11-4f11-a27b-6ed8c8bbdc94")
+			(uuid "f3f7b498-09a0-4d57-b1e5-d5f550059834")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -5878,7 +6236,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "92754f09-41ab-4072-bb16-0125eb16b12f")
+			(uuid "99f7068a-fdfb-4d66-83b6-094f439bab28")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -5889,7 +6247,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "346b79cd-d519-4b50-92a6-059b3abe19ce")
+			(uuid "6168c15c-0ebd-439d-9c2e-4e8a12264a34")
 		)
 		(fp_rect
 			(start 11.875 -9.5)
@@ -5900,7 +6258,18 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "a487e85e-cd2e-4a45-9901-a3898584072f")
+			(uuid "9a0578b0-a3d2-42e4-9430-e238d22aac0d")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "68764044-7edd-424a-acc9-2084c680547c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -5915,7 +6284,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "6ed1e27f-25f0-47a3-8ed0-f34762bca72f")
 		(at 99.75 57)
@@ -5972,17 +6341,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "033298ff-b91d-4b96-900c-1544020ff15b")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -5991,7 +6349,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d1d69d49-8f65-4877-838d-6f201707f276")
+			(uuid "a3b9015a-6137-412b-9176-f62f5360d452")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -6001,7 +6359,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4111acf6-a3fe-4ad8-ba4c-00131a625426")
+			(uuid "cbbc9916-a890-4b79-9575-12fb79cbbb0b")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -6011,7 +6369,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3dbd0749-35c6-4ac6-a0f1-453e178b99ca")
+			(uuid "6ddf7888-18b2-4bac-b14d-aedabd2b0824")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -6021,7 +6379,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8fdf09a8-eb54-4b19-be51-4a3fe6ddb8c2")
+			(uuid "f5f31f8f-4eda-4fba-bc20-32c58562354f")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -6032,7 +6390,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "21083f53-755c-45f2-ac05-03bac0ac765e")
+			(uuid "4f65228a-c258-48b7-8dc1-f55d8b97ee2b")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -6043,7 +6401,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5e9d541c-e266-4e8c-95f8-40882e138fb6")
+			(uuid "a898ccd6-6398-47c9-836c-6824dbe98511")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -6054,7 +6412,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "91b4941e-d405-4bb2-bee6-9e4101dbb2e4")
+			(uuid "714309e7-b5a4-41c6-beab-39f2e9db909d")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -6065,7 +6423,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dd75be74-5532-487a-a327-6b0418845492")
+			(uuid "194f658d-4cac-4f79-8463-ae860e5d4994")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "8cc7f759-d63d-424e-b602-93509cca658f")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -6080,7 +6449,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "6ff9b180-9cd3-43ac-96f7-0162d02d13b3")
 		(at 218.5 19)
@@ -6137,17 +6506,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "72466d01-9e3d-4098-97a9-9a1cd938b7a0")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -6156,7 +6514,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c47752a5-4c2f-4b60-b906-c792877968bf")
+			(uuid "4a955bc0-0ab3-42dd-83b2-f429fb6cf16a")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -6166,7 +6524,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "67eeb2d5-8228-4474-a366-5a0a4a0ec85b")
+			(uuid "da450a2a-09b1-4287-aa47-f0535b5d84c3")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -6176,7 +6534,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "74327a7c-5b8d-4f8f-98c0-a2908644ef16")
+			(uuid "cfdb354c-65e0-4b82-8a1e-2a1bd2b392b1")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -6186,7 +6544,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e879c5f7-eddf-45ce-8300-a00140272eeb")
+			(uuid "5cb103e5-88fe-42e2-9dc8-0b466d42d2a1")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -6197,7 +6555,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "511c8cb8-ae75-43e5-8a75-cfd1c40d8f07")
+			(uuid "2776f2c2-dd87-40ef-870e-26da1cf55f09")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -6208,7 +6566,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "026e4dbb-df0f-4bce-8c78-7ede2beaa738")
+			(uuid "6e45b169-3831-4069-8c01-5a9196df7956")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -6219,7 +6577,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6d244e3e-b744-42e3-ae6b-b69cbd4775d5")
+			(uuid "b51d3fab-c1f2-4451-8908-8c8fc03db92d")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -6230,7 +6588,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5e7d58d1-1cb2-4074-af3f-40e08a875035")
+			(uuid "d48e8a6c-2401-4142-a3cf-cb4f94d4b456")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "3b6f5f94-568f-4a05-ae29-3ae2a8029892")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -6245,7 +6614,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "75d191a5-9812-4496-b43c-e50177bca228")
 		(at 95 0)
@@ -6302,17 +6671,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "e46dbbd7-8059-407d-b5de-c5f8192e2395")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -6321,7 +6679,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a9dac815-a7bf-483e-b13e-4f6464398f31")
+			(uuid "1a705f23-79dc-462a-8304-b34ba1edd339")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -6331,7 +6689,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "570b4d79-190e-49af-8f2d-cc5cbb107f22")
+			(uuid "04e49f87-ccec-4a6b-b4c1-dcfe4160d2fe")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -6341,7 +6699,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b7d8f667-6ed9-4131-b7bb-241d5e45435b")
+			(uuid "a9c8c8f2-ca3d-475d-8a1a-c28efec4fad2")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -6351,7 +6709,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7b009fee-b4ac-4026-b453-6e34c57610b7")
+			(uuid "6e423715-1600-483d-9520-eb62ddbcf9fa")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -6362,7 +6720,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "96e41d57-4d11-4682-b356-0be775c13bf5")
+			(uuid "4366efa6-4c4b-4e17-91c9-7fcca073d350")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -6373,7 +6731,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b53931c6-df2f-4f03-922f-efc86ec1057d")
+			(uuid "f38e0552-83fd-4c52-8332-b54fe1552166")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -6384,7 +6742,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4d1de8f3-749d-422f-8a2b-8404151adc4d")
+			(uuid "4b95f038-ac3f-42ee-865a-9b3ec24e39b9")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -6395,7 +6753,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2c9a7e84-ff90-49e8-8504-a2df793937a1")
+			(uuid "5b29f1e8-22f5-48f5-bb36-75bceb171864")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "21dcd56b-141e-495a-9226-d73c966eefb3")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -6410,7 +6779,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "76a020f3-bc68-4b1c-855b-cd29eb1ad0eb")
 		(at 137.75 76)
@@ -6467,17 +6836,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "c2b7442d-7f8e-4d2d-bd66-8aeb4ec988f0")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -6486,7 +6844,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "096ee374-a10a-4dfb-b98b-641baae2d3cf")
+			(uuid "aaaf6b11-3be0-49e4-b2e1-c9f21a31b9f8")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -6496,7 +6854,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6c419a84-5028-423e-806f-5dfdbd59a700")
+			(uuid "c87ee1bd-e7df-4b5a-b967-13f9b3bc3284")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -6506,7 +6864,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e9aa5b8d-d226-4cc5-9695-04d22ec848e5")
+			(uuid "c631e885-86ac-47dd-a8d6-bc2bff102752")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -6516,7 +6874,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a9623819-ec07-496a-89b4-61e02a1ae94c")
+			(uuid "44350037-1ee2-4739-ba46-d39722ce05f6")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -6527,7 +6885,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e9a8abd5-9673-4497-9526-63e002b042af")
+			(uuid "96436cdd-4e35-4afa-a226-b73d704fe202")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -6538,7 +6896,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ed57de28-4656-4cd0-a623-cdf8fa37314c")
+			(uuid "c3ddfbf8-750c-4571-9ab9-6599f3a0610f")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -6549,7 +6907,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0bdf392c-9f06-4920-88ed-1230343afe4b")
+			(uuid "79b84826-368f-41bd-9cde-a03a9eea2c4b")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -6560,7 +6918,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7e2d799f-38db-46f7-b740-a283e4e22c86")
+			(uuid "cebb5c1f-c988-466f-aa11-8258fcc92af0")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "fc76984f-e889-4aef-801e-d0bdcf5b7b75")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -6575,7 +6944,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "7b482c38-0181-4eb1-8e90-a65d7861cf1a")
 		(at 152 0)
@@ -6632,17 +7001,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "c78c64d9-0f92-4192-8b7a-b724f4fb5830")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -6651,7 +7009,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6269499a-0a40-4631-bf4a-e03155945f7e")
+			(uuid "9a90d864-d900-4c98-8f79-132883055cac")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -6661,7 +7019,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "75380994-4868-4498-a5ac-8d018370a3c5")
+			(uuid "f62c6752-42e3-49fe-8334-654155964925")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -6671,7 +7029,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c847031d-517d-485c-99fb-7fdb4f1654e5")
+			(uuid "91c99a9d-a085-4849-8994-2004ccf9ed82")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -6681,7 +7039,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "af3af78d-f541-4f4c-8412-880268bde5bf")
+			(uuid "7e74ecab-693b-47a2-91c2-61aa60f0e2f1")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -6692,7 +7050,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "03d2032d-d4da-4aa5-a458-68e479f9e510")
+			(uuid "09639fca-7785-4db3-a267-11669e52c604")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -6703,7 +7061,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5718229b-b59b-42bb-b20c-406be9969a36")
+			(uuid "8b5ea987-ee37-48d6-9f0e-6091d86ada24")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -6714,7 +7072,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1d88240f-0bc5-416b-9a70-73a8bf26c02f")
+			(uuid "275d2dcb-5bc9-4072-8c5f-18497aaaf8f1")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -6725,7 +7083,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "381e1472-dcd7-4c60-b6e8-cf2fbefde632")
+			(uuid "377a7203-b050-40dc-84f5-1b15fb327cf6")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "f3dc6f2b-8da5-48e7-bf2b-4af17416507c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -6740,7 +7109,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "7b735993-e059-4f75-8ee6-fd67b77fa2ea")
 		(at 61.75 57)
@@ -6797,17 +7166,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "a379473f-0acc-49dc-8bc8-be91a989dfa4")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -6816,7 +7174,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2ff8346b-03c8-46a5-b006-9da15b78dae7")
+			(uuid "d75e535c-f78c-4677-b595-623d2c73b860")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -6826,7 +7184,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2b956e8c-02df-4907-898c-108f991ade06")
+			(uuid "0c96ec91-ee10-4fef-87ca-f43e80d85197")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -6836,7 +7194,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6890db58-65e6-4a02-9624-2db9cb31882f")
+			(uuid "bcb28869-3322-49b4-9a79-7c925934d5e2")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -6846,7 +7204,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6ccf75df-4521-450f-9823-d4440e64892f")
+			(uuid "71d5fd02-6d5b-411c-8fc6-62c3fc5dd5ae")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -6857,7 +7215,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "aa3d5d1a-67c0-4ff8-a2b4-5b7e3604f149")
+			(uuid "6783a6f4-9319-45db-8eb9-9d97c19af10d")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -6868,7 +7226,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "43bcaf66-0bb9-4fb0-a2e1-f3c57c392822")
+			(uuid "0f09bb2c-5b39-4ebf-b796-f597a6533f23")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -6879,7 +7237,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4e73ec12-84ca-471a-9761-58afaaabe231")
+			(uuid "3b2c9977-0e51-4cc7-a1bf-6fb1f293bc37")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -6890,7 +7248,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "91642bf1-1e60-472c-8c24-96babfc1c7e4")
+			(uuid "061f508b-9b07-4d3d-9758-3c75726784cc")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "4956991e-82f4-4e72-990f-5afaaea6d244")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -6905,7 +7274,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.25u"
+	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
 		(uuid "7e0855e8-7882-457f-8bfc-fba27c9fe6ff")
 		(at 239.875 76)
@@ -6962,17 +7331,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "91027a3b-5c35-4b2e-afea-fa2b0db2c50c")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -6981,7 +7339,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "79c3f4df-40ce-43fc-8813-1e971dff0a7a")
+			(uuid "379aa1a7-3be1-4c4f-ae81-e4e48e5cab69")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -6991,7 +7349,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "85c87e0a-d4da-43d2-a701-028e90b83f51")
+			(uuid "534cd1ba-e363-471f-8795-48c9a193845f")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -7001,7 +7359,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "afd69eed-3cd8-470e-90d5-df288d961517")
+			(uuid "46ec81bf-df53-4edc-af13-01fc06af42ea")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -7011,7 +7369,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cfd21387-dbd6-4604-aea1-fcf0e67df0e7")
+			(uuid "e87626e6-2a41-4f49-8549-de0f4f11e233")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -7022,7 +7380,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5e0db2c1-62a7-4cd0-8cfb-33c7aeadd76a")
+			(uuid "4d11211d-d4d1-4dfd-b5ed-8b805a8b8eb5")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -7033,7 +7391,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3120f02c-4561-4de0-80b7-1cb3a9d44bcc")
+			(uuid "b51e366f-3f38-4cb7-a558-bba76040e8b4")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -7044,7 +7402,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "79a0a6a4-c388-497e-a129-323f2f5f9109")
+			(uuid "ed945a78-d2b6-4f53-b216-58c3074f5624")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -7055,7 +7413,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8fae0e73-d411-4b34-a963-f0ad6272b675")
+			(uuid "45b1237d-beb9-43fb-b605-f660efa41ff5")
 		)
 		(fp_rect
 			(start 11.875 -9.5)
@@ -7066,7 +7424,18 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "09ec12a2-377d-463d-b4aa-0f0a7fb0c4ae")
+			(uuid "002d8ad2-3145-49e5-9ab4-95db424b39fc")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "2138cfa9-8d85-44f2-b63c-48863615f400")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -7081,7 +7450,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "8461af67-cd7d-477f-85bf-1e67394d9c8a")
 		(at 185.25 38)
@@ -7138,17 +7507,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "d03bad7b-d902-4e2f-bcd7-f45b44ffc2a5")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -7157,7 +7515,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a8ea5b7e-3cfc-4c33-adb4-7dba18d37ca2")
+			(uuid "8ca58fe5-ecc9-4298-b92f-6c0b49822fe0")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -7167,7 +7525,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b93914b2-ce85-4776-a79d-e1d3e0f40a0e")
+			(uuid "feac633f-684a-4114-92e6-bd24eb165849")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -7177,7 +7535,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "965e85fb-830a-44c5-9b8b-403112032dc2")
+			(uuid "6f8c636a-cecd-483a-9392-97f9ad72bbd4")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -7187,7 +7545,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a8d439c5-4052-49ce-a664-4b71bdb53e30")
+			(uuid "887ec2c1-99f4-42a8-86b6-a0878c27b7d6")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -7198,7 +7556,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "da9386f1-e8a2-48aa-a3b7-485035271077")
+			(uuid "016023ff-3fe0-4dba-9cbf-97389dcf710e")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -7209,7 +7567,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "76093caf-a864-45b5-aace-f837c9af4c14")
+			(uuid "621d108a-45ae-4df0-8164-ff4fcdce2ae9")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -7220,7 +7578,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "62783d2e-621e-4e80-8b7a-74925d43a996")
+			(uuid "9681a6d0-ce74-41f3-8061-18730113ffa8")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -7231,7 +7589,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "63b2c4fc-b435-422c-92ef-0d6e8ba68bd1")
+			(uuid "b509d4b9-4d1c-4bf5-823f-6985501983ea")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "38e86b60-0c3e-4a05-b316-bf789d3b27fa")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -7246,7 +7615,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "8a5bd155-e5b1-4b8b-859c-89a97f9123db")
 		(at 23.75 19)
@@ -7303,17 +7672,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "c86a1b22-db0b-4199-beb6-245a0845d7b9")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -7322,7 +7680,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "483649ee-cabf-4926-b452-239c05697349")
+			(uuid "7e12eb28-fe7f-4965-99d8-48e8fa9a1a46")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -7332,7 +7690,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "727093ea-1caa-4bd5-8282-86139ad48ba8")
+			(uuid "9bdfa105-f216-4606-87e6-2cea2d629479")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -7342,7 +7700,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b4e36ce6-581e-40ba-a4ef-84c0f0e90b6f")
+			(uuid "c7bdafb7-4c31-43e2-8e61-2d8c21c79c25")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -7352,7 +7710,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0baaa32c-d16f-4665-a8dc-134f68f0a48d")
+			(uuid "0d663170-ba2b-481b-aab6-0584535b7b0d")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -7363,7 +7721,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dc725616-a5de-45e5-9e9e-2e95c055fff0")
+			(uuid "57427bbd-bffd-4778-a620-40df108755d2")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -7374,7 +7732,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "efa6f43a-a934-4043-831e-050ddeb71b12")
+			(uuid "9d98657b-0d0e-4f02-9ae1-fd6d65bf9e4c")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -7385,7 +7743,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4b8408d4-42ea-4b4d-b8ee-ebe859341b1e")
+			(uuid "6a56d604-43ec-4e52-a809-cac216d6dbbe")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -7396,7 +7754,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "453fa80d-dce7-44e1-b70a-ed34efaeaf9c")
+			(uuid "4990799f-40a1-4d28-9410-67756da26c33")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "9e5ecbdf-dd0c-4e91-b85d-160dd93beddd")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -7411,7 +7780,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.25u"
+	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
 		(uuid "90a6b9e9-727c-4aed-9abb-33995c416665")
 		(at 11.875 38)
@@ -7468,17 +7837,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "d51242c4-6f19-48eb-ae87-d5adca11a0a6")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -7487,7 +7845,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bdc7f30b-a218-4882-b8ec-b23d9279e4b1")
+			(uuid "20ae2dc7-55c3-45be-975a-6d88bbd40cda")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -7497,7 +7855,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "81cd897d-8bad-47f0-acb1-e3c0703c1a43")
+			(uuid "b495512c-83b4-4156-b580-1f29551247ef")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -7507,7 +7865,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ffbcd774-3e06-40fa-9862-ffa67de42c1c")
+			(uuid "256b5dc0-d056-430c-af2d-2c6d25d80ae8")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -7517,7 +7875,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ae012690-c934-478e-8615-e0faf580a9df")
+			(uuid "893aefa2-3a25-460f-a811-c02ca2e6da86")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -7528,7 +7886,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0ead35eb-af2c-4f0f-9786-ad9f74b187f6")
+			(uuid "2b939aff-13e8-4e71-82e4-f20b80b54c5f")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -7539,7 +7897,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dadedab7-0ed3-42bf-89d1-999e8c8e0198")
+			(uuid "ee806c34-eef3-46fc-801d-7bc09c8d5f12")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -7550,7 +7908,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2922e926-b150-41db-bc44-005e56221a92")
+			(uuid "5a7fea71-279f-462c-bd96-12f3241855af")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -7561,7 +7919,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "aa376332-8ef6-4be1-b732-8d22c01d6e49")
+			(uuid "f9c56813-5a8f-4e55-9d39-38492ab52188")
 		)
 		(fp_rect
 			(start 11.875 -9.5)
@@ -7572,7 +7930,18 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "05925bab-a9f2-46f9-a488-ed93b0e5cd3d")
+			(uuid "8efb7a11-5530-469f-a2e8-91a29a065fdb")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "fe7ae4e8-eb7a-4589-97d9-0d16e5a20602")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -7587,7 +7956,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "9f6b72ae-3c50-48f0-8e98-43afc73502f4")
 		(at 190 0)
@@ -7644,17 +8013,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "73a08901-6a4a-42c2-abc5-a4a3be7365c0")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -7663,7 +8021,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1615265c-d136-4507-8910-b4cf4ff486c4")
+			(uuid "e73bdeb3-9467-4c4a-aeb4-a121f8abdc51")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -7673,7 +8031,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0d6803ac-2215-44cd-929a-ec4a0e17b6be")
+			(uuid "942ab724-1575-445c-9222-192ebc79fc5e")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -7683,7 +8041,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6ce6e98d-3620-46c3-b6cd-963d352c9654")
+			(uuid "1c640e40-e5a8-43e2-b29d-fbc57949816b")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -7693,7 +8051,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3b4c16f8-0b24-43ee-a437-f81b3de9f4e9")
+			(uuid "9414f0e0-cec1-4e83-9986-812f93f47be3")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -7704,7 +8062,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "861c9d72-7f64-491d-ac96-3c946b65a259")
+			(uuid "c567ce51-a10e-4757-8a3b-26cec252dea4")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -7715,7 +8073,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ba17abc7-04d3-4c7f-bb05-ab8058df6ec8")
+			(uuid "023e1d8f-9590-4ea4-b6b9-1fe240bb2c0d")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -7726,7 +8084,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "78e707e7-111c-4ffd-aaf9-1dfcc4a92b7f")
+			(uuid "396a7f6a-78c3-402a-8f22-ababc6057125")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -7737,7 +8095,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b54b7483-a9d7-4105-81ee-4429f962deb6")
+			(uuid "7f67436c-48a1-4bb4-83ff-418530013259")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "84567d67-d019-405c-92ef-b75c707034ca")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -7752,7 +8121,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.75u"
+	(footprint "tmr-lib:Switch_Cutout_1.75u"
 		(layer "F.Cu")
 		(uuid "a107bc43-d6e4-4166-9f09-b25ba271e243")
 		(at 35.625 57)
@@ -7809,17 +8178,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "333c63dc-6742-4453-a8e2-53bcd42bd385")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -7828,7 +8186,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0f885cd8-1574-4762-b301-acae228c2845")
+			(uuid "9bb53dae-f7a8-49eb-a4c5-3f716414391a")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -7838,7 +8196,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a5a65665-d678-48b7-b335-1beb28ae1062")
+			(uuid "8de13bbd-f7d6-4a5f-9384-b80015c72d6d")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -7848,7 +8206,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bb6a480a-e9c6-46db-807c-3b590416fc5e")
+			(uuid "59d329b4-9b95-482f-9218-8b326ae3335f")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -7858,7 +8216,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "94353523-bc5a-4bad-87f8-b233eba12d4f")
+			(uuid "1f0c923e-f2e7-4a24-829a-7b2862dae3a3")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -7869,7 +8227,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c2cf725e-830f-4969-acf7-3bd1590d5774")
+			(uuid "18c62a96-86a2-4b18-ad49-5d5c135ccd8c")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -7880,7 +8238,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4093d195-0ba4-4a56-bbd9-010986e1784a")
+			(uuid "c807d089-6d8e-40c1-ac7a-74c28426f4c1")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -7891,7 +8249,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0cd35e61-7c06-4ce4-824d-a1ad126b5739")
+			(uuid "f0a3a933-07dd-4d0e-8165-047daa1a2e94")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -7902,7 +8260,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e86f2b00-6bdc-4c3b-ac7f-89b59435b9ce")
+			(uuid "39e3d697-a217-43d3-bbf6-bbf8b412c584")
 		)
 		(fp_rect
 			(start -16.625 -9.5)
@@ -7913,7 +8271,18 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "b1c20736-c537-49ab-bb82-625d423875ed")
+			(uuid "cfbf40d3-0266-4190-a244-036007c3b977")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "a9e2cec3-1f28-4c3f-939a-b3b39d27194b")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -7928,7 +8297,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "a2855dc1-5292-484b-9eb9-b966f0af9325")
 		(at 52.25 38)
@@ -7985,17 +8354,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "5dfb4886-5f9e-41c1-8bd1-401b5c338567")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -8004,7 +8362,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c8baf2d8-9306-44a9-9929-1a2fad116a19")
+			(uuid "f8dcd8c9-a7ca-4e95-93a9-21a0c262f99d")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -8014,7 +8372,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a3cdd026-1c91-4d65-ba90-710038bbb588")
+			(uuid "a1a6afe6-8e7d-44a4-bbb7-b98acf166aee")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -8024,7 +8382,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "59fbb225-a717-4801-b6f6-85cc061c5fc7")
+			(uuid "d311786f-5cee-4ccd-a3bb-3d0f3d41e67f")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -8034,7 +8392,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6d2f088b-cd24-401a-8f51-3b70f8cdf41e")
+			(uuid "da84b0b6-676a-47d3-876c-74f12f59ed30")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -8045,7 +8403,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2c258255-6546-40d0-8a98-ee2f0c68f940")
+			(uuid "9666dd72-f5f7-4ee6-bfc6-02eadc2a6a95")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -8056,7 +8414,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "24672a02-7022-47c4-a87e-8cde7a400886")
+			(uuid "cdfc8e87-25be-45ac-aa0a-59b2235ede47")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -8067,7 +8425,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d3d572e8-678d-43fb-8ffd-0d39334a7db1")
+			(uuid "d1be6886-f4e9-40af-8807-f6e9e8d2919a")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -8078,7 +8436,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d0d10bb4-2a9e-4040-9cf2-8cbadb450370")
+			(uuid "b67502a9-6df6-45a9-b2be-22738fed33d8")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "77d44b70-0106-41ad-9cdb-65e5bf619c4e")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -8093,7 +8462,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.25u"
+	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
 		(uuid "a32f1a97-146d-4162-ae0e-970946db5c64")
 		(at 244.625 38)
@@ -8150,17 +8519,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "9f9e75ed-0cb7-4b82-89c2-266883bea388")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -8169,7 +8527,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f52839b6-6398-4ad5-b921-ca812ce1b496")
+			(uuid "2dba7d1e-2493-4cfd-8473-b970f665c6d7")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -8179,7 +8537,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b9e3507e-14e4-42a5-80f7-f7ca13990d16")
+			(uuid "71b1bac4-8352-4e94-8bac-a976e7a526ee")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -8189,7 +8547,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "573baf6d-842d-41c8-a9ce-caeedfb05ed9")
+			(uuid "fb81d956-b09f-49f4-8d2d-b64728c4041d")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -8199,7 +8557,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "722b807f-3e1d-4302-89ab-aa1958fa0b67")
+			(uuid "b4252c8c-1eda-409e-8929-a5391379a5aa")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -8210,7 +8568,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "eb6ca13e-b5f1-46e7-8d7a-d99e408ab2e2")
+			(uuid "241a011c-fa83-4bb9-9a9f-3a798579b430")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -8221,7 +8579,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fe466f15-1fe9-4637-a0e6-4a9f14b8fe51")
+			(uuid "e6718fde-edac-4871-8796-c17388efa591")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -8232,7 +8590,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "696add50-ffd8-4267-ac35-435152e2b539")
+			(uuid "a51f45fd-7fdf-461b-94a3-0103545a2f44")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -8243,7 +8601,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9f8a6b0f-9346-498d-adad-6c7f104d98f7")
+			(uuid "215b08ca-4e4e-4a94-89d7-fa1508ae12c4")
 		)
 		(fp_rect
 			(start 11.875 -9.5)
@@ -8254,7 +8612,18 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "257d4d3e-e9b0-492a-b464-e4f296d36ebc")
+			(uuid "5476c406-745c-4ea8-ac71-5348193cde87")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "40f1c76f-048b-49b4-b741-456ea83f152f")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -8269,7 +8638,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "a98898bc-8619-48ec-b176-6f4f1facabe4")
 		(at 33.25 38)
@@ -8326,17 +8695,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "dfc61c25-90e4-4783-8cf9-9c3789b7a59e")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -8345,7 +8703,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "11ad449c-0c99-4575-8191-a00eb1c1a1ac")
+			(uuid "d191087b-8f33-4f97-84a9-481e9f686315")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -8355,7 +8713,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2aac98a5-93c2-4fd1-bf83-bc71db87c148")
+			(uuid "616b02d9-8360-438d-8bf9-c9006c6bd031")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -8365,7 +8723,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "eea0f4e2-0d60-435c-b147-d06cf6e92ce3")
+			(uuid "9dcbe09b-00f4-46e1-bb00-a1977c90dd25")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -8375,7 +8733,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0f994ac1-d770-4c9f-8aca-e22921b2a037")
+			(uuid "ace43779-ac7a-4817-9d09-4d85a91b0738")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -8386,7 +8744,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7735ddca-5f4b-4a47-bb68-49f307252574")
+			(uuid "a72d43a8-71cb-4a24-b10f-1bfef154faf6")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -8397,7 +8755,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e17319da-45ee-4e8c-950d-8f2cc123fbaa")
+			(uuid "a2f5e06a-3f15-4191-ae25-d4dc0cf42cd3")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -8408,7 +8766,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "55ef7efd-51ac-4fb5-a259-e7433bbde634")
+			(uuid "eedad570-cb4e-48c6-9859-2d1f68d17563")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -8419,7 +8777,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "35c7435f-78e1-42f1-a893-c99407cef511")
+			(uuid "7581206e-a165-429f-8e6b-4c3b833570b9")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "f8aa25f0-1191-4287-a3c9-fc0728308b23")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -8434,7 +8803,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "abdb27ae-01a9-4b60-8181-8264982c0088")
 		(at 285 38)
@@ -8491,17 +8860,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "795191a1-62a9-4c9f-a545-30a7d2ab24ac")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -8510,7 +8868,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c4680850-d898-488d-86c7-ab76194b3d01")
+			(uuid "1c03ff16-34aa-43fd-9ec1-870b34666b52")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -8520,7 +8878,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "042c9b69-4b4e-4dc9-b1a2-66e3ae768e2b")
+			(uuid "7bc741ce-b93e-47df-88c7-d99e48da011e")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -8530,7 +8888,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b12b7258-9961-4600-b855-681eb7807aec")
+			(uuid "d55e4577-d2ea-4cfe-9f55-ab64fa4832aa")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -8540,7 +8898,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3f803009-39e3-4cb8-98dc-42d070df013d")
+			(uuid "0f28c801-fe3f-4e32-a48f-6d19ae1f0207")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -8551,7 +8909,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4ec221a2-cc6c-40a5-9779-9ea607bbfc24")
+			(uuid "8c38f8f6-bd3f-4dd1-baa6-265066022157")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -8562,7 +8920,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f295185e-ad1b-42d4-900f-36b444fb90df")
+			(uuid "e466ee61-87b2-48b8-ab5c-7552116badb2")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -8573,7 +8931,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "37480e06-6055-4eff-b52e-d2c4602743f2")
+			(uuid "a9a00a2c-d1e2-4340-83fe-343ac111ac12")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -8584,7 +8942,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4b581f10-44e5-4e70-b5bd-1b13b08f2a02")
+			(uuid "3be69e25-dfcb-4708-98da-e48caa40c310")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "b6a14953-dec4-4995-8e17-82a745818c05")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -8599,7 +8968,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "adea43a0-5b5d-41d1-8363-0d20e3cdedd7")
 		(at 123.5 19)
@@ -8656,17 +9025,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "3c8be413-d563-4d3c-83c6-9318aada53ba")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -8675,7 +9033,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2ab41642-966a-436e-919e-2a27c3d688d3")
+			(uuid "9f5b6c6d-143e-44d8-92e3-93c1545d3850")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -8685,7 +9043,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e1bb56a4-e5f9-4d86-908b-3859f8c2e936")
+			(uuid "a7b250cf-ecad-4f4b-a421-16b58a5d5f22")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -8695,7 +9053,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e18c6d71-a8e9-424d-b6cc-21b53c6db78b")
+			(uuid "1b49a772-62c2-4ec4-9521-d6f4f042c23d")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -8705,7 +9063,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cd7542b5-9d98-4290-8620-6f156818df99")
+			(uuid "af8de012-269b-4f44-88d9-c1bc598fc285")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -8716,7 +9074,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4a857cbb-4c3e-416c-9e97-6a3754f8c20d")
+			(uuid "62c96c63-278e-4b70-b184-13eeb5381ed2")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -8727,7 +9085,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b3eca94d-83f6-4979-bd16-b6747622e856")
+			(uuid "893e6c05-7114-42f9-bf49-6de39bc82fde")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -8738,7 +9096,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6977caa2-51fd-435c-a9c5-26dab67ffb08")
+			(uuid "f8ebde49-d9bb-417c-bc64-5a3fb55c924d")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -8749,7 +9107,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "693a2bbb-ff44-45e0-9fcb-daf7e057b382")
+			(uuid "fd4e6f7e-4fa1-4d24-b4ea-205d3e2da6ec")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "cf27488b-b2fd-47a0-ad7d-3a70f5981165")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -8764,7 +9133,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_2u"
+	(footprint "tmr-lib:Switch_Cutout_2u"
 		(layer "F.Cu")
 		(uuid "b0646d2c-1097-48fb-a9fb-4a854d6736a3")
 		(at 162.1 92.5 -70)
@@ -8821,105 +9190,465 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_poly
-			(pts
-				(xy 9.499999 -9.5) (xy -9.5 -9.499999) (xy -9.499999 9.5) (xy 9.5 9.499999)
-			)
+		(fp_line
+			(start -14.6 5.73)
+			(end -9.4 5.73)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "1f88d18b-b2c5-4e0a-bb8a-87643edd5d31")
+			(layer "Edge.Cuts")
+			(uuid "32d8e919-c8a2-420d-8e90-2cfa8ce769b6")
 		)
 		(fp_line
-			(start -6.600001 7)
+			(start -6.6 7)
 			(end 6.6 7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d549a1b1-31a8-41ec-8ffb-9b1d09151267")
+			(uuid "b81a3c2d-c5c0-4a83-9909-9debed60aecc")
 		)
 		(fp_line
-			(start -7 -6.600001)
-			(end -7 6.6)
+			(start -7 6.6)
+			(end -7 0)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8f600d7b-42a0-41f6-bf46-1aff112d9ed8")
+			(uuid "474b731b-6acc-4440-92ea-1094bf6a1409")
+		)
+		(fp_line
+			(start -9 0)
+			(end -9 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "11cbd781-6fd9-4c2e-87ea-40e57f328e82")
+		)
+		(fp_line
+			(start -7 0)
+			(end -9 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2814329c-0dd0-4fc0-a530-0cb8f38f9e3a")
+		)
+		(fp_line
+			(start 9.4 5.73)
+			(end 14.6 5.73)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "060b14b6-e096-4dcb-9773-1bcc3f53bf2e")
+		)
+		(fp_line
+			(start -7 -2.3)
+			(end -9 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e0702b0b-e828-4af3-b3e5-39ed7b42f3be")
+		)
+		(fp_line
+			(start -15 -6.37)
+			(end -15 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d2eb1610-92df-435b-b30f-05263550f093")
+		)
+		(fp_line
+			(start -12.85 -6.77)
+			(end -14.6 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8bfbb030-3259-4ee8-a9cd-9e1633f15f35")
+		)
+		(fp_line
+			(start 7 0)
+			(end 7 6.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0f28e2eb-6f62-4a57-a33b-093162db55be")
+		)
+		(fp_line
+			(start -9 -6.37)
+			(end -9 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "8543ae60-4521-4300-ab02-0c47ab849d1b")
+		)
+		(fp_line
+			(start -12.85 -7.900001)
+			(end -12.85 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ea035c14-be47-41e6-95cf-b15133bccb3a")
+		)
+		(fp_line
+			(start 9 0)
+			(end 9 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "cae17423-5ef1-4b2f-b316-9cadd7a2a999")
+		)
+		(fp_line
+			(start 9 0)
+			(end 7 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "75e325a6-9b24-4f8b-861e-c2b099ec6327")
+		)
+		(fp_line
+			(start -9.4 -6.77)
+			(end -11.15 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "61d2a396-d738-4220-be17-0b6eac765945")
+		)
+		(fp_line
+			(start -12.45 -8.3)
+			(end -11.55 -8.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "db3a0e53-93c0-4a4d-891d-d39321bfc74d")
+		)
+		(fp_line
+			(start -11.150001 -7.899999)
+			(end -11.15 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e6eaa056-cb55-425d-80f3-38112522abf5")
+		)
+		(fp_line
+			(start -7 -6.6)
+			(end -7 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "10d36efe-c20a-4a32-bc8e-ab41bce85999")
 		)
 		(fp_line
 			(start -6.6 -7)
-			(end 6.600001 -7)
+			(end 6.6 -7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "16c81ef9-2c70-4827-8eab-8ed2a3c5dceb")
+			(uuid "a5d6a790-7a9f-4c76-ab7c-08f256b9ef8d")
+		)
+		(fp_line
+			(start 9 -2.3)
+			(end 7 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "dbb3f3e0-a4dd-4fb1-83b1-8a8af7732935")
 		)
 		(fp_line
 			(start 7 -6.6)
-			(end 7 6.600001)
+			(end 7 -2.3)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1bc2ddc4-49ee-46c5-97ad-aa04f22766eb")
+			(uuid "dbe94ed1-231c-4c5f-9c15-90b05f401792")
+		)
+		(fp_line
+			(start 9 -6.37)
+			(end 9 -2.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2ca92855-af11-4f2d-b429-123d33d24ba7")
+		)
+		(fp_line
+			(start 11.15 -6.77)
+			(end 9.4 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "4da2f1aa-feb7-4942-9240-48d8b1bfe043")
+		)
+		(fp_line
+			(start 15 -6.37)
+			(end 15 5.330001)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "d2bf7a32-427b-4e5d-9f96-50c2bea17e86")
+		)
+		(fp_line
+			(start 11.15 -7.9)
+			(end 11.15 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e19fa437-f06e-4785-a40d-8844bac57cb7")
+		)
+		(fp_line
+			(start 14.6 -6.77)
+			(end 12.85 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "7aa10697-d8a6-4f3d-8cda-ebdab784264a")
+		)
+		(fp_line
+			(start 11.55 -8.299999)
+			(end 12.45 -8.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "16f4d9a3-560b-45d0-b100-b7d784951dbd")
+		)
+		(fp_line
+			(start 12.85 -7.9)
+			(end 12.85 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "72772ef2-c254-40b5-9bad-eb21c467d507")
 		)
 		(fp_arc
-			(start -6.600001 7)
-			(mid -6.882842 6.882843)
+			(start -14.6 5.73)
+			(mid -14.882843 5.612843)
+			(end -15 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "3d2bf492-245b-41ed-9e49-c19ac2bf16a5")
+		)
+		(fp_arc
+			(start -6.6 7)
+			(mid -6.882843 6.882843)
 			(end -7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "797a91af-bebb-4608-a092-79e577f5fc38")
+			(uuid "fbc4d57b-6de6-4804-9b93-7c73ad080363")
 		)
 		(fp_arc
-			(start 7 6.600001)
-			(mid 6.882843 6.882842)
+			(start -9 5.33)
+			(mid -9.117157 5.612842)
+			(end -9.4 5.73)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "e382c220-44ee-411f-b3b8-786d76831460")
+		)
+		(fp_arc
+			(start 7 6.6)
+			(mid 6.882843 6.882843)
 			(end 6.6 7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2cff570b-d5f0-486d-9d57-d19c5d7f6d80")
+			(uuid "cc3f5808-692b-48c3-8318-bf4a0182ee07")
 		)
 		(fp_arc
-			(start -7 -6.600001)
-			(mid -6.882843 -6.882842)
+			(start 9.4 5.73)
+			(mid 9.117157 5.612843)
+			(end 9 5.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ecd9c846-89f4-49bf-943b-1dccb8dac4c9")
+		)
+		(fp_arc
+			(start 15 5.330001)
+			(mid 14.882843 5.612843)
+			(end 14.6 5.73)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6b5d584f-c187-4f37-97a9-ccd366e94a05")
+		)
+		(fp_arc
+			(start -15 -6.37)
+			(mid -14.882843 -6.652843)
+			(end -14.6 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "2194b677-d525-4454-a50c-6b1d33405612")
+		)
+		(fp_arc
+			(start -12.85 -7.9)
+			(mid -12.732843 -8.182843)
+			(end -12.45 -8.3)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f7ff3d5e-743b-45c7-a03e-fedf86128817")
+		)
+		(fp_arc
+			(start -9.4 -6.77)
+			(mid -9.117157 -6.652843)
+			(end -9 -6.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "0af29b50-c0f3-4a69-bb89-0dec7f5ab703")
+		)
+		(fp_arc
+			(start -7 -6.6)
+			(mid -6.882843 -6.882843)
 			(end -6.6 -7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "02dc7c34-e044-49eb-bde5-b590bf050efe")
+			(uuid "29d13606-4a37-405b-98ab-981f0557566b")
 		)
 		(fp_arc
-			(start 6.600001 -7)
-			(mid 6.882842 -6.882843)
+			(start -11.55 -8.3)
+			(mid -11.267157 -8.182842)
+			(end -11.150001 -7.899999)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "ae019800-65e5-4e26-a1cb-aab8d56fa401")
+		)
+		(fp_arc
+			(start 6.6 -7)
+			(mid 6.882843 -6.882843)
 			(end 7 -6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "59740a9e-1595-4f3f-adf2-23f373ee7be7")
+			(uuid "7190330a-b33f-4e1a-acdf-60cdab5811e6")
+		)
+		(fp_arc
+			(start 9 -6.37)
+			(mid 9.117157 -6.652843)
+			(end 9.4 -6.77)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "54ba6eff-c264-4d6b-8b8d-77679ce41823")
+		)
+		(fp_arc
+			(start 11.15 -7.9)
+			(mid 11.267157 -8.182843)
+			(end 11.55 -8.299999)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "f6c00ecf-3e70-468d-9ade-e6220ea917cb")
+		)
+		(fp_arc
+			(start 14.6 -6.77)
+			(mid 14.882843 -6.652844)
+			(end 15 -6.37)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "306347f7-40d9-486f-b1ef-c29370dd58ef")
+		)
+		(fp_arc
+			(start 12.45 -8.3)
+			(mid 12.732843 -8.182843)
+			(end 12.85 -7.9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "02933e6c-9bf5-4a4e-b2ab-0191b934b081")
 		)
 		(fp_poly
 			(pts
-				(xy -18.999999 -9.5) (xy 19 -9.500001) (xy 18.999999 9.5) (xy -19 9.500001)
+				(xy -19 -9.5) (xy 19 -9.500001) (xy 19 9.5) (xy -19 9.500001)
 			)
 			(stroke
 				(width 0.1)
@@ -8927,10 +9656,22 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "75cc0f5c-6553-4a07-9512-fb7808a4107d")
+			(uuid "b50281c8-52df-4377-83bd-0637ea09d444")
+		)
+		(fp_poly
+			(pts
+				(xy 9.5 -9.5) (xy -9.5 -9.5) (xy -9.5 9.5) (xy 9.5 9.5)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "ffd25e1b-4060-4efa-b7da-f83b66ce5b97")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 -8.199999 290)
+			(at 0 -8.199999 290)
 			(layer "F.Fab")
 			(uuid "dbc46c7d-2281-4ff5-86db-e3f9dbfe0f0e")
 			(effects
@@ -8942,7 +9683,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "b675260c-1e8c-4486-b558-8b1c9fddcc53")
 		(at 285 57)
@@ -8999,17 +9740,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "5f5769af-df95-494d-971c-7f848be50ac5")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -9018,7 +9748,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "cd9e640f-895f-4733-9f15-0ecbea9280c8")
+			(uuid "bf26c665-5171-4447-8b23-1987401c27e0")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -9028,7 +9758,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a9e7b859-c7f5-4761-94c2-31b094ac1357")
+			(uuid "c14cc340-a212-44ca-997a-868d62722cf5")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -9038,7 +9768,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a7f5809d-1959-4ca0-8af7-3962e11821f6")
+			(uuid "8200b492-b51f-4262-a529-7b8d4c0319b6")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -9048,7 +9778,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "73e7dbd8-fb45-4b4f-9d9b-048e77747999")
+			(uuid "f8569f37-fad6-4bcd-a4b6-cd89247eaf1b")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -9059,7 +9789,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "31ad8588-bc39-424c-a681-c5b0ffa8cf07")
+			(uuid "289177d0-afd2-4976-a91c-1c989fc3fd28")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -9070,7 +9800,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "03821e4e-4ae8-475b-b3ea-8da142708a82")
+			(uuid "26896977-f8a4-4f9e-a523-7f200d863048")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -9081,7 +9811,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "22d543fd-13ce-4937-a629-59d550ccb2a9")
+			(uuid "748ef283-c939-4fb4-a882-b2f73343598d")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -9092,7 +9822,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "69c33fb3-a96b-4c6e-a666-36c5508d8ada")
+			(uuid "0e385213-cb85-4408-9ab0-e77cfb9fef53")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "7158cc40-364f-44c5-b0e6-96195d4d8a8f")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -9107,7 +9848,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "bf5fb5c7-0e4d-4633-9b06-cc0d557a6c64")
 		(at 133 0)
@@ -9164,17 +9905,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "8e7e4004-2e88-4173-b778-2d1def4ace7d")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -9183,7 +9913,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6960d6a1-b7be-4eea-9cdd-f50be4881cb0")
+			(uuid "3fb2c001-0252-48f2-8dd6-77fdb5e759c5")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -9193,7 +9923,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "617662f0-1c54-4030-be55-1064137af4c9")
+			(uuid "a0154fe4-cd4f-4a15-9952-7300d182140e")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -9203,7 +9933,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f9d93a11-d37a-4c10-95cf-2b5910926a2f")
+			(uuid "d942e9c0-3584-4534-8125-5afa4d8224e4")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -9213,7 +9943,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a630a958-eeb3-4d53-942e-4cf8c346e2fa")
+			(uuid "07ecfe1f-fd9a-44a8-a507-f0b9c4288de1")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -9224,7 +9954,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "603d83e0-212d-4bd9-b4f1-ba4a2732256e")
+			(uuid "88a6d944-5f67-4738-815a-85fde076742d")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -9235,7 +9965,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d35365ed-da26-4755-b4cb-6c0db80ed87a")
+			(uuid "bfda894e-29d4-4031-8a91-5b0794618bed")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -9246,7 +9976,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "492cd0b0-14c4-456d-b8dd-512638c75ac0")
+			(uuid "ab746fab-5f65-4c63-b630-86f9bb937fbc")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -9257,7 +9987,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8525dc7c-1bca-47fa-8931-c2aeb7ac8e93")
+			(uuid "90ff005c-2ee3-4b79-aba4-05cdc8465ed4")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "f38ae037-ee11-4027-a0c4-5eb58d16780a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -9272,7 +10013,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "c0d571ce-6db0-4b59-b893-cbf44a93338b")
 		(at 175.75 57)
@@ -9329,17 +10070,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "8ecc88b7-7877-4080-a9c5-31b73b0822e3")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -9348,7 +10078,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "585a4ec7-9477-4144-bfee-8f1549e9fb2f")
+			(uuid "61c017b3-3709-49a9-8eb8-f6d06ee5e388")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -9358,7 +10088,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "481a2241-a8e2-4f53-b3da-eaca9db130e7")
+			(uuid "c5587e26-ec7b-4fae-a247-1d570236390b")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -9368,7 +10098,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "af2b73d0-6742-4cf9-8a0a-e1862fefa0a4")
+			(uuid "5e1088d3-daf9-4c3b-8528-3408272c30cb")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -9378,7 +10108,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2a8d6e34-4ad6-4329-85f9-f44813e4843c")
+			(uuid "3256eadd-8dca-4d5b-8b0a-7c0da020aaa6")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -9389,7 +10119,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a0965bea-5202-4a11-839f-92f6b5ef2779")
+			(uuid "574fac05-457d-4bcc-839f-55787cf46847")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -9400,7 +10130,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1fcd2344-3b46-4b2b-a202-5715ca3f0a5e")
+			(uuid "1548a9d3-b401-4d3b-8240-95cb9a79dc1c")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -9411,7 +10141,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2490ba68-07ff-4acf-93a6-6ba7803fd08d")
+			(uuid "1c4a21bb-096a-4866-ae36-029c1db12b10")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -9422,7 +10152,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3c9a0e4e-2e66-40af-9df1-8739866993b8")
+			(uuid "dc83d358-fbb9-4361-bc2c-37d3c1f829eb")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "23077a2e-2d1b-40bf-912c-63584ff75009")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -9507,7 +10248,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "c60e03bb-5f89-4cb1-8b77-fb265aa6b2c8")
 		(at 161.5 19)
@@ -9564,17 +10305,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "b2859e29-8996-4a13-bf30-b4e4857a22eb")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -9583,7 +10313,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "da2f1bf1-93ff-4023-b45e-69e1245755d8")
+			(uuid "e4949cbb-e36a-4b5f-9f3e-f415afc4c9d0")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -9593,7 +10323,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c81a0596-679e-4f2a-afc5-6b642a66b16d")
+			(uuid "cf199077-31d4-4fbb-9efa-a09a2fc500f8")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -9603,7 +10333,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f896556c-ce20-4c15-9a56-e1f6e249e594")
+			(uuid "eae3ec08-7d34-48ff-a22b-91904a0bf99f")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -9613,7 +10343,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "581de375-911d-48ab-abea-08c0119b6875")
+			(uuid "2251444d-1c23-4591-93d8-97376d4cc31c")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -9624,7 +10354,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "633b2482-fb42-45df-980d-e70a1231ca1b")
+			(uuid "16b2cbe8-2ec1-421c-ba11-9f26ddd7b180")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -9635,7 +10365,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "73fef072-7864-4b27-8909-4fcaea215691")
+			(uuid "8282a127-5708-4a51-9350-e7f4532f36f6")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -9646,7 +10376,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6797736e-36fe-45f1-94c4-81b1eae27b08")
+			(uuid "2164a833-5a7d-403f-b3cf-b1c3a55642f3")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -9657,7 +10387,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8fb8d008-f4e1-46dc-a24b-d33c21a2cd83")
+			(uuid "22b6e721-e215-4964-9426-c9e3fffac52a")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "ef666f2a-ef5a-4812-bd4f-d12ad87b2d21")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -9672,7 +10413,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "c6461637-da23-43c4-a4f0-b8c6946e69ba")
 		(at 247 0)
@@ -9729,17 +10470,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "0f3e2059-5dcc-42d8-a11a-7d04d9027a43")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -9748,7 +10478,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "446e6b6b-281d-43e8-a530-706154b7e2a6")
+			(uuid "4687498f-8c52-4dec-8eed-8a2153a32e7b")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -9758,7 +10488,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "17b7edc3-4829-42b1-8b33-5a42c46818e1")
+			(uuid "196b6a2f-a726-4d9e-aeb1-8c6713e1a890")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -9768,7 +10498,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8895f1d6-4551-4fe0-b822-2fbe95b0fc2b")
+			(uuid "02d68b70-e761-41c4-9dbc-f3469cb3e4be")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -9778,7 +10508,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6cd63259-890a-4aca-86f3-d8bb8c602b7a")
+			(uuid "5374ee30-a5fa-413b-9ff3-643bb564a65e")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -9789,7 +10519,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d926df56-85ca-4688-9a1f-6faafdc707ce")
+			(uuid "b1d814d4-b339-437c-96cc-26dc84ed2021")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -9800,7 +10530,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c4041460-2cab-4108-a8eb-c7a58526c835")
+			(uuid "c13fd479-3895-4797-be3f-2405e65fca61")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -9811,7 +10541,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "de711dbf-4dbb-4006-9b92-a9ba587ae302")
+			(uuid "928f679b-b655-4960-a430-6f1523f3acbc")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -9822,7 +10552,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "29b2a380-36d5-4784-b739-c53a904fbf43")
+			(uuid "c7836fc9-4400-421b-b212-6d2950f5c234")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "125b72ef-7a9b-40dc-ad5f-0b2517627784")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -9837,7 +10578,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "c91dd28e-b121-4bf8-bf66-5e11751a3838")
 		(at 209 0)
@@ -9894,17 +10635,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "948cc479-2bf9-40fa-810e-2b13550ef0b2")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -9913,7 +10643,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bd5f1e24-9fd1-4a1c-89dc-6b4521b59b7c")
+			(uuid "089e0d25-ed66-426a-b1e6-3cf09407cbb6")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -9923,7 +10653,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "08bc437f-7545-4c75-bb3f-ce1c374f5fe1")
+			(uuid "210f6ad9-37c6-4b09-aa2a-407b37747fb1")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -9933,7 +10663,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "76f96e9a-a9b1-4212-9dbc-da350611c6eb")
+			(uuid "a63623cf-86ca-44e6-be84-30244d6e9c84")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -9943,7 +10673,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1c40cf9b-cd23-48cb-885d-2d967b1883d7")
+			(uuid "de7dcaa0-e32a-49f2-99b7-14cd578d7200")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -9954,7 +10684,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0f25326f-b236-440c-a5f7-3c31fd58703a")
+			(uuid "c1fc7b4a-dc8f-498d-ab76-5bdd8af70411")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -9965,7 +10695,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0c222ad5-0eba-4a8a-a79b-6f65331972f6")
+			(uuid "f60ed65d-4a41-4133-b6fa-f131e12a3bc9")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -9976,7 +10706,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2ac09f1e-f5ae-461b-a5bc-2d899fa132f0")
+			(uuid "0ecb2238-bc00-4988-8552-4b29c2fe9b77")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -9987,7 +10717,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d759b592-e28e-4a36-8599-5e45959988ac")
+			(uuid "d78a594c-cf11-4635-8de2-02461ee6bb82")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "cc74e7f3-1698-481d-9c44-81894be65696")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -10002,7 +10743,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "cf2634f4-c09f-4fec-ae67-458dbb3f160e")
 		(at 71.25 38)
@@ -10059,17 +10800,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "f5d2d776-a404-4f6e-8a20-267b3521e5e1")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -10078,7 +10808,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "10ec68bf-7742-4a26-8bb9-3b878287f160")
+			(uuid "2a5852c0-c992-4dc5-89d9-4dea518dce36")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -10088,7 +10818,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b7981318-6ac5-40e9-a045-8d99b03814f7")
+			(uuid "9802ea0b-c256-4bf9-b3f8-94ecd5d96ef3")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -10098,7 +10828,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c55cc10f-7319-4aec-beef-deb16f3ca2b9")
+			(uuid "cca9bdc3-34b4-4202-a678-d7ec5da6a0ba")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -10108,7 +10838,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3ded9974-b31a-400a-ae4f-ad68c1d6ed7e")
+			(uuid "f33521b5-1147-44d7-af78-5c1a31ee19c3")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -10119,7 +10849,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bc69c5cd-6a2f-4155-8edf-f5dbdfddd5ec")
+			(uuid "fda9ba6c-a60f-440d-ae37-50e2f6f7f9ca")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -10130,7 +10860,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9933dbff-b84d-414a-9efa-39e2dc80deb5")
+			(uuid "7b4ed1f9-a486-4b6e-aaa9-96f11701fb0f")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -10141,7 +10871,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5eea9573-0313-4db8-9db0-ca00249eccc8")
+			(uuid "c6aca76d-7d2e-48e7-8c34-3da0390abab3")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -10152,7 +10882,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7dddfb42-0c05-4484-960d-25e975e90482")
+			(uuid "11a48b21-91db-43c1-afdf-0ecdf36a3d69")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "aca5e197-c486-41c4-8ad4-137b135d8738")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -10167,7 +10908,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX_1.25u"
+	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
 		(uuid "d8bd1cca-d56c-462e-8699-c03d54c961d0")
 		(at 7.125 57)
@@ -10224,17 +10965,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "bdb5d21c-1626-4e77-b21c-a56b002760cb")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -10243,7 +10973,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "45c332cb-2b9a-41b2-8f4d-465d1c03b292")
+			(uuid "e3c836c3-cd93-4654-bf81-20b0da267fa9")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -10253,7 +10983,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "65ff7f69-e78a-48d7-87d7-528c9519dd6d")
+			(uuid "6dcbc55d-3d48-40ee-8cff-e86f9ca70196")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -10263,7 +10993,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9a0dd45a-6b6c-409f-badd-9d523c5a67df")
+			(uuid "185860bd-9763-4142-b1de-c05be2d17059")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -10273,7 +11003,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "67a26ca8-80e0-4d2a-9a4c-cee2bd5a7392")
+			(uuid "4def17dd-8331-4e39-abc5-501ba501c6b6")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -10284,7 +11014,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bb3794ef-b0ca-4566-a966-2cd4a3688c04")
+			(uuid "a06816df-22bd-4f0a-bafe-4750b247bcea")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -10295,7 +11025,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "238bafc4-056f-467d-b526-436e8b989d71")
+			(uuid "d386594e-2af4-4dd6-ba46-1dc779e51939")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -10306,7 +11036,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e3aa0f75-c749-4ea4-8036-0b36728206d7")
+			(uuid "a3423e10-f2fc-4f8a-9255-2f294a6d9989")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -10317,7 +11047,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "43726007-0e40-4ff6-a99d-dbe3d97f3893")
+			(uuid "7970c480-8844-4a0a-b603-072bd173250e")
 		)
 		(fp_rect
 			(start 11.875 -9.5)
@@ -10328,7 +11058,18 @@
 			)
 			(fill no)
 			(layer "User.2")
-			(uuid "2c6ad342-1bea-4108-a57e-82792dab9cdb")
+			(uuid "a37fe992-6a5b-4f47-a7cd-87eb8226dead")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "310b236b-6e16-44f5-8831-53ac0e5fbdd7")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -10343,7 +11084,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "db4183b1-7f28-4b05-aa40-577c463b6f77")
 		(at 232.75 57)
@@ -10400,17 +11141,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "4fce6a79-17a2-4b4a-bf54-0da6abe7f47a")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -10419,7 +11149,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0c208aa2-b31f-438d-98f2-f7dcf457e2a1")
+			(uuid "adf7a96b-86ff-47c1-b092-abd51a5f8153")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -10429,7 +11159,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c913b137-73b7-429e-b532-049feb061f66")
+			(uuid "63e316e3-5699-4dd1-bbcd-3310b8f107e7")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -10439,7 +11169,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9c3f3fcf-092d-4d5c-a442-ae80f85f2ca6")
+			(uuid "e2ef7dd5-39bc-4de3-a80a-3a3b28a0e29e")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -10449,7 +11179,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f6efd900-44eb-4e3f-b157-1217d8bd576f")
+			(uuid "50b20899-4e05-4d84-a549-04a645dac643")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -10460,7 +11190,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c4e99071-12a6-4b6c-96d4-3b9ce1c14efe")
+			(uuid "0d579b8a-7950-4545-a2bd-6673d05eb30c")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -10471,7 +11201,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "68916196-ef04-4ff7-8c1e-58eb117e25be")
+			(uuid "6860099e-96fc-440b-a825-93c6918a1962")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -10482,7 +11212,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dd51dd45-1d8a-42c4-b62c-028d55e686d9")
+			(uuid "45a690d4-df67-4994-8b4f-aa5ea0976b65")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -10493,7 +11223,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c4f5b835-73be-4a55-b7be-cb9c769925d1")
+			(uuid "1754b4c4-e653-44a1-aef1-17cbe25c1b7c")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "47a267d5-35fa-40a4-85c9-fadf42329ec1")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -10508,7 +11249,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "dd37a647-2d6a-4687-9023-d847063590ed")
 		(at 266 38)
@@ -10565,17 +11306,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "30cbeef3-f935-4369-b87f-17279c61177b")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -10584,7 +11314,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "85a6cd45-67dc-486f-9d00-31dfb6d0cf8f")
+			(uuid "d4f42f33-e1fa-464c-9a2f-476984bab670")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -10594,7 +11324,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7ee9237f-c688-401d-ac58-8b239662b142")
+			(uuid "5b2f97d7-8a8d-4bc3-9c28-f3ab59e4bd59")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -10604,7 +11334,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6b01da46-4906-41a0-afd5-6d5778661c4e")
+			(uuid "dfcbd925-b10b-41a1-a220-a90b30b9f186")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -10614,7 +11344,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "790f2ef4-0d58-46fa-8501-ce2b2a886cde")
+			(uuid "ad0e4475-06bc-45fe-9da1-98af85f3f837")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -10625,7 +11355,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c0efe2e3-cb9e-46ca-8706-b52ea6a09ff3")
+			(uuid "81aa0612-6970-48d3-9186-6f1fe059caa7")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -10636,7 +11366,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6fb6fedb-1b2f-4647-8960-f821479577a4")
+			(uuid "d4d540fc-7f90-417f-8b1b-1699043dd371")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -10647,7 +11377,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6b4497d6-f8c5-4a90-8ad5-a1dcab15b5e2")
+			(uuid "e8a6df1a-3443-44e7-84a0-173c2cba061a")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -10658,7 +11388,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f3983b3c-4b30-4158-a40b-d05b78020052")
+			(uuid "7122a4f6-60ac-4c1c-9ed9-199bbb0c652e")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "57768c08-8f0c-43bb-bff1-66d023cea488")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -10673,7 +11414,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "e01587e1-6749-473e-a95e-b0079a808957")
 		(at 114 0)
@@ -10730,17 +11471,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "c9831ea0-4d3b-451c-a190-6aeb175c2e2c")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -10749,7 +11479,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c294d172-b641-4333-9325-36829cacb953")
+			(uuid "b7c3806a-ac50-493b-a12f-a7db64999559")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -10759,7 +11489,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "33053336-1279-49a4-b2d4-a67e400f65ba")
+			(uuid "45dabbfe-f36a-4807-b420-b948c81dcf9d")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -10769,7 +11499,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "69276725-2174-4456-9a69-d9348303b213")
+			(uuid "b71bf495-e9a3-4320-8579-1fe15071278c")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -10779,7 +11509,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ea19549f-21a3-4df8-ae63-399e8229831f")
+			(uuid "bb065206-30d4-499d-8194-6bc91d5ce100")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -10790,7 +11520,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3157b8bb-00a8-4a04-bc3f-7c32adb3668c")
+			(uuid "7323cf1f-b36b-4437-8ccf-7a1bd93f982b")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -10801,7 +11531,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ed4c5e86-4d02-4913-b373-0749c021fe89")
+			(uuid "c1602314-edf8-4794-a699-201331482cc7")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -10812,7 +11542,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c6724374-0968-437c-a476-8e1763ba5d83")
+			(uuid "7016ce0f-dc01-471e-9ad2-1d7354c2d5d2")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -10823,7 +11553,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "7830aecc-0f1d-44af-b160-d8d043d11bf6")
+			(uuid "ef197f06-b9ef-4d7b-ba9b-61620caf75db")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "1dee2ab1-c7c1-4d32-a85c-f6b7dfa23ea9")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -10838,7 +11579,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "e2b8d236-3a73-4602-9161-d260addd0ee0")
 		(at 104.5 19)
@@ -10895,17 +11636,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "cae712db-f2ac-4284-a619-bc4df3456abf")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -10914,7 +11644,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "090c1b24-2566-4bd9-a332-307de33af4fd")
+			(uuid "3ea3b056-c30f-4f6a-9751-d10c8a5fbf16")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -10924,7 +11654,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "be836ecf-483d-4d7f-8283-11a24b19b845")
+			(uuid "71e83c2b-4804-4f45-84bd-65e409a83015")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -10934,7 +11664,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dbb7998c-6a65-42cb-9903-a411425e34af")
+			(uuid "66676974-a09c-497e-adca-12fc105b0a4a")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -10944,7 +11674,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3e433b1f-d5ad-44f0-a129-15fdd02cd08c")
+			(uuid "fa352546-7206-44c1-b3eb-dc9adfc398fe")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -10955,7 +11685,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c532ddfc-35ef-4b27-a9d8-48fc42ee005b")
+			(uuid "7fa9ba60-44b1-4bbe-94c4-362e98300d7f")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -10966,7 +11696,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "909c6bd0-3cb4-40b2-93b3-53a1e1ce00cf")
+			(uuid "112644c4-1c6d-4cca-ab2d-527c598b66aa")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -10977,7 +11707,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "200c6fc2-3eaa-40ab-884d-768e5365915f")
+			(uuid "edc0564d-8001-42da-bc06-03e63ea10bc3")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -10988,7 +11718,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "1ccf02e0-7b34-4e94-a227-8bc3c9432527")
+			(uuid "e529cd3e-4def-43b4-bb29-b85fd1345d4d")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "be2ce1e2-0c67-487e-80d3-19a202e462af")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -11003,7 +11744,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "f1071044-20a4-4785-9b49-65d75d9b05f1")
 		(at 199.5 19)
@@ -11060,17 +11801,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "83fdca0e-8a16-4ebf-8604-76f22795c230")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -11079,7 +11809,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "38a4502d-032a-44d8-aa92-ff0dbdd8e4d0")
+			(uuid "e48fae3d-27ea-4bcd-b8b6-c67ce725379b")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -11089,7 +11819,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "dbc5a2bd-37a3-4724-9fab-ea0f41d99802")
+			(uuid "20dd30e3-5188-4252-95f0-25753dfeb1d8")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -11099,7 +11829,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d19abd67-d007-439c-abed-cebe4b406fe2")
+			(uuid "d8865f34-9898-4ff9-be32-02710c2a028c")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -11109,7 +11839,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "545c4ac5-9fdb-4dc3-af8c-0af204b7bc42")
+			(uuid "b1aed387-8591-4fc6-b58b-617603b8066d")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -11120,7 +11850,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4252f20d-5c51-435a-8fe2-a2f877f07dfd")
+			(uuid "af0ff154-1f46-4098-b871-a5d9d6e00789")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -11131,7 +11861,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "01f9ab57-21f9-4e43-ae2c-02978fd5c2e8")
+			(uuid "6020ef89-5eca-4667-84e5-6b7789ee5de2")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -11142,7 +11872,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c854687e-b1d0-49d2-a787-78ebefecf7a1")
+			(uuid "09e033e5-1ea8-4275-ab5f-ebae83c6af98")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -11153,7 +11883,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "430146d8-802b-4f0b-b218-a6d4d46ca2ee")
+			(uuid "62b68641-f3af-484c-97b9-97705cb9f0aa")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "799ae7d1-9b44-44e5-89ae-ef7b70cbd473")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -11168,7 +11909,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "f1b1a57b-9d99-4ba1-85ad-9fb87f98b763")
 		(at 76 0)
@@ -11225,17 +11966,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "301124a9-458b-4a6d-a478-120d60444db2")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -11244,7 +11974,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9adda085-9965-4ffc-b03b-c368e217fd08")
+			(uuid "2b72270a-325b-4297-99b8-852731caefbf")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -11254,7 +11984,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "527e9e94-5b39-49bf-9199-99cc35393699")
+			(uuid "ef1e3a02-9ff0-40d5-b7a6-e9deb2ca846f")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -11264,7 +11994,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "96f3d006-8c7b-49f4-91a7-8f26d1ddecb4")
+			(uuid "9e8e7a94-0d5c-4d01-865a-52e0f929d0e4")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -11274,7 +12004,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "640e41d4-44a1-41fd-b1f1-17e9e7a3bd49")
+			(uuid "5d12e808-87b0-427f-a230-3b6a6de0d8b2")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -11285,7 +12015,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e39cb193-5cf5-40ff-9aeb-c6c4bfb85b55")
+			(uuid "8fc67fa2-b41a-41f6-9b64-80e14f6c204c")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -11296,7 +12026,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "01f72f28-2bdd-478d-883c-ac28a3c8f363")
+			(uuid "088fd416-803a-4433-b78c-6b015366ba3d")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -11307,7 +12037,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c0a1956e-4f04-4dd9-9226-6af78ede29bd")
+			(uuid "022a84d2-6c5d-46c1-8c2d-e30d46abb60c")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -11318,7 +12048,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5d1f73a9-4954-4ced-8713-9436a2f8a88c")
+			(uuid "5c08a172-cc64-4e9f-8e9a-c5c83f94c768")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "2a63b684-c3c7-4c6b-a2b3-9d26c1ccc28c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -11333,7 +12074,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "f4680fde-0c39-478e-bfaf-b14bcea8a939")
 		(at 171 0)
@@ -11390,17 +12131,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "f5840a01-f6b5-4fea-88da-62156112dfaa")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -11409,7 +12139,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9664b0e1-b58f-4415-ba6d-b0befd199d17")
+			(uuid "aa3c614c-4e1b-47ec-aae2-a784dcb76fba")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -11419,7 +12149,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3a30f06e-1016-46db-8a75-31c083ea08de")
+			(uuid "3f77f9ed-ebe0-4ecd-b018-ee3ae08ddb76")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -11429,7 +12159,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e900e12e-8ac6-4fe2-b03e-2eca93ef0805")
+			(uuid "6cbe61bb-533e-4ec8-b99a-29ef9f5f8a60")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -11439,7 +12169,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "069531ef-cb88-4469-ab51-f0d7858ffd89")
+			(uuid "b5e83933-0606-474f-b1d6-1256dda1e091")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -11450,7 +12180,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "917fd598-ac73-4206-a9e4-b4dde0c7db8a")
+			(uuid "da980026-e5e1-4dcd-8bf9-84c2d1513e97")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -11461,7 +12191,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "f97918e0-948f-40ab-9a2b-81ce6a1cacfd")
+			(uuid "233ecf22-0591-4bac-b7a3-94541b90250a")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -11472,7 +12202,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ed3e3784-245d-4f52-9205-9f90eef079e0")
+			(uuid "87a0d7c0-6ea6-4d40-b458-9576ae74fa39")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -11483,7 +12213,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9267c925-07c0-48f0-8b4b-a8dcd9b703f9")
+			(uuid "76b1fe3a-5b45-4b1d-a5a2-b8b2fe85fddd")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "c3220186-d336-4185-8729-7ea3fd18cffc")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -11498,7 +12239,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "f9e171a3-64df-4d2b-bf98-032b71233211")
 		(at 109.25 38)
@@ -11555,17 +12296,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "b69fa475-5dc1-4f97-b43d-ff95be3852b6")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -11574,7 +12304,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c078e957-2c1c-4f1a-884f-b7461227b548")
+			(uuid "a177e9c6-6c51-49b9-886d-f8603112b551")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -11584,7 +12314,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "319d16ab-bef3-4faf-8519-81285ed91d8d")
+			(uuid "2f8d9e05-0a9d-4080-bd30-e4e004fc31cc")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -11594,7 +12324,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "0e3d7422-398c-4865-9d82-a97fb38c9b35")
+			(uuid "2154fc80-e9d1-467b-9000-9418dfdb074a")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -11604,7 +12334,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "c4de9108-e794-4f84-804c-1ee637baf309")
+			(uuid "28dbdd30-974b-49bc-8b8c-fa54997895b2")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -11615,7 +12345,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "029094b5-2652-4e7d-b98b-059f410570a0")
+			(uuid "766cb266-d183-4ff3-8f22-5f0613e6ad4d")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -11626,7 +12356,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8a1027f7-ac2d-4180-b60f-bad69c0882f9")
+			(uuid "e22a38ea-82bb-4626-99b1-aea1ac309a76")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -11637,7 +12367,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "fb19dd85-c210-4e64-8b86-dfc6073ce4b1")
+			(uuid "adaa3c2f-fabb-46cb-8438-32161a76becb")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -11648,7 +12378,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "10ca810c-392a-431b-9e20-77f30562d2b9")
+			(uuid "47a68031-3677-4043-b082-7fc859616453")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "c34758ee-a9f2-4a60-8d76-9869cd92b9ad")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -11663,7 +12404,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "f9f99109-3ee2-4022-a098-3b20cbb66d51")
 		(at 85.5 19)
@@ -11720,17 +12461,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "ecff5f07-fe32-4d0a-91dd-10f02c7e1daa")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -11739,7 +12469,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "58ec01b5-bdb3-4fb7-bed9-e6c53a789e82")
+			(uuid "83be48fd-f4c4-4f0e-85d9-1b1cd94b5ee2")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -11749,7 +12479,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "3eca2bc3-ccb8-44b3-a167-4b3fe620b7fa")
+			(uuid "80e53913-a12e-4c83-910a-f7cecada9a6c")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -11759,7 +12489,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "daaa125c-dfaf-4af4-bc6a-4a8973d1344f")
+			(uuid "88190f7d-4aab-4e4b-a5ac-d59c044c0f7d")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -11769,7 +12499,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ef31b3db-8776-4cc5-b5ed-5bc84f2da03e")
+			(uuid "e1164bc5-1391-4c54-be00-7ea45b7637a9")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -11780,7 +12510,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "22b7b9bb-4c1e-4835-a5c6-25ab4a0e68e1")
+			(uuid "3e5defc4-78bb-4a21-8c28-6929d6d1979d")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -11791,7 +12521,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "47f6a72c-3014-475d-a812-2037b7ca6f8b")
+			(uuid "da96b419-ea79-4701-8e71-b85a4340d9d2")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -11802,7 +12532,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "14c028b9-e179-49ce-b10e-46dedd840746")
+			(uuid "29856c45-e908-434c-89e5-3ccba4cc9499")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -11813,7 +12543,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "49152dad-2283-43f2-b6df-84adc96c34bb")
+			(uuid "74ff4a99-47e5-49ab-a704-4cb1253f0a5e")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "5066b2ad-142e-4bee-9786-10eff84fc955")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -11828,7 +12569,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "fdc4db2f-d330-4da7-a670-94f7f50c9a9d")
 		(at 237.5 19)
@@ -11885,17 +12626,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "90b5024e-1ba8-412d-9699-78e5c75fa9be")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -11904,7 +12634,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "ced8f7d9-b16e-4438-98b5-537102c64191")
+			(uuid "3b2c4194-f9d7-4479-80d4-d12182e3c943")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -11914,7 +12644,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "246eabc3-ba31-4ee4-bbe1-ec1f63849793")
+			(uuid "53e7b522-a183-4424-89fb-05822443f314")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -11924,7 +12654,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "eb412d54-013b-48a9-b1e8-5d47b3ca3293")
+			(uuid "bae1ec37-a3cb-49ed-8e4e-f0cab81a9535")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -11934,7 +12664,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bc0a643d-cd5c-46a8-99e1-cfad45757804")
+			(uuid "2a14becd-0406-4fc5-95f8-194d07202268")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -11945,7 +12675,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "37f72422-f137-4673-a7bd-77808fa3a26d")
+			(uuid "1089620f-1769-4c6c-a4fa-5d8d5e81342d")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -11956,7 +12686,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e8ec32c2-a677-44d0-b651-5419e255bb24")
+			(uuid "a8253ba3-3a80-48b6-a20f-184b27234a8c")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -11967,7 +12697,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "b528169e-d036-40f1-b75f-c04dd44243d7")
+			(uuid "989f1bdb-37eb-4932-baca-3b57e94a738f")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -11978,7 +12708,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5f6a10fa-dd38-4038-a1a8-2d3b910367f3")
+			(uuid "5f053c6c-377d-4df0-ae43-591c00b566b7")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "1fd797d1-06b3-44f0-9ecc-3a03f21c66e3")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)
@@ -11993,7 +12734,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "tmr-lib:Switch_Cutout2_MX"
+	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "fdf12fc5-53c3-409b-993c-5f91459e771a")
 		(at 280.25 76)
@@ -12050,17 +12791,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "Dwgs.User")
-			(uuid "03701c8b-51b0-4b65-a255-559059a71221")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -12069,7 +12799,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "a74fccc6-e52a-4d8b-8279-384c7561b0fd")
+			(uuid "89ea1fda-ea66-490b-8897-41ced0e2d9a2")
 		)
 		(fp_line
 			(start -6.6 -7)
@@ -12079,7 +12809,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "068c48c1-9d9f-4a7f-8eab-146e3f5d8643")
+			(uuid "6fb4d07c-53f9-4d06-8db2-86603498d098")
 		)
 		(fp_line
 			(start -6.6 7)
@@ -12089,7 +12819,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8de5bb0f-fbdd-4522-b03d-5b5745fdab89")
+			(uuid "29063e13-58ec-4b5c-a7be-07c468b22d82")
 		)
 		(fp_line
 			(start 7 -6.6)
@@ -12099,7 +12829,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "81a345a3-42ba-4b02-93fd-b0a76b356bcf")
+			(uuid "83f39706-3c7b-45c9-9f73-7f930022186c")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -12110,7 +12840,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "93ef41f1-4877-4625-9bbb-7f50dec3866d")
+			(uuid "3a76871e-440f-49d4-883c-6817beafdac2")
 		)
 		(fp_arc
 			(start -6.6 7)
@@ -12121,7 +12851,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "5de99c42-6909-49da-b774-2169aca36bf9")
+			(uuid "7bb001be-1bb4-4ff8-b840-e9fc465a2825")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -12132,7 +12862,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "66e4033b-e8a1-4862-a1fd-fa660ba6b3f5")
+			(uuid "665be0e3-0401-4e16-a8af-e86c0a48fbdc")
 		)
 		(fp_arc
 			(start 7 6.6)
@@ -12143,7 +12873,18 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2209926a-fc93-48c2-8d7b-ce984c1d155c")
+			(uuid "81bca7d7-93c6-46d8-a252-0bc8614dcbf8")
+		)
+		(fp_rect
+			(start 9.5 -9.5)
+			(end -9.5 9.5)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "User.3")
+			(uuid "2776343e-c3e6-4fec-8713-588b72b09a79")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -8.2 0)

@@ -157,7 +157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 125.73 53.34 0)
 			(effects
 				(font
@@ -220,7 +220,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 148.59 66.04 0)
 			(effects
 				(font
@@ -283,7 +283,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 68.58 91.44 0)
 			(effects
 				(font
@@ -346,7 +346,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 137.16 66.04 0)
 			(effects
 				(font
@@ -409,7 +409,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 205.74 78.74 0)
 			(effects
 				(font
@@ -472,7 +472,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 102.87 53.34 0)
 			(effects
 				(font
@@ -535,7 +535,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 114.3 78.74 0)
 			(effects
 				(font
@@ -598,7 +598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_2u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_2u"
 			(at 114.3 91.44 0)
 			(effects
 				(font
@@ -725,7 +725,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 80.01 78.74 0)
 			(effects
 				(font
@@ -788,7 +788,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 114.3 39.37 0)
 			(effects
 				(font
@@ -851,7 +851,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 68.58 53.34 0)
 			(effects
 				(font
@@ -914,7 +914,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.75u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.75u"
 			(at 194.31 78.74 0)
 			(effects
 				(font
@@ -977,7 +977,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 194.31 53.34 0)
 			(effects
 				(font
@@ -1040,7 +1040,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 194.31 66.04 0)
 			(effects
 				(font
@@ -1103,7 +1103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 68.58 66.04 0)
 			(effects
 				(font
@@ -1166,7 +1166,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 102.87 66.04 0)
 			(effects
 				(font
@@ -1229,7 +1229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 57.15 78.74 0)
 			(effects
 				(font
@@ -1292,7 +1292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 57.15 39.37 0)
 			(effects
 				(font
@@ -1355,7 +1355,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 205.74 91.44 0)
 			(effects
 				(font
@@ -1418,7 +1418,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 125.73 39.37 0)
 			(effects
 				(font
@@ -1481,7 +1481,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 148.59 39.37 0)
 			(effects
 				(font
@@ -1544,7 +1544,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.75u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.75u"
 			(at 68.58 78.74 0)
 			(effects
 				(font
@@ -1607,7 +1607,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 171.45 91.44 0)
 			(effects
 				(font
@@ -1670,7 +1670,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 171.45 39.37 0)
 			(effects
 				(font
@@ -1733,7 +1733,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 194.31 91.44 0)
 			(effects
 				(font
@@ -1796,7 +1796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -1859,7 +1859,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 148.59 91.44 0)
 			(effects
 				(font
@@ -1922,7 +1922,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 91.44 53.34 0)
 			(effects
 				(font
@@ -1985,7 +1985,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 102.87 39.37 0)
 			(effects
 				(font
@@ -2048,7 +2048,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 91.44 39.37 0)
 			(effects
 				(font
@@ -2111,7 +2111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_2u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_2u"
 			(at 137.16 91.44 0)
 			(effects
 				(font
@@ -2174,7 +2174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 182.88 91.44 0)
 			(effects
 				(font
@@ -2237,7 +2237,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 68.58 39.37 0)
 			(effects
 				(font
@@ -2300,7 +2300,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 125.73 78.74 0)
 			(effects
 				(font
@@ -2363,7 +2363,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 137.16 53.34 0)
 			(effects
 				(font
@@ -2426,7 +2426,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 91.44 78.74 0)
 			(effects
 				(font
@@ -2489,7 +2489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 80.01 53.34 0)
 			(effects
 				(font
@@ -2552,7 +2552,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 171.45 78.74 0)
 			(effects
 				(font
@@ -2615,7 +2615,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 80.01 66.04 0)
 			(effects
 				(font
@@ -2678,7 +2678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 102.87 78.74 0)
 			(effects
 				(font
@@ -2741,7 +2741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 160.02 39.37 0)
 			(effects
 				(font
@@ -2804,7 +2804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 114.3 66.04 0)
 			(effects
 				(font
@@ -2867,7 +2867,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 57.15 53.34 0)
 			(effects
 				(font
@@ -2930,7 +2930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 205.74 66.04 0)
 			(effects
 				(font
@@ -2993,7 +2993,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 160.02 78.74 0)
 			(effects
 				(font
@@ -3056,7 +3056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 171.45 53.34 0)
 			(effects
 				(font
@@ -3119,7 +3119,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 182.88 78.74 0)
 			(effects
 				(font
@@ -3182,7 +3182,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 91.44 91.44 0)
 			(effects
 				(font
@@ -3245,7 +3245,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 137.16 39.37 0)
 			(effects
 				(font
@@ -3308,7 +3308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 182.88 39.37 0)
 			(effects
 				(font
@@ -3371,7 +3371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 182.88 66.04 0)
 			(effects
 				(font
@@ -3434,7 +3434,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 57.15 66.04 0)
 			(effects
 				(font
@@ -3497,7 +3497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 137.16 78.74 0)
 			(effects
 				(font
@@ -3560,7 +3560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 125.73 91.44 0)
 			(effects
 				(font
@@ -3623,7 +3623,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 148.59 78.74 0)
 			(effects
 				(font
@@ -3686,7 +3686,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 160.02 53.34 0)
 			(effects
 				(font
@@ -3749,7 +3749,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 160.02 91.44 0)
 			(effects
 				(font
@@ -3812,7 +3812,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 148.59 53.34 0)
 			(effects
 				(font
@@ -3875,7 +3875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 217.17 39.37 0)
 			(effects
 				(font
@@ -3938,7 +3938,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 217.17 66.04 0)
 			(effects
 				(font
@@ -4001,7 +4001,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 80.01 39.37 0)
 			(effects
 				(font
@@ -4064,7 +4064,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 80.01 91.44 0)
 			(effects
 				(font
@@ -4127,7 +4127,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 160.02 66.04 0)
 			(effects
 				(font
@@ -4190,7 +4190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 125.73 66.04 0)
 			(effects
 				(font
@@ -4253,7 +4253,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 194.31 39.37 0)
 			(effects
 				(font
@@ -4316,7 +4316,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 171.45 66.04 0)
 			(effects
 				(font
@@ -4379,7 +4379,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 205.74 53.34 0)
 			(effects
 				(font
@@ -4442,7 +4442,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 57.15 91.44 0)
 			(effects
 				(font
@@ -4505,7 +4505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 102.87 91.44 0)
 			(effects
 				(font
@@ -4568,7 +4568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 182.88 53.34 0)
 			(effects
 				(font
@@ -4631,7 +4631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 91.44 66.04 0)
 			(effects
 				(font
@@ -4694,7 +4694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout2_MX"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 114.3 53.34 0)
 			(effects
 				(font

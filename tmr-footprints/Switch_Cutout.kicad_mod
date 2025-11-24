@@ -1,4 +1,4 @@
-(footprint "Switch_Cutout2_MX_2u"
+(footprint "Switch_Cutout"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1b675931-9764-4b8e-8985-e9969767a916")
+		(uuid "fe0264ec-854e-422b-b79a-fd520b6c921e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +44,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d78714f3-4ba6-4cf3-be9a-4a5d5fd60939")
+		(uuid "1cd635e5-a07e-477a-a47c-20f4fa34d96c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,17 +53,6 @@
 		)
 	)
 	(attr through_hole)
-	(fp_rect
-		(start 9.5 -9.5)
-		(end -9.5 9.5)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(fill no)
-		(layer "Dwgs.User")
-		(uuid "68a98b98-eec7-4089-8e11-9eab3bbd3a17")
-	)
 	(fp_line
 		(start -7 -6.6)
 		(end -7 6.6)
@@ -149,15 +138,15 @@
 		(uuid "a82cec30-45c1-49b3-b9e6-e30cc49eb759")
 	)
 	(fp_rect
-		(start -19 -9.5)
-		(end 19 9.5)
+		(start 9.5 -9.5)
+		(end -9.5 9.5)
 		(stroke
-			(width 0.1)
-			(type default)
+			(width 0.12)
+			(type solid)
 		)
 		(fill no)
-		(layer "User.2")
-		(uuid "58d8016a-aec3-463a-8fdd-9ee3e804ff3c")
+		(layer "User.3")
+		(uuid "68a98b98-eec7-4089-8e11-9eab3bbd3a17")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -8.2 0)

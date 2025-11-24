@@ -1,3 +1,5 @@
+5.85 , 12.4
+
 https://www.waveshare.com/wiki/RP2040-Tiny
 
 https://jlccnc.com/help/article/CNC-Machining-Design-Guideline
