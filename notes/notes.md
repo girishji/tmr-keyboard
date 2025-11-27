@@ -2,7 +2,7 @@ https://www.waveshare.com/wiki/RP2040-Tiny
 
 https://jlccnc.com/help/article/CNC-Machining-Design-Guideline
 
-======================================================================
+----------------------------------------------------------------------
 
 https://www.youtube.com/watch?v=wz2ZO3kSfNE
 
@@ -19,12 +19,12 @@ https://www.youtube.com/watch?v=vwzUx7oq-f0
 
 analog vs digital sensors
 
-======================================================================
+------------------------------------------------------------------------
 
 
  7G = 0.7mT
 
-======================================================================
+------------------------------------------------------------------------
 
 We show how a new tunneling magnetoresistance sensor can be used for perpendicular proximity sensing such as a keyboard switch.
 
@@ -46,7 +46,7 @@ https://www.snapeda.com/parts/ALT025-14E/NVE/view-part/
 
 https://www.youtube.com/watch?v=3HGQzlyUNsI
 
-======================================================================
+------------------------------------------------------------------------
 
 Use a comparator:
 A comparator is an electronic component that compares two analog input voltages
@@ -57,7 +57,7 @@ digitizing signals, such as in analog-to-digital converters (ADCs), or for
 creating simple switches, like turning a fan on when a temperature gets too
 high.
 
-======================================================================
+------------------------------------------------------------------------
 
 The battery life is very good - I'm using full RGB and used it heavily for at
 least 8 hrs a day, and it was lasting up to a week. But if you want to max it
@@ -67,15 +67,41 @@ it can last even 2 weeks.
 Now I'm testing a TMR with an 8000 mAh battery unit, and I can see it will be
 doubled.
 
-======================================================================
+------------------------------------------------------------------------
 
 Travel distance of low profile switches:
 Keychron optical: 2.5 mm
 Kailh choc: 3 mm
-Kailh magnetic: 2.8 mm
-Gateron magnetic: 3.5 mm
+Kailh magnetic: 2.8 mm (in reality exactly 2.8mm)
+Gateron magnetic: 3.5 mm (in reality 3.2mm-3.25mm)
 
 Use o-ring inside the shaft of the switch to reduce travel.
 
-======================================================================
-vim:tw=78:ts=4:ft=help:norl:ma:noro:ai:lcs=tab\:\ \ ,trail\:~:
+------------------------------------------------------------------------
+
+Sensors:
+
+MDT TMR2617S
+Programmed at:
+	sensitivity: 0.7 mv/V/Gs
+	offset voltage: 300 mV/V
+Output:
+	0.8V - 0V (when key pressed)
+NOTE: This is wrongly programmed, but still usable. Offset voltage should be
+700 mv/V (or 500 mV/V if you don't want to worry about polarity).
+If programmed at 700 mV/V, voltage range will be 2.4V-0V. If programmed at
+500 mV/V, it will be 1.6V-0V (3.2V/2 = 1.6V).
+
+MDT TMR2615 (1.6mm package)
+Programmed at:
+	sensitivity: 2 mV/V/Gs
+	offset voltage: 300 mV/V
+Output:
+	1V - 0.75V (when key pressed)
+NOTE: This is correctly programmed if (looking from above the switch), SMD is
+orinted to the right of magnet with one pin above and 2 pins below. However
+sensitivity can be increased further (or perhaps it can be moved a bit away from
+magnet).
+
+------------------------------------------------------------------------
+vim:tw=80:ts=4:ft=markdown:ai:
