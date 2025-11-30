@@ -1,6 +1,7 @@
 To open readable html rendering: VSCode -> Open Preview to the Side icon (looks like a magnifying glass with a document) in the top-right corner (or Cmd-KV)
 
-======================================================================
+---
+---
 
 The method you proposed using **Analog Multiplexers (Muxes)** is one of two common solutions. The other solution, using **ADC Expanders** (or external multi-channel ADCs), offers a different set of trade-offs in complexity, speed, and signal integrity.
 
@@ -51,7 +52,8 @@ For a professional-grade 72-key magnetic keyboard project, use **multiple 8-chan
 
 Would you like me to find a specific **8-channel I²C ADC expander** that would work well with the RP2040?
 
-======================================================================
+---
+---
 
 That's an excellent approach. To maximize **scan speed** and minimize **chip count/complexity** for 72 analog inputs, you'll want to focus on **SPI-based** ADC expanders with a high channel count.
 
@@ -111,7 +113,8 @@ This totals **13 RP2040 pins** to read all 72 analog inputs, which is highly eff
 
 Do you want to focus on the **TLA2518** and look at how to implement the **16-bit averaging feature** on the RP2040?
 
-======================================================================
+---
+---
 
 That's a great question. Connecting multiple SPI ADC expanders (like the TLA2518 or MCP3208) to the RP2040 involves using a **shared bus architecture** for speed and a **separate Chip Select ($\overline{CS}$) line** for device addressing.
 
@@ -171,7 +174,8 @@ The RP2040 would run a scan loop, cycling through all 9 chips, and for each chip
 ---
 Would you like to explore the specific **pin assignments** on the Raspberry Pi Pico/Pico W that are best suited for the SPI bus?
 
-======================================================================
+---
+---
 
 100 kSPS stands for **100 Kilo-Samples Per Second**.
 
@@ -198,7 +202,8 @@ The sampling rate dictates how quickly an ADC can convert a continuous analog si
 
 In the context of the **MCP3208** ADC chip mentioned earlier (which has a 100 kSPS maximum rate), it means that each of its 8 channels can be sampled at a maximum combined rate of 100,000 times per second.
 
-======================================================================
+---
+---
 
 The total **scan time** for your 72 analog inputs depends entirely on the **sampling rate (kSPS)** of the ADC chip you choose and the **overhead time** required to communicate with all 9 chips.
 
@@ -269,4 +274,5 @@ Even the slower **MCP3208** provides a scan frequency of over **650 Hz**, meanin
 ---
 Would you like to look at the specific **SPI pin mappings** on the Raspberry Pi Pico/Pico W to start your wiring diagram?
 
-======================================================================
+---
+---

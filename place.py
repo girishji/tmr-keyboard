@@ -23,7 +23,7 @@ board = pcbnew.GetBoard()
 
 switches = [board.FindFootprintByReference('S' + str(num)) for num in range(COUNT + 1)]
 
-def place_switches():
+def place_switches(ispcb):
 
     def place(fp, offset):
         pointMM = wxPointMM(*offset)
@@ -35,7 +35,7 @@ def place_switches():
         orient(switches[i], 0)
 
     # row 1
-    place(switches[1], (dim, 0))
+    place(switches[1], (dim * (1 - 1/8) , 0))
     for i in range(2, 16):
         place(switches[i], (i * dim, 0))
 
@@ -72,38 +72,42 @@ def place_switches():
     place(switches[58], (offs, 3 * dim))
 
     # row 5
-    x_offset = 0.5 # to accommodate for angled keys
+    x_offset = 0.6 # to accommodate for angled keys
     offs = (1 - 1 / 2 + 1 / 8) * dim - x_offset
     place(switches[59], (offs, 4 * dim))
-    place(switches[60], (offs + dim * (1 + 1 / 4) - x_offset, 4 * dim))
-    place(switches[61], (offs + dim * (2 + 1 / 2 - 1 / 8) - x_offset, 4 * dim))
+    place(switches[60], (offs + dim * (1 + 1 / 4), 4 * dim))
+    place(switches[61], (offs + dim * (2 + 1 / 2 - 1 / 8), 4 * dim))
+
     offs = (3 + 1 / 2 + 1 / 8) * dim
     place(switches[62], (offs + dim / 2 - 0.75, 4 * dim + 3.5))
     orient(switches[62], -20)
 
-    # rotated
     offs += dim * (1 + 1 / 4 + 1 / 8)
     place(switches[63], (offs + 0.6, 4 * dim + 10))
     orient(switches[63], -20)
 
     offs += dim
     place(switches[64], (offs - 0.6, 4.5 * dim + 7))
-    orient(switches[64], -20)
+    if ispcb:
+        orient(switches[64], -20)
+    else:
+        orient(switches[64], -20 + 90)
 
     offs += dim * 1.25
     place(switches[65], (offs, 4 * dim))
 
     place(switches[66], (offs + dim + dim / 4 + 0.6, 4.5 * dim + 7))
-    orient(switches[66], 20)
+    if ispcb:
+        orient(switches[66], 20)
+    else:
+        orient(switches[66], 20 - 90)
+
     offs += dim * 1.25
     place(switches[67], (offs + dim - 0.6, 4 * dim + 10))
     orient(switches[67], 20)
-    # place(switches[68], (offs + 2 * dim - 0.7, 4 * dim + 1))
-    # orient(switches[68], 5)
-    #
     place(switches[68], (offs + 2 * dim - 1.75, 4 * dim + 0 + 3.5))
     orient(switches[68], 20)
-    #
+
     offs += 2 * dim + x_offset
     place(switches[69], (offs + dim, 4 * dim))
 
@@ -114,58 +118,6 @@ def place_switches():
     offs += dim
     place(switches[72], (offs, 4 * dim))
 
-
-def transform(pt, around, theta):
-    """
-    Rotate vector 'pt' by 'theta' degrees. Add vector 'around' to vector 'pt'.
-    """
-    matrix = [
-        [math.cos(math.radians(theta)), -math.sin(math.radians(theta))],
-        [math.sin(math.radians(theta)), math.cos(math.radians(theta))],
-    ]
-    return wxPoint(
-        around.x + pt.x * matrix[0][0] + pt.y * matrix[0][1],
-        around.y + pt.x * matrix[1][0] + pt.y * matrix[1][1],
-    )
-
-
-def place_leds():
-    leds = [board.FindFootprintByReference('D' + str(num)) for num in range(1, COUNT + 1)]
-    offset = wxPointMM(0, -dim * 0.268)
-    if any(leds):
-        for led, sw in zip(leds, switches[1:]):
-            deg = sw.GetOrientationDegrees()
-            led.SetOrientationDegrees(deg)
-            swpos = sw.GetPosition().getWxPoint()
-            led.SetPosition(VECTOR2I(transform(offset, swpos, -deg)))
-
-def place_ir_resistors():
-    rIR = [board.FindFootprintByReference('Ri' + str(num)) for num in range(COUNT // 3 + 1)]
-    if any(rIR):
-        selected = itertools.chain(range(3, 28, 3), [29], range(32, 45, 3), range(47, 57, 3), [58, 61, 64, 67, 70])
-        for i, j in zip(range(1, COUNT // 3 + 1), selected):
-            offset = wxPointMM(dim * 0.415, -2.3) if i < 5 else wxPointMM(dim * 0.43, 0)
-            deg = switches[j].GetOrientationDegrees()
-            rIR[i].SetOrientationDegrees(deg + 90)
-            swpos = switches[j].GetPosition().getWxPoint()
-            rIR[i].SetPosition(VECTOR2I(transform(offset, swpos, -deg)))
-
-def place_bjts():
-    cols = 15
-    bjt = [board.FindFootprintByReference('Q' + str(num)) for num in range(1, cols + 1)]
-    if any(bjt):
-        r1r = [board.FindFootprintByReference('R1_r' + str(num)) for num in range(1, cols + 1)]
-        r2r = [board.FindFootprintByReference('R2_r' + str(num)) for num in range(1, cols + 1)]
-        xoffset = -dim * .48
-        yoffset = 2.8
-        for bj, r1, r2, sw in zip(bjt, r1r, r2r, switches[1:]):
-            bj.SetOrientationDegrees(-90)
-            r1.SetOrientationDegrees(180)
-            r2.SetOrientationDegrees(180)
-            swpos = sw.GetPosition().getWxPoint()
-            bj.SetPosition(VECTOR2I(transform(wxPointMM(xoffset, -1.3 + yoffset), swpos, 0)))
-            r1.SetPosition(VECTOR2I(transform(wxPointMM(xoffset + .3, -4.1 + yoffset), swpos, 0)))
-            r2.SetPosition(VECTOR2I(transform(wxPointMM(xoffset, 1.5 + yoffset), swpos, 0)))
 
 def place_mounting_holes():
     delta = 0.6
@@ -202,11 +154,10 @@ def place_mounting_holes():
             hole.SetPosition(VECTOR2I(wxPointMM(*pos[i])))
 
 
+# PCB = False  # Plate, not pcb
+PCB = True
 
-place_switches()
-# place_leds()
-# place_ir_resistors()
-# place_bjts()
+place_switches(PCB)
 # place_mounting_holes()
 
 pcbnew.Refresh()
