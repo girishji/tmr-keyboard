@@ -22,6 +22,7 @@ COUNT = 72
 board = pcbnew.GetBoard()
 
 switches = [board.FindFootprintByReference('S' + str(num)) for num in range(COUNT + 1)]
+stabs = [board.FindFootprintByReference('Stb' + str(num)) for num in range(2 + 1)]
 
 def place_switches(ispcb):
 
@@ -87,18 +88,24 @@ def place_switches(ispcb):
     orient(switches[63], -20)
 
     offs += dim
-    place(switches[64], (offs - 0.6, 4.5 * dim + 7))
+    pos64 = (offs - 0.6, 4.5 * dim + 7)
+    place(switches[64], pos64)
     if ispcb:
         orient(switches[64], -20)
+        place(stabs[1], pos64)
+        orient(stabs[1], -20 + 90)
     else:
         orient(switches[64], -20 + 90)
 
     offs += dim * 1.25
     place(switches[65], (offs, 4 * dim))
 
-    place(switches[66], (offs + dim + dim / 4 + 0.6, 4.5 * dim + 7))
+    pos66 = (offs + dim + dim / 4 + 0.6, 4.5 * dim + 7)
+    place(switches[66], pos66)
     if ispcb:
         orient(switches[66], 20)
+        place(stabs[2], pos66)
+        orient(stabs[2], 20 - 90)
     else:
         orient(switches[66], 20 - 90)
 

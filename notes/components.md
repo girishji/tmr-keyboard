@@ -276,3 +276,41 @@ Would you like to look at the specific **SPI pin mappings** on the Raspberry Pi 
 
 ---
 ---
+
+Short answer — **SPI is almost certainly the better choice** for nine 8-channel ADC boards (72 channels) on an RP2040, unless you have a specific reason to prefer I²C (very low sample rates, extremely simple wiring, or must use I²C-only ADC chips).
+
+# Practical ways to attach 9 SPI ADCs to an RP2040
+
+Options (ranked by simplicity / reliability):
+
+1. **SPI with 9 CS lines (simplest conceptually)**
+
+   * Share SCLK, MOSI, MISO. Use 9 GPIOs on the RP2040 as CS lines (RP2040 has plenty of GPIOs).
+   * Use hardware SPI + DMA to collect samples quickly and reduce CPU load.
+   * Decent PCB or tidy ribbon wiring recommended so CS lines don’t pick up noise.
+
+2. **SPI + decoder / demux (fewer MCU pins)**
+
+   * Use a 3-to-8 decoder (74HC138) or 74HC237 plus one extra GPIO for the 9th device. This reduces CS pins to 3 (plus maybe an enable pin).
+   * Good when you want to conserve GPIOs.
+
+3. **SPI + GPIO-shift register / SPI-GPIO expander**
+
+   * Use a shift register (74HC595) or SPI GPIO expander to generate CS lines — fewer MCU pins, but adds latency and an extra SPI transaction to change CS state. OK if sample rate is modest.
+
+4. **Daisy-chainable ADCs or ADCs that support multi-device chaining**
+
+   * Some ADC boards support daisy-chaining, letting you read many devices with fewer CS toggles. Check datasheets if you want this optimization.
+
+# Noise, grounding, and analog considerations
+
+* Keep analog inputs short and shielded where possible and use proper decoupling on every ADC board.
+* Share analog ground carefully (star ground) if you have many channels.
+* Clock lines (SCLK) and CS toggles can inject glitches — use proper routing or small series resistors on digital lines if you experience noise.
+
+# RP2040 tips
+
+* Use the RP2040’s **hardware SPI** and **DMA** to read many channels with minimal CPU usage. You can schedule transfers to read each ADC sequentially and fill a buffer fast.
+* If you pick SPI, run it from a dedicated SPI port (or two) and use DMA with a big buffer for bursts of samples.
+
+---
