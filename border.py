@@ -179,15 +179,9 @@ def draw_wrist(L):
 
 def draw_wristrest():
     # Left side
-    R = switches[65].GetPosition() + VECTOR2I(0, half + offset)
-    angle = -switches[64].GetOrientationDegrees()
-    S = switches[64].GetPosition() + rotate(VECTOR2I(half + offset, 0), angle)
-    draw_arc_fill_lines(left(R), up(S, angle), radius)
 
-    R = S
     angle2 = -switches[63].GetOrientationDegrees()
-    S = switches[63].GetPosition() + rotate(VECTOR2I(0, half - mil(0.5)), angle2)
-    draw_arc_fill_lines(down(R, angle), right(S, angle2), radius)
+    S = switches[63].GetPosition() + rotate(VECTOR2I(0, half), angle2)
 
     R, angle = (S, angle2)
     wradius = radius_wrist_rest
@@ -212,15 +206,8 @@ def draw_wristrest():
     draw_arc_fill_lines(up(R), right(S), wradius)
 
     # Right side, starting from bottom middle switch
-    R = switches[65].GetPosition() + VECTOR2I(0, half + offset)
-    angle = -switches[66].GetOrientationDegrees()
-    S = switches[66].GetPosition() + rotate(VECTOR2I(-half - offset, 0), angle)
-    draw_arc_fill_lines(right(R), up(S, angle), radius)
-
-    R = S
     angle2 = -switches[67].GetOrientationDegrees()
-    S = switches[67].GetPosition() + rotate(VECTOR2I(0, half - mil(0.5)), angle2)
-    draw_arc_fill_lines(down(R, angle), left(S, angle2), radius)
+    S = switches[67].GetPosition() + rotate(VECTOR2I(0, half), angle2)
 
     R, angle = (S, angle2)
     S = switches[65].GetPosition() + VECTOR2I(wrist['xoffset'] + 2 * (wradius + dls),
@@ -517,15 +504,15 @@ def remove_border():
             board.Delete(t)
 
 
-# PCB = False  # Plate, not pcb
-PCB = True
+PCB = False  # Plate, not pcb
+# PCB = True
 
 remove_border()
 draw_border(PCB)
 if PCB:
     draw_cutout_pcb()
-    Layer = pcbnew.User_2
-    draw_border(True)
 else:
     draw_cutout_plate()
+    Layer = pcbnew.User_2
+    draw_wristrest()
 pcbnew.Refresh()

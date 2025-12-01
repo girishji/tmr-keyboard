@@ -161,8 +161,8 @@ def place_mounting_holes():
             hole.SetPosition(VECTOR2I(wxPointMM(*pos[i])))
 
 
-# PCB = False  # Plate, not pcb
-PCB = True
+PCB = False  # Plate, not pcb
+# PCB = True
 
 place_switches(PCB)
 # place_mounting_holes()
