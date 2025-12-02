@@ -229,6 +229,7 @@ def draw_wristrest():
     S += VECTOR2I(wradius + dls, -wrist['yoffset'] + wradius + offset)
     draw_arc_fill_lines(up(R), left(S), wradius)
 
+
 def draw_cutout_pcb():
     # Draw left cutout
     R = switches[50].GetPosition() + VECTOR2I(0, half + offset)
@@ -474,7 +475,6 @@ def draw_border(ispcb = False):
         angle2 = -switches[67].GetOrientationDegrees()
         S = switches[67].GetPosition() + rotate(VECTOR2I(0, half + offset), angle2)
         draw_arc_fill_lines(left(R, angle), left(S, angle2), radius)
-
 
     R, angle = (S, angle2)
     S = switches[72].GetPosition() + VECTOR2I(0, half + offset)

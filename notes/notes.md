@@ -1,3 +1,9 @@
+
+With low depth activation of key there will be less spurious key presses since
+springs are light
+
+----------------------------------------------------------------------
+
 https://www.waveshare.com/wiki/RP2040-Tiny
 
 https://jlccnc.com/help/article/CNC-Machining-Design-Guideline
