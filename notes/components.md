@@ -1,6 +1,9 @@
 To open readable html rendering: VSCode -> Open Preview to the Side icon (looks like a magnifying glass with a document) in the top-right corner (or Cmd-KV)
 
 ---
+
+See the section below on comparators
+
 ---
 
 The method you proposed using **Analog Multiplexers (Muxes)** is one of two common solutions. The other solution, using **ADC Expanders** (or external multi-channel ADCs), offers a different set of trade-offs in complexity, speed, and signal integrity.
@@ -13,7 +16,7 @@ Here is a comparison of the two approaches:
 
 ## ⚖️ Analog Mux vs. ADC Expander Comparison
 
-| Feature | Analog Multiplexer (Mux) (e.g., 74HC4051) | ADC Expander (e.g., ADS1115, MCP3008) |
+| Feature | Analog Multiplexer (Mux) (e.g., 74HC4051) | ADC Expander (e.g., MCP3208, ADS1115, MCP3008) |
 | :--- | :--- | :--- |
 | **Required Chip** | Mux IC (e.g., 74HC4051, CD74HC4067) | Multi-channel ADC IC (or breakout board) |
 | **Core Function** | **Analog** switching/routing | **Digital** conversion and communication |
@@ -314,3 +317,246 @@ Options (ranked by simplicity / reliability):
 * If you pick SPI, run it from a dedicated SPI port (or two) and use DMA with a big buffer for bursts of samples.
 
 ---
+---
+
+# Analog Mux
+
+
+For 72 analog inputs there are a few common, practical approaches. Below I list popular multiplexer choices, how many chips you’d need, their pros/cons for keyboard/magnetic-switch sensing, and a short recommendation.
+
+---
+
+# Top candidate parts (with citations)
+
+### 1) **CD74HC4067 / 74HC4067 — 16:1 analog MUX**
+
+* You’d need **5 chips** (5×16 = 80 channels, leaves 8 spare).
+* Pros: high channel density (fewer ICs/PCB area), cheap and widely available. Typical ON-resistance is fairly high (tens of ohms; TI lists ~70 Ω typ at 4.5 V). Good for general analog routing. ([Texas Instruments][1])
+
+### 2) **74HC4051 — 8:1 analog MUX**
+
+* You’d need **9 chips** (9×8 = 72 exactly).
+* Pros: very common, simple, low cost, easy to wire. ON-resistance and performance similar to HC4067 family (tens of ohms depending on VCC). Good if you prefer fewer channels-per-chip for routing/PCB layout control. ([Nexperia][2])
+
+### 3) **ADG704 (Analog Devices) — 4 × SPST CMOS MUX / low-RON options**
+
+* This family is for when you need **very low on-resistance and low leakage**. ADG704 shows **~2.5 Ω typ RON** and very low power — great for preserving analog accuracy and low noise. You’d need **18 devices** if using 4:1 channels (18×4 = 72). Use this when signal integrity/linearity matters (e.g. small sensor voltages). ([Analog Devices][3])
+
+### 4) **Discrete low-RON analog switches (TS5A3159, etc.)**
+
+* SPDT or dual switches with very low RON (single-digit ohms) — useful if you want best linearity/lowest distortion. These typically increase BOM and PCB routing compared to 16:1 parts. ([Texas Instruments][4])
+
+---
+
+# How to choose (tradeoffs)
+
+* **Channel density vs. signal quality:** 16:1 parts (4067) minimize PCB real estate and MCU IO required but have higher RON (tens of Ω). That’s usually fine if your sensor source impedance is low or the ADC input buffers the signal.
+* **Low RON matters** when sensor output is high-impedance or you need very accurate small-voltage readings — choose ADG-series or low-RON switches.
+* **Power & leakage:** HC family CMOS parts draw µA static ICC; AD parts often advertise nA–µW standby — useful for battery keyboards. Check datasheets for standby/leakage if battery life is critical. ([Analog Devices][3])
+* **Switching speed:** not usually critical for keyboards (kHz or slower), but check tON/tOFF if you plan to multiplex quickly for scanning. ([Analog Devices][3])
+
+---
+
+# Practical recommendation for a magnetic keyboard (72 switches)
+
+* If you want **fewer chips and simpler routing**, go **CD74HC4067 (5 chips)** and feed outputs to your ADC(s). Add a small buffer (op-amp or the ADC’s sample-and-hold input) if sensor impedance is high. ([Texas Instruments][1])
+* If your magnetic sensors produce **small, high-impedance analog voltages** and you need best accuracy/noise performance, use **low-RON analog MUXes (ADG704 or similar)** and accept more chips (18 devices). ([Analog Devices][3])
+
+---
+
+# Other tips
+
+* Consider grouping channels to match ADC inputs (e.g., 4× MCP3208 or a single higher-channel ADC).
+* Use the MUX enable lines to power down unused banks if you want lower idle current.
+* Add small input series resistors or buffering to avoid the MUX’s RON and channel capacitance distorting readings.
+* Prototype quickly: try one 4067 on a breadboard to validate signal accuracy before committing to layout.
+
+---
+
+If you want, I can:
+
+* compute **expected total RON + divider error** for your specific sensor source impedance,
+* calculate **total static current** for 5×4067 vs 18×ADG704, or
+* find **exact part numbers and distributors** with pricing and footprints for your region. Which would you like?
+
+[1]: https://www.ti.com/lit/ds/symlink/cd74hc4067.pdf?utm_source=chatgpt.com "cd74hc4067.pdf"
+[2]: https://assets.nexperia.com/documents/data-sheet/74HC_HCT4051.pdf?utm_source=chatgpt.com "74HC4051; 74HCT4051"
+[3]: https://www.analog.com/en/products/adg704.html?utm_source=chatgpt.com "ADG704 Datasheet and Product Info"
+[4]: https://www.ti.com/lit/gpn/TS5A3159?utm_source=chatgpt.com "TS5A3159 1-Ω SPDT Analog Switch datasheet (Rev. D)"
+
+---
+---
+
+Yes — what you’re asking for is basically a **comparator** (or a 1-bit ADC). Instead of a full ADC that returns a multi-bit value, a comparator outputs a **digital 0 or 1** depending on whether the analog input is above or below a set threshold voltage. ([ScienceDirect][1])
+
+Here are some popular comparator ICs (or small modules) that do exactly that — analog input → digital output based on threshold:
+
+## ✅ Example comparator chips/modules
+
+### [LM393 Low Power Dual Comparator](https://kitsguru.com/products/in-line-lm393-17393-low-power-voltage-dual-comparator-dip-8?variant=44661530362108&country=AE&currency=INR&utm_source=chatgpt.com)
+
+#### Dual comparator
+
+*0,24 PLN*
+
+### [LM339 Quad Voltage Comparator IC](https://kitsguru.com/products/ic-gen-pur-comp-quad-1-3-s-dip-14-lm339ng-on-semiconductor?variant=40708906844341&country=AE&currency=INR&utm_source=chatgpt.com)
+
+#### Quad comparator
+
+*0,85 PLN*
+
+### [MCP6541T-E/OT Microchip Ultra‑Low‑Power Comparator](https://www.digikey.pl/pl/products/detail/microchip-technology/MCP6541T-E-OT/1969572?utm_source=chatgpt.com)
+
+#### Ultra‑low power
+
+*1,76 PLN*
+
+### [TLV3501 Ultra‑High Speed Comparator](https://www.ebay.com/itm/194883792726?utm_source=chatgpt.com)
+
+#### High‑speed comparator
+
+*157,11 PLN*
+
+### [LM393D Dual Comparator (STMicroelectronics)](https://estore.st.com/en/lm393d-cpn.html?utm_source=chatgpt.com)
+
+#### Dual comparator
+
+*9,78 PLN*
+
+### [LM2901Q4T CMOS Comparator Pack of 10](https://www.ebay.com/itm/134451534712?utm_source=chatgpt.com)
+
+#### Comparator pack
+
+*21,86 PLN*
+
+### [LM393 Comparator Module High/Low Output](https://www.ebay.com/itm/314183117410?utm_source=chatgpt.com)
+
+#### Comparator module
+
+*9,81 PLN*
+
+### [TSX339 Compact Quad Comparator](https://estore.st.com/en/tsx339iypt-cpn.html?utm_source=chatgpt.com)
+
+#### Quad comparator
+
+*5,84 PLN*
+
+### Quick notes on some:
+
+* **[LM393 Low Power Dual Comparator](https://kitsguru.com/products/in-line-lm393-17393-low-power-voltage-dual-comparator-dip-8?variant=44661530362108&country=AE&currency=INR&utm_source=chatgpt.com)** — a classic, widely used dual comparator. It compares an analog input to a reference (which you set with a resistor divider or a DAC) and outputs a digital signal (HIGH if input > threshold, else LOW). Good for simple threshold-detection on sensor lines, battery voltage monitoring, etc.
+* **[LM339 Quad Voltage Comparator IC](https://kitsguru.com/products/ic-gen-pur-comp-quad-1-3-s-dip-14-lm339ng-on-semiconductor?variant=40708906844341&country=AE&currency=INR&utm_source=chatgpt.com)** — offers four comparators in one IC. Useful if you need multiple threshold-detectors in a design.
+* **[MCP6541T-E/OT Ultra‑Low‑Power Comparator](https://www.digikey.pl/pl/products/detail/microchip-technology/MCP6541T-E-OT/1969572?utm_source=chatgpt.com)** — if you care about power consumption (battery-powered device), this low-power comparator is a good choice.
+* **[TLV3501 Ultra‑High Speed Comparator](https://www.ebay.com/itm/194883792726?utm_source=chatgpt.com)** — suitable when you need fast threshold detection (high-speed analog signals, rapid events).
+
+---
+
+## 🧠 Why comparators are good for “analog → ON/OFF” use-cases
+
+* A comparator is effectively a **1-bit ADC**: it only tells you whether the signal is above or below a threshold. ([ScienceDirect][1])
+* You set the threshold either via a fixed resistor divider, a potentiometer, or — in more advanced ICs — an internal/reference input.
+* When input crosses threshold, output toggles digital — easy to feed into a microcontroller’s GPIO, interrupt line, or logic gate.
+
+---
+
+## ⚠️ When a full ADC still makes sense
+
+If you need more than “above/below threshold” — e.g. to **measure exact voltage**, **read continuously varying analog sensors**, or **compute value changes over time** — a full ADC (multi-bit) is better. Comparators are ideal for binary decisions (on/off, above/below), not precise measurements.
+
+---
+
+If you like — I can search and list **3–5 modern comparator ICs with digitally programmable thresholds** (so you can change threshold via software or I²C/SPI rather than resistor dividers), which might be especially useful for your keyboard / sensor project.
+Do you want me to build that list now?
+
+[1]: https://www.sciencedirect.com/topics/engineering/comparator?utm_source=chatgpt.com "Comparator - an overview | ScienceDirect Topics"
+
+
+---
+
+
+Good — there *are* comparator / threshold-detector / “1-bit ADC”-style chips that let you set a threshold (or window) and get a digital output when analog input crosses it. Some are “fixed threshold + external resistors,” others let you adjust thresholds digitally (or with external reference). Below are a few representative ICs / modules.
+
+---
+
+## ✅ Example comparator / threshold-detector ICs & modules
+
+### [LM2903N/P Dual Low‑Power Voltage Comparator](https://kitsguru.com/products/lm2903n-p-dip-8-dual-low-power-voltage-comparator-ic?variant=47395103179004&country=AE&currency=INR&utm_source=chatgpt.com)
+
+#### Low‑power dual comparator
+
+*0,45 PLN*
+
+### [TSX339 Quad CMOS Comparator](https://estore.st.com/en/tsx339iypt-cpn.html?utm_source=chatgpt.com)
+
+#### Quad comparator CMOS
+
+*5,84 PLN*
+
+### [TLV3501 High‑Speed Comparator Module](https://www.ebay.com/itm/388108148153?utm_source=chatgpt.com)
+
+#### High‑speed comparator
+
+*64,74 PLN*
+
+### [TS881ICT Low‑Power Comparator]()
+
+#### Low‑power comparator
+
+*5,29 PLN*
+
+### [Texas Instruments Dual Comparator (Open Collector Output)](https://www.ebay.com/itm/166316056090?var=465944675538&utm_source=chatgpt.com)
+
+#### Dual comparator TTL
+
+*16,24 PLN*
+
+### [Dual Low‑Power Comparator (CMOS/TTL Output)](https://www.electromaker.io/shop/product/lo-pwr-dual-vltg-comparators?utm_source=chatgpt.com)
+
+#### Dual comparator CMOS
+
+*1,93 PLN*
+
+### [ADC 16 Click – ADC with Window Comparator & Programmable Thresholds](https://www.mikroe.com/adc-16-click?utm_source=chatgpt.com)
+
+#### ADC + window comparator
+
+*54,73 PLN*
+
+### [TLV3501 High‑Speed Comparator Module (Alternate Listing)](https://www.elecbee.com/en-32691-TLV3501-High-Speed-Comparator-Frequency-Meter-Front-end-Shaping-Module-4.5ns-High-speed-Comparator?utm_source=chatgpt.com)
+
+#### High‑speed comparator
+
+*61,99 PLN*
+
+### Highlights
+
+* **[LM2903N/P Dual Low‑Power Voltage Comparator](https://kitsguru.com/products/lm2903n-p-dip-8-dual-low-power-voltage-comparator-ic?variant=47395103179004&country=AE&currency=INR&utm_source=chatgpt.com)** — a classic, very low-cost dual comparator. You set the threshold manually (via a resistor divider or reference), and it outputs a digital ON/OFF depending on whether the input is above or below threshold. Good for battery-powered, low-speed tasks.
+* **[TSX339 Quad CMOS Comparator](https://estore.st.com/en/tsx339iypt-cpn.html?utm_source=chatgpt.com)** — offers 4 comparators per chip; convenient if you need to monitor multiple analog lines for threshold crossings. CMOS output and low power.
+* **[TLV3501 High‑Speed Comparator Module](https://www.ebay.com/itm/388108148153?utm_source=chatgpt.com)** — if you need fast detection (e.g. quick threshold crossing, fast switching), this comparator provides low latency and high speed. Useful if signals change rapidly.
+* **[TS881ICT Low‑Power Comparator]()** — another low-power comparator suitable for simple threshold detection with minimal quiescent current.
+* **[ADC 16 Click – ADC with Window Comparator & Programmable Thresholds](https://www.mikroe.com/adc-16-click?utm_source=chatgpt.com)** — this is a bit different: it’s a small module that features an ADC + built-in window comparator logic, allowing you to program high and low thresholds, with per-channel interrupt/event logic. This is especially useful if you want to detect “in range / out of range” events without continuously reading raw analog values.
+* **Other comparators (like TSX339, TLV3501, generic dual comparators)**: Good building blocks if you want fine control, are comfortable building threshold circuits yourself, and just need “analog in → digital threshold output.”
+
+---
+
+## 🎯 Notes: What these chips *are* (and aren’t)
+
+* These comparator ICs are **not full ADCs** — they don’t measure a voltage value precisely. Instead they give a **binary output**: on/off (above/below threshold). That’s exactly what you asked for.
+* For many, the threshold is set by external resistors or a reference voltage. In modules like “ADC 16 Click,” the threshold (or window) is **programmatically configurable** (so you can change it via I²C or register write).
+* You won’t get an exact numeric value — but if all you need is “is the analog signal > X?” or “has it crossed threshold?”, these are efficient and low-power.
+* Comparators (and window comparators) are very power-efficient compared to doing full ADC conversions continuously — useful in battery-powered or always-on devices. ([ic-online.com][1])
+
+---
+
+## ✅ My recommendation for a keyboard / sensor matrix use-case
+
+If I were you and I just want to detect “magnet present / magnet absent” (or “sensor above / below threshold”) for ~70+ inputs:
+
+* I’d go with a **comparator / window-comparator solution** — lower overhead than a multi-channel ADC + MUX + software.
+* A module like **ADC 16 Click** (with programmable threshold + interrupt logic) is especially attractive: you can tune threshold in firmware (rather than messing with resistor dividers), and get digital signals — simplifies wiring and coding.
+* If I want minimal cost + minimal power + simple threshold detection, I’d pick **LM2903** or **TSX339** (or similar). These are cheap, easy to wire, and widely available.
+
+---
+
+If you like — I can **pull up 5–10 comparator / comparator-module ICs** available from **European distributors** (e.g. DigiKey EU, Mouser Germany, TME Poland) — that might make procurement easier for you. Do you want me to build that “ready-to-order” list now?
+
+[1]: https://ic-online.com/news/post/comparator-integrated-circuits-essential-components-for-signal-processing-and-threshold-detection?utm_source=chatgpt.com "Comparator Integrated Circuits: Essential Components for Signal Processing and Threshold Detection"
