@@ -4,8 +4,6 @@ autodesk fusion
 - import it in fusion
 - insert the above model into a new design
 - start a sketch and project the outlines
-- remove all straight lines from outer end of the projected sketch leaving only arcs
-- connect all the arcs to form the outer endge again (kicad disign has lots of short length lines that cause issues)
 - make sure the shape is closed and you can extrude
 - offset the outer endge and islands in the middle by 0.2mm (kicad pcb is 0.1mm smaller than the width of switch)
 - offset the outer edge by the thickness of wall
