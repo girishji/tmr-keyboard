@@ -19,12 +19,34 @@ from pcbnew import VECTOR2I, wxPoint, wxPointMM
 
 dim = 19.00
 COUNT = 72
-board = pcbnew.GetBoard()
 
 switches = [board.FindFootprintByReference('S' + str(num)) for num in range(COUNT + 1)]
 stabs = [board.FindFootprintByReference('Stb' + str(num)) for num in range(2 + 1)]
 
+def flip_footprint_to_back(footprint_ref):
+    """
+    Flips a specified footprint from the front (F.Cu) to the back (B.Cu) layer.
+    """
+
+    board = pcbnew.GetBoard()
+
+    # Find the footprint by its reference designator (string)
+    footprint = board.FindFootprintByRef(footprint_ref)
+    if not footprint:
+        print(f"Error: Footprint '{footprint_ref}' not found.")
+        return
+
+    current_layer = footprint.GetLayerName()
+    if current_layer == "B.Cu":
+        return
+
+    if footprint.GetLayer() == pcbnew.F_Cu:
+        footprint.SetLayer(pcbnew.B_Cu)
+
+
 def place_switches(ispcb):
+
+    board = pcbnew.GetBoard()
 
     def place(fp, offset):
         pointMM = wxPointMM(*offset)
