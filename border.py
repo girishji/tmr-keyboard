@@ -23,6 +23,8 @@ dim = 19.00
 COUNT = 72
 board = pcbnew.GetBoard()
 
+mil = lambda x: int(x * 1e6)
+
 offset = mil(0.1)  # there is 1mm gap between keycaps
 fillet_radius = mil(1)
 fillet_radius_half = mil(0.5)
@@ -36,8 +38,6 @@ switches = [board.FindFootprintByReference('S' + str(num)) for num in range(COUN
 
 holes = [board.FindFootprintByReference('H' + str(i)) for i in range(9)]
 hole_count  = sum(h is not None for h in holes)
-
-mil = lambda x: int(x * 1e6)
 
 # Create very short directed line segment from vector X, in one of 4 directions.
 # 'left' is vector (-delta, 0), etc. 'X' is a directed line segment represented
@@ -328,12 +328,6 @@ def draw_border(ispcb = False):
     S = switches[16].GetPosition() + VECTOR2I(-int(half * 1.5) - offset, 0)
     R = draw_line_arc(right(R), down(S))
 
-    S = switches[1].GetPosition() + VECTOR2I(-half, half + offset)
-    R = draw_line_arc(up(R), right(S))
-
-    S = switches[1].GetPosition() + VECTOR2I(-int(half * 1.25) - offset, 0)
-    R = draw_line_arc(left(R), down(S))
-
     S = switches[15].GetPosition() + VECTOR2I(0, -half - offset)
     Rleft = draw_line_arc(up(R), left(S), fillet_radius_half)
 
@@ -399,3 +393,4 @@ if PCB:
 else:
     draw_cutout_plate()
 pcbnew.Refresh()
+# board.Save(board.GetFileName())

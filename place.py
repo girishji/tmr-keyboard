@@ -36,8 +36,7 @@ def place_switches(ispcb):
         orient(switches[i], 0)
 
     # row 1
-    place(switches[1], (dim * (1 - 1/8) , 0))
-    for i in range(2, 16):
+    for i in range(1, 16):
         place(switches[i], (i * dim, 0))
 
     # row 2
@@ -168,3 +167,4 @@ place_switches(PCB)
 # place_mounting_holes()
 
 pcbnew.Refresh()
+# board.Save(board.GetFileName())

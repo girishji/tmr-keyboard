@@ -5,6 +5,9 @@ springs are light
 ----------------------------------------------------------------------
 todo:
 
+- left top key is 1u
+- remove wall from left top and 2 keys on right top
+- fn key can be 1.25u
 - two holes in the front -- a pcb with standoffs to act as stopper (sometimes
   25mm is ok, sometimes (at night where knuckes obstruct screen) 30mm is
   needed, this is distance from the top of key)
