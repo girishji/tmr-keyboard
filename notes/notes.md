@@ -5,7 +5,8 @@ springs are light
 ----------------------------------------------------------------------
 todo:
 
-- left top key is 1u
+- LDO height is 1.1mm max, rp2040 is .9mm max, winbond memory is .8mm max,
+  crystal is .6mm max.
 - remove wall from left top and 2 keys on right top
 - fn key can be 1.25u
 - two holes in the front -- a pcb with standoffs to act as stopper (sometimes
@@ -13,6 +14,17 @@ todo:
   needed, this is distance from the top of key)
 - bottom depression may not be necessary (over engineering), just use a thin
   rubber tape if needed
+- gateron: bottom of switch to center column height = 3.7mm (6.2 - 2.5)
+  smaller posts are 3mm, total height from lip is 6.2mm. drill a hole of depth
+  1.5mm (2.5mm - 1.2mm (for components) + 0.2mm (gap)) +  and leave 1.5mm
+  (plastic bottom) for the blind hole. Elsewhere bottom is 3mm.
+- kailh switch has a wider post which makes 12g spring stick. try 12g mx spring.
+- usb vias: Keep return path continuity: a solid reference plane beneath the
+  traces (no splits under the via region). If a trace crosses a plane split, the
+  return current has to detour and that creates noise.
+- https://www.youtube.com/watch?v=JxzSpaMoQR0: since there is no force on pcb if
+  you use 1.5mm spacer (or 1.5mm smtso), you can either use smtso on plate (made
+  of fr4) or on pcb.
 
 ----------------------------------------------------------------------
 
@@ -122,6 +134,49 @@ NOTE: This is correctly programmed if (looking from above the switch), SMD is
 orinted to the right of magnet with one pin above and 2 pins below. However
 sensitivity can be increased further (or perhaps it can be moved a bit away from
 magnet).
+
+----------------------------------------------------------------------
+
+Should you choose MCP3208 B or C package?
+
+C is half the price.
+
+The MCP3208 family is offered in two accuracy classes: B and C. The datasheet
+specifies INL = ±1 LSB for MCP3204/3208–B and INL = ±2 LSB for C.
+
+At 12 bits an LSB = VREF / 4096. Example: with VREF = 3.3 V,
+LSB ≈ 3.3 / 4096 ≈ 0.805 mV → ±1 LSB ≈ ±0.805 mV, ±2 LSB ≈ ±1.61 mV.
+
+Raw ADC numbers (12-bit MCP3208, VREF = 3.3 V)
+- LSB = VREF / 4096 = 0.000805664 V = 0.8057 mV.
+- Counts across 0…0.8 V = 0.8 / 0.000805664 ≈ 993 counts.
+- Counts per mm = 993 / 3.5 ≈ 283.7 counts/mm.
+- Travel per count (1 LSB) = 3.5 / 993 ≈ 0.003525 mm ≈ 3.53 µm.
+
+(So each ADC step corresponds to ~3.5 micrometres of key travel.)
+
+Difference between B and C grades
+- MCP3208–B INL spec ≈ ±1 LSB; –C ≈ ±2 LSB (typical datasheet split).
+- The practical difference between B and C is therefore about 1 LSB (i.e. C can
+  be ~1 LSB worse than B in worst case).
+- 1 LSB = 0.8057 mV → in displacement that’s ~0.00353 mm = 3.53 µm.
+- So B vs C worst-case difference ≈ ±3.5 µm (and C’s worst-case error could be
+  ~±7 µm if you compare absolute limits).
+
+3.5 µm (micrometres) is tiny compared with mechanical tolerances, key wobble,
+switch spring hysteresis, sensor noise, connector tolerances and human
+perception.
+
+Choose C package.
+
+----------------------------------------------------------------------
+
+Bypass capacitor for MCP3208
+
+* “Bypass capacitor” (also called “decoupling capacitor”) is a small capacitor placed between the chip’s supply voltage pin (VDD) and ground (GND). Its job is to **filter out high-frequency noise** or transients on the power rail — preventing them from upsetting the ADC’s internal analog circuitry. ([Analog Devices][2])
+* The bypass capacitor should go between **VDD** (power supply pin) and **ground**. ([DigiKey][1])
+* Choose a small-value **ceramic capacitor** (e.g. 1 µF, X5R/X7R dielectric) — good for high-frequency decoupling.
+* Connect the “–” side of the cap to the same ground net/plane that covers **both** the analog ground (AGND) and digital ground (DGND) of the MCP3208.
 
 ----------------------------------------------------------------------
 

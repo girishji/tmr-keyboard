@@ -864,9 +864,10 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "tmr-lib:sw_lowpro_combo_MDT"
+		(property "Footprint" "tmr-lib:sw_lowpro_gateron_MDT"
 			(at 0 0 0)
 			(effects
 				(font

@@ -383,8 +383,8 @@ def remove_border():
             board.Delete(t)
 
 
-PCB = False  # Plate, not pcb
-# PCB = True
+# PCB = False  # Plate, not pcb
+PCB = True
 
 remove_border()
 draw_border(PCB)

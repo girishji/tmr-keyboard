@@ -7,24 +7,26 @@
 	(tags "capacitor")
 	(property "Reference" "REF**"
 		(at 0 -1.43 0)
-		(layer "User.1")
+		(layer "B.SilkS")
 		(uuid "88f82a2f-3893-4407-8eb8-c2c8198dd7e8")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.4 0.4)
+				(thickness 0.1)
 			)
+			(justify mirror)
 		)
 	)
 	(property "Value" "C_0603_1608Metric"
 		(at 0 1.43 0)
-		(layer "F.Fab")
+		(layer "B.Fab")
 		(uuid "23142db7-be7d-49bb-b45f-0283243dd037")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.15)
 			)
+			(justify mirror)
 		)
 	)
 	(property "Datasheet" ""
@@ -53,127 +55,128 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -0.14058 -0.51)
-		(end 0.14058 -0.51)
+		(start 0.14058 -0.51)
+		(end -0.14058 -0.51)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "B.SilkS")
 		(uuid "70b68af2-f3ad-49f2-bd2b-06720d089230")
 	)
 	(fp_line
-		(start -0.14058 0.51)
-		(end 0.14058 0.51)
+		(start 0.14058 0.51)
+		(end -0.14058 0.51)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
-		(layer "F.SilkS")
+		(layer "B.SilkS")
 		(uuid "8a180e3e-9cb8-44ae-a527-4dd1c6f7507f")
 	)
 	(fp_line
 		(start -1.48 -0.73)
-		(end 1.48 -0.73)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "c5e5bab8-4b60-4055-8a7d-ad56c5fb345b")
-	)
-	(fp_line
-		(start -1.48 0.73)
-		(end -1.48 -0.73)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "0eb2b130-8394-46d4-9f03-c1c3f1306cf6")
-	)
-	(fp_line
-		(start 1.48 -0.73)
-		(end 1.48 0.73)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(layer "F.CrtYd")
-		(uuid "739b6ff9-125b-43bb-870d-99abb3f7372d")
-	)
-	(fp_line
-		(start 1.48 0.73)
 		(end -1.48 0.73)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
-		(layer "F.CrtYd")
+		(layer "B.CrtYd")
+		(uuid "739b6ff9-125b-43bb-870d-99abb3f7372d")
+	)
+	(fp_line
+		(start -1.48 0.73)
+		(end 1.48 0.73)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
 		(uuid "f36ea6f8-eb42-4f43-93d8-e5afe986e402")
 	)
 	(fp_line
+		(start 1.48 -0.73)
+		(end -1.48 -0.73)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "c5e5bab8-4b60-4055-8a7d-ad56c5fb345b")
+	)
+	(fp_line
+		(start 1.48 0.73)
+		(end 1.48 -0.73)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "0eb2b130-8394-46d4-9f03-c1c3f1306cf6")
+	)
+	(fp_line
 		(start -0.8 -0.4)
-		(end 0.8 -0.4)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "08458c80-5878-4d58-bad1-a8a8723041c7")
-	)
-	(fp_line
-		(start -0.8 0.4)
-		(end -0.8 -0.4)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "0d09a10b-1380-4dfd-81f1-4e15c498de7c")
-	)
-	(fp_line
-		(start 0.8 -0.4)
-		(end 0.8 0.4)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "59758c43-d987-47b0-b3bf-f40f68167827")
-	)
-	(fp_line
-		(start 0.8 0.4)
 		(end -0.8 0.4)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
-		(layer "F.Fab")
+		(layer "B.Fab")
+		(uuid "59758c43-d987-47b0-b3bf-f40f68167827")
+	)
+	(fp_line
+		(start -0.8 0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
 		(uuid "eb39cdc5-6ae5-439e-af7f-b50eaf3a54da")
+	)
+	(fp_line
+		(start 0.8 -0.4)
+		(end -0.8 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "08458c80-5878-4d58-bad1-a8a8723041c7")
+	)
+	(fp_line
+		(start 0.8 0.4)
+		(end 0.8 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "0d09a10b-1380-4dfd-81f1-4e15c498de7c")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
-		(layer "F.Fab")
+		(layer "B.Fab")
 		(uuid "1d416329-6910-4cf9-9c55-8da4e6f79042")
 		(effects
 			(font
 				(size 0.4 0.4)
 				(thickness 0.06)
 			)
+			(justify mirror)
 		)
 	)
 	(pad "1" smd roundrect
-		(at -0.775 0)
+		(at 0.775 0)
 		(size 0.9 0.95)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(layers "B.Cu" "B.Mask" "B.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "8ab33716-5c0d-4469-b004-8b8abeebb6ad")
 	)
 	(pad "2" smd roundrect
-		(at 0.775 0)
+		(at -0.775 0)
 		(size 0.9 0.95)
-		(layers "F.Cu" "F.Mask" "F.Paste")
+		(layers "B.Cu" "B.Mask" "B.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "b801dc8c-034d-4779-aebe-6b772a82e155")
 	)
