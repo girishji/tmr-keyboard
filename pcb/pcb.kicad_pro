@@ -498,7 +498,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1524,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -510,13 +510,27 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.5,
+        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       },
       {
+        "clearance": 0.5,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Analog",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1524,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -524,7 +538,7 @@
         "microvia_drill": 0.1,
         "name": "IC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -541,7 +555,7 @@
         "microvia_drill": 0.1,
         "name": "LEDs",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -558,7 +572,7 @@
         "microvia_drill": 0.1,
         "name": "USB_DP_1p2",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.8,
@@ -575,7 +589,7 @@
         "microvia_drill": 0.1,
         "name": "USB_DP_1p6",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.8,
@@ -595,111 +609,7 @@
       },
       {
         "netclass": "IC",
-        "pattern": "/COL1A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL1B"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL2A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL2B"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL3A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL3B"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL4A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL4B"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL5A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL5B"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL6A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL6B"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL7A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL7B"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL8A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL8B"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL9A"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/COL9B"
-      },
-      {
-        "netclass": "IC",
         "pattern": "/C_FLT"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/P1"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/P2"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/P3"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/P4"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/P5"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/P6"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/P7"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/P8"
       },
       {
         "netclass": "IC",
@@ -770,80 +680,32 @@
         "pattern": "SDA"
       },
       {
-        "netclass": "LEDs",
-        "pattern": "CA1"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CA2"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CA3"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CA4"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CA5"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CA6"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CA7"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CA8"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CA9"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB1"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB2"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB3"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB4"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB5"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB6"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB7"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB8"
-      },
-      {
         "netclass": "USB_DP_1p2",
         "pattern": "/USB_D+"
       },
       {
         "netclass": "USB_DP_1p2",
         "pattern": "/USB_D-"
+      },
+      {
+        "netclass": "Analog",
+        "pattern": "ANA_*"
+      },
+      {
+        "netclass": "LEDs",
+        "pattern": "CA*"
+      },
+      {
+        "netclass": "LEDs",
+        "pattern": "CB*"
+      },
+      {
+        "netclass": "IC",
+        "pattern": "D*"
+      },
+      {
+        "netclass": "IC",
+        "pattern": "GPIO*"
       }
     ]
   },

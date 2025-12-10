@@ -5,6 +5,11 @@ springs are light
 ----------------------------------------------------------------------
 todo:
 
+- get parts, try spi (adjusting clock if necessary)
+https://www.tme.eu/pl/details/cx90m-16p_c/zlacza-usb-i-ieee1394/hirose/cx90m-16p/
+https://www.tme.eu/pl/details/ubc-ra-tf/zlacza-usb-i-ieee1394/jst/ubc-ra-tf-hf/
+- USB https://www.tme.eu/pl/katalog/zlacza-usb-i-ieee1394_100379/
+https://www.tme.eu/pl/details/usb4510-03-1-a/zlacza-usb-i-ieee1394/gct/
 - LDO height is 1.1mm max, rp2040 is .9mm max, winbond memory is .8mm max,
   crystal is .6mm max.
 - remove wall from left top and 2 keys on right top
@@ -188,13 +193,21 @@ a maximum of 3 cycles to be safe. For non-critical panels, you might achieve 10+
 cycles if extreme care is taken.
 
 ----------------------------------------------------------------------
+How to minimize warping
 
-That's a specific fastener! The **self-tapping nut (M2xM4x4)** is designed to be
-installed *into* the plastic to provide a reusable **M2 internal thread**, using
-an **M4 outer thread** to cut and secure itself into the plastic boss.
+✔ Clamp/weight the PCB flat during heating
+Use a metal block, plate, or flat thick aluminum heat spreader underneath.
 
-The boss diameter must be calculated based on the **outer diameter of the M4
-self-tapping thread** that creates the connection with the plastic.
+✔ Heat gradually rather than blasting one spot
+Start with lower airflow or preheat the area.
+
+✔ Preheat the board (optional)
+If you have a preheater or hot plate, preheat to ~120–150 °C first, then use hot air. This reduces temperature gradients dramatically.
+
+✔ Avoid heating large areas at once
+Only heat the part you're soldering.
+
+----------------------------------------------------------------------
 
 ## 📐 Recommended Boss Diameter
 
