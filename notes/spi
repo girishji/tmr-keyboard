@@ -405,4 +405,15 @@ Here is why:
 3.  **Potential Issue (Floating):** The only time the $\text{MISO}$ line could technically float is during the brief period **between transactions**, when the $\text{CS}$ line to the previous device is raised $\text{HIGH}$ and the $\text{CS}$ line to the next device has not yet been lowered $\text{LOW}$. However, this transition is usually quick, and if the $\text{MISO}$ pin is configured with a built-in weak pull-up/pull-down on the $\text{RP}2040$, that prevents floating. The $\text{RP}2040$ GPIOs can be configured with internal pull-ups, which is a better option than an external resistor if needed for a fully idle bus state.
 
 ---
+---
 
+Prioritize the Ground Return Path (Most Important)
+
+Whenever the SCK, MOSI, and MISO traces go through a via to change layers, you must provide an immediate and close path for the return current to follow.
+
+Place "Stitching Vias" (Ground Vias): Place several Ground vias immediately next to the signal vias. These ground vias connect the ground plane/pour on the top layer to the ground plane/pour on the bottom layer, creating a "stitch" that allows the return current to transition layers right alongside the signal.
+
+Avoid Routing Over Splits/Voids: Ensure your traces never cross over a split in the ground plane or an anti-pad area (a copper-free zone) without a return path.
+
+---
+---

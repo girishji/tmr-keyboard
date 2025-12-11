@@ -21,7 +21,7 @@ from typing import Dict, List, Tuple
 
 # KiCad uses nanometers (nm) as its internal unit (IU)
 # 1 mm = 1,000,000 nm
-IU_PER_MM = pcbnew.IU_PER_MM
+IU_PER_MM = pcbnew.PCB_IU_PER_MM
 
 # --- Configuration ---
 # File name for saving/loading footprint data
@@ -173,7 +173,7 @@ def restore_all_positions():
 # --- Example ---
 
 # 1. Save all current positions
-# save_positions()
+save_positions()
 
 # 2. Restore a specific position (e.g., after moving it accidentally)
 # restore_position("J1")
