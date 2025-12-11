@@ -7174,16 +7174,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 384.81) (xy 77.47 384.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "024c0bb2-b425-43a7-b00e-0ab310686dac")
-	)
-	(wire
-		(pts
 			(xy 510.54 415.29) (xy 510.54 416.56)
 		)
 		(stroke
@@ -7391,16 +7381,6 @@
 			(type default)
 		)
 		(uuid "09f044f4-07a0-4153-b8ed-52aa8feff8b1")
-	)
-	(wire
-		(pts
-			(xy 80.01 438.15) (xy 77.47 438.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a592c4f-058c-43b6-9378-4de6399a3dd8")
 	)
 	(wire
 		(pts
@@ -8021,16 +8001,6 @@
 			(type default)
 		)
 		(uuid "1cbd7b91-f4ce-4b86-bfd9-798a9caaf384")
-	)
-	(wire
-		(pts
-			(xy 80.01 392.43) (xy 77.47 392.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d68e110-d18b-42ff-a222-2892b12e8a10")
 	)
 	(wire
 		(pts
@@ -9181,6 +9151,16 @@
 			(type default)
 		)
 		(uuid "3e8fff98-912d-4b5c-b94d-ed185541f105")
+	)
+	(polyline
+		(pts
+			(xy 26.67 416.56) (xy 330.2 416.56)
+		)
+		(stroke
+			(width 0.8128)
+			(type solid)
+		)
+		(uuid "3f17616c-f2de-4e9c-b485-c977e0dc8c7c")
 	)
 	(wire
 		(pts
@@ -11214,16 +11194,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 422.91) (xy 77.47 422.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b0a94eb-dd98-4130-9e44-30e2945bf30a")
-	)
-	(wire
-		(pts
 			(xy 198.12 130.81) (xy 198.12 132.08)
 		)
 		(stroke
@@ -11411,16 +11381,6 @@
 			(type default)
 		)
 		(uuid "7fbf47f1-5a91-40fc-957a-fdf2873e377f")
-	)
-	(wire
-		(pts
-			(xy 80.01 430.53) (xy 77.47 430.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fdbb1dd-50bc-4bfb-bb08-da532d019385")
 	)
 	(wire
 		(pts
@@ -11711,16 +11671,6 @@
 			(type default)
 		)
 		(uuid "8ad02911-e62c-4e9c-b8ca-b8655505690a")
-	)
-	(wire
-		(pts
-			(xy 80.01 407.67) (xy 77.47 407.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ad632b7-f520-4dc0-a8c9-31281ead9a71")
 	)
 	(wire
 		(pts
@@ -12364,16 +12314,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 445.77) (xy 77.47 445.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a16a78f7-288f-422e-becf-918b6cc6c870")
-	)
-	(wire
-		(pts
 			(xy 515.62 53.34) (xy 515.62 55.88)
 		)
 		(stroke
@@ -12631,16 +12571,6 @@
 			(type default)
 		)
 		(uuid "a9d01521-d591-416b-b8d8-fad6f1be6f01")
-	)
-	(wire
-		(pts
-			(xy 80.01 400.05) (xy 77.47 400.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9efc50f-f145-4e2f-aa4d-fc7b8c9187ad")
 	)
 	(wire
 		(pts
@@ -14771,16 +14701,6 @@
 			(type default)
 		)
 		(uuid "e2a438e8-8585-4697-858c-cf8fc26d7852")
-	)
-	(wire
-		(pts
-			(xy 80.01 415.29) (xy 77.47 415.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e37cff5b-7b89-4803-b47f-ec28277b0093")
 	)
 	(wire
 		(pts
@@ -17296,28 +17216,6 @@
 			)
 		)
 	)
-	(global_label "CS_6"
-		(shape bidirectional)
-		(at 77.47 422.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1f04e9a6-31bf-416b-bfae-224cd7ca9895")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 422.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ANA_48"
 		(shape bidirectional)
 		(at 372.11 262.89 0)
@@ -18308,28 +18206,6 @@
 			)
 		)
 	)
-	(global_label "CS_1"
-		(shape bidirectional)
-		(at 77.47 384.81 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3c0eeaf0-1b1a-44b7-bb84-8b61bf2d4901")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 384.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ANA_10"
 		(shape bidirectional)
 		(at 243.84 57.15 90)
@@ -18704,28 +18580,6 @@
 			)
 		)
 	)
-	(global_label "CS_9"
-		(shape bidirectional)
-		(at 77.47 445.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4de3755b-b103-46e4-be8f-b93ecb442308")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 445.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SCK"
 		(shape bidirectional)
 		(at 265.43 317.5 180)
@@ -19078,28 +18932,6 @@
 			)
 		)
 	)
-	(global_label "CS_8"
-		(shape bidirectional)
-		(at 77.47 438.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6206da29-5c81-44b4-996e-e86eaf8a64fd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 438.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ANA_28"
 		(shape bidirectional)
 		(at 152.4 312.42 0)
@@ -19382,28 +19214,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CS_2"
-		(shape bidirectional)
-		(at 77.47 392.43 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "76a8074e-1421-42ea-85fe-1b5b2f7fcd37")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 392.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -19932,28 +19742,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CS_3"
-		(shape bidirectional)
-		(at 77.47 400.05 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a5e76170-50af-41c0-897b-d7774fbd0279")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 400.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -20992,28 +20780,6 @@
 			)
 		)
 	)
-	(global_label "CS_4"
-		(shape bidirectional)
-		(at 77.47 407.67 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d4199085-57b4-4536-961a-74ac76343231")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 407.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "ANA_60"
 		(shape bidirectional)
 		(at 298.45 261.62 0)
@@ -21093,28 +20859,6 @@
 		(uuid "d9a28ff7-56e2-49e8-927f-affef540a9c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 329.1273 262.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CS_7"
-		(shape bidirectional)
-		(at 77.47 430.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "db5e0115-32d9-4d47-9d09-37121067749f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 430.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21692,28 +21436,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CS_5"
-		(shape bidirectional)
-		(at 77.47 415.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fca4435a-810b-4ccd-b712-ced07bba6653")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.7169 415.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -24548,74 +24270,6 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "D27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 438.15 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11c9da5b-aabf-4217-a550-3a1c288c1fff")
-		(property "Reference" "R24"
-			(at 82.55 443.23 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 440.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 438.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 438.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 438.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "589703fa-f754-4fd0-8f3d-4248caa8d52f")
-		)
-		(pin "2"
-			(uuid "6724ab35-336b-4105-af19-757cea548f95")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -29567,74 +29221,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 415.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3477c192-e81e-4106-baf3-114622a3175f")
-		(property "Reference" "R21"
-			(at 82.55 420.37 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 417.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 415.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 415.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 415.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "54d30843-dba0-4930-a187-1e1524b90f06")
-		)
-		(pin "2"
-			(uuid "08408937-23c2-45b4-89e9-d51d54d3bab6")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 485.14 365.76 270)
 		(unit 1)
@@ -33796,74 +33382,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 445.77 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4d3533b6-e8c4-4796-8ef3-8c7c381bafae")
-		(property "Reference" "R25"
-			(at 82.55 450.85 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 448.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 445.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 445.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 445.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b9ac2c3f-e17e-43ab-9dc2-73f5abaff837")
-		)
-		(pin "2"
-			(uuid "3fdee3a3-74c4-458d-8319-4b80fb18433a")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 228.6 142.24 0)
 		(unit 1)
@@ -36512,74 +36030,6 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 400.05 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "630bf7e6-a4c0-4889-ab93-0ce72ebb34db")
-		(property "Reference" "R19"
-			(at 82.55 405.13 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 402.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 400.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 400.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 400.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9e8139a-ca7a-4745-9953-6da252eec9ca")
-		)
-		(pin "2"
-			(uuid "94a77613-2aaa-4f72-8738-0d832e3b819f")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -41548,74 +40998,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 392.43 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b81c6d8-165c-4e1d-97e5-5a7bb0b17973")
-		(property "Reference" "R18"
-			(at 82.55 397.51 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 394.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 392.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 392.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 392.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b73719a8-24c5-4db9-b7c7-bfe8f15a65b2")
-		)
-		(pin "2"
-			(uuid "f58f86c3-4c02-468b-8ee4-93a1e358693b")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 544.83 190.5 0)
 		(unit 1)
@@ -42883,74 +42265,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 422.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "808b8e0b-4367-41fd-9062-8ea3d7e2b3d5")
-		(property "Reference" "R22"
-			(at 82.55 427.99 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 425.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 422.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 422.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 422.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "85a3db20-b8fa-4379-9141-1cff88d26972")
-		)
-		(pin "2"
-			(uuid "29751d9d-0663-428d-9a13-4d74d11f0699")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 45.72 142.24 0)
 		(unit 1)
@@ -44098,74 +43412,6 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "JLC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 384.81 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "872b43a4-bc98-4a83-9b91-ca7b440fadb5")
-		(property "Reference" "R17"
-			(at 82.55 389.89 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 387.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 384.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 384.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 384.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4b23c72f-612f-4b41-b6ce-8609f2cf8ac8")
-		)
-		(pin "2"
-			(uuid "68b2fb8d-ebb7-4c5e-aeb0-4e211f27e6fd")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -51798,142 +51044,6 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 430.53 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bbf8777f-deca-4ad4-9731-1eb1e94f67dc")
-		(property "Reference" "R23"
-			(at 82.55 435.61 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 433.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 430.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 430.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 430.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b68323f7-0289-4860-a85e-cc8157d9fcb4")
-		)
-		(pin "2"
-			(uuid "57c99bd7-fd49-46d5-a512-a51f613e3b75")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 407.67 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc64fcf6-6567-4404-b564-3ae91cd81943")
-		(property "Reference" "R20"
-			(at 82.55 412.75 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "33R"
-			(at 82.55 410.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:R_0603_1608Metric"
-			(at 82.55 407.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 407.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Series termination resistor for signal integrity"
-			(at 82.55 407.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ebc0bf18-0c4a-43f4-8184-08b5e20fd840")
-		)
-		(pin "2"
-			(uuid "375a7616-d6b2-4311-9543-98924d776896")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "R20")
 					(unit 1)
 				)
 			)

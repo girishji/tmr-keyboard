@@ -417,3 +417,56 @@ Avoid Routing Over Splits/Voids: Ensure your traces never cross over a split in 
 
 ---
 ---
+Q: do i need series termination resistors on CS (chip select) pins
+
+That's a very good, specific question that deals with the trade-off between signal integrity and design complexity.
+
+**The short answer is: You most likely do not need series termination resistors on the Chip Select (CS) pins for the MCP3208 ADCs on a 30cm trace, but they are highly recommended for the clock (SCK) and data (MOSI/MISO) lines.**
+
+Here is the reasoning based on the function of the pins and the characteristics of the RP2040 and the MCP3208.
+
+---
+
+## 1. The Role of the CS Pin
+
+The Chip Select (CS) pin on the MCP3208 acts as a simple **enable/disable** signal.
+
+* It is asserted (pulled low) **once** at the start of the ADC conversion/read process.
+* It remains asserted for the **entire duration** of the multi-bit SPI transaction.
+* It is deasserted (pulled high) **once** at the end.
+
+Crucially, unlike the SCK and MOSI lines, the CS pin **does not switch at the high frequency** of the SPI clock. It only has a single rising and falling edge for the entire transaction, which typically lasts tens to hundreds of microseconds at the 2MHz speed limit of the MCP3208.
+
+## 2. Why Termination is Less Critical on CS
+
+Series termination resistors are primarily used to manage **reflections** caused by sharp, high-speed signal edges (high-frequency components) on a long trace.
+
+| Signal | Frequency | Function | Termination Need |
+| :--- | :--- | :--- | :--- |
+| **SCK / MOSI** | High (e.g., 1-2 MHz clock speed) | Synchronous Data Transfer | **HIGH:** Required for long traces (30cm) to ensure clean edges. |
+| **CS** | Low (Single state change per transaction) | Chip Enable/Disable | **LOW:** The edges are relatively slow; reflections are less likely to cause timing failure. |
+
+While a 30cm trace is considered a **transmission line** for the fast edge rates of the RP2040's GPIO pins, the occasional, slow transition of the CS signal is far more forgiving than the constant, fast switching of the SCK and MOSI lines.
+
+## ✅ Recommendation: Prioritize SCK and MOSI
+
+Focus your series termination efforts on the lines that carry the high-frequency switching energy:
+
+| Pin | Recommendation (for a 30cm Trace) | Value (Near RP2040) |
+| :--- | :--- | :--- |
+| **SCK** (Clock) | **Strongly Recommended** | $10\Omega$ to $33\Omega$ |
+| **MOSI** (Data) | **Recommended** | $10\Omega$ to $33\Omega$ |
+| **MISO** (Data) | Optional (Less critical as it's an input) | $10\Omega$ to $33\Omega$ (If signal integrity issues occur) |
+| **CS** (Chip Select) | **Optional, but unnecessary** | **SKIP** (or only use for a very slow-rate filter) |
+
+### 💡 Alternative CS Consideration: Pull-Up Resistors
+
+Instead of a series termination resistor, a very common practice for CS lines (especially for active-low enables like the MCP3208's `CS/SHDN` pin) is to use a **pull-up resistor** ($10\text{k}\Omega$ to $100\text{k}\Omega$).
+
+This is not for signal integrity, but for **fail-safe operation**:
+
+* It ensures that all ADCs are reliably **deselected** (`CS` is High) during system power-up or if the RP2040's GPIO pins are floating before being initialized. This prevents the ADCs from accidentally starting conversions due to noise.
+
+**Conclusion:** Save your resistors and board space on the CS lines. Invest them on the **SCK** and **MOSI** lines to ensure the integrity of the synchronous clock and data signals over the 30cm distance.
+
+---
