@@ -1,0 +1,44 @@
+
+2-side soldering of SMTSO nuts:
+
+
+This is a very common challenge when doing double-sided surface mount (SMT) assembly, especially in a reflow oven. The key is to manage the **reflow temperature profile** and the **weight/surface area** of the components.
+
+There are three primary methods to prevent the first side's components from reflowing and falling off when you solder the second side:
+
+### 1. Sequential Reflow with Standard Solder
+
+This is the most common professional approach and relies on the principles of solder surface tension and a slight increase in the solder's remelt temperature.
+
+* **Solder the First Side (Side A):** Apply solder paste, place components, and reflow the first side using a standard reflow profile (e.g., peak temperature of $220^\circ\text{C}$ to $250^\circ\text{C}$ for lead-free solder like SAC305).
+* **Solder the Second Side (Side B):**
+    * Flip the board.
+    * Apply solder paste and place components on the second side.
+    * **Crucial Step:** When running the second reflow cycle, the already-soldered components on Side A are held in place by the **surface tension** of the molten solder joint. The first side's solder joints also have a slightly higher melting/remelt temperature due to the formation of intermetallic compounds (IMCs) during the first reflow.
+    * **Component Management:** Place **smaller and lighter components** on the first side (the side that will be reflowed twice) and heavier/larger components (like your SMT SO-NUT or larger ICs) on the second side (the side reflowed last), or only on the top side. Heavy components may require a dot of **SMT adhesive (red glue)** on the first side to prevent them from falling off during the second reflow.
+
+### 2. Use Different Solder Pastes (Low-Temperature Reflow)
+
+This method provides a larger temperature margin and is excellent for hobbyists or for boards with very sensitive components.
+
+* **Side A (First Reflow):** Use a **higher melting point** solder paste, such as standard **lead-free SAC305** (Melting Point: $217^\circ\text{C}$).
+* **Side B (Second Reflow):** Use a **low-temperature solder paste**, typically a **Tin-Bismuth (SnBi)** alloy (e.g., Sn42/Bi58), which has a significantly lower melting point (around **$138^\circ\text{C}$**).
+* **Process:**
+    1.  Reflow Side A using the high-temp profile (peak $\approx 240^\circ\text{C}$).
+    2.  Reflow Side B using a low-temp profile (peak $\approx 150^\circ\text{C}$). The temperature on the second pass is kept well below the $217^\circ\text{C}$ melting point of the solder on Side A, ensuring those components remain solid and in place.
+
+### 3. Alternative Assembly Methods (For Specific Cases)
+
+* **Hand Soldering:** For very low volumes or components that are easily accessible (like through-hole components or a few difficult SMDs), you can reflow one side and then **hand-solder** the other. This gives you direct control over the heat applied.
+* **High Glass Transition Temperature ($T_g$) PCB Substrate:** For high-volume professional manufacturing, using a higher $T_g$ PCB material helps prevent the board from warping or experiencing layer delamination during the repeated heating cycles.
+
+For your specific issue with the SMT SO-NUT, if you are doing a home reflow:
+
+* **If possible, move the SO-NUT to the side you solder *last* (Side B).**
+* If you must solder it on Side A (the side that goes through two reflows), **use a small dot of SMT adhesive** under the component body before the first reflow to mechanically secure it during the second pass.
+* Consider using the **low-temperature solder paste** method for Side B to avoid getting near the remelt temperature of the components on Side A entirely.
+
+This video provides an excellent visual of the double-sided reflow process and how professional equipment manages the heat: [Manufacturing Double-Sided PCBAs](https://www.youtube.com/watch?v=6SIN15XG77M)
+
+
+http://googleusercontent.com/youtube_content/0

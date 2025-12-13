@@ -13,6 +13,7 @@
 				(size 1 1)
 				(thickness 0.1)
 			)
+			(justify mirror)
 		)
 	)
 	(property "Value" "sw_lowpro_gateron_MDT"

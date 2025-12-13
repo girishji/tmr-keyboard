@@ -247,14 +247,15 @@ def place_leds():
             led.SetPosition(new_pos)
 
 
-def place_mounting_holes():
+def place_mounting_holes(is_pcb):
     """Places mounting holes based on global coordinates."""
     board = pcbnew.GetBoard()
 
     # Place Hs series (Small holes)
-    for i, (x, y) in enumerate(HOLES_SMALL):
-        fp = board.FindFootprintByReference(f"Hs{i+1}")
-        set_position_mm(fp, x, y)
+    if is_pcb:
+        for i, (x, y) in enumerate(HOLES_SMALL):
+            fp = board.FindFootprintByReference(f"Hs{i+1}")
+            set_position_mm(fp, x, y)
 
     # Place H series (Large holes)
     for i, (x, y) in enumerate(HOLES_LARGE):
@@ -262,14 +263,19 @@ def place_mounting_holes():
         set_position_mm(fp, x, y)
 
 
+def place_usb_conn():
+    board = pcbnew.GetBoard()
+    usbfp = board.FindFootprintByReference("USB1")
+    set_position_mm(usbfp, -3.1, 55)
+
+
 def main():
     print(f"Starting placement... Mode: {'PCB' if IS_PCB_MOUNT else 'PLATE'}")
 
     place_switches_and_stabs(IS_PCB_MOUNT)
     place_leds()
-
-    if IS_PCB_MOUNT:
-        place_mounting_holes()
+    place_mounting_holes(IS_PCB_MOUNT)
+    place_usb_conn()
 
     pcbnew.Refresh()
     print("Placement complete.")

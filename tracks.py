@@ -121,11 +121,11 @@ def route_switch(sw_footprint):
         print("Pads not found")
         return
 
-    for pad in pads:
-        name = pad.GetPadName()
-        net = pad.GetNetname()
-        netcode = board.GetNetcodeFromNetname(net)
-        print(f'{name} {net} {netcode}')
+    # for pad in pads:
+    #     name = pad.GetPadName()
+    #     net = pad.GetNetname()
+    #     netcode = board.GetNetcodeFromNetname(net)
+    #     print(f'{name} {net} {netcode}')
 
     deg = sw_footprint.GetOrientationDegrees()
     EPSILON = rotate(VECTOR2I(mm_to_nm(0.1), 0), -deg)  # Very small line segment
