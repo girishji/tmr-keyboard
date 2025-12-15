@@ -1,9 +1,0 @@
-there are 2 options (assuming built-in uf2 support is a must, for easy firmware installs and tweaks).
-
-1) rp2040 -> straightforward, with qmk support. qmk has usb bugs and requires
-   constant reboot (they use chibios monstrosity for usb, instead of built in
-   stack), but it is easy to install and deal with.
-
-2) seeed studio ble sense (with nrf52840). this also comes with uf2 (from
-   adafruit). however there are not enough gpio pins to support adc expanders.
-   for this use sipo like 74HC595 shift register.
