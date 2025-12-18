@@ -1,0 +1,163 @@
+In a high-speed sensor array like yours, "optimization" isn't just about making the code run faster—it’s about **maximizing signal integrity** while **minimizing power-on time.** Since you have 72 sensors and 5 muxes, there are three major hardware/software strategies to optimize:
+
+###1. The "Parallel Output" OptimizationThe nRF54L15 has multiple SAADC (Analog-to-Digital Converter) channels. You have two ways to wire the 5 muxes:
+
+* **The Slow Way (Serial):** Tie all 5 mux outputs to **one** ADC pin. You have to Enable Mux 1, sample, Disable Mux 1, Enable Mux 2, sample, etc. This is slow and requires more GPIOs for Enable lines.
+* **The Optimized Way (Parallel):** Connect each of the 5 mux outputs to its own **dedicated ADC pin** on the nRF54 (e.g., `AIN0` through `AIN4`).
+* **The Benefit:** You can tie all 5 \overline{EN} (Enable) pins to Ground (always on) and all 5 sets of Address pins (A0–A3) together.
+* **The Scan Logic:** You set the 4-bit address once, and **5 sensors are immediately ready to read** on 5 different pins. You just tell the SAADC to scan its internal buffer. This reduces your switching overhead by 5\times.
+
+
+
+---
+
+###2. Settling Time Optimization (RC Constant)The ADG706 has an internal "On-Resistance" (R_{ON}) of about 8\Omega at 2.1V, but it also has **Output Capacitance** (C_{OUT} \approx 40\text{pF}). When you switch an address, the voltage doesn't change instantly.
+
+If you sample too fast, you get "Ghosting" (the reading from the previous sensor bleeds into the current one).
+
+* **Optimization:** You can tune the nRF54 SAADC **Acquisition Time** (t_{acq}).
+* With an 8\Omega mux, the bottleneck isn't the mux—it's the output impedance of your TMR sensors.
+* If your TMR sensor has an output impedance of 10\text{k}\Omega, the time constant \tau is:
+
+
+* To get 12-bit accuracy, you usually need to wait 9 \times \tau. Optimization means calculating this exactly so you aren't waiting too long (wasting battery) or too little (getting bad data).
+
+---
+
+###3. PPI/DPPI Automation (The "Pro" Move)The nRF54L15 features **DPPI (Distributed Programmable Peripheral Interconnect)**. This allows the hardware to talk to itself without the CPU.
+
+* **The Optimization:** You can link a **Timer** to the **SAADC**.
+* The Timer triggers a sample; when the sample is done, it triggers the **PWM or GPIO peripheral** to increment the Mux Address.
+* **The Result:** The CPU can go to sleep. The hardware "autoscans" all 72 sensors into a DMA buffer (EasyDMA) and wakes the CPU only when the entire 72-sensor map is finished. This is the ultimate battery-saving optimization.
+
+---
+
+###Recommended GPIO Mapping for 5 MuxesTo keep the layout clean and the code fast, I suggest this mapping:
+
+| nRF54L15 Pin | Function | Connection |
+| --- | --- | --- |
+| **P0.xx - P0.xy** | **Address Bus** | A0, A1, A2, A3 (Shared by ALL 5 Muxes) |
+| **GND** | **Enable** | \overline{EN} (Tie to GND to keep muxes active during pulse) |
+| **AIN0** | **Mux 1 Out** | Sensors 1–16 |
+| **AIN1** | **Mux 2 Out** | Sensors 17–32 |
+| **AIN2** | **Mux 3 Out** | Sensors 33–48 |
+| **AIN3** | **Mux 4 Out** | Sensors 49–64 |
+| **AIN4** | **Mux 5 Out** | Sensors 65–72 (Pins 9–16 unused) |
+
+###Summary of the "Fastest Scan" Logic:1. **Pulse ON:** Turn on TPS22902 (Wait ~150µs for TMRs to stabilize).
+2. **Loop (1 to 16):**
+* Set GPIO Address (0–15).
+* Trigger SAADC sequence (Samples AIN0, 1, 2, 3, 4).
+
+
+3. **Pulse OFF:** Turn off TPS22902.
+4. **Process:** You now have an array of 72 values in RAM.
+
+**Would you like me to draft the C code using the nRF Connect SDK (NCS) to set up this automated SAADC scan?**
+
+To implement this scan on the **nRF54L15**, we will use the **Zephyr ADC API** within the nRF Connect SDK (NCS). This approach uses **EasyDMA**, meaning the ADC will dump the sensor values directly into your RAM without the CPU needing to "ask" for every bit.
+
+###1. The Devicetree Overlay (`app.overlay`)First, we must tell the hardware which pins are the ADC inputs and which are the Mux controls.
+
+```dts
+/ {
+    /* Define GPIOs for Mux Address and Load Switch */
+    zephyr,user {
+        mux-addr-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>, /* A0 */
+                         <&gpio0 5 GPIO_ACTIVE_HIGH>, /* A1 */
+                         <&gpio0 6 GPIO_ACTIVE_HIGH>, /* A2 */
+                         <&gpio0 7 GPIO_ACTIVE_HIGH>; /* A3 */
+        
+        load-sw-en-gpio = <&gpio0 8 GPIO_ACTIVE_HIGH>; /* TPS22902 ON */
+    };
+};
+
+&adc {
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	/* Define 5 channels for the 5 Mux outputs */
+	channel@0 { reg = <0>; zephyr,gain = "ADC_GAIN_1_6"; zephyr,reference = "ADC_REF_INTERNAL"; zephyr,acquisition-time = <ADC_ACQ_TIME(10)>; zephyr,input-positive = "SAADC_CH_PSEL_PSEL_AnalogInput0"; };
+	channel@1 { reg = <1>; zephyr,gain = "ADC_GAIN_1_6"; zephyr,reference = "ADC_REF_INTERNAL"; zephyr,acquisition-time = <ADC_ACQ_TIME(10)>; zephyr,input-positive = "SAADC_CH_PSEL_PSEL_AnalogInput1"; };
+	channel@2 { reg = <2>; zephyr,gain = "ADC_GAIN_1_6"; zephyr,reference = "ADC_REF_INTERNAL"; zephyr,acquisition-time = <ADC_ACQ_TIME(10)>; zephyr,input-positive = "SAADC_CH_PSEL_PSEL_AnalogInput2"; };
+	channel@3 { reg = <3>; zephyr,gain = "ADC_GAIN_1_6"; zephyr,reference = "ADC_REF_INTERNAL"; zephyr,acquisition-time = <ADC_ACQ_TIME(10)>; zephyr,input-positive = "SAADC_CH_PSEL_PSEL_AnalogInput3"; };
+	channel@4 { reg = <4>; zephyr,gain = "ADC_GAIN_1_6"; zephyr,reference = "ADC_REF_INTERNAL"; zephyr,acquisition-time = <ADC_ACQ_TIME(10)>; zephyr,input-positive = "SAADC_CH_PSEL_PSEL_AnalogInput4"; };
+};
+
+```
+
+---
+
+###2. The C Code (`main.c`)This code handles the timing: turning on the power, iterating the addresses, and collecting the data.
+
+```c
+#include <zephyr/kernel.h>
+#include <zephyr/drivers/gpio.h>
+#include <zephyr/drivers/adc.h>
+
+/* Setup Buffer: 16 address steps * 5 channels = 80 samples */
+static int16_t sample_buffer[80];
+
+/* Mux Logic: Sets A0-A3 pins based on 0-15 value */
+void set_mux_address(const struct gpio_dt_spec *pins, uint8_t address) {
+    for (int i = 0; i < 4; i++) {
+        gpio_pin_set_dt(&pins[i], (address >> i) & 0x01);
+    }
+}
+
+void scan_all_sensors(const struct device *adc_dev, const struct gpio_dt_spec *addr_pins, const struct gpio_dt_spec *pwr_pin) {
+    /* 1. Turn on Sensors */
+    gpio_pin_set_dt(pwr_pin, 1);
+    k_busy_wait(200); // Wait for TMR sensors + TPS22902 to stabilize
+
+    /* 2. Setup ADC sequence for 5 channels */
+    struct adc_sequence sequence = {
+        .channels    = BIT(0) | BIT(1) | BIT(2) | BIT(3) | BIT(4),
+        .buffer      = NULL, // Updated in loop
+        .buffer_size = 5 * sizeof(int16_t),
+        .resolution  = 12,
+    };
+
+    /* 3. Loop through the 16 Mux states */
+    for (uint8_t i = 0; i < 16; i++) {
+        set_mux_address(addr_pins, i);
+        k_busy_wait(10); // Short delay for Mux settling
+
+        // Point ADC to the specific section of our 80-sample array
+        sequence.buffer = &sample_buffer[i * 5];
+        adc_read(adc_dev, &sequence);
+    }
+
+    /* 4. Power Down to save battery */
+    gpio_pin_set_dt(pwr_pin, 0);
+}
+
+```
+
+---
+
+###3. Key Optimizations used in this Draft* **12-bit Resolution:** This gives you 4096 steps of sensitivity, which is vital for detecting small magnetic changes in TMR sensors.
+* **EasyDMA Alignment:** By using a single `sample_buffer`, the nRF54's DMA engine offloads the memory writing, keeping the CPU free for other tasks.
+* **Stabilization Wait:** The `k_busy_wait(200)` is the most important line for your "all-on" strategy. It ensures the sensors have moved past their power-on reset state before you take the first reading.
+* **Internal Reference:** I set the ADC to use the internal reference (0.6\text{V} with 1/6 gain), which makes your readings independent of battery voltage fluctuations.
+
+###4. How to make this even faster (The "Pro" Level)If you find that the CPU is spending too much time in this loop, you can move to **`nrfx_saadc`** drivers with **PPI/DPPI**.
+
+In that setup:
+
+1. **Timer** triggers ADC start.
+2. **ADC End** triggers **GPIO Task** (Mux increment).
+3. **Entire scan happens in the background** while your code does other things.
+
+**Would you like me to refine the `k_busy_wait` timing based on the specific stabilization time of your TMR sensor model?**
+
+----
+
+###2. The "Timing Window" OptimizationBecause your TMR sensors need **100$\mu$s** to stabilize, your software sequence should look like this to ensure the Mux is ready and the sensors are settled:
+
+1. **T = 0\mu\text{s}:** Set TPS22902 `ON` pin to **HIGH**.
+2. **T = 5\mu\text{s}:** Set your **Mux Address** (A0-A3) to `0`. (Since `EN` is tied to V_{DD}, the Mux will be ready the moment the power rail reaches ~1.1V).
+3. **T = 100\mu\text{s}:** The TMR sensors are now stable.
+4. **T = 105\mu\text{s}:** Trigger the **ADC** to read the first set of 5 sensors.
+

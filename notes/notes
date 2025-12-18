@@ -5,6 +5,37 @@ springs are light
 ----------------------------------------------------------------------
 todo:
 
+- Complete minimal USB-C power wiring summary
+Pin	Connection
+A9, B9	Tie together → nPM1100 VBUS
+GND pins	All tied → GND
+CC1	5.1 kΩ → GND
+CC2	5.1 kΩ → GND
+D+/D−	NC (or ESD only)
+
+Why USB-C requires CC pins
+A USB-C source will not turn on VBUS unless it sees:
+A valid Rd on CC1 or CC2
+A 2-pin connector:
+Has no CC pins
+So a compliant charger may never provide power
+(Some “dumb” chargers always supply 5 V, but this is unreliable.)
+
+| Function            | N-FET (low-side)            | P-FET (high-side)          |
+| ------------------- | --------------------------- | -------------------------- |
+| Switch location     | Ground side                 | Positive side              |
+| Source connected to | GND                         | +V                         |
+| Gate turns ON when  | HIGH                        | LOW                        |
+| Current path        | Load → Drain → Source → GND | +V → Source → Drain → Load |
+| Control simplicity  | Very simple                 | Simple (logic-level OK)    |
+
+- The Check: Ensure your MCU’s ADC pins are not configured with internal pull-ups. If they are, current will leak from the MCU into the unpowered TMR sensors, wasting battery and potentially giving you false readings when you switch banks.
+
+- hard shutdown IS31FL3731 (SDB pin low), otherwise it uses >2mA even when LEDs
+  are off (for better sleep current use LP5864 chip (supports 18x4=72 leds), but
+  has higher min voltage requirements than IS31FL3731. However I2C needs to be
+  reinitialized (after a brief delay after turning on SDB pin) by calling
+  is31fl3731_init(). If you don't like this complication, use LP5864.
 - get parts, try spi (adjusting clock if necessary)
 https://www.tme.eu/pl/details/cx90m-16p_c/zlacza-usb-i-ieee1394/hirose/cx90m-16p/
 https://www.tme.eu/pl/details/ubc-ra-tf/zlacza-usb-i-ieee1394/jst/ubc-ra-tf-hf/
@@ -30,6 +61,13 @@ https://www.tme.eu/pl/details/usb4510-03-1-a/zlacza-usb-i-ieee1394/gct/
 - https://www.youtube.com/watch?v=JxzSpaMoQR0: since there is no force on pcb if
   you use 1.5mm spacer (or 1.5mm smtso), you can either use smtso on plate (made
   of fr4) or on pcb.
+- get red or orange leds. have low forward voltage. needed as battery drops:
+LED Color,Typical Forward Voltage (VF​),Chemistry/Wavelength,Power Efficiency & Battery Life Impact
+Red,1.8V – 2.2V,AlInGaP (Long Wavelength),Lowest VF​. Easiest on the battery and your power supply.
+Orange/Yellow,2.0V – 2.4V,AlInGaP,"Very good, almost as low as Red."
+Green,2.8V – 3.5V,AlInGaP/InGaN,High VF​. Can struggle when the LiFePO4​ battery dips to 3.0V.
+Blue,3.0V – 3.7V,InGaN (Short Wavelength),High VF​. Requires a boost regulator (or a fully charged battery) to drive.
+White/RGB,3.0V – 3.7V,Blue LED + Phosphor,Same high VF​ as Blue. Requires the most power.
 
 ----------------------------------------------------------------------
 

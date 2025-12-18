@@ -1,0 +1,24 @@
+### 2. The Nut and ABS Thickness
+
+You have a **3mm thick ABS bottom** and a **2mm tall M2 nut**.
+
+* **The Problem (The "Punch-Through"):** When you heat-insert a 2mm nut into a 3mm wall, you only have **1mm of plastic** remaining at the bottom of the hole. ABS is a soft thermoplastic; if you apply too much heat or pressure during installation, the nut can easily "punch through" or cause a visible bulge (witness mark) on the exterior of your CNC case.
+* **The Solution:** * **Pre-drill Depth:** Ensure your CNC hole is exactly 2.1mm or 2.2mm deep, leaving that 0.8mm–0.9mm "floor" intact.
+* **Low Heat:** Set your soldering iron to about **250°C** for ABS.
+* **Counter-Bore:** If possible, insert the nut from the **bottom** ("pull-style"). This way, when you tighten the screw, you are pulling the nut *into* the case rather than pulling it *out* of the plastic.
+
+Layer,Detail
+Screw Head,M2 Button Head (Stainless Steel)
+Plate,1.3mm Thick (to match Gateron spec)
+Spacer,1.3mm Nylon Washer (Critical for Magnetic sensor height)
+PCB,Hall Effect PCB
+Case Floor,CNC machined ABS
+Nut Location,Heat-inserted from the bottom of the case.
+
+---
+
+https://www.youtube.com/watch?v=KC1LLU54DKU
+
+make your own tip
+
+---

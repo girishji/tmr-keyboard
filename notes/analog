@@ -1,3 +1,55 @@
+Q: I have 30cm analog traces coming from tmr sensor to the nrf54l15 mcu, which can read 8 analog ADC inputs at a time (8 adc pins). i am thinking of simply wiring each sensor oujtput (from a bank) directly into the adc pin of mcu. this way i will combine analog output of 9 sensors (one from each bank) into one pin of mcu. but only one bank will be powered at a time. there is also a .1nF decoupling capacitor at each Vout (out pin) of tmr sensor. will my design work?
+
+grok:
+Your proposed design of tying the analog outputs from one sensor in each of the 9 banks to a single MCU ADC pin (resulting in 8 ADC pins handling all 72 sensors, with only one bank powered at a time) has some merits for simplicity and pin efficiency, but it likely won't work reliably. Here's a breakdown of why, based on the TMR2617S-AAC's characteristics and general analog design principles:
+
+### Key Issues
+1. **ESD Protection Diode Clamping in Unpowered Sensors**:
+   - The TMR2617S-AAC includes ESD protection (rated at ±4000 V HBM), which typically consists of internal diodes connected between the output pin (V_OUT) and the supply pins (V_CC and GND). This is standard for most ICs to guard against electrostatic discharge.
+   - When a bank is powered off (V_CC disconnected and potentially pulled to GND via your load switch's discharge feature), the unpowered sensors' V_CC is at 0 V. If the active sensor drives the shared line to its typical output voltage (around 50% of V_CC, or ~1.5 V at 3 V supply, depending on your programmed offset), this voltage exceeds V_CC_unpowered + 0.7 V (~0.7 V threshold).
+   - This forward-biases the ESD diodes in the 8 unpowered sensors per ADC line, causing them to conduct current from the shared line to their grounded V_CC rails. The active sensor's output op-amp must then source this extra current to maintain the voltage.
+   - Problems this causes:
+     - **Signal Distortion**: The TMR2617's output drive is limited (absolute max ±1.5 mA, and it can only reliably drive loads ≥10 kΩ). With 8 unpowered sensors sinking current (potentially hundreds of μA each, depending on diode characteristics), the line voltage will sag significantly—possibly clamping near ~0.7–1 V instead of the intended 1.5 V offset. This ruins accuracy, especially since the sensor's linearity and sensitivity (programmable up to 3.6 mV/V/Gs) rely on clean analog levels.
+     - **Potential Damage**: ESD diodes aren't designed for continuous current (only brief ESD events). Prolonged operation could overheat or degrade them, leading to sensor failure over time.
+   - This is a common pitfall in "power-multiplexed" analog setups, as confirmed in various engineering resources discussing ESD diode feedback and overvoltage conduction in unpowered devices.
+
+2. **Output Impedance and Drive Limitations**:
+   - The sensor's integrated op-amp has unspecified output impedance but is spec'd for ≥10 kΩ loads and ≤10 nF capacitive loads. Your setup adds parallel capacitance (9 × 0.1 nF = 0.9 nF per line, plus trace capacitance) and the dynamic load from unpowered diodes, which could exceed this and cause instability or slow settling during your 100 μs power-on window.
+   - The power-on time for the sensor is <100 μs, which fits your timing, but any loading could extend settling, affecting ADC readings.
+
+3. **Trace Length and Noise**:
+   - 30 cm analog traces are relatively long for sensitive signals (50 kHz bandwidth on the sensor). They can act as antennas, picking up EMI, crosstalk from adjacent traces, or noise from the power switching (e.g., transients during bank on/off).
+   - The 0.1 nF caps at each V_OUT help filter high-frequency noise but won't mitigate low-frequency issues or the ESD clamping. Long traces also add inductance/resistance (~0.1–1 Ω, depending on trace width), which could further distort signals under load.
+
+4. **MCU ADC Compatibility**:
+   - The nRF54L15's ADC supports up to 8 channels with resolutions/speeds like 14-bit at 31.25 ksps, 12-bit at 250 ksps, or 10-bit at 2 Msps. Sampling 8 channels in 100 μs is feasible (e.g., at 12-bit/250 ksps, you could sample each in ~4 μs, leaving margin for settling).
+   - Input impedance is high (typically >1 MΩ for SAADC in Nordic devices), so it won't load the sensors much. However, if the shared line is distorted by the above issues, readings will be inaccurate anyway.
+
+### Will It Work At All?
+- In theory, if the ESD diodes sink minimal current and the active op-amp can compensate, you might get rough readings—but expect high error (e.g., 10–50% offset shifts) and unreliability. Testing on a prototype might show it "kinda works" at room temp/low fields, but it would fail under variation (temperature affects diode Vf, magnetic fields change output voltage).
+- No, this isn't a robust design for production or precise measurements.
+
+### Recommendations to Fix It
+- **Use Analog Multiplexers**: Instead of tying outputs directly, add a 9:1 analog mux (e.g., ADG709 or TS3A24159) per ADC pin. Power all sensors continuously (or per bank), but use the mux to select which bank's outputs connect to the ADC. Control the mux with GPIOs synced to your bank sequencing. This isolates unpowered/powered issues and adds no distortion (low R_ON ~5–10 Ω, low leakage <1 nA).
+  - Cost: ~$1–2 per mux IC; you'd need 8 (one per channel).
+  - If powering banks sequentially, mux after the sensors but before the shared line.
+- **Alternative: Series Isolation**:
+  - Add a small series resistor (100–1k Ω) per sensor output to limit current, but this adds voltage drop/error/noise.
+  - Or use Schottky diodes in series (low Vf ~0.2 V), but they introduce non-linearity and temp dependence—not ideal for precision analog.
+- **Mitigate Traces**: Use shielded cable or twisted pairs for the 30 cm runs. Ground shields at the MCU end. Add larger output caps if needed, but test for settling.
+- **Test and Validate**: Prototype with a scope on the shared line during switching. Measure voltage droop, settling time, and current draw. Check for sensor heating or degradation after hours of operation.
+- **Power Supply**: Ensure your nPM1100 and load switches (e.g., TPS22932B) handle the transients without droop affecting the active bank.
+
+If you provide more details (e.g., exact sensor programming, trace layout, or acceptable error margin), I can refine this further.
+
+
+
+---
+---
+
+
+
+
 - comparator no good
 - do not use GPIO to power the sensors
 - use pull-down resistors so do not leave pin floating when TMR is off

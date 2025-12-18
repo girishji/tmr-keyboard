@@ -1,0 +1,293 @@
+Q: is LDO enough? or is buck converter needed (ref: npm1100)
+
+Short answer: **Yes — an LDO is very likely enough**, and in your specific case it may actually be the **better** choice than the nPM1100 buck.
+
+Let’s walk through it quantitatively and then give a clear recommendation.
+
+---
+
+## Your load profile (what really matters)
+
+* **9 × TMR sensors**
+* Each sensor: **300 µA**
+* Worst-case when all on at once:
+  👉 **9 × 300 µA = 2.7 mA**
+* Duty cycling: “momentarily every 10 ms”
+  Even if they’re on for a short window, this is still *very* small.
+
+### nRF54L15 current (typical BLE use)
+
+* RX/TX peaks: ~10–15 mA (short bursts)
+* CPU active: a few mA
+* Sleep: µA or sub-µA
+
+### Combined worst-case instantaneous current
+
+Even being conservative:
+
+* MCU TX peak: ~15 mA
+* Sensors: ~2.7 mA
+* **Total ≈ 18 mA**
+
+👉 This is **well within LDO capability** and *far* below nPM1100 buck limits.
+
+---
+
+## Efficiency comparison: Buck vs LDO (important insight)
+
+### If you use an LDO from Li-ion (4.2 V → 3.0 V)
+
+* Efficiency ≈ **3.0 / 4.2 ≈ 71%**
+* But current is only ~10–20 mA during peaks
+* Average current is likely **< 1 mA**
+
+➡️ Power lost in the LDO is **tiny** (tens of mW at most, usually much less)
+
+### Buck advantage only shows when:
+
+* Load current is higher
+* System stays active longer
+* Current draw is sustained
+
+Your system is:
+
+* Bursty
+* Low average current
+* Mostly sleeping
+
+➡️ Buck efficiency gains will be **minimal in practice**
+
+---
+
+## Noise & simplicity (where LDO wins)
+
+### Advantages of LDO in your design
+
+* **Zero switching noise** → cleaner ADC / sensors
+* **Simpler PCB layout**
+* Fewer passives (no inductor)
+* Easier EMI compliance
+* No minimum load concerns
+
+### Buck disadvantages here
+
+* Switching noise near sensitive TMR sensors
+* Layout sensitivity
+* Higher BOM & area
+* Efficiency advantage mostly unused
+
+---
+
+## Battery life impact (real-world)
+
+Let’s say:
+
+* Average system current: **0.8 mA**
+* LDO loss at 4.2 → 3.0 V: ~0.3 mA equivalent loss
+* On a 200 mAh battery:
+
+**Battery life difference between LDO and buck**
+👉 typically **only a few percent** in this profile
+
+Not worth the added complexity unless you’re optimizing extremely hard.
+
+---
+
+## Clear recommendation ✅
+
+**Use an LDO** if:
+
+* Total peak current < ~30 mA (✔ true)
+* Average current < a few mA (✔ true)
+* Sensors are sensitive / analog (✔ likely)
+* You want simplicity and robustness (✔)
+
+### Suggested architecture
+
+```
+Li-ion battery
+   ↓
+Low-IQ LDO (3.0 V or 2.8 V)
+   ↓
+nRF54L15 + TMR sensors
+```
+
+Optionally:
+
+* Separate LDO or RC filter for sensor rail if they’re very noise-sensitive.
+
+---
+
+## When you *would* want the buck instead
+
+* Add display / GNSS / motor
+* Continuous >20–30 mA draw
+* Need >90% efficiency during long active periods
+* Larger battery where thermal dissipation matters
+
+---
+
+
+----
+----
+
+Q:
+is it worth adding % battery indicator with this setup (npm1100)
+
+**Short answer:**
+👉 **No — it’s usually *not* worth adding a true “% battery” indicator with an nPM1100-based setup.**
+But a **coarse battery level (bars / low-battery warning)** *is* worth it.
+
+Let me explain why, and what *does* make sense for your design.
+
+---
+
+## Why % battery is not worth it here
+
+### 1️⃣ nPM1100 has **no fuel gauge**
+
+* No coulomb counting
+* No current measurement
+* No state-of-charge (SoC) estimation
+
+So:
+
+* Any “%” would be **voltage-based**
+* Voltage-based % on Li-Po is **inherently inaccurate** (especially mid-range)
+
+You’d spend time tuning tables and still be wrong ±15–30%.
+
+---
+
+### 2️⃣ Your load profile makes voltage % worse
+
+Your system has:
+
+* BLE TX current spikes
+* 9 pulsed sensors every 10 ms
+* Very low average current
+
+This causes:
+
+* Voltage sag + recovery
+* Flat discharge curve between ~30–80%
+
+Result:
+
+> Two batteries at **3.7 V** can differ by **hundreds of mAh**
+
+So a precise “47%” readout is misleading.
+
+---
+
+### 3️⃣ User value is low
+
+From a user’s perspective:
+
+* “Charging / Not charging” → useful
+* “Low battery” → useful
+* “63%” → **not actionable** and often wrong
+
+Many consumer devices deliberately **hide %** for this reason.
+
+---
+
+## What *is* worth doing instead ✅
+
+### 🥇 Best practice for your setup
+
+**Use a 3-level or 4-level battery indication**
+
+Example:
+
+* **Normal** (>3.8 V)
+* **Medium** (3.8–3.6 V)
+* **Low** (3.6–3.4 V)
+* **Critical** (<3.4 V)
+
+This is:
+
+* Honest
+* Robust
+* Easy to implement
+* Good UX
+
+---
+
+### 🥈 How to implement it (simple)
+
+1. Measure **VBAT only when idle**
+2. Average multiple samples
+3. Map voltage to levels (not %)
+4. Apply hysteresis (±50–100 mV)
+
+No extra ICs needed.
+
+---
+
+### Example mapping (practical)
+
+| Battery Voltage (rested) | Level    |
+| ------------------------ | -------- |
+| > 3.90 V                 | Full     |
+| 3.90 – 3.70 V            | Medium   |
+| 3.70 – 3.55 V            | Low      |
+| < 3.55 V                 | Critical |
+
+(These values work well for Li-Po under light load.)
+
+---
+
+## When % battery *is* worth it
+
+Add real % only if:
+
+* Product is user-facing with a screen
+* Battery life claims matter
+* You can add:
+
+  * Fuel gauge IC, or
+  * PMIC with coulomb counting (e.g. nPM1300)
+
+Otherwise, it’s unnecessary complexity.
+
+---
+
+## Recommended UX for your product
+
+Given your setup:
+
+* nPM1100
+* LDO
+* BLE device
+* No display
+
+✔ **Single charge LED** (PMIC-driven)
+✔ **Low battery warning** (BLE or LED blink)
+✔ **Coarse battery level** (optional, via BLE)
+❌ **Exact % indicator**
+
+---
+
+## Bottom line
+
+> **With nPM1100, a % battery indicator is mostly fake precision.**
+
+Use:
+
+* **Charge LED** for charging
+* **Voltage thresholds** for battery health
+* **Low-battery warning** for UX
+
+Skip:
+
+* “Exact %” unless you add a fuel gauge
+
+If you want, I can:
+
+* Design a **robust battery-level algorithm**
+* Suggest **exact voltage thresholds**
+* Help you decide if upgrading to **nPM1300** ever makes sense
+
+Just tell me.
+
