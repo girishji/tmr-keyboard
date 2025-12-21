@@ -7,7 +7,7 @@
 	(tags "SOT TO_SOT_SMD")
 	(property "Reference" "REF**"
 		(at -0.2 2.5 0)
-		(layer "F.SilkS")
+		(layer "B.Fab")
 		(uuid "423a65fa-ad88-4b07-aa0e-e605d175f312")
 		(effects
 			(font

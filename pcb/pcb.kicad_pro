@@ -498,7 +498,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1524,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -515,74 +515,29 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.5,
+        "bus_width": 12,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
+        "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Analog",
+        "name": "All Nets",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.1524,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "IC",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.35,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "LEDs",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.35,
-        "wire_width": 6
-      },
-      {
-        "clearance": 0.1524,
+        "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Power_3V3",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "SPI",
+        "name": "Analog",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -591,38 +546,18 @@
         "via_drill": 0.3
       },
       {
-        "bus_width": 12,
-        "clearance": 0.1524,
-        "diff_pair_gap": 0.1524,
-        "diff_pair_width": 0.73,
-        "line_style": 0,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "USB_DP_1p2",
+        "name": "PowerRegulated",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.1524,
-        "diff_pair_gap": 0.1524,
-        "diff_pair_width": 0.77,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "USB_DP_1p6",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
+        "track_width": 0.3,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -632,132 +567,12 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "IC",
-        "pattern": "/AD"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/C_FLT"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/QSPI_SCLK"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/QSPI_SD0"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/QSPI_SD1"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/QSPI_SD2"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/QSPI_SD3"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/QSPI_SS"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/RUN"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/R_EXT"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/SWCLK"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/SWD"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/XIN"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/XOUT"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/~{INTB}"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/~{SDB}"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "/~{USB_BOOT}"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "SCL"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "SDA"
-      },
-      {
-        "netclass": "USB_DP_1p2",
-        "pattern": "/USB_D+"
-      },
-      {
-        "netclass": "USB_DP_1p2",
-        "pattern": "/USB_D-"
-      },
-      {
         "netclass": "Analog",
         "pattern": "ANA_*"
       },
       {
-        "netclass": "LEDs",
-        "pattern": "CA*"
-      },
-      {
-        "netclass": "LEDs",
-        "pattern": "CB*"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "D+"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "GPIO*"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "MISO"
-      },
-      {
-        "netclass": "SPI",
-        "pattern": "MOSI"
-      },
-      {
-        "netclass": "SPI",
-        "pattern": "CS_*"
-      },
-      {
-        "netclass": "SPI",
-        "pattern": "SCK"
-      },
-      {
-        "netclass": "IC",
-        "pattern": "D-"
-      },
-      {
-        "netclass": "Power_3V3",
-        "pattern": "+3V3"
+        "netclass": "PowerRegulated",
+        "pattern": "+2V1"
       }
     ]
   },
@@ -894,356 +709,580 @@
       "Root"
     ],
     [
-      "a4f1037d-0f7b-417e-92dc-c685a326ced9",
-      "Switch59"
+      "97823941-b9cb-415d-bb26-30ac1bdda4fc",
+      "Switch1"
     ],
     [
-      "0d555cd3-7fd5-4e18-a2c9-6e0799ec0555",
-      "Switch60"
+      "e32ccde8-1997-43f2-9920-33bfa5fd2c7d",
+      "Switch2"
     ],
     [
-      "e21841d6-63bc-4bc0-a917-875efa74975a",
-      "Switch61"
+      "0057b1f5-e1b2-4f54-9d84-3bdde3b87fc1",
+      "Switch3"
     ],
     [
-      "9314357f-b7a7-49ff-9d66-6ff7b552450b",
-      "Switch62"
+      "498c0c4f-ff4b-4a9e-a55f-c01d74a5dd42",
+      "Switch4"
     ],
     [
-      "12409a41-1ad4-4fa0-bc1a-a2fea2cfea5d",
-      "Switch63"
+      "9db34f52-2365-49cc-be22-662275fc14b2",
+      "Switch5"
     ],
     [
-      "58380010-05e7-4b63-bdb7-861d27af9c43",
-      "Switch64"
+      "dbe3449f-2e4f-4a43-bed2-6d31b16b77ea",
+      "Switch6"
     ],
     [
-      "95b1f89c-6613-4cbf-ba2a-2e4c645ea800",
-      "Switch65"
+      "511e1831-5d14-4fe3-ad9d-335896c83bc6",
+      "Switch7"
     ],
     [
-      "6f500253-ba8f-4f02-8ced-761dd1d61f9b",
-      "Switch66"
+      "e9c63768-80bb-466b-9da0-df5fcf1ffd92",
+      "Switch8"
     ],
     [
-      "e0d2a801-f3e5-4284-9a85-55083f336177",
-      "Switch67"
+      "34dd933e-3bbe-4cfa-9a02-5b2a143c255e",
+      "Switch9"
     ],
     [
-      "8d50fcee-e865-4ea5-a3c3-d6a78b14f041",
-      "Switch68"
+      "38ab7c32-475c-4927-a998-d3ff68e9b394",
+      "Switch10"
     ],
     [
-      "f896facf-7be3-49d9-8c49-db238825a530",
-      "Switch69"
+      "e2778e0f-2ebd-4845-bc1f-93dfbc18a08b",
+      "Switch11"
     ],
     [
-      "dbc184e9-f402-4bde-82fa-2f6c168920b8",
-      "Switch70"
+      "411d416e-7c52-4437-afa4-848d35b13a0b",
+      "Switch12"
     ],
     [
-      "d7aaff37-87e5-4848-a797-41c4aa1d56a4",
-      "Switch71"
+      "abd44aaa-735a-4178-a1d3-29b478b67cac",
+      "Switch13"
     ],
     [
-      "db2863c4-b196-447e-b813-f82157591db6",
-      "Switch72"
+      "a1dc11d3-4413-4c83-afb7-5b439b5a364d",
+      "Switch14"
     ],
     [
-      "531d2be2-f1c6-4568-b86d-0b1122ff1872",
-      "Switch73"
+      "29d8902b-ff06-4bf0-9ab3-48b4a685e826",
+      "Switch15"
+    ],
+    [
+      "6b10b08e-eaad-4636-9cd8-7b648952cd7b",
+      "Switch16"
+    ],
+    [
+      "57531fbb-3dde-4bf5-86df-7c9bb5ee1cab",
+      "Switch17"
+    ],
+    [
+      "943d5d7a-bc27-4e52-84f0-7e8b462b72a0",
+      "Switch18"
+    ],
+    [
+      "ccfdffdf-d24c-4c82-95ae-3a256448f403",
+      "Switch19"
+    ],
+    [
+      "d4afc822-f214-4af0-82ca-620358c9dd15",
+      "Switch20"
+    ],
+    [
+      "59d8ba6d-1653-4e54-95c1-ded7fbffbfea",
+      "Switch21"
+    ],
+    [
+      "e70a0cab-046f-4966-ab83-ebbc3e110f05",
+      "Switch22"
+    ],
+    [
+      "ac3a5c13-03c7-46a2-b71f-3ac76007ae9e",
+      "Switch23"
+    ],
+    [
+      "3591a0ec-e1b3-4e7f-8e40-529dbecd461e",
+      "Switch24"
+    ],
+    [
+      "f3ffd67d-89a9-41d2-9ac5-f50d179f2fc3",
+      "Switch25"
+    ],
+    [
+      "62a287dc-7712-4424-a5f2-8d5b21716f2c",
+      "Switch26"
+    ],
+    [
+      "1e8cc25e-06f0-4aff-957a-b1397efd0093",
+      "Switch27"
+    ],
+    [
+      "36838286-1ddd-41e3-8288-41d8ae930e3f",
+      "Switch28"
+    ],
+    [
+      "f01a2b6a-d85f-4e4e-95ef-e896b47ab8d9",
+      "Switch29"
     ],
     [
       "9d62fd32-e08d-47f4-91da-5c4d147cb52c",
       "LED1"
     ],
     [
-      "97823941-b9cb-415d-bb26-30ac1bdda4fc",
+      "100137d1-7552-45d0-a503-73136326866c",
+      "Switch30"
+    ],
+    [
+      "6d22e048-4fea-4e17-9f6a-87adb41dcea5",
+      "Switch31"
+    ],
+    [
+      "c3c7a0f6-2bd1-414b-9167-eb8df395ee40",
+      "Switch32"
+    ],
+    [
+      "643af8ea-7b77-4e32-a284-bf52c3bafbeb",
+      "Switch33"
+    ],
+    [
+      "f233585f-8f37-45bc-9f9e-29bd30b03722",
+      "Switch34"
+    ],
+    [
+      "0d390910-c8e0-439c-ada7-ffe7fbbc9284",
+      "Switch35"
+    ],
+    [
+      "1563712b-c120-4353-8327-29be2fb09d4f",
+      "Switch36"
+    ],
+    [
+      "8b0fabc6-f8b0-4961-a808-a3023a6c29be",
+      "Switch37"
+    ],
+    [
+      "359263b2-1649-4cb9-b9a4-6a1141139ada",
+      "Switch38"
+    ],
+    [
+      "18d88e40-bd7e-4ae3-881f-6af5a316e591",
+      "Switch39"
+    ],
+    [
+      "dcfbaa93-9e3c-4509-b843-e3f1cbf64578",
+      "Switch40"
+    ],
+    [
+      "89905925-76c9-4158-8c3e-5f8f2ef7aea4",
+      "Switch41"
+    ],
+    [
+      "1c1943d2-5cbc-40da-9a34-9b5e01c7b303",
+      "Switch42"
+    ],
+    [
+      "1c75ba25-ceb2-4906-88f8-a512fdf80fb6",
+      "Switch43"
+    ],
+    [
+      "24b66e15-02d4-483a-8afe-e94ac2050830",
+      "Switch44"
+    ],
+    [
+      "360ca9e6-4d5d-4236-b397-b518d945ae23",
+      "Switch45"
+    ],
+    [
+      "d7c22de9-4e6f-4945-8826-0bcba630bf1d",
+      "Switch46"
+    ],
+    [
+      "95b0cfd1-e5cf-4096-88bc-d767dd9be9d9",
+      "Switch47"
+    ],
+    [
+      "7b136aa3-b262-4696-bb97-3b426760340c",
+      "Switch48"
+    ],
+    [
+      "83e28bfd-5034-4e87-8e4c-9975053d9f2b",
+      "Switch49"
+    ],
+    [
+      "aaa714d9-8276-45ba-9976-3c31b60641ec",
+      "Switch50"
+    ],
+    [
+      "1e65d0c8-76c8-4f61-b1ad-d5c249edf576",
+      "Switch51"
+    ],
+    [
+      "ae7a5630-bf45-444b-963a-ed90ff025efa",
+      "Switch52"
+    ],
+    [
+      "7ffe388b-f064-4d2f-9b38-98fb7b6b9359",
+      "Switch53"
+    ],
+    [
+      "0fa2e320-0220-464f-931c-c74815c8d92c",
+      "Switch54"
+    ],
+    [
+      "5611441a-bd74-4ec7-a5f3-c7d6c68ea6f3",
+      "Switch55"
+    ],
+    [
+      "2b7ed1bc-2c37-4832-bbae-2a2e96f089e1",
+      "Switch56"
+    ],
+    [
+      "8e0e95f1-76bc-48be-83c4-28d116eace43",
+      "Switch57"
+    ],
+    [
+      "8111c7b0-5471-4bb1-b08c-ef974d38d136",
       "Switch58"
     ],
     [
-      "4c218695-7e06-4e52-a040-2a134a6eacab",
+      "757d490f-11fd-49a5-9cb3-02e97f139fc6",
+      "Switch59"
+    ],
+    [
+      "be0b4fa5-0ede-4a00-8d2f-0559aee13374",
       "LED2"
     ],
     [
-      "e60bcf6e-1f58-42f4-848f-02b47927204e",
-      "LED"
+      "ece6956d-d6a4-4146-9850-2c5816299d95",
+      "Switch60"
     ],
     [
-      "256a88f7-48d7-4a6d-8b98-ad7f7d1548e6",
+      "6d0ffecf-6562-4a1a-9c52-37f570ef24ef",
+      "Switch61"
+    ],
+    [
+      "73a2af62-db51-48da-915e-147ea407c621",
+      "Switch62"
+    ],
+    [
+      "9134bd65-dd0d-44f0-bb21-20981e8fcf63",
+      "Switch63"
+    ],
+    [
+      "e1a3b19f-ab15-4eca-a800-c1d2782cbfa8",
+      "Switch64"
+    ],
+    [
+      "f1a1a1d2-53b7-4143-b553-21159d3f0ef9",
+      "Switch65"
+    ],
+    [
+      "305d1f1b-b543-4a80-894b-6cddcc5bca1b",
+      "Switch66"
+    ],
+    [
+      "51a2f937-e2c4-42a4-86a5-edf7de48600d",
+      "Switch67"
+    ],
+    [
+      "cb3b58d8-c422-4607-a3bd-83ee37911e4d",
+      "Switch68"
+    ],
+    [
+      "582d5753-5097-46a9-a2b2-b1309e83f2f0",
+      "Switch69"
+    ],
+    [
+      "a2ad243b-fee0-483f-9e70-dc5fd4ae0272",
+      "Switch70"
+    ],
+    [
+      "62227923-269e-40f8-b9bf-06858ef72339",
+      "Switch71"
+    ],
+    [
+      "fd4c2e48-6fb6-48a2-9a06-594673361a53",
       "LED3"
     ],
     [
-      "93fe8892-2c80-4fde-8155-9c3c789cccae",
+      "ecb45e01-42b9-4683-bc5f-921cbb3f0009",
+      "Switch72"
+    ],
+    [
+      "b7e1aaed-19e6-4f70-b691-4a7ced0a188d",
       "LED4"
     ],
     [
-      "0a3970cb-c87d-4cb0-b4d9-386cc02b0b67",
+      "281482a1-2cad-4858-9199-0b6fcad05d6f",
       "LED5"
     ],
     [
-      "85efbb35-6491-4d9c-806d-147a8a04f4e0",
+      "b31a5f86-bd4c-44dd-b4f6-5fbdd3152bd3",
       "LED6"
     ],
     [
-      "ebfab345-761b-48ca-9d0b-b3d62a24d300",
+      "dc0ec1b8-3b8c-4e83-8728-33483fd1ebab",
       "LED7"
     ],
     [
-      "ab16a111-fd7c-4090-8fe3-078b1b407187",
+      "1142860e-aa97-4a01-aeec-a2245871301a",
       "LED8"
     ],
     [
-      "21a637f7-200e-419d-aea1-4e0199b4f595",
+      "790efd90-98bd-4222-b4fb-6f4e31b84abf",
       "LED9"
     ],
     [
-      "8c475940-df88-4a75-b6f1-2b3308a3f125",
+      "59de0ba7-9762-4585-9de2-8a05436edb47",
       "LED10"
     ],
     [
-      "7117e11d-ada7-4cf4-a0a7-54c66449fa13",
+      "53d1132b-c9d6-476d-b834-ed8c8550083b",
       "LED11"
     ],
     [
-      "d217348e-8b5d-4a25-81d2-207424443c0a",
+      "f18b4b11-a694-4155-8899-93681a6b48c2",
       "LED12"
     ],
     [
-      "20edc335-4872-4bbc-bf9b-b7c74636ed87",
+      "f0d9c582-43a9-4312-a6d6-8dbb8cab014d",
       "LED13"
     ],
     [
-      "81e749d6-3a1e-4e07-8951-fc5481d8d99c",
+      "1b9f32d6-9e9e-40ce-a527-c82d10f005bd",
       "LED14"
     ],
     [
-      "aea71e3e-19dc-4f0c-bd29-fa44522dfc81",
+      "020d2d7a-0a42-4d6f-9350-0d026aba43fd",
       "LED15"
     ],
     [
-      "a905cc4e-430f-4c88-a53b-881d6b24b374",
+      "177196d0-f8eb-48ab-9990-6991a4b5545a",
       "LED16"
     ],
     [
-      "59ced60e-e4ec-419b-9e46-0b7bc5c469d2",
+      "6ef817a5-d488-49c9-86d8-04b2c1f3c8dd",
       "LED17"
     ],
     [
-      "9a8d3893-f318-486a-a670-fe4fd03efe09",
+      "c377f275-a4a9-42a7-bb0f-5e375f00f6a2",
       "LED18"
     ],
     [
-      "76aeb277-06b3-4720-bfe2-825696648210",
+      "4ab5fbaf-db98-47b1-bbc2-27d46ecb97ca",
       "LED19"
     ],
     [
-      "17a8a5be-ce96-49d7-a1fb-8e5d7e90fb82",
+      "d57a208b-abb6-494b-b718-3cda71409353",
       "LED20"
     ],
     [
-      "7eea9187-b875-46fb-87d1-9eb483403ba3",
+      "af9a4ffd-22e1-40fa-8564-00cebc83d52d",
       "LED21"
     ],
     [
-      "50467d5d-c70e-4be2-8412-0b2c53a42420",
+      "16e9df63-9a24-4656-ada6-9c581cc3a3b3",
       "LED22"
     ],
     [
-      "a1c4a04c-b50c-4093-9a7c-1da44820c0e1",
+      "f49ab70a-7ca1-425e-bfe2-2ed14917280d",
       "LED23"
     ],
     [
-      "7f136124-3c31-4054-87b4-538e19ab909d",
+      "79a964cf-8a75-40d2-81d2-8a48ed98787d",
       "LED24"
     ],
     [
-      "f0436851-0ad8-4e4d-a9de-fa1cf8b18ed4",
+      "0df53143-4f44-4512-88ff-c5c42f7dec26",
       "LED25"
     ],
     [
-      "7001f268-d5b1-42b5-a469-218570c4d048",
+      "58143e0e-3f89-41d5-ac1d-446854597460",
       "LED26"
     ],
     [
-      "903edf7d-0a6c-4da1-9aee-0979d376d5eb",
+      "87d303e1-ce1b-46a5-8710-162cb3ea97d7",
       "LED27"
     ],
     [
-      "95c42fe5-66fd-4fb7-a795-40023837d1e6",
+      "fd7b528f-02f3-4794-b4e5-bc45186962b1",
       "LED28"
     ],
     [
-      "e10f3b63-a911-4533-bf99-5751244138cc",
+      "e0e981d7-9a43-4962-9daa-7c9930aa8228",
+      "LED29"
+    ],
+    [
+      "994e8422-ad0e-48ba-93cf-7400c577ea5a",
       "LED30"
     ],
     [
-      "ecd12fa9-b6f4-4e79-85d1-78b8ea100abd",
+      "ea3d0633-feab-48cb-a526-efb10e265a06",
       "LED31"
     ],
     [
-      "8ebdd4fb-e0d9-45df-b9dd-581dcf1e3702",
+      "bb89da40-c0f5-493e-9cf1-0cf67e453d90",
       "LED32"
     ],
     [
-      "9b2abb00-2048-48d4-b3ac-70c996a9eff8",
+      "dc5a4ee4-c945-403f-93cc-3b0d4ba6abad",
       "LED33"
     ],
     [
-      "a4ace6b7-0e22-47a9-851d-47fe47c3b2ff",
+      "c2e8e908-4533-42cb-9a1e-320621b78d74",
       "LED34"
     ],
     [
-      "1a4eb93d-002b-4607-b80e-e52d756380a7",
+      "f2827fbd-8307-4fa7-afbe-0af4f3d0dfd4",
       "LED35"
     ],
     [
-      "8ff72a54-2389-4a51-835a-f9df5aa2a82c",
+      "1a614965-4ad3-41d6-94df-06342bb45f6d",
       "LED36"
     ],
     [
-      "3c5ea2a9-b60f-4031-b4f2-ee442b347ace",
+      "fbdca0ad-ec67-47f8-b9f9-c3439471b3bd",
       "LED37"
     ],
     [
-      "eae83772-9fcc-4bc9-9a35-b3f9ad25aef3",
+      "9ccf47a5-f10b-4c0c-88f9-e8c0bd9031e7",
       "LED38"
     ],
     [
-      "95fad7aa-e390-4b14-b61d-b6e7f295492a",
+      "37dc5ba3-b269-4835-b8a8-6766eeeb1bf1",
       "LED39"
     ],
     [
-      "8c5476e6-0481-458c-b97f-5c921a44d52a",
+      "b45e14c0-5975-4058-b509-b5c387107c2a",
       "LED40"
     ],
     [
-      "462c187e-686a-4d9f-af10-8019dc7faa3c",
+      "5b755b3a-9ec3-4a26-ac3d-06cc4d7eb3a0",
       "LED41"
     ],
     [
-      "99c6f2ec-ded6-41ca-a375-69455802fc39",
+      "2ed20f31-ad8f-443b-b001-cf783a758415",
       "LED42"
     ],
     [
-      "8a0ebaf4-6021-4bd4-8f92-1306ee5b16ed",
+      "c4303509-6ace-4f12-b8f8-22741fcd46c9",
       "LED43"
     ],
     [
-      "5179e32c-0f78-4cff-8ebb-b003c7b157a6",
+      "d80474e9-8a89-4e5b-bb7f-e6480a082296",
       "LED44"
     ],
     [
-      "be21abbf-7a80-43a2-a6f3-7040a5287ebd",
+      "8fab9e5f-1c0b-43b1-851a-570232fd1d84",
       "LED45"
     ],
     [
-      "36173508-fb43-4701-b862-548606caec25",
+      "347b6157-e85c-4f15-9f00-9abc15d3fd69",
       "LED46"
     ],
     [
-      "38ba31db-e48c-4329-8e86-b7baab24ba2b",
+      "c2299b58-b7c6-4ddd-9923-040720061b3f",
       "LED47"
     ],
     [
-      "b9ebd9de-9923-4c9c-9c69-7e570ee0cb46",
+      "662672c5-1c65-4f61-a52f-ec99128e86fe",
       "LED48"
     ],
     [
-      "b08c66da-f644-4efe-9233-02caa58b7f8d",
+      "0a063731-343f-4af3-91a1-aaa35f4c8680",
       "LED49"
     ],
     [
-      "5e3d5c65-9a22-4160-a333-831722724fab",
+      "eca20c66-98e1-4451-888f-5d4a520ffb00",
       "LED50"
     ],
     [
-      "7ad27aa9-a807-4cb4-9e80-2020b4c8337e",
+      "e36e64b7-a653-4af1-b954-50319f731732",
       "LED51"
     ],
     [
-      "eab2b474-4e4f-4e68-a40c-8abce973402e",
+      "b46d8465-5186-440c-ac47-800e8738a0e0",
       "LED52"
     ],
     [
-      "f5a88281-a313-4980-b1d6-2ae2ef138c0e",
+      "5696836c-d9a4-48e7-a298-e572c03f46cd",
       "LED53"
     ],
     [
-      "754bd1e7-833e-42ff-b678-1687715d7f79",
+      "954fde31-3b5e-46a0-8cc3-f22d5425d019",
       "LED54"
     ],
     [
-      "7fccb7e9-9784-42c9-83a6-21035d942142",
+      "c835844e-8a60-414c-ac0b-af45cae24583",
       "LED55"
     ],
     [
-      "b3e3f933-d2ee-40c9-9215-3e5e9b51048c",
+      "96b4d325-e64d-4344-853d-3f43ad11a9de",
       "LED56"
     ],
     [
-      "e694c89e-7419-496e-8bd6-c39ff28793a1",
+      "755b80ca-1c9e-4656-b1da-cc9e25382f2a",
       "LED57"
     ],
     [
-      "5e87fd0d-11d0-4ba2-bab1-f218daac274f",
+      "0d7c4dca-ef1f-4d12-95da-a0d6bd89188f",
       "LED58"
     ],
     [
-      "07bbfdf8-4f99-41f4-9860-efd2af45083e",
+      "44d256d6-1799-4278-a87d-228ea0afded1",
+      "LED59"
+    ],
+    [
+      "9b6b7de5-aba4-463f-8090-6e01bea8731c",
       "LED60"
     ],
     [
-      "4526db4b-df91-4cc5-bce5-6ea01b5897d9",
+      "2933ed5b-7f5c-4c3d-bd8e-dd26d0daac8e",
       "LED61"
     ],
     [
-      "09896f66-ae1a-455d-98de-217db29d861f",
+      "c1c3e2fb-78a9-4512-9f21-5971968e23c7",
       "LED62"
     ],
     [
-      "35fc0838-2682-4559-b9c0-c1cef2826e43",
+      "dc532027-3970-4751-bd63-3b280fc92cbe",
       "LED63"
     ],
     [
-      "6a8602dc-eb57-44de-9655-1977944f764f",
+      "528f95e3-238c-4128-bf67-177b761c2385",
       "LED64"
     ],
     [
-      "14d1a59e-e99e-4b89-aa53-dc1f2a2daf10",
+      "7a294ea1-8d50-4889-8b45-0c2087d2e14d",
       "LED65"
     ],
     [
-      "c15d244a-0bd9-4b04-ae08-aed197472695",
+      "f93530d6-e43d-4cc2-ba59-15c00bc62c9f",
       "LED66"
     ],
     [
-      "b08b8733-0463-4e34-9b55-ce1c94d42adc",
+      "67e42963-17ec-4027-8fb0-ca70ef9ef6ad",
       "LED67"
     ],
     [
-      "ab1e0e10-17ad-497c-831f-f3a28481c688",
+      "bae7e4bf-6ba5-45c2-aba8-8ed5b2c4d694",
       "LED68"
     ],
     [
-      "2364e7a6-83c9-4d5e-af0d-c8dee396ea4a",
+      "9b047eae-35f2-40df-82e7-ed8770eccfb0",
       "LED69"
     ],
     [
-      "69377945-adec-46b9-ac34-562aff543b21",
+      "5efad752-945f-4a1f-810b-5a3326e0d359",
       "LED70"
     ],
     [
-      "8a2cd7f4-adab-49b0-8575-69e5e3048341",
+      "e2e52c3a-0786-4465-94ea-ce1cb3df1189",
       "LED71"
     ],
     [
-      "8147fd4d-c528-40b9-804b-db8634031215",
+      "cbd6b355-2ebd-4b58-b86b-17fcf4eb7ba2",
       "LED72"
-    ],
-    [
-      "32b098dc-5522-4152-a0d3-c0d13be299f8",
-      "LED73"
     ]
   ],
   "text_variables": {}

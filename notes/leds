@@ -1,3 +1,115 @@
+Where to connect the power?
+You should connect the VCC of the LED driver to the Li-Po battery ($V_{BATT}$),
+not the regulated 2.1V or 3.0V output of the nPM1100.
+
+Use is31fl3731
+
+For a battery-powered magnetic keyboard with 72 LEDs, you should use a dedicated ** LED Matrix Driver**, and you should power it **directly from the Li-Po battery** (not through the nPM1100).
+
+Here is the reasoning for this hardware architecture.
+
+### 1. Recommended IC: IS31FL3731 (or IS31FL3733)
+
+* **Logic Compatibility:** It works with **1.8V - 3.3V logic**, so your **2.1V nRF54L15** can talk to it directly over  without level shifters.
+* **Constant Current:** It has internal current sinks. You **do not need resistors** for each LED. This saves huge amounts of PCB space and assembly cost.
+* **No "Flash" Noise:** It uses a scanning matrix, meaning it only turns on a few LEDs at any exact microsecond. This eliminates the massive 72mA current spikes that would otherwise interfere with your **TMR2617 sensors**.
+
+---
+
+### 2. Where to connect the power?
+
+You should connect the **VCC of the LED driver to the Li-Po battery** (), not the regulated 2.1V or 3.0V output of the nPM1100.
+
+| Feature | Powered by nPM1100 (Buck) | Powered by Li-Po (Direct) |
+| --- | --- | --- |
+| **Efficiency** | Lower (Double conversion loss) | **Higher (Single conversion)** |
+| **TMR Noise** | **Bad** (LED noise leaks into TMR rail) | **Great** (LED noise is isolated on the battery) |
+| **Brightness** | Limited by 2.1V/3.0V rail | **Consistent** (Driver regulates current internally) |
+
+**Why this is better:**
+The nPM1100 buck converter has a maximum current limit. If you try to pull 72mA for LEDs + MCU current + Sensor current through it, you might hit the "current limit" and cause the whole system to reset. By powering the LED driver from the battery, the driver handles the voltage swings of the battery ( to ) and keeps the LED brightness **perfectly constant** regardless of battery level.
+
+---
+
+### 3. Comparison of Architectures
+
+| Feature | Your MOSFET Setup |  Matrix Driver Setup |
+| --- | --- | --- |
+| **Components** | 1 MOSFET + 72 Resistors | **1 IC + 0 Resistors** |
+| **Wiring** | 72 traces to resistors | **18 traces (Matrix)** |
+| **TMR Accuracy** | Risky (PWM Noise) | **High (Silent operation)** |
+| **Individual Control** | No (All or none) | **Yes (Per-key lighting/animations)** |
+
+### Summary Recommendation
+
+1. **Power:** Keep the **nPM1100 at 3.0V** to power the nRF54L15 and the TMR2617 sensors (for best resolution).
+2. **LEDs:** Use the **IS31FL3733** or **IS31FL3731**. Connect its power pin directly to the **Li-Po battery**.
+3. **Control:** Connect the  pins (SDA/SCL) to your nRF54L15.
+
+This setup ensures that your magnetic sensors are in a "quiet" electrical environment, your battery lasts significantly longer, and you gain the ability to do cool per-key RGB or white lighting effects later.
+
+---
+---
+
+
+Q:
+i have 72 led's ON simultaneously (one per key). power saving is important. how does PWM save power? same amount of power need to be spent to get the same brightness , no?
+
+
+It is a common misconception that PWM and DC "spend" the same power for the same brightness. In reality, **PWM is significantly more efficient for battery life** because of how the human eye works.
+
+Here is why PWM saves power in your keyboard design, especially with 72 LEDs:
+
+### 1. The "Persistence of Vision" Effect
+
+Your brain doesn't see a "dim" LED; it sees a **bright** LED that was just there a millisecond ago.
+
+When you use PWM, you flash the LED at full current (e.g., 5mA) for a tiny fraction of time (e.g., 10% duty cycle).
+
+* **The LED:** Only uses 10% of the energy.
+* **The Eye:** Because of the high peak brightness, your brain "remembers" the peak and perceives the LED as much brighter than a DC-dimmed LED using that same 10% energy.
+
+> **The Math:** To get a certain "comfortable" brightness, you might only need a **2% duty cycle** with PWM, whereas achieving that same perceived brightness with DC would require a constant current that consumes significantly more total battery power.
+
+---
+
+### 2. Efficiency: Resistor Waste vs. Buck Converter
+
+This is the most important part of your **nPM1100 + 3.0V** setup:
+
+* **In DC (Static):** To dim the LEDs to  at , you have to use a large  resistor. That resistor is constantly burning off energy as heat.
+* **In PWM:** You use a much smaller resistor (sized for, say,  or ). When the LED is **ON**, it is efficient because the "overhead" of the resistor is lower relative to the light produced. When the LED is **OFF**, it consumes **zero** power.
+
+Because your **nPM1100 is a Buck converter**, it is "smart." When the LEDs are in the "OFF" phase of the PWM cycle, the nPM1100 actually draws almost zero current from your battery.
+
+---
+
+### 3. LED Color Stability
+
+If you try to save power by simply lowering the voltage (DC dimming) to the point where the LEDs are very dim, green LEDs often shift toward a "sickly" yellowish hue.
+
+* **PWM** keeps the LED at its "true" forward voltage () when it's on, ensuring your keyboard looks high-end with consistent, crisp green light across all keys.
+
+---
+
+---
+---
+
+q: wont is31fl3731 itself waste power ? compare to using PWM from mcu
+
+
+### 3. Noise & Signal Integrity (Your Keyboard's Performance)
+
+Beyond just power, the IS31FL3731 protects your **TMR2617 sensors**.
+
+* **The MOSFET Method:** When your MOSFET slams 72 LEDs "ON," it creates a massive EMI (Electro-Magnetic Interference) spike. Because you are building a **magnetic keyboard**, these spikes can interfere with your TMR sensors' ability to detect the magnet's position accurately.
+* **The Driver Method:** The IS31FL3731 "scans" the LEDs. It turns on one group, then the next, very fast (). The current draw is steady and "quiet," which keeps your analog sensor readings clean.
+
+---
+----
+---
+
+
 PWM Noise: Switching $36\text{mA}$ at high frequency (PWM) can create
 electrical noise on the $2.1\text{V}$ rail. This might "jitter" your TMR sensor
 readings.Solution: Place a large $10\mu\text{F}$ Ceramic Capacitor directly at
@@ -163,9 +275,6 @@ for yellow/amber to match green's subtlety.
 If you strongly prefer yellow for aesthetics (e.g., warmer tone, less
 "clinical" than green), the APTR3216SYCK is usable:
 
-Resistors: Same as Würth (4.7k–10kΩ for ~0.05–0.1mA peak at 2.1V; prototype to
-tune). It works electrically fine, just not as power-efficient perceptually.
-
 Final Recommendation: Stay with the Würth green for best battery life and night
 visibility. If yellow's warmth wins you over, go for this Kingbright—but expect
 a small efficiency hit. Test a few of each if possible!in markdown formatNo,
@@ -209,8 +318,6 @@ for yellow/amber to match green's subtlety.
 If you strongly prefer yellow for aesthetics (e.g., warmer tone, less
 "clinical" than green), the APTR3216SYCK is usable:
 
-Resistors: Same as Würth (4.7k–10kΩ for ~0.05–0.1mA peak at 2.1V; prototype to
-tune). It works electrically fine, just not as power-efficient perceptually.
 
 Final Recommendation: Stay with the Würth green for best battery life and night
 visibility. If yellow's warmth wins you over, go for this Kingbright—but expect
@@ -332,11 +439,6 @@ peripherals via Zephyr/nRF Connect SDK).
 
 Component suggestions: MOSFET: Something small and efficient like the AO3400,
 SI2312, or DMG2305UX (low Rds(on), fully on at 3V gate drive, near-zero
-quiescent current). Resistors: Choose based on your LEDs' forward voltage
-(typically ~2.7-3.0V for white at low current). For very low brightness (e.g.,
-0.1-0.5mA per LED), use 4.7kΩ to 22kΩ resistors. This keeps peak current low
-(~7-36mA total for all 72 LEDs), and PWM duty cycle can dim it further down to
-microamp averages with no flicker (use high PWM frequency, e.g., >1kHz).
 
 Why this is best for your priorities: Virtually zero quiescent power draw (only
 leakage, <<1µA). PWM dimming is highly efficient—no wasted power in resistors
@@ -427,22 +529,11 @@ visible."
 
 Avoid 2.7V or 3.0V for this ultra-low setup:
 
-Too much headroom → requires very large resistors (e.g., 47k–100kΩ+) to hit low
-currents → but LED brightness varies more with temperature/battery voltage
-changes, and efficiency drops slightly (more waste in resistors). Fine if you
-want easier resistor values, but not optimal for max battery life.
 
 Don't go lower than 2.1V (e.g., 1.8V):
 
 Many green LEDs won't reliably light (or very dimly/inconsistently) at such low
 currents with only 1.8V supply.
-
-Practical Setup
-
-Use the MOSFET + global PWM approach (as before). Start with ~4.7k–22kΩ per-LED
-resistors at 2.1V supply. Test current/brightness on a prototype LED (measure
-with multimeter). Adjust PWM duty cycle (1–20%) in firmware for perfect "night
-visibility" without excess power.
 
 
 

@@ -1,0 +1,201 @@
+does ADG706 work with 2.1v supplied to nrf54l15 mcu. i am concerned about the digital logic. It says (for adg706):
+
+
+To give you the short answer: No, the ADG706 will not work reliably with logic signals from an nRF54L15 running at 2.1V if the ADG706 itself is powered by a standard 3.3V or 5V rail.
+
+---
+
+Recommended 8:1 Multiplexers (Precision)
+Since you asked for 8x1 or 12x1, these TI TMUX series parts are the current industry standard for high-precision sensing:
+
+Part Number,Type,Logic Compatibility,RON​ (Typical),Benefit for TMR Sensors
+TMUX1108,8:1,1.8V Logic,2.5 Ω,"Ultra-low leakage (3pA). This ensures the magnetic field readings don't ""drift"" or ""bleed"" between keys."
+TMUX1208,8:1,1.8V Logic,5 Ω,Very cost-effective and general-purpose; fits most keyboard budgets.
+
+Imp:
+3. TMR2617 Specific ConsiderationsThe TMR2617 has a very high sensitivity.6 If
+   you are multiplexing these, you must watch out for Charge Injection.
+When the mux switches from Key A to Key B, a tiny "puff" of charge is pushed
+into the signal line. In a keyboard, this can look like a fake "spike" in
+magnetic field.The TMUX1108 has ultra-low charge injection (7$1pC$), making it
+far superior for high-sensitivity TMR sensors compared to older designs like
+the ADG706.
+
+---
+
+ADC Pin 7: Connect to the outputs of Mux 8 and Mux 9 through a 2:1 switch (like a TMUX1119).
+
+The "8-Pin Parallel" approach is the fastest. If you connect 8 Muxes to 8 Pins,
+you can use the nRF54's SAADC (Scan Mode). The chip can automatically "cycle"
+through all 8 pins and take readings very rapidly without CPU intervention.
+
+---
+q: for tmux119 and tmux1208 what is the 'settling time' after switching the input before analog signal can be measured
+
+To determine the settling time for the **TMUX1119** (2:1 mux) and **TMUX1208** (8:1 mux), we have to look at two different factors: the **Switching Time** (how long the silicon takes to move) and the **RC Settling Time** (how long the voltage takes to stabilize based on resistance and capacitance).
+
+For your TMR sensors in a magnetic keyboard, the **RC Settling Time** is the one that usually trips up designers.
+
+---
+
+### 1. Switching Time (Internal Logic)
+
+This is the time it takes for the internal MOSFETs to physically transition after you toggle the address pin.
+
+| Specification | TMUX1119 (Typical) | TMUX1208 (Typical) |
+| --- | --- | --- |
+| **Transition Time ()** | **14 ns** | **20 ns** |
+| **On/Off Time ()** | **6 ns / 3 ns** | **85 ns / 60 ns** |
+
+In the world of MCU clock cycles, this is incredibly fast. If your nRF54L15 is running at 64MHz, one clock cycle is **~15.6 ns**. This means the switch is ready almost as soon as the GPIO instruction finishes.
+
+---
+
+### 2. RC Settling Time (The "Real" Wait)
+
+This is the most critical part for your **TMR2617** sensors. When you switch from "Sensor A" to "Sensor B," the multiplexer has internal capacitance () and resistance (). This creates a low-pass filter.
+
+The settling time depends on your **Source Impedance ()** (the output resistance of your TMR sensor).
+
+#### **The Calculation**
+
+To get 12-bit accuracy (which the nRF54 ADC supports), you generally need to wait **9 time constants** ().
+
+
+* **TMUX1108/1208 :**
+* **TMUX1108/1208 :**
+* **TMR2617 Impedance:**  (This is the dominant factor!)
+
+**Estimation:**
+
+
+
+Settling time for 12-bit accuracy ()  **4.5 microseconds**.
+
+---
+
+### 4. Summary & Advice
+
+* **The Mux is not the bottleneck:** The **TMUX1119/1208** switches in nanoseconds.
+* **The Sensor is the bottleneck:** The high output impedance of the TMR sensor means the "charge" has to crawl through the mux into the ADC.
+* **ADC Sampling:** On the nRF54L15, ensure you set the **Acquisition Time** () in the SAADC configuration to at least **5µs** or **10µs**. If you set it too short (e.g., 3µs), the ADC will read a voltage that is still "drifting" from the previous key's value, causing "ghosting" between adjacent keys.
+
+---
+
+q: given the power saving is very important for ble keybaord, would it make
+sense to use comparators with TMR sensors and then use GPIO pins (there are 28
+available) to read digital input (not use analog mux'es)
+
+This is a clever "low-power" thought, but for a **magnetic keyboard**, using comparators is actually a step backward in both power efficiency and functionality.
+
+Here is why sticking with the **Analog Mux + ADC** approach is better for your battery and your keyboard’s performance.
+
+### 1. Power Consumption: ADC vs. Comparators
+
+While it seems like a digital GPIO would save power, 72 external comparators would be a power disaster.
+
+* **Quiescent Current:** Even a "low-power" comparator (like the TLV3691) draws about  to . Multiplying that by **72 sensors** means you are constantly drawing ** to ** just for the comparators to "stay awake."
+* **The ADC Advantage:** The **nRF54L15 SAADC** is designed for "burst" operation. You can keep it completely powered off, wake it up for a millisecond to scan all 72 sensors, and then shut it back down. The **average** current for the ADC approach is usually much lower than a massive array of always-on comparators.
+
+---
+
+### How to actually save power with TMR sensors
+
+If battery life is your top priority, use these three "Pro" strategies instead of comparators:
+
+**B. "Idle" vs. "Active" Scanning**
+
+* **Active Mode:** When the user is typing, scan at 1,000Hz (every 1ms).
+* **Idle Mode:** If no key is pressed for 30 seconds, drop the scan rate to 10Hz (every 100ms). This saves massive amounts of battery.
+
+**C. Use the nRF54's PPI (Programmable Peripheral Interconnect)**
+The nRF54 can use a timer to trigger the ADC and the Multiplexer address pins **without waking up the CPU**. This allows the "brain" of your MCU to stay in deep sleep while the hardware handles the scanning.
+
+---
+----
+
+Q: i will be using 8 tmux1108 and 2 tmux1511. does it make sense to keep them all ON all the time?
+
+
+In short: **No, it does not make sense to keep them ON all the time**, especially for a battery-powered BLE keyboard.
+
+While the "leakage" current we discussed is tiny, the **Quiescent Current ()**—the power the chips need just to keep their internal logic alive—is a significant "battery killer" when multiplied across 10 ICs.
+
+### 1. The "Always ON" Battery Drain
+
+When an analog switch is enabled, its internal charge pump and logic circuitry are active.
+
+* **TMUX1108 :** ~8u A (Typical)
+* **TMUX1511 :** ~37u A (Typical)
+* **Total System "Waste":**  138uA
+
+While  sounds small, for a BLE device, it’s massive. A typical nRF54L15 in deep sleep consumes less than **1 A**. Keeping these chips on increases your "floor" power consumption by **13,800%**.
+
+### 2. The "Duty Cycle" Solution
+
+The **Turn-On Time** for these chips is incredibly fast (~85 ns). Since you only need the switches to be active during the few microseconds it takes for the ADC to sample the TMR sensors, you should "duty cycle" the power.
+
+**The Math of Savings:**
+If you scan your keyboard at 1,000Hz (once every 1ms), and each scan takes 50 s:
+
+* **Always ON:**  constant drain.
+* **Duty Cycled (5% On-Time):**  average drain.
+
+### 3. How to Connect the Enable (EN) Pins
+
+To save GPIO pins on your nRF54L15, you should not give every chip its own EN pin. Instead:
+
+1. **Tie all 8 TMUX1108 "EN" pins together** to one GPIO.
+2. **Tie both TMUX1511 "EN" pins together** to another GPIO (or the same one).
+3. **The Process:** * Pull EN **High**.
+* **Wait 1micorsec** (plenty of time for the chip to wake up and the signal to settle).
+* Perform your ADC Scan.
+* Pull EN **Low**.
+
+---
+---
+
+q: which is more power efifcient : 1) keep 1 tmux1119 with 9 tmux1108, and use SAADC to read 8 analog pins 8 times (by switching 8 tmux1108), followed by read 1 analog pin 8 times (by switching the last tmux1108)
+
+2) keep 2 tmux1574 and 8 tmux1108. read first bank 8 times and second bank once using SAADC
+
+Option 2 (**2x TMUX1574 + 8x TMUX1108**) is significantly more power-efficient, both in terms of electrical consumption and software execution.
+
+Here is the breakdown of why the "Bank Switching" architecture wins:
+
+### 1. Electrical Efficiency (Hardware Power)
+
+In a battery-powered device, every microsecond the MCU is "awake" is a drain on the battery.
+
+* **Option 1 (The 8+1 Method):** To read your 72 sensors, your nRF54 must manage **two different sampling logic flows**. First, it triggers an 8-channel scan, then it has to reconfigure or manually trigger a single-channel scan for the 9th mux. This keeps the high-power CPU and ADC active for a longer total duration.
+* **Option 2 (The 8x8 Bank Method):** You treat your keyboard as two identical blocks. You scan the 8x8 block (64 keys) and then the 8x1 block (8 keys) using the **exact same SAADC configuration**. This allows the ADC to stay in its high-efficiency "burst" mode.
+
+### 2. Software Efficiency (CPU "Napping")
+
+The nRF54L15 is most efficient when you use **PPI (Programmable Peripheral Interconnect)** and **DMA (Direct Memory Access)**.
+
+* **In Option 2:** You can set up one DMA buffer. The ADC fills the first 64 slots, the GPIO toggles the Bank Switch (TMUX1574), and the ADC fills the last 8 slots. The CPU can stay in a **Low Power Sub-utility state** during this entire process.
+* **In Option 1:** Switching from an 8-channel scan to a 1-channel scan usually requires a CPU interrupt to reconfigure the SAADC registers. Every time the CPU "wakes up" to handle an interrupt, it consumes a massive spike of current (several milliamps) compared to the hardware just running on its own.
+
+### 3. Timing and Scan Speed
+
+Speed is power. The faster you finish the scan, the faster you can turn off the TMR sensors (which are your biggest power hogs).
+
+| Feature | Option 1 (8+1) | Option 2 (Bank Switch) |
+| --- | --- | --- |
+| **ADC Config Changes** | Needed between 64th and 65th key | None (Same 8-ch scan) |
+| **Total Wake Time** | Longer (Sequential overhead) | **Shorter (Parallel burst)** |
+| **Code Complexity** | High | **Low** |
+| **Battery Life** | Good | **Best** |
+
+---
+
+### Why "2x TMUX1574" is the Winner
+
+Even though you are adding one more IC than Option 1, the **system-level power** is lower because:
+
+1. **The CPU sleeps more:** Hardware handles the logic.
+2. **The TMR sensors are on for less time:** Because you are scanning 8 sensors in parallel at the end instead of 1-by-1, you can kill the power to the sensors sooner.
+
+---
+---

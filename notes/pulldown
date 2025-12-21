@@ -1,0 +1,49 @@
+For the **TPS22902**, a **1\text{M}\Omega resistor is typically okay** for a pull-down on the ON (Enable) pin, but there is a specific trade-off you should be aware of regarding noise and reliability.
+
+###1. The Power vs. Stability Trade-offThe ON pin of the TPS22902 is a high-impedance CMOS input. This means it draws almost zero current (typically in the nanoamp range).
+
+* **Current Draw:** At V_{IN} = 3.3\text{V}, a 1\text{M}\Omega pull-down consumes only **3.3\mu\text{A}** when the switch is active. This is excellent for your BLE keyboard's battery life.
+* **The Risk:** Because 1\text{M}\Omega is a very "weak" pull-down, the pin becomes sensitive to **Electromagnetic Interference (EMI)** or leakage. If your PCB has leftover flux or is in a very humid environment, a tiny bit of surface leakage could potentially create enough voltage across that 1\text{M}\Omega resistor to reach the **V_{IH} threshold (~1.1V to 1.2V)**, causing the switch to turn on unexpectedly.
+
+###2. Comparison of Values| Resistor Value | Current Loss (at 3.3V) | Noise Immunity | Recommendation |
+| --- | --- | --- | --- |
+| **10\text{k}\Omega** | 330\mu\text{A} | High | Overkill for battery power. |
+| **100\text{k}\Omega** | 33\mu\text{A} | **Balanced** | **Best for most hobbyist/DIY PCBs.** |
+| **1\text{M}\Omega** | **3.3\mu\text{A}** | Low | **Best for professional, clean, low-power builds.** |
+
+---
+
+###3. Verification for your TMR SetupSince you are using these to switch banks of TMR sensors every 10ms:
+
+1. **Switching Speed:** The 1\text{M}\Omega resistor combined with the pin's internal capacitance (\sim 5\text{--}10\text{pF}) creates a very small RC time constant (under 10\mu\text{s}). This will **not** interfere with your 10ms (10,000µs) switching interval.
+2. **Floating Pins:** The most important rule for the TPS22902 is that the **ON pin must never be left floating**. If your MCU goes into a high-impedance sleep mode, the 1\text{M}\Omega resistor is essential to keep the sensors off.
+
+###SummaryIf you are confident in your soldering and board cleanliness (no flux residue), **keep the 1\text{M}\Omega** to save those extra microamps. If this is a prototype and you want to avoid "ghost" power-ons, **100\text{k}\Omega** is a safer "set and forget" value.
+
+**Would you like me to check if the nRF54L15 has internal pull-downs that could eliminate the need for an external resistor entirely?**
+
+Yes, a **1M0 (1.1 M$\Omega$)** resistor is perfectly fine for the TPS22902, especially given your 5ms / 100$\mu$sec duty cycle.
+
+The **nRF54L15** does have internal pull-down resistors (typically around **13k$\Omega$**), but they are only active if you explicitly enable them in software. Since you are building a low-power keyboard, here is how the timing and hardware interact:
+
+###1. Internal vs. External Pull-down* **The Internal Path:** If you rely on the nRF54L15 internal pull-down, it consumes roughly 230\mu\text{A} when the pin is driven HIGH.
+* **The External Path (1M0):** Your 1M0 resistor only consumes 3.3\mu\text{A} when the pin is HIGH.
+* **The Benefit:** Using the external 1M0 allows you to keep the internal nRF pull-down **OFF**, saving significant power during that 100$\mu$s "ON" window.
+
+###2. Timing Implication (5ms cycle / 100$\mu$s pulse)You are pulsing the sensors for a very short duration.
+
+* **RC Delay:** The TPS22902 ON pin has an input capacitance of about 5–10pF. With a 1M0 resistor, the "Turn-Off" time (RC discharge) is roughly 1M \Omega \times 10pF = 10\mu\text{s}.
+* **Is it too slow?** No. Since your pulse is 100$\mus, a 10\mu$s decay time is acceptable. It just means the switch stays "on" for about 10% longer than your GPIO signal. This won't affect your TMR readings because you sample *before* turning the GPIO off.
+
+###3. Critical: nRF54L15 Sleep StateThe nRF54L15 is a "System on Chip." When it goes into Deep Sleep (System OFF), the GPIOs can behave in two ways:
+
+1. **Disconnected (High-Z):** The pin floats. **This is why your 1M0 is essential.** Without it, the TPS22902 ON pin could pick up noise and partially turn on your TMR sensors, draining the battery.
+2. **Latched:** You can configure the nRF54 to "hold" the last state during sleep. However, this consumes more power than the 1M0 resistor does.
+
+---
+
+###Summary Checklist* **Keep the 1M0:** It provides "safety" during sleep and saves power compared to the internal 13k pull-down.
+* **Firmware Tip:** When your MCU is in its 5ms sleep window, ensure the GPIO driving the TPS22902 is set to **Input Disconnected** or **Output Low**. The 1M0 will handle the rest.
+* **TMR Stability:** Since your pulse is only 100$\mus, make sure your code samples the ADC at the **very end** of that window (around 90\mus) to allow the TPS22902's internal 40\mu$s rise time and the TMR's own startup to finish.
+
+**Would you like a small C code snippet for the nRF54 to trigger this 100$\mu$s pulse using a hardware timer for maximum precision?**

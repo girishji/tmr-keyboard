@@ -161,11 +161,11 @@ Programmed at:
 	sensitivity: 0.7 mv/V/Gs
 	offset voltage: 300 mV/V
 Output:
-	0.8V - 0V (when key pressed)
+	0.8v - 0V (when key pressed, when key is inserted it goes from 1v to .8v))
+    (when magnet is reversed it goes from 1.3v to 2.5v)
 NOTE: This is wrongly programmed, but still usable. Offset voltage should be
 700 mv/V (or 500 mV/V if you don't want to worry about polarity).
-If programmed at 700 mV/V, voltage range will be 2.4V-0V. If programmed at
-500 mV/V, it will be 1.6V-0V (3.2V/2 = 1.6V).
+sensitivity can be 0.5 mv/v/gs. when key is inserted it jumps ~0.2-0.3v.
 
 MDT TMR2615 (1.6mm package)
 Programmed at:

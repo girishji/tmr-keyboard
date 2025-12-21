@@ -1,3 +1,14 @@
+B. "Idle" vs. "Active" Scanning
+
+Active Mode: When the user is typing, scan at 1,000Hz (every 1ms).
+
+Idle Mode: If no key is pressed for 30 seconds, drop the scan rate to 10Hz (every 100ms). This saves massive amounts of battery.
+
+C. Use the nRF54's PPI (Programmable Peripheral Interconnect) The nRF54 can use a timer to trigger the ADC and the Multiplexer address pins without waking up the CPU. This allows the "brain" of your MCU to stay in deep sleep while the hardware handles the scanning.
+
+---
+
+
 In a high-speed sensor array like yours, "optimization" isn't just about making the code run faster—it’s about **maximizing signal integrity** while **minimizing power-on time.** Since you have 72 sensors and 5 muxes, there are three major hardware/software strategies to optimize:
 
 ###1. The "Parallel Output" OptimizationThe nRF54L15 has multiple SAADC (Analog-to-Digital Converter) channels. You have two ways to wire the 5 muxes:

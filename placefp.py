@@ -28,25 +28,26 @@ HOLES_SMALL = [
     (KEY_SPACING * 1.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 7.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 14.5, KEY_SPACING * 0.47),
-    (KEY_SPACING * 0.1, KEY_SPACING * 4),
-    (KEY_SPACING * 3.25, KEY_SPACING * 2.47),
+    (KEY_SPACING * 0.1, KEY_SPACING * 4 - 3),
+    (KEY_SPACING * 2.25, KEY_SPACING * 2.47),
     (KEY_SPACING * 7.25, KEY_SPACING * 2.47),
     (KEY_SPACING * 4.545, KEY_SPACING * 4.4),
     (KEY_SPACING * 9.955, KEY_SPACING * 4.4),
+    (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
     (KEY_SPACING * 14.5, KEY_SPACING * 3.47),
 ]
 
-HOLES_LARGE = [
-    (KEY_SPACING * 4.5, KEY_SPACING * 0.47),
-    (KEY_SPACING * 12.5, KEY_SPACING * 0.47),
-    (KEY_SPACING * 15.35, KEY_SPACING * 1.35),
-    (KEY_SPACING * 0.65, KEY_SPACING * .65),
-    (KEY_SPACING * 5.25, KEY_SPACING * 2.47),
-    (KEY_SPACING * 9.25, KEY_SPACING * 2.47),
-    (KEY_SPACING * 0.1, KEY_SPACING * 4.35),
-    (KEY_SPACING * 13.22, KEY_SPACING * 4.35),
-]
+# HOLES_LARGE = [
+#     (KEY_SPACING * 4.5, KEY_SPACING * 0.47),
+#     (KEY_SPACING * 12.5, KEY_SPACING * 0.47),
+#     (KEY_SPACING * 15.35, KEY_SPACING * 1.35),
+#     (KEY_SPACING * 0.65, KEY_SPACING * .65),
+#     (KEY_SPACING * 5.25, KEY_SPACING * 2.47),
+#     (KEY_SPACING * 9.25, KEY_SPACING * 2.47),
+#     (KEY_SPACING * 0.1, KEY_SPACING * 4.35),
+#     (KEY_SPACING * 13.22, KEY_SPACING * 4.35),
+# ]
 
 
 # =============================================================================
@@ -223,28 +224,37 @@ def place_switches_and_stabs(is_pcb):
     if switches[68]: switches[68].SetOrientationDegrees(angle)
 
 
-def place_leds():
-    """Places LEDs relative to their parent switches."""
+def place_sw_components():
+    """Places components relative to their parent switches."""
     board = pcbnew.GetBoard()
 
-    # LED Offset relative to switch center (in mm)
-    led_offset_mm = (0, -KEY_SPACING * 0.25)
-    offset_vec = pcbnew.VECTOR2I(mm_to_nm(led_offset_mm[0]), mm_to_nm(led_offset_mm[1]))
+    # Offset relative to switch center (in mm)
+    offset_mm = [
+        ('TMR', (0, 4.4), 0),  # Sensor
+        ('Cvout', (-3, 2), 90),  # Bypass resistor
+        ('Cvcc', (-3, 4), 270),  # Bypass resistor
+        ('D', (0, -4.75), 0),  # LED
+        ('Rd', (3.1, -4.75), 270),  # LED resistor
+        ]
 
-    for i in range(1, SWITCH_COUNT + 1):
-        sw = board.FindFootprintByReference(f"S{i}")
-        led = board.FindFootprintByReference(f"D{i}")
+    for (sym, pos, rot_deg) in offset_mm:
+        offset_vec = pcbnew.VECTOR2I(mm_to_nm(pos[0]), mm_to_nm(pos[1]))
+        for i in range(1, SWITCH_COUNT + 1):
+            sw = board.FindFootprintByReference(f"S{i}")
+            comp = board.FindFootprintByReference(f"{sym}{i}")
 
-        if sw and led:
-            deg = sw.GetOrientationDegrees()
-            sw_pos = sw.GetPosition()
+            if sw and comp:
+                deg = sw.GetOrientationDegrees()
+                sw_pos = sw.GetPosition()
 
-            # Match rotation
-            led.SetOrientationDegrees(deg)
+                # Match rotation
+                comp.SetOrientationDegrees(deg + rot_deg)
 
-            # Compute position: Rotate the offset vector to match switch rotation
-            new_pos = rotate_point(offset_vec + sw_pos, sw_pos, -deg)
-            led.SetPosition(new_pos)
+                # Compute position: Rotate the offset vector to match switch rotation
+                new_pos = rotate_point(offset_vec + sw_pos, sw_pos, -deg)
+                comp.SetPosition(new_pos)
+                if comp.GetLayer() == pcbnew.F_Cu:
+                    comp.Flip(new_pos, True)
 
 
 def place_mounting_holes(is_pcb):
@@ -258,9 +268,9 @@ def place_mounting_holes(is_pcb):
             set_position_mm(fp, x, y)
 
     # Place H series (Large holes)
-    for i, (x, y) in enumerate(HOLES_LARGE):
-        fp = board.FindFootprintByReference(f"H{i+1}")
-        set_position_mm(fp, x, y)
+    # for i, (x, y) in enumerate(HOLES_LARGE):
+    #     fp = board.FindFootprintByReference(f"H{i+1}")
+    #     set_position_mm(fp, x, y)
 
 
 def place_usb_conn():
@@ -273,9 +283,9 @@ def main():
     print(f"Starting placement... Mode: {'PCB' if IS_PCB_MOUNT else 'PLATE'}")
 
     place_switches_and_stabs(IS_PCB_MOUNT)
-    place_leds()
+    place_sw_components()
     place_mounting_holes(IS_PCB_MOUNT)
-    place_usb_conn()
+    # place_usb_conn()
 
     pcbnew.Refresh()
     print("Placement complete.")
