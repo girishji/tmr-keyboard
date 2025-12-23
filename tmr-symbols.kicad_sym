@@ -1114,7 +1114,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "BAT"
-			(at -6.35 10.668 0)
+			(at -6.858 8.128 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1123,7 +1123,7 @@
 			)
 		)
 		(property "Value" "Battery_Pack_PS5"
-			(at -6.35 8.128 0)
+			(at -6.858 5.588 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1179,8 +1179,8 @@
 		)
 		(symbol "Battery_Pack_PS5_0_1"
 			(rectangle
-				(start -6.35 5.08)
-				(end 6.35 -5.08)
+				(start -6.35 3.81)
+				(end 5.08 -3.81)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1191,26 +1191,8 @@
 			)
 		)
 		(symbol "Battery_Pack_PS5_1_1"
-			(pin power_in line
-				(at -2.54 -7.62 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_out line
-				(at 8.89 2.54 180)
+				(at -8.89 1.27 0)
 				(length 2.54)
 				(name "VBAT"
 					(effects
@@ -1228,7 +1210,7 @@
 				)
 			)
 			(pin passive line
-				(at 8.89 -2.54 180)
+				(at -8.89 -1.27 0)
 				(length 2.54)
 				(name "NTC"
 					(effects
@@ -1238,6 +1220,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 1.27 -6.35 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
