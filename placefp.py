@@ -49,6 +49,13 @@ HOLES_SMALL = [
 #     (KEY_SPACING * 13.22, KEY_SPACING * 4.35),
 # ]
 
+COMPONENTS = [
+    ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90),  # MCU module
+    ("MUXA1", KEY_SPACING * 8.5 - 5, KEY_SPACING * 0.47, 180),
+    ("MUXA2", KEY_SPACING * 8.5 + 5, KEY_SPACING * 0.47, 180),
+    ("USB1", KEY_SPACING * 2.5, -6.2, 180),
+]
+
 
 # =============================================================================
 # HELPER FUNCTIONS
@@ -273,6 +280,16 @@ def place_mounting_holes(is_pcb):
     #     set_position_mm(fp, x, y)
 
 
+def place_components():
+    """Places components."""
+    board = pcbnew.GetBoard()
+
+    for i, (fpname, x, y, deg) in enumerate(COMPONENTS):
+        fp = board.FindFootprintByReference(fpname)
+        set_position_mm(fp, x, y)
+        fp.SetOrientationDegrees(deg)
+
+
 def place_usb_conn():
     board = pcbnew.GetBoard()
     usbfp = board.FindFootprintByReference("USB1")
@@ -283,7 +300,9 @@ def main():
     print(f"Starting placement... Mode: {'PCB' if IS_PCB_MOUNT else 'PLATE'}")
 
     place_switches_and_stabs(IS_PCB_MOUNT)
-    place_sw_components()
+    if IS_PCB_MOUNT:
+        place_sw_components()
+        place_components()
     place_mounting_holes(IS_PCB_MOUNT)
     # place_usb_conn()
 
