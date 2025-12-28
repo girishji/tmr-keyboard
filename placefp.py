@@ -247,7 +247,7 @@ def place_sw_components():
     offset_mm = [
         ('TMR', (0, 4.4), 180),  # Sensor
         ('Cvout', (-2.8, 4), 90),  # Bypass resistor
-        ('Cvcc', (3, 2), 90),  # Bypass resistor
+        ('Cvcc', (3, 3), -90),  # Bypass resistor
         ('D', (0, -4.75), 0),  # LED
         ('Rd', (3.1, -4.75), 270),  # LED resistor
         ]

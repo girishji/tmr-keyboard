@@ -581,6 +581,10 @@
       {
         "netclass": "Power",
         "pattern": "VSYS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VCCS"
       }
     ]
   },
