@@ -551,11 +551,11 @@
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "PowerRegulated",
+        "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.3,
+        "track_width": 0.25,
         "via_diameter": 0.6,
         "via_drill": 0.3
       }
@@ -571,8 +571,16 @@
         "pattern": "ANA_*"
       },
       {
-        "netclass": "PowerRegulated",
-        "pattern": "+2V1"
+        "netclass": "Power",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VOUT*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VSYS"
       }
     ]
   },

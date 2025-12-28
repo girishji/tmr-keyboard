@@ -50,10 +50,18 @@ HOLES_SMALL = [
 # ]
 
 COMPONENTS = [
-    ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90),  # MCU module
-    ("MUXA1", KEY_SPACING * 8.5 - 5, KEY_SPACING * 0.47, 180),
-    ("MUXA2", KEY_SPACING * 8.5 + 5, KEY_SPACING * 0.47, 180),
-    ("USB1", KEY_SPACING * 2.5, -6.2, 180),
+    ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90, True),  # MCU module
+    ("MUXA1", KEY_SPACING * 8.5 - 5, 8.5, 180, True),
+    ("MUXA2", KEY_SPACING * 8.5 + 5, 8.5, 0, True),
+    ("USB1", KEY_SPACING * 1.5, -6.2, 180, False),
+    ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
+    ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
+    ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),
+    ("MUXB4", KEY_SPACING * 6.75 + 1.5, KEY_SPACING * 3 + 4.5, 180, True),
+    ("MUXB5", KEY_SPACING * 9.5, 4.5, 0, True),
+    ("MUXB6", KEY_SPACING * 10, KEY_SPACING + 4.5, 0, True),
+    ("MUXB7", KEY_SPACING * 9.25, KEY_SPACING * 2 + 4.5, 180, True),
+    ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
 ]
 
 
@@ -237,9 +245,9 @@ def place_sw_components():
 
     # Offset relative to switch center (in mm)
     offset_mm = [
-        ('TMR', (0, 4.4), 0),  # Sensor
-        ('Cvout', (-3, 2), 90),  # Bypass resistor
-        ('Cvcc', (-3, 4), 270),  # Bypass resistor
+        ('TMR', (0, 4.4), 180),  # Sensor
+        ('Cvout', (-2.8, 4), 90),  # Bypass resistor
+        ('Cvcc', (3, 2), 90),  # Bypass resistor
         ('D', (0, -4.75), 0),  # LED
         ('Rd', (3.1, -4.75), 270),  # LED resistor
         ]
@@ -284,16 +292,12 @@ def place_components():
     """Places components."""
     board = pcbnew.GetBoard()
 
-    for i, (fpname, x, y, deg) in enumerate(COMPONENTS):
+    for i, (fpname, x, y, deg, flip) in enumerate(COMPONENTS):
         fp = board.FindFootprintByReference(fpname)
         set_position_mm(fp, x, y)
         fp.SetOrientationDegrees(deg)
-
-
-def place_usb_conn():
-    board = pcbnew.GetBoard()
-    usbfp = board.FindFootprintByReference("USB1")
-    set_position_mm(usbfp, -3.1, 55)
+        if flip and fp.GetLayer() == pcbnew.F_Cu:
+            fp.Flip(fp.GetPosition(), True)
 
 
 def main():
@@ -304,7 +308,6 @@ def main():
         place_sw_components()
         place_components()
     place_mounting_holes(IS_PCB_MOUNT)
-    # place_usb_conn()
 
     pcbnew.Refresh()
     print("Placement complete.")
