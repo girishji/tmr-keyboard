@@ -585,6 +585,10 @@
       {
         "netclass": "Power",
         "pattern": "VCCS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDDIO"
       }
     ]
   },

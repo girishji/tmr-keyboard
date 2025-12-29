@@ -51,7 +51,7 @@ HOLES_SMALL = [
 
 COMPONENTS = [
     ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90, True),  # MCU module
-    ("MUXA1", KEY_SPACING * 8.5 - 5, 8.5, 180, True),
+    ("MUXA1", KEY_SPACING * 8.5 - 5, 9.5, 180 - 45, True),
     ("MUXA2", KEY_SPACING * 8.5 + 5, 8.5, 0, True),
     ("USB1", KEY_SPACING * 1.5, -6.2, 180, False),
     ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
