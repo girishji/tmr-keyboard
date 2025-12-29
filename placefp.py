@@ -62,6 +62,7 @@ COMPONENTS = [
     ("MUXB6", KEY_SPACING * 10, KEY_SPACING + 4.5, 0, True),
     ("MUXB7", KEY_SPACING * 9.25, KEY_SPACING * 2 + 4.5, 180, True),
     ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
+    ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
 ]
 
 

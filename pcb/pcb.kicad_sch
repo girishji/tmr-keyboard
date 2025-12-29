@@ -14615,7 +14615,7 @@
 		(uuid "05a2511d-8f71-4289-9e8d-0fe741f9a949")
 	)
 	(label "CS2"
-		(at 396.24 426.72 180)
+		(at 467.36 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14955,7 +14955,7 @@
 		(uuid "1d089ec6-1770-43c0-abf6-e250fecc6c28")
 	)
 	(label "CS3"
-		(at 405.13 426.72 180)
+		(at 476.25 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15555,7 +15555,7 @@
 		(uuid "50fd058b-8b66-4aa6-93a4-ae6ffe759d13")
 	)
 	(label "CS16"
-		(at 502.92 426.72 180)
+		(at 431.8 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15874,16 +15874,6 @@
 		)
 		(uuid "65b37a54-f7cd-4739-848c-6048cd26cb1e")
 	)
-	(label "CS9"
-		(at 414.02 441.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "65b485d8-e873-41c0-a045-92b577ab6bba")
-	)
 	(label "ANA_70"
 		(at 170.18 294.64 180)
 		(effects
@@ -15915,7 +15905,7 @@
 		(uuid "6754ce59-560e-459c-b9f3-cf6b2d3e5145")
 	)
 	(label "CS1"
-		(at 387.35 426.72 180)
+		(at 458.47 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16195,7 +16185,7 @@
 		(uuid "7adcee8a-26ab-4636-bc63-fb0864931f8b")
 	)
 	(label "CS6"
-		(at 431.8 426.72 180)
+		(at 502.92 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16265,7 +16255,7 @@
 		(uuid "813ced15-7925-412b-a768-19bccd7c42fd")
 	)
 	(label "CS12"
-		(at 467.36 426.72 180)
+		(at 396.24 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16353,6 +16343,16 @@
 			(justify left bottom)
 		)
 		(uuid "88b089ba-a053-4e23-a0a1-89532d38d543")
+	)
+	(label "CS9"
+		(at 378.46 441.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "896c9b68-3d58-49fe-8cb7-a3d1299ba1fd")
 	)
 	(label "ANA_34"
 		(at 170.18 223.52 180)
@@ -16475,7 +16475,7 @@
 		(uuid "910aa270-9f24-41dc-8f98-97cb56098fde")
 	)
 	(label "CS7"
-		(at 440.69 426.72 180)
+		(at 476.25 441.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16595,7 +16595,7 @@
 		(uuid "9d78bb41-83f2-48f0-a254-4955f698928a")
 	)
 	(label "CS5"
-		(at 422.91 426.72 180)
+		(at 494.03 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16665,7 +16665,7 @@
 		(uuid "a415f44d-ebf8-42ad-ae87-9bfd7e4a0b28")
 	)
 	(label "CS10"
-		(at 449.58 426.72 180)
+		(at 378.46 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16675,7 +16675,7 @@
 		(uuid "a5097799-3688-4536-b6ea-b5a8871e3462")
 	)
 	(label "CS15"
-		(at 494.03 426.72 180)
+		(at 422.91 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16794,16 +16794,6 @@
 		)
 		(uuid "b2f1f6b9-a43a-4886-8d37-6c38c72613ca")
 	)
-	(label "CS17"
-		(at 476.25 441.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b389ae9f-5e2b-45fa-b2b4-7e9b0c47647c")
-	)
 	(label "ANA_71"
 		(at 204.47 134.62 0)
 		(effects
@@ -16904,7 +16894,7 @@
 		)
 		(uuid "bda2a012-0d7b-4a9a-931f-2470396f7309")
 	)
-	(label "CS16"
+	(label "CS6"
 		(at 494.03 441.96 180)
 		(effects
 			(font
@@ -17024,7 +17014,7 @@
 		)
 		(uuid "c5b0c7de-806b-4adb-a556-62c2c0215516")
 	)
-	(label "CS16"
+	(label "CS6"
 		(at 485.14 441.96 180)
 		(effects
 			(font
@@ -17145,7 +17135,7 @@
 		(uuid "cf8a8926-679c-4616-a1a7-c31b42a748f2")
 	)
 	(label "CS11"
-		(at 458.47 426.72 180)
+		(at 387.35 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17155,7 +17145,7 @@
 		(uuid "cfb6c1ec-779a-42e4-8ddf-6b673f14a5c1")
 	)
 	(label "CS4"
-		(at 414.02 426.72 180)
+		(at 485.14 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17255,7 +17245,7 @@
 		(uuid "d4ba7f96-c4de-4823-bc4c-3b12451de9b9")
 	)
 	(label "CS8"
-		(at 378.46 441.96 180)
+		(at 414.02 441.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17344,6 +17334,16 @@
 		)
 		(uuid "d9665945-1363-43ae-9b44-4bbc8a3d9f8f")
 	)
+	(label "CS17"
+		(at 440.69 426.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "da501e7f-7821-415e-a813-b27bbb32517f")
+	)
 	(label "ANA_52"
 		(at 213.36 279.4 180)
 		(effects
@@ -17385,7 +17385,7 @@
 		(uuid "de38e00e-5b3b-45b0-8ece-0464230fdbfa")
 	)
 	(label "CS14"
-		(at 485.14 426.72 180)
+		(at 414.02 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17665,7 +17665,7 @@
 		(uuid "fb2d4eb1-9577-43fd-8e9a-b1649628382b")
 	)
 	(label "CS0"
-		(at 378.46 426.72 180)
+		(at 449.58 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17675,7 +17675,7 @@
 		(uuid "fb4e23ea-f029-40f6-96ef-dbac20ea3806")
 	)
 	(label "CS13"
-		(at 476.25 426.72 180)
+		(at 405.13 426.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
