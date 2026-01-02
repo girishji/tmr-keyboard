@@ -36,6 +36,7 @@ HOLES_SMALL = [
     (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
     (KEY_SPACING * 14.5, KEY_SPACING * 3.47),
+    (KEY_SPACING * 13.5 - 1.25, KEY_SPACING * 2),
 ]
 
 # HOLES_LARGE = [
@@ -53,7 +54,7 @@ COMPONENTS = [
     ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90, True),  # MCU module
     ("MUXA1", KEY_SPACING * 8.5 - 5, 9.5, 180 - 45, True),
     ("MUXA2", KEY_SPACING * 8.5 + 5, 8.5, 0, True),
-    ("USB1", KEY_SPACING * 1.5, -6.2, 180, False),
+    ("USB1", 12.8, KEY_SPACING, -90, False),
     ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
     ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
     ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),
@@ -63,6 +64,11 @@ COMPONENTS = [
     ("MUXB7", KEY_SPACING * 9.25, KEY_SPACING * 2 + 4.5, 180, True),
     ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
     ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
+    # ("SW1", -3.1, KEY_SPACING * 3, 90, True),
+    ("SW1", 21, 38, -90, True),
+    ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
+    ("JTAG1", 27.52, -4.89, 0, False),
+    ("BAT1", 25, 83, 180, False),
 ]
 
 
