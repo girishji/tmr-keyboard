@@ -94,14 +94,14 @@
 		(zone_connect 2)
 		(uuid "2d02b7f1-8f28-4379-ab42-1aecde026aa8")
 	)
-	(pad "1" connect circle
+	(pad "" connect circle
 		(at 0 0)
 		(size 3.5 3.5)
 		(layers "F.Cu" "F.Mask")
 		(zone_connect 2)
 		(uuid "cad7c2c4-de69-4f8c-8547-b45b63ff2ffe")
 	)
-	(pad "1" connect circle
+	(pad "" connect circle
 		(at 0 0)
 		(size 3.5 3.5)
 		(layers "B.Cu" "B.Mask")

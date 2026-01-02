@@ -115,56 +115,93 @@ def remove_via(A):
                 board.Remove(via)
 
 
-def route_switch(sw_footprint):
-    """Draw tracks and vias on a switch footprint."""
-    pads = list(sw_footprint.Pads())
-    if len(pads) <= 0:
-        print("Pads not found")
-        return
-
-    # for pad in pads:
-    #     name = pad.GetPadName()
-    #     net = pad.GetNetname()
-    #     netcode = board.GetNetcodeFromNetname(net)
-    #     print(f'{name} {net} {netcode}')
-
-    deg = sw_footprint.GetOrientationDegrees()
-    EPSILON = rotate(VECTOR2I(mm_to_nm(0.1), 0), -deg)  # Very small line segment
-
-    # track 1
+def draw_track_Vout(idx):
+    """Draw track from TMR sensor's Vout to bypass cap."""
+    cap = board.FindFootprintByReference(f'Cvout{idx}')
+    pads = list(cap.Pads())
+    deg = cap.GetOrientationDegrees()
     A = pads[0].GetPosition()
-    net = pads[0].GetNetname() # Pin number (e.g., '1', '2', 'A1')
+    B = A + rotate(VECTOR2I(mm_to_nm(2.2), 0), -deg + 135)
+    net = pads[0].GetNetname()
+    remove_track(A, B)
+    draw_track(A, B, net)
+
+    EPSILONA = rotate(VECTOR2I(mm_to_nm(0.1), 0), -deg - 90)
+    A = B
+    tmr = board.FindFootprintByReference(f'TMR{idx}')
+    pads = list(tmr.Pads())
+    deg = tmr.GetOrientationDegrees()
+    EPSILONB = rotate(VECTOR2I(mm_to_nm(0.1), 0), -deg + 135)
     B = pads[1].GetPosition()
-    I = intersect(A, A + EPSILON, B, B + rotate(EPSILON, 135))
+    I = intersect(A, A + EPSILONA, B, B + EPSILONB)
     remove_track(A, I)
     remove_track(I, B)
     draw_track(A, I, net)
     draw_track(I, B, net)
 
-    # track 2
-    A = pads[4].GetPosition()
-    net = pads[4].GetNetname()
-    B = pads[5].GetPosition()
-    C = A + VECTOR2I(mm_to_nm(0.1), 0)
-    I = intersect(C, C + rotate(EPSILON, 45), B, B + rotate(EPSILON, -90))
-    remove_track(A, C)
-    remove_track(C, I)
-    remove_track(I, B)
-    draw_track(A, C, net)
-    draw_track(C, I, net)
-    draw_track(I, B, net)
 
-    VIA_DIST = rotate(VECTOR2I(0, -mm_to_nm(2.5)), -deg)
+def draw_track_Cvcc(idx):
+    """Draw track from Cvcc capacitor's ground pad to ground via."""
+    cap = board.FindFootprintByReference(f'Cvcc{idx}')
+    pads = list(cap.Pads())
+    deg = cap.GetOrientationDegrees()
+    A = pads[1].GetPosition()
+    B = A + rotate(VECTOR2I(mm_to_nm(5), 0), -deg + -90)
+    net = pads[1].GetNetname()
+    remove_track(A, B)
+    draw_track(A, B, net)
+    remove_via(B)
+    draw_via(B)
 
-    # vias
-    for pad_id in [4, 6]:
-        A = pads[pad_id].GetPosition()
-        net = pads[pad_id].GetNetname()
-        B = A + VIA_DIST
-        remove_track(A, B)
-        draw_track(A, B, net)
-        remove_via(B)
-        draw_via(B)
+
+    # pads = list(sw_footprint.Pads())
+    # if len(pads) <= 0:
+    #     print("Pads not found")
+    #     return
+    #
+    # # for pad in pads:
+    # #     name = pad.GetPadName()
+    # #     net = pad.GetNetname()
+    # #     netcode = board.GetNetcodeFromNetname(net)
+    # #     print(f'{name} {net} {netcode}')
+    #
+    # deg = sw_footprint.GetOrientationDegrees()
+    # EPSILON = rotate(VECTOR2I(mm_to_nm(0.1), 0), -deg)  # Very small line segment
+    #
+    # # track 1
+    # A = pads[0].GetPosition()
+    # net = pads[0].GetNetname() # Pin number (e.g., '1', '2', 'A1')
+    # B = pads[1].GetPosition()
+    # I = intersect(A, A + EPSILON, B, B + rotate(EPSILON, 135))
+    # remove_track(A, I)
+    # remove_track(I, B)
+    # draw_track(A, I, net)
+    # draw_track(I, B, net)
+    #
+    # # track 2
+    # A = pads[4].GetPosition()
+    # net = pads[4].GetNetname()
+    # B = pads[5].GetPosition()
+    # C = A + VECTOR2I(mm_to_nm(0.1), 0)
+    # I = intersect(C, C + rotate(EPSILON, 45), B, B + rotate(EPSILON, -90))
+    # remove_track(A, C)
+    # remove_track(C, I)
+    # remove_track(I, B)
+    # draw_track(A, C, net)
+    # draw_track(C, I, net)
+    # draw_track(I, B, net)
+    #
+    # VIA_DIST = rotate(VECTOR2I(0, -mm_to_nm(2.5)), -deg)
+    #
+    # # vias
+    # for pad_id in [4, 6]:
+    #     A = pads[pad_id].GetPosition()
+    #     net = pads[pad_id].GetNetname()
+    #     B = A + VIA_DIST
+    #     remove_track(A, B)
+    #     draw_track(A, B, net)
+    #     remove_via(B)
+    #     draw_via(B)
 
 
 def draw_intersecting_tracks(A, B, C, D, net):
@@ -257,11 +294,18 @@ def draw_angled_tracks():
     # draw_track(I, B, net)
 
 def main():
+    EXCLUDE = [1]
+
     # for i in range(1, SWITCH_COUNT + 1):
-    #     if switches[i]:
+    #     if switches[i] and not i in EXCLUDE:
     #         route_switch(switches[i])
 
-    draw_angled_tracks()
+    # EXCLUDE = [1, 2, 6, 7, 8, 9, 10, 14, 15,
+    #            16, 17, 19
+    #            ]
+    # draw_track_Cvcc(1)
+
+    # draw_angled_tracks()
 
     # Refresh the view to see the change
     pcbnew.Refresh()

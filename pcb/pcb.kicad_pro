@@ -576,7 +576,7 @@
       },
       {
         "netclass": "Power",
-        "pattern": "VOUT*"
+        "pattern": "/VOUT2"
       },
       {
         "netclass": "Power",
@@ -589,6 +589,10 @@
       {
         "netclass": "Power",
         "pattern": "VDDIO"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
       }
     ]
   },
