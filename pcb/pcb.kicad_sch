@@ -18211,7 +18211,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 359.41 364.49 0)
 			(effects
 				(font
@@ -18762,7 +18762,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 359.41 372.11 0)
 			(effects
 				(font
@@ -23325,7 +23325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 384.81 364.49 0)
 			(effects
 				(font
@@ -23780,7 +23780,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 372.11 364.49 0)
 			(effects
 				(font
@@ -25295,7 +25295,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 397.51 372.11 0)
 			(effects
 				(font
@@ -27725,7 +27725,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 372.11 372.11 0)
 			(effects
 				(font
@@ -27866,7 +27866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 359.41 379.73 0)
 			(effects
 				(font
@@ -29266,7 +29266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 397.51 379.73 0)
 			(effects
 				(font
@@ -29581,7 +29581,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 384.81 372.11 0)
 			(effects
 				(font
@@ -30780,7 +30780,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 372.11 379.73 0)
 			(effects
 				(font
@@ -30956,7 +30956,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 384.81 379.73 0)
 			(effects
 				(font
@@ -31174,7 +31174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
 			(at 397.51 364.49 0)
 			(effects
 				(font
