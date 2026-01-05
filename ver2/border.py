@@ -29,14 +29,10 @@ mil = lambda x: int(x * 1e6)
 offset = 0
 fillet_radius = mil(1)
 fillet_radius_half = mil(0.5)
-wrist = {'xoffset': mil(64), 'yoffset': mil(28), 'width': mil(88), 'height': mil(65)}
+wrist = {'xoffset': mil(64), 'yoffset': mil(28), 'xwidth': mil(88), 'ywidth': mil(65)}
 side_wall = mil(3)  # thickness of side wall of enclosure
 fillet_radius_left_corner = mil(10)
 fillet_radius_right_corner = mil(4)
-
-# dls = 2 * arc_dls # Length from where directed line segment is specified
-wrist = {'xoffset': mil(64), 'yoffset': mil(28), 'width': mil(88), 'height': mil(65)}
-
 half = mil(dim / 2)
 
 switches = [board.FindFootprintByReference('S' + str(num)) for num in range(COUNT + 1)]
@@ -280,23 +276,24 @@ def draw_cutout_plate():
     draw_line(R, S)
 
 
-def draw_wrist(L):
-    """Draw wrist and locate it to vector L."""
+def draw_wrist():
+    """Draw wrist rests."""
     radius = fillet_radius_left_corner
-    vlen = mil(0.2)
-    R = L
-    S = VECTOR2I(R) + VECTOR2I(-radius - vlen, wrist['height'] - vlen - radius)
-    draw_arc_fill_lines(left(R), up(S), radius)
-    R = VECTOR2I(S)
-    S += VECTOR2I(radius + vlen, radius + vlen)
-    draw_arc_fill_lines(down(R), left(S), radius)
-    R = VECTOR2I(S)
-    S += VECTOR2I(wrist['width'] - radius - vlen, -radius - vlen)
-    draw_arc_fill_lines(right(R), down(S), radius)
-    R = VECTOR2I(S)
-    S += VECTOR2I(-radius - vlen, -wrist['height'] + radius + vlen)
-    draw_arc_fill_lines(up(R), right(S), radius)
-    draw_line(S, L)
+
+    def draw_wrist_inner(A):
+        R = A
+        S = R + VECTOR2I(-radius, wrist['ywidth'] - radius)
+        R = draw_line_arc(down(R), right(S), radius)
+        S = R + VECTOR2I(-wrist['xwidth'] + radius, -radius)
+        R = draw_line_arc(left(R), down(S), radius)
+        S = R + VECTOR2I(radius, -wrist['ywidth'] + radius)
+        R = draw_line_arc(up(R), left(S), radius)
+        R = draw_line_arc(right(R), up(A), radius)
+
+    A = switches[65].GetPosition() + VECTOR2I(-wrist['xoffset'], half + wrist['yoffset'] + radius)
+    draw_wrist_inner(A)
+    A = switches[65].GetPosition() + VECTOR2I(wrist['xoffset'] + wrist['xwidth'],  half + wrist['yoffset'] + radius)
+    draw_wrist_inner(A)
 
 
 def draw_border(ispcb = False):
@@ -331,7 +328,7 @@ def draw_border(ispcb = False):
     S = switches[61].GetPosition() + VECTOR2I(0, half + offset)
     R = draw_line_arc(left(R, angle), right(S))
 
-    S = switches[65].GetPosition() + VECTOR2I(-wrist['xoffset'] - wrist['width'] + side_wall, -half)
+    S = switches[65].GetPosition() + VECTOR2I(-wrist['xoffset'] - wrist['xwidth'] + side_wall, -half)
     R = draw_line_arc(left(R), down(S), fillet_radius_left_corner)
     RLeft = R
 
@@ -431,5 +428,9 @@ draw_border(PCB)
 #     draw_cutout_pcb()
 # else:
 #     draw_cutout_plate()
+
+Layer = pcbnew.User_2
+draw_wrist()
+
 pcbnew.Refresh()
 # board.Save(board.GetFileName())
