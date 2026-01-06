@@ -398,16 +398,18 @@ def draw_border(ispcb = False):
     S = switches[15].GetPosition() + VECTOR2I(0, -half - offset)
     R = draw_line_arc(up(R), right(S), fillet_radius_half)
 
-    # Draw cutout for Ezurio board's antennae
-    S = VECTOR2I(mil(168), -half)
-    draw_line(R, S)
-    R = S
-    S = R + VECTOR2I(-mil(10), mil(4.5))
-    R = draw_line_arc(down(R), right(S), fillet_radius_half)
-    S = VECTOR2I(mil(157.25), -half)
-    R = draw_line_arc(left(R), down(S), fillet_radius_half)
-    draw_line(R, S)
-    R = S
+    if ispcb:
+        # Draw cutout for Ezurio board's antennae
+        S = VECTOR2I(mil(168), -half)
+        draw_line(R, S)
+        R = S
+        S = R + VECTOR2I(-mil(10), mil(4.5))
+        R = draw_line_arc(down(R), right(S), fillet_radius_half)
+        S = VECTOR2I(mil(157.25), -half)
+        R = draw_line_arc(left(R), down(S), fillet_radius_half)
+        draw_line(R, S)
+        R = S
+
     R = draw_line_arc(left(R), up(RLeft), fillet_radius_left_corner)
     draw_line(R, RLeft)
 
@@ -419,15 +421,13 @@ def remove_border():
             board.Delete(t)
 
 
-# PCB = False  # Plate, not pcb
-PCB = True
+PCB = False  # Plate, not pcb
+# PCB = True
 
 remove_border()
 draw_border(PCB)
-# if PCB:
-#     draw_cutout_pcb()
-# else:
-#     draw_cutout_plate()
+if not PCB:
+    draw_cutout_plate()
 
 Layer = pcbnew.User_2
 draw_wrist()
