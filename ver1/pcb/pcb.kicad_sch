@@ -7427,6 +7427,12 @@
 		(uuid "6740eb37-1536-4164-bfbb-77e41cbbacca")
 	)
 	(junction
+		(at 487.68 306.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cfa1d75-9135-495e-b281-3b24538dddd5")
+	)
+	(junction
 		(at 119.38 367.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7563,6 +7569,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c64de35-a09f-4f24-b4f3-4d72779da6a8")
+	)
+	(junction
+		(at 499.11 313.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d31bb38-11a6-4cf6-9a5e-9503cb35ec7a")
 	)
 	(junction
 		(at 52.07 355.6)
@@ -8023,6 +8035,10 @@
 	(no_connect
 		(at 346.71 129.54)
 		(uuid "8f2e4e2e-a980-414a-8005-a568c20edbfa")
+	)
+	(no_connect
+		(at 514.35 308.61)
+		(uuid "93bfadb7-fd85-4d7c-bd69-b077f6c07f88")
 	)
 	(no_connect
 		(at 486.41 109.22)
@@ -8610,6 +8626,16 @@
 	)
 	(wire
 		(pts
+			(xy 514.35 306.07) (xy 514.35 302.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "171ad75d-77cb-471a-a490-a256233d0c7b")
+	)
+	(wire
+		(pts
 			(xy 185.42 304.8) (xy 185.42 307.34)
 		)
 		(stroke
@@ -8870,7 +8896,7 @@
 	)
 	(wire
 		(pts
-			(xy 482.6 306.07) (xy 488.95 306.07)
+			(xy 482.6 306.07) (xy 487.68 306.07)
 		)
 		(stroke
 			(width 0)
@@ -11910,6 +11936,16 @@
 	)
 	(wire
 		(pts
+			(xy 487.68 302.26) (xy 487.68 306.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a25163dc-2b15-484f-bdad-8e7fd42da5c3")
+	)
+	(wire
+		(pts
 			(xy 405.13 308.61) (xy 403.86 308.61)
 		)
 		(stroke
@@ -12067,16 +12103,6 @@
 			(type default)
 		)
 		(uuid "a966abb4-7e55-4a35-80fe-14eeb490bcc0")
-	)
-	(polyline
-		(pts
-			(xy -259.08 556.26) (xy -161.29 556.26)
-		)
-		(stroke
-			(width 0.8128)
-			(type solid)
-		)
-		(uuid "a96ea9b3-a958-4d4a-9a99-26d1cb3df79d")
 	)
 	(wire
 		(pts
@@ -12327,6 +12353,16 @@
 			(type default)
 		)
 		(uuid "b6faa4e7-069f-4292-84c4-d91657798ab2")
+	)
+	(wire
+		(pts
+			(xy 514.35 302.26) (xy 487.68 302.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7d830d1-8584-40b4-9c83-4941e98be4ab")
 	)
 	(wire
 		(pts
@@ -12630,6 +12666,16 @@
 	)
 	(wire
 		(pts
+			(xy 487.68 306.07) (xy 488.95 306.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c25b2bce-1fdc-433e-a64c-3a4a1d9a0c9d")
+	)
+	(wire
+		(pts
 			(xy 201.93 384.81) (xy 207.01 384.81)
 		)
 		(stroke
@@ -12807,6 +12853,16 @@
 			(type default)
 		)
 		(uuid "cd1fff55-1f49-406a-b9dc-865ce08ac5b2")
+	)
+	(wire
+		(pts
+			(xy 499.11 313.69) (xy 524.51 313.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cda907ac-2a4a-4f0d-b685-6ec149897c2c")
 	)
 	(wire
 		(pts
@@ -15887,6 +15943,16 @@
 			(justify left bottom)
 		)
 		(uuid "a2f76673-3300-4636-a318-2df23e1e5690")
+	)
+	(label "VBAT"
+		(at 496.57 302.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a301808c-5a2d-48f0-ae9f-76133dafa98e")
 	)
 	(label "MUXB_SEL_1"
 		(at 83.82 266.7 180)
@@ -19701,6 +19767,82 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Battery_Pack_PS5_1")
+		(lib_id "tmr-lib:Battery_Pack_PS5")
+		(at 523.24 307.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3044e724-6772-4b84-94ae-52e6af08acfd")
+		(property "Reference" "BAT2"
+			(at 529.59 307.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 529.59 308.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
+			(at 502.412 332.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 527.558 330.708 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PS5 battery pack (red->power, black->ground, white->ntc)"
+			(at 526.034 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "a715119b-48ea-4977-8629-a79ad08cd83e")
+		)
+		(pin "2"
+			(uuid "16e436e8-de8c-43a2-ab01-75c1dedee707")
+		)
+		(pin "1"
+			(uuid "5324721d-ec71-40ba-8bbe-0f1f313014a0")
+		)
+		(instances
+			(project "pcb"
+				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
+					(reference "BAT2")
 					(unit 1)
 				)
 			)

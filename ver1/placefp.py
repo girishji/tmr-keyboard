@@ -21,6 +21,7 @@ import pcbnew
 KEY_SPACING = 19.00  # Standard key spacing in mm
 SWITCH_COUNT = 72
 IS_PCB_MOUNT = True  # Set to False for Plate generation
+# IS_PCB_MOUNT = False
 
 # Mounting Hole Coordinates (Layout specific)
 # Format: (x_mm, y_mm)
@@ -54,7 +55,7 @@ COMPONENTS = [
     ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90, True),  # MCU module
     ("MUXA1", KEY_SPACING * 8.5 - 5, 9.5, 180 - 45, True),
     ("MUXA2", KEY_SPACING * 8.5 + 5, 8.5, 0, True),
-    ("USB1", 12.8, KEY_SPACING, -90, False),
+    ("USB1", 12.7, KEY_SPACING, -90, False),  # make sure cutout on plate is distant from switch cutout
     ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
     ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
     ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),
@@ -68,7 +69,8 @@ COMPONENTS = [
     ("SW1", 21, 38, -90, True),  # Button switch
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
     ("JTAG1", 27.52, -4.89, 0, False),
-    ("BAT1", 25, 82.2, 0, False),
+    ("BAT1", KEY_SPACING * (1 + 1/4 - 1/32), 80, 0, False),
+    ("BAT2", KEY_SPACING * (12 + 1/16 + 1/32), 80, 0, False),
 ]
 
 
@@ -283,11 +285,15 @@ def place_mounting_holes(is_pcb):
     """Places mounting holes based on global coordinates."""
     board = pcbnew.GetBoard()
 
+    for i, (x, y) in enumerate(HOLES_SMALL):
+        fp = board.FindFootprintByReference(f"Hs{i+1}")
+        set_position_mm(fp, x, y)
+
     # Place Hs series (Small holes)
-    if is_pcb:
-        for i, (x, y) in enumerate(HOLES_SMALL):
-            fp = board.FindFootprintByReference(f"Hs{i+1}")
-            set_position_mm(fp, x, y)
+    # if is_pcb:
+    #     for i, (x, y) in enumerate(HOLES_SMALL):
+    #         fp = board.FindFootprintByReference(f"Hs{i+1}")
+    #         set_position_mm(fp, x, y)
 
     # Place H series (Large holes)
     # for i, (x, y) in enumerate(HOLES_LARGE):
@@ -295,11 +301,13 @@ def place_mounting_holes(is_pcb):
     #     set_position_mm(fp, x, y)
 
 
-def place_components():
+def place_components(is_pcb):
     """Places components."""
     board = pcbnew.GetBoard()
 
     for i, (fpname, x, y, deg, flip) in enumerate(COMPONENTS):
+        if not is_pcb and fpname not in ['USB1', 'BAT1', 'BAT2']:
+            continue
         fp = board.FindFootprintByReference(fpname)
         set_position_mm(fp, x, y)
         fp.SetOrientationDegrees(deg)
@@ -313,7 +321,7 @@ def main():
     place_switches_and_stabs(IS_PCB_MOUNT)
     if IS_PCB_MOUNT:
         place_sw_components()
-        place_components()
+    place_components(IS_PCB_MOUNT)
     place_mounting_holes(IS_PCB_MOUNT)
 
     pcbnew.Refresh()
