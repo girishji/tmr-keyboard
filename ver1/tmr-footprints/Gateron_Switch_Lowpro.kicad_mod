@@ -10,7 +10,7 @@
 		(uuid "caae8438-486d-4e33-ac63-6fe42bb06ce1")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.8 0.8)
 				(thickness 0.1)
 			)
 			(justify mirror)

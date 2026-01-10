@@ -21,13 +21,13 @@ import math
 import pcbnew
 from pcbnew import VECTOR2I
 
+# IS_PCB_MOUNT = True  # Set to False for Plate generation
+IS_PCB_MOUNT = False
+
 mil = lambda x: int(x * 1e6)
 
 # USB cutout interferes with switch 16 hole
-# USB_CUTOUT = [mil(8.6), mil(6.8)]  # GCT USB4125 connector
-
-# IS_PCB_MOUNT = True  # Set to False for Plate generation
-IS_PCB_MOUNT = False
+USB_CUTOUT = [mil(8.7), mil(6)]  # GCT USB4125 connector (5.8mm deep + .2)
 
 Layer = pcbnew.Edge_Cuts
 
@@ -38,8 +38,7 @@ board = pcbnew.GetBoard()
 fillet_radius = mil(1)
 fillet_radius_half = mil(0.5)
 
-# dls = 2 * arc_dls # Length from where directed line segment is specified
-wrist = {'xoffset': mil(64), 'yoffset': mil(28), 'width': mil(88), 'height': mil(65)}
+WRIST = {'xoffset': mil(64), 'yoffset': mil(28), 'xwidth': mil(88), 'ywidth': mil(65)}
 
 half = mil(dim / 2)
 
@@ -284,6 +283,26 @@ def draw_cutout_plate():
     draw_line(R, S)
 
 
+def draw_wrist():
+    """Draw wrist rests."""
+    radius = mil(12)
+
+    def draw_wrist_inner(A):
+        R = A
+        S = R + VECTOR2I(-radius, WRIST['ywidth'] - radius)
+        R = draw_line_arc(down(R), right(S), radius)
+        S = R + VECTOR2I(-WRIST['xwidth'] + radius, -radius)
+        R = draw_line_arc(left(R), down(S), radius)
+        S = R + VECTOR2I(radius, -WRIST['ywidth'] + radius)
+        R = draw_line_arc(up(R), left(S), radius)
+        R = draw_line_arc(right(R), up(A), radius)
+
+    A = switches[65].GetPosition() + VECTOR2I(-WRIST['xoffset'], half + WRIST['yoffset'] + radius)
+    draw_wrist_inner(A)
+    A = switches[65].GetPosition() + VECTOR2I(WRIST['xoffset'] + WRIST['xwidth'],  half + WRIST['yoffset'] + radius)
+    draw_wrist_inner(A)
+
+
 def draw_border(ispcb = False):
     """Draw border."""
 
@@ -338,22 +357,21 @@ def draw_border(ispcb = False):
     R = draw_line_arc(right(R), down(S))
 
     # Draw USB cutout
-    # if not ispcb:
-    #     usb = board.FindFootprintByReference('USB1')
-    #     Rorig = R
-    #     if usb:
-    #         S = VECTOR2I(R.x, usb.GetPosition().y + int(USB_CUTOUT[0] / 2))
-    #         draw_line(R, S)
-    #         R = S
-    #         S = VECTOR2I(R.x + USB_CUTOUT[1], R.y - int(USB_CUTOUT[0] / 2))
-    #         R = draw_line_arc(right(R), down(S), fillet_radius_half)
-    #         S = VECTOR2I(Rorig.x, usb.GetPosition().y - int(USB_CUTOUT[0] / 2))
-    #         R = draw_line_arc(up(R), right(S), fillet_radius_half)
-    #         draw_line(R, S)
-    #         R = S
+    if not ispcb:
+        usb = board.FindFootprintByReference('USB1')
+        Rorig = R
+        if usb:
+            S = VECTOR2I(R.x, usb.GetPosition().y + int(USB_CUTOUT[0] / 2))
+            draw_line(R, S)
+            R = S
+            S = VECTOR2I(R.x + USB_CUTOUT[1], R.y - int(USB_CUTOUT[0] / 2))
+            R = draw_line_arc(right(R), down(S), fillet_radius_half)
+            S = VECTOR2I(Rorig.x, usb.GetPosition().y - int(USB_CUTOUT[0] / 2))
+            R = draw_line_arc(up(R), right(S), fillet_radius_half)
+            draw_line(R, S)
+            R = S
 
-    S = switches[15].GetPosition() + VECTOR2I(0, -half)
-    Rleft = draw_line_arc(up(R), left(S), fillet_radius_half)
+    RLeft = R
 
     # Right side, starting from bottom middle switch
     #
@@ -397,7 +415,20 @@ def draw_border(ispcb = False):
     S = switches[15].GetPosition() + VECTOR2I(0, -half)
     R = draw_line_arc(up(R), right(S), fillet_radius_half)
 
-    draw_line(R, Rleft)
+    if ispcb:
+        # Draw cutout for Ezurio board's antennae
+        S = VECTOR2I(mil(168), -half)
+        draw_line(R, S)
+        R = S
+        S = R + VECTOR2I(-mil(10), mil(4.3))
+        R = draw_line_arc(down(R), right(S), fillet_radius_half)
+        S = VECTOR2I(mil(157.25), -half)
+        R = draw_line_arc(left(R), down(S), fillet_radius_half)
+        draw_line(R, S)
+        R = S
+
+    R = draw_line_arc(left(R), up(RLeft))
+    draw_line(R, RLeft)
 
 
 def remove_border():
@@ -413,5 +444,10 @@ if IS_PCB_MOUNT:
     draw_cutout_pcb()
 else:
     draw_cutout_plate()
+
+if not IS_PCB_MOUNT:
+    Layer = pcbnew.User_2
+    draw_wrist()
+
 pcbnew.Refresh()
 # board.Save(board.GetFileName())

@@ -20,8 +20,9 @@ import pcbnew
 # =============================================================================
 KEY_SPACING = 19.00  # Standard key spacing in mm
 SWITCH_COUNT = 72
-IS_PCB_MOUNT = True  # Set to False for Plate generation
-# IS_PCB_MOUNT = False
+
+# IS_PCB_MOUNT = True  # Set to False for Plate generation
+IS_PCB_MOUNT = False
 
 # Mounting Hole Coordinates (Layout specific)
 # Format: (x_mm, y_mm)
@@ -55,7 +56,8 @@ COMPONENTS = [
     ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90, True),  # MCU module
     ("MUXA1", KEY_SPACING * 8.5 - 5, 9.5, 180 - 45, True),
     ("MUXA2", KEY_SPACING * 8.5 + 5, 8.5, 0, True),
-    ("USB1", 12.7, KEY_SPACING, -90, False),  # make sure cutout on plate is distant from switch cutout
+    # ("USB1", 3.4 + KEY_SPACING * 0.5, KEY_SPACING, -90, False),  # see gct usb4515 footprint
+    ("USB1", 3.4 + KEY_SPACING * 0.5 - 1.2, KEY_SPACING, -90, False),  # see gct usb4125 footprint
     ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
     ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
     ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),
