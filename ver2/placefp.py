@@ -254,8 +254,8 @@ def place_sw_components():
     # Offset relative to switch center (in mm)
     offset_mm = [
         ('TMR', (0, 4.4), 180),  # Sensor
-        ('Cvout', (-2.8, 4), 90),  # Bypass resistor
-        ('Cvcc', (3, 3), -90),  # Bypass resistor
+        ('Cvout', (-2.8, 4), 90),  # Bypass cap
+        ('Cvcc', (3, 3), -90),  # Bypass cap
         ('D', (0, -4.75), 0),  # LED
         ('Rd', (3.1, -4.75), 270),  # LED resistor
         ]

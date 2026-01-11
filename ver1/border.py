@@ -21,8 +21,8 @@ import math
 import pcbnew
 from pcbnew import VECTOR2I
 
-# IS_PCB_MOUNT = True  # Set to False for Plate generation
-IS_PCB_MOUNT = False
+IS_PCB_MOUNT = True  # Set to False for Plate generation
+# IS_PCB_MOUNT = False
 
 mil = lambda x: int(x * 1e6)
 

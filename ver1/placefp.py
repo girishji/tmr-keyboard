@@ -21,8 +21,8 @@ import pcbnew
 KEY_SPACING = 19.00  # Standard key spacing in mm
 SWITCH_COUNT = 72
 
-# IS_PCB_MOUNT = True  # Set to False for Plate generation
-IS_PCB_MOUNT = False
+IS_PCB_MOUNT = True  # Set to False for Plate generation
+# IS_PCB_MOUNT = False
 
 # Mounting Hole Coordinates (Layout specific)
 # Format: (x_mm, y_mm)
@@ -257,10 +257,9 @@ def place_sw_components():
     # Offset relative to switch center (in mm)
     offset_mm = [
         ('TMR', (0, 4.4), 180),  # Sensor
-        ('Cvout', (-2.8, 4), 90),  # Bypass resistor
-        ('Cvcc', (3, 3), -90),  # Bypass resistor
+        ('Cvout', (-2.8, 4.4), 90),  # Bypass cap
+        ('Cvcc', (2.8, 4.4), -90),  # Bypass cap
         ('D', (0, -4.75), 0),  # LED
-        ('Rd', (3.1, -4.75), 270),  # LED resistor
         ]
 
     for (sym, pos, rot_deg) in offset_mm:
