@@ -135,6 +135,16 @@
 		(uuid "19792c39-92fe-4b27-b9dc-34126eccc58c")
 	)
 	(fp_line
+		(start -3.5 3.9)
+		(end -3.5 4.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "14e0ba34-639a-41dc-b75c-a74c2452081f")
+	)
+	(fp_line
 		(start -2.5 -6.25)
 		(end 2.5 -6.25)
 		(stroke
@@ -155,8 +165,8 @@
 		(uuid "2ead60f7-1583-463a-98ae-9383c40d39c0")
 	)
 	(fp_line
-		(start -1.8 2.4)
-		(end 1.8 2.4)
+		(start -2 2.4)
+		(end 2 2.4)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -165,14 +175,35 @@
 		(uuid "696c2be8-11e3-4eb4-85f2-de96eae00271")
 	)
 	(fp_line
-		(start -1.8 6.4)
-		(end 1.8 6.4)
+		(start -2 6.4)
+		(end 2 6.4)
 		(stroke
 			(width 0.1)
 			(type solid)
 		)
 		(layer "User.3")
 		(uuid "684fb858-b6d3-4de9-830e-1b977b565b20")
+	)
+	(fp_line
+		(start 3.5 3.9)
+		(end 3.5 4.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "a947539e-75ac-4c6c-a08a-de7da5e9950d")
+	)
+	(fp_arc
+		(start -3.5 3.9)
+		(mid -3.06066 2.83934)
+		(end -2 2.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "User.3")
+		(uuid "516458c5-3a31-4777-9e47-098f641cdf22")
 	)
 	(fp_arc
 		(start -2.5 -3.25)
@@ -186,26 +217,26 @@
 		(uuid "e6aa3890-da48-447f-84b7-4dc2d985de06")
 	)
 	(fp_arc
-		(start -1.8 6.4)
-		(mid -3.8 4.4)
-		(end -1.8 2.4)
+		(start -2 6.4)
+		(mid -3.06066 5.96066)
+		(end -3.5 4.9)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "User.3")
-		(uuid "028ab29e-6245-4012-b516-461956fff043")
+		(uuid "4d10c464-9ded-4104-aa9b-f1d0272724e2")
 	)
 	(fp_arc
-		(start 1.8 2.4)
-		(mid 3.8 4.4)
-		(end 1.8 6.4)
+		(start 2 2.4)
+		(mid 3.06066 2.83934)
+		(end 3.5 3.9)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "User.3")
-		(uuid "0c5f7c36-a106-421e-80d4-001c9eb7c65c")
+		(uuid "031b3e70-d94d-44c2-bbc2-b21fcf00d5f6")
 	)
 	(fp_arc
 		(start 2.5 -6.25)
@@ -217,6 +248,17 @@
 		)
 		(layer "User.3")
 		(uuid "3b1ad2cd-2106-44fa-bb5b-a24279295b54")
+	)
+	(fp_arc
+		(start 3.5 4.9)
+		(mid 3.06066 5.96066)
+		(end 2 6.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.3")
+		(uuid "2e0ea52f-f77e-4551-973b-0a699d5f9d7d")
 	)
 	(fp_line
 		(start -7 -7)
