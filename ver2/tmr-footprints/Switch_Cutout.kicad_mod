@@ -161,6 +161,7 @@
 	)
 	(embedded_fonts no)
 	(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
+		(hide yes)
 		(offset
 			(xyz 0 0 -3)
 		)
