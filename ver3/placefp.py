@@ -61,7 +61,7 @@ COMPONENTS = [
     ("MUXA2", 167.22, 11.11, 0, True),
     # ("USB1", 3.4 + KEY_SPACING * 0.5, KEY_SPACING, -90, False),  # gct4515
     # ("USB1", 3.4 + KEY_SPACING * 0.5 - 1.2, KEY_SPACING, -90, False),  # gct4125
-    ("Jusb1", -7, KEY_SPACING / 2, -90, False),  # gct4105 usb-c
+    ("Jusb1", -9, KEY_SPACING / 2, -90, False),  # gct4105 usb-c
     ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
     ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
     ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),

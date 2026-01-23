@@ -261,36 +261,6 @@
 		(uuid "2e0ea52f-f77e-4551-973b-0a699d5f9d7d")
 	)
 	(fp_line
-		(start -8.2 -6)
-		(end -8.2 6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "59a2f3a4-0220-4628-a29d-d32a51adb03f")
-	)
-	(fp_line
-		(start -7.8 -6.4)
-		(end -7 -6.4)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "bdaaa521-27ac-4c9a-9e82-bebea1fe48d5")
-	)
-	(fp_line
-		(start -7.8 6.4)
-		(end -7 6.4)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "d2ad33d5-0c56-4358-992f-e6c1974495cc")
-	)
-	(fp_line
 		(start -7 -6.6)
 		(end -7 6.6)
 		(stroke
@@ -329,58 +299,6 @@
 		)
 		(layer "User.4")
 		(uuid "5d401b59-16e8-49fe-b315-3143307dd9ef")
-	)
-	(fp_line
-		(start 7 -6.4)
-		(end 7.8 -6.4)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "0f240010-d9e5-449b-9c01-b05e361af468")
-	)
-	(fp_line
-		(start 7 6.4)
-		(end 7.8 6.4)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "142a9fcd-7b25-4cc4-a0dc-88a8f4c09339")
-	)
-	(fp_line
-		(start 8.2 -6)
-		(end 8.2 6)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "f360e2bb-7bb4-4bb4-8eaf-6e2b6829501e")
-	)
-	(fp_arc
-		(start -8.2 -6)
-		(mid -8.082842 -6.282843)
-		(end -7.799999 -6.4)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "9ded57e9-4079-424e-9d45-61da227c0c10")
-	)
-	(fp_arc
-		(start -7.8 6.4)
-		(mid -8.082843 6.282842)
-		(end -8.2 5.999999)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "34bd865a-402d-4129-8987-3dab96d9eea2")
 	)
 	(fp_arc
 		(start -7 -6.6)
@@ -425,28 +343,6 @@
 		)
 		(layer "User.4")
 		(uuid "4d40f56c-994e-4e36-b5ab-351fdc749971")
-	)
-	(fp_arc
-		(start 7.8 -6.4)
-		(mid 8.082843 -6.282842)
-		(end 8.2 -5.999999)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "3d3e37a3-07ce-4f0c-b509-7f7618d1d1d7")
-	)
-	(fp_arc
-		(start 8.2 6)
-		(mid 8.082842 6.282843)
-		(end 7.799999 6.4)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "User.4")
-		(uuid "8128eee0-7e8b-4bf7-a533-5e394321ade1")
 	)
 	(fp_text user "${REFERENCE}"
 		(at -0.25 8.65 0)
