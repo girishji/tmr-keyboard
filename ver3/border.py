@@ -302,7 +302,7 @@ def draw_wings():
     S = switches[65].GetPosition() + VECTOR2I(int(-xmid + WRIST['xwidth']/2), half + WRIST['yoffset'])
     R = draw_line_arc(down(R, skew), left(S), radius)
 
-    R = switches[59].GetPosition() + VECTOR2I(0, half + SIDE_WALL)
+    R = switches[59].GetPosition() + VECTOR2I(-half, half + SIDE_WALL)
     S = switches[65].GetPosition() + VECTOR2I(int(-xmid - width/2), half + WRIST['yoffset'])
     R = draw_line_arc(right(R), up(S, skew), radius)
     S = switches[65].GetPosition() + VECTOR2I(int(-xmid - WRIST['xwidth']/2), half + WRIST['yoffset'])

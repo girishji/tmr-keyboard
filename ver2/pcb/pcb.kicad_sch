@@ -30574,7 +30574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc94e71d-401a-44ed-9750-f38b34548a29")
-		(property "Reference" "U1"
+		(property "Reference" "PMIC1"
 			(at 440.69 275.59 0)
 			(do_not_autoplace yes)
 			(effects
@@ -30721,7 +30721,7 @@
 		(instances
 			(project ""
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "U1")
+					(reference "PMIC1")
 					(unit 1)
 				)
 			)

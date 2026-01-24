@@ -59,7 +59,7 @@ COMPONENTS = [
     ("MUXA2", 167.22, 11.11, 0, True),
     # ("USB1", 3.4 + KEY_SPACING * 0.5, KEY_SPACING, -90, False),  # gct4515
     # ("USB1", 3.4 + KEY_SPACING * 0.5 - 1.2, KEY_SPACING, -90, False),  # gct4125
-    ("USB1", 12.575, KEY_SPACING, -90, False),  # gct4105 usb-c
+    ("Jusb1", -4.775, 52.91, -90, False),  # gct4105 usb-c
     ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
     ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
     ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),
@@ -314,7 +314,7 @@ def place_components(is_pcb):
     board = pcbnew.GetBoard()
 
     for i, (fpname, x, y, deg, flip) in enumerate(COMPONENTS):
-        if not is_pcb and fpname not in ['USB1', 'BAT1', 'BAT2']:
+        if not is_pcb and fpname not in ['Jusb1', 'BAT1', 'BAT2']:
             continue
         fp = board.FindFootprintByReference(fpname)
         set_position_mm(fp, x, y)
