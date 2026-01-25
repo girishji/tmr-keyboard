@@ -1,0 +1,10 @@
+identifier: Girish_nRF52840/nrf52840
+name: TMR Keyboard
+vendor: Girish
+type: mcu
+arch: arm
+ram: 256
+flash: 1024
+toolchain:
+  - zephyr
+supported: []
