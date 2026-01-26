@@ -1,0 +1,118 @@
+/dts-v1/;
+
+#include <nordic/nrf52840_qiaa.dtsi>
+#include <nordic/nrf52840_partition.dtsi>
+#include "tmr_kbd_nrf52840-pinctrl.dtsi"
+/* Include keycode definitions */
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+	model = "TMR Keyboard";
+	compatible = "gp,tmr-kbd-nrf52840";
+
+	chosen {
+		/* Redirect console to Seggar RTT to save pins */
+		zephyr,console = &snippet_rtt;
+		zephyr,shell-uart = &snippet_rtt;
+		zephyr,uart-mcumgr = &snippet_rtt;
+	};
+
+	/* Virtual RTT console node */
+	snippet_rtt: snippet_rtt {
+		compatible = "segger,rtt-uart";
+	};
+
+	/* Define MUX control pins as a new group */
+	mux_control {
+		compatible = "gpio-leds"; /* generic gpio driver */
+		mux_a0: mux_a0 {
+			gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
+		};
+		mux_b0: mux_b0 {
+			gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+		};
+		mux_b1: mux_b1 {
+			gpios = <&gpio0 7 GPIO_ACTIVE_HIGH>;
+		};
+		mux_b2: mux_b2 {
+			gpios = <&gpio1 8 GPIO_ACTIVE_HIGH>;
+		};
+	};
+};
+
+/* Configure the I2C0 Bus and Peripherals */
+&i2c0 {
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-1 = <&i2c0_sleep>;
+	pinctrl-names = "default", "sleep";
+
+	// XXX:
+	npm1300: npm1300@48 {
+		compatible = "nordic,npm1300";
+		reg = <0x48>;
+		/* Add PMIC sub-nodes (regulators/charger) here */
+		npm1300_charger: charger {
+			compatible = "nordic,npm1300-charger";
+			term-termination-current-micro-amp = <20000>;
+			term-ext-voltage-micro-volt = <4200000>;
+			/* The driver handles battery V and I reading via I2C commands */
+		};
+		// regulator
+	};
+
+	// XXX:
+	/* Ensure the nPM1300 LDO or Buck regulator powering your sensors is set to a "Quiet" mode (usually LDO is better for analog). */
+
+	lp5864: lp5864@30 {
+		compatible = "i2c-device";
+		reg = <0x30>;
+		/* EN pin connected to P0.13 */
+		enable-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+	};
+};
+
+/* Enable ADC for your TMR sensors */
+&adc {
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	/* Example of defining one of your 8 channels */
+	channel@0 {
+		reg = <0>;
+		zephyr,gain = "ADC_GAIN_1_6";
+		// XXX:
+		zephyr,reference = "ADC_REF_INTERNAL"; /* 0.6V internal ref */
+		/* sensors are powered by the same VDD as the nRF52. This cancels out any noise from your power supply */
+		zephyr,reference = "ADC_REF_VDD_1_4";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,input-positive = <NRF_SAADC_AIN0>; /* P0.02 */
+		zephyr,resolution = <12>;
+	};
+	/* ... repeat for channels 1 through 7 ... */
+};
+
+/* Enable GPIO Ports */
+&gpio0 {
+	status = "okay";
+};
+
+&gpio1 {
+	status = "okay";
+};
+
+/* Disable everything you aren't using to save power/resources */
+&uart0 { status = "disabled"; };
+&uart1 { status = "disabled"; };
+&i2c1 { status = "disabled"; };
+&spi0 { status = "disabled"; };
+&spi1 { status = "disabled"; };
+&spi2 { status = "disabled"; };
+&pwm0 { status = "disabled"; };
+&qspi { status = "disabled"; };
+
+/* Keep USB enabled for the keyboard connection */
+zephyr_udc0: &usbd {
+	status = "okay";
+};

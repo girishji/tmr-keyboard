@@ -1,0 +1,5 @@
+board:
+  name: tmr_kbd_nrf52840
+  vendor: gp
+  socs:
+    - name: nrf52840

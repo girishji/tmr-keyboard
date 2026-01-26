@@ -1,0 +1,10 @@
+identifier: tmr_kbd_nrf52840/nrf52840
+name: TMR Keyboard
+vendor: gp
+type: mcu
+arch: arm
+ram: 256
+flash: 1024
+toolchain:
+  - zephyr
+supported: []

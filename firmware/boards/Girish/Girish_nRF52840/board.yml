@@ -1,5 +1,0 @@
-board:
-  name: Girish_nRF52840
-  vendor: Girish
-  socs:
-    - name: nrf52840

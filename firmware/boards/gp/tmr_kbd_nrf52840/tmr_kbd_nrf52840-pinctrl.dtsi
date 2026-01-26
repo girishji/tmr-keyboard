@@ -1,0 +1,19 @@
+/* TMR Keyboard Custom Pinctrl */
+
+&pinctrl {
+	i2c0_default: i2c0_default {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
+				<NRF_PSEL(TWIM_SCL, 0, 11)>;
+			bias-pull-up; /* Internal pull-ups as backup to physical ones */
+		};
+	};
+
+	i2c0_sleep: i2c0_sleep {
+		group1 {
+			psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
+				<NRF_PSEL(TWIM_SCL, 0, 11)>;
+			low-power-enable;
+		};
+	};
+};
