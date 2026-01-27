@@ -32,3 +32,25 @@ int main(void)
 	return 0;
 }
 
+# if 0
+Optimized C Code for 5ms Scanning
+Since you're using enable-gpio-config = <2 ...>, the nPM1300 driver handles the GPIO2 work behind the scenes when you call the regulator API.
+
+#include <zephyr/drivers/regulator.h>
+
+const struct device *tmr_pwr = DEVICE_DT_GET(DT_NODELABEL(npm1300_ldsw1));
+
+void scan_matrix(void) {
+    // 1. Flip the switch (GPIO2 goes high internally)
+    regulator_enable(tmr_pwr);
+
+    // 2. Very short stabilization wait (Load switch is fast!)
+    k_busy_wait(100); // 100 microseconds is usually plenty for LDSW
+
+    // 3. Run your ADC scan logic
+    read_all_tmr_sensors();
+
+    // 4. Kill the power to the sensors immediately
+    regulator_disable(tmr_pwr);
+}
+#endif
