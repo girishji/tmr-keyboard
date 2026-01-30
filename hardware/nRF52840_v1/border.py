@@ -60,7 +60,6 @@ up = lambda X, angle=0: (X, X + rotate(VECTOR2I(0, -epsilon_dls), angle))
 down = lambda X, angle=0: (X, X + rotate(VECTOR2I(0, epsilon_dls), angle))
 
 
-
 def draw_line(start, end):
     board = pcbnew.GetBoard()
     ls = pcbnew.PCB_SHAPE(board)
@@ -366,28 +365,8 @@ def draw_border(ispcb = False, offset = 0):
         S = switches[59].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
         R = draw_line_arc(left(R), down(S))
 
-        # Draw USB pcb extension
-        Rsave = R
         S = switches[45].GetPosition() + VECTOR2I(-half, half)
         R = draw_line_arc(up(R), right(S))
-
-        S = switches[45].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
-        R = draw_line_arc(left(R), down(S))
-
-        S = S + VECTOR2I(-mil(3), mil(1.4))
-        R = draw_line_arc(up(R), right(S))
-
-        S = S + VECTOR2I(-mil(-0.5), -mil(5))
-        R = draw_line_arc(left(R), down(S))
-
-        S = switches[45].GetPosition() + VECTOR2I(-half, -half)
-        R = draw_line_arc(up(R), left(S))
-        Rsave2 = R
-
-        # Draw outline (on non-Edge_Cuts cuts without USB receptacle)
-        LAYER = pcbnew.User_2
-        S = switches[45].GetPosition() + VECTOR2I(-half, half)
-        R = draw_line_arc(up(Rsave), right(S))
 
         S = switches[45].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
         R = draw_line_arc(left(R), down(S))
@@ -395,10 +374,8 @@ def draw_border(ispcb = False, offset = 0):
         S = switches[45].GetPosition() + VECTOR2I(-half, -half)
         R = draw_line_arc(up(R), left(S))
 
-        # Continue drawing Edge_Cuts
-        LAYER = pcbnew.Edge_Cuts
         S = switches[30].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
-        R = draw_line_arc(right(Rsave2), down(S))
+        R = draw_line_arc(right(R), down(S))
 
         S = switches[30].GetPosition() + VECTOR2I(-half, -half)
         R = draw_line_arc(up(R), left(S))
@@ -406,20 +383,17 @@ def draw_border(ispcb = False, offset = 0):
         S = switches[16].GetPosition() + VECTOR2I(-int(half * 1.5), 0)
         R = draw_line_arc(right(R), down(S))
 
-        # # Draw USB cutout
-        # if not ispcb:
-        #     usb = board.FindFootprintByReference('USB1')
-        #     Rorig = R
-        #     if usb:
-        #         S = VECTOR2I(R.x, usb.GetPosition().y + int(USB_CUTOUT[0] / 2))
-        #         draw_line(R, S)
-        #         R = S
-        #         S = VECTOR2I(R.x + USB_CUTOUT[1], R.y - int(USB_CUTOUT[0] / 2))
-        #         R = draw_line_arc(right(R), down(S), fillet_radius_half)
-        #         S = VECTOR2I(Rorig.x, usb.GetPosition().y - int(USB_CUTOUT[0] / 2))
-        #         R = draw_line_arc(up(R), right(S), fillet_radius_half)
-        #         draw_line(R, S)
-        #         R = S
+        # Draw USB pcb extension
+        if ispcb:
+            S = switches[1].GetPosition() + VECTOR2I(0, -half - mil(4.3))
+            R = draw_line_arc(up(R), left(S))
+
+            S = R + VECTOR2I(mil(28), mil(5))
+            R = draw_line_arc(right(R), up(S))
+
+            S = switches[3].GetPosition() + VECTOR2I(0, -half)
+            R = draw_line_arc(down(R), left(S))
+
 
     RLeft = R
 
@@ -473,6 +447,9 @@ def draw_border(ispcb = False, offset = 0):
     if outline:
         S = switches[15].GetPosition() + VECTOR2I(half + offset, 0)
         R = draw_line_arc(right(R), down(S), fillet_radius_right_bottom + offset)
+
+        S = switches[15].GetPosition() + VECTOR2I(0, -half - offset - mil(1.5))
+        R = draw_line_arc(up(R), right(S), fradius)
     else:
         S = switches[72].GetPosition() + VECTOR2I(half, 0)
         R = draw_line_arc(right(R), down(S))
@@ -483,8 +460,8 @@ def draw_border(ispcb = False, offset = 0):
         S = switches[58].GetPosition() + VECTOR2I(half, 0)
         R = draw_line_arc(right(R), down(S))
 
-    S = switches[15].GetPosition() + VECTOR2I(0, -half - offset)
-    R = draw_line_arc(up(R), right(S), fradius)
+        S = switches[15].GetPosition() + VECTOR2I(0, -half - offset)
+        R = draw_line_arc(up(R), right(S), fradius)
 
     if ispcb and offset == 0:
         # Draw cutout for nrf board's antennae
@@ -500,7 +477,7 @@ def draw_border(ispcb = False, offset = 0):
 
     if outline:
         R = draw_line_arc(left(R), up(RLeft), fillet_radius_laptop - SIDE_WALL + offset)
-    else:
+    elif not ispcb:
         R = draw_line_arc(left(R), up(RLeft))
     draw_line(R, RLeft)
 

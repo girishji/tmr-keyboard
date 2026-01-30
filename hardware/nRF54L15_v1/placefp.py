@@ -70,7 +70,7 @@ COMPONENTS = [
     # ("SW1", -3.1, KEY_SPACING * 3, 90, True),
     ("SW1", 21, 38, -90, True),  # Button switch
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
-    ("JTAG1", 27.52, -4.89, 0, False),
+    ("JTAG1", 28, -5, 0, False),
     ("BAT1", KEY_SPACING * (1 + 1/4 - 1/32), 80, 0, False),
     ("BAT2", KEY_SPACING * (12 + 1/16 + 1/32), 80, 0, False),
 ]
