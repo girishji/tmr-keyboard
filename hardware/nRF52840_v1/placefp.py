@@ -58,7 +58,7 @@ COMPONENTS = [
     ("MUXA1", 155.44, 12.27, 135, True),
     ("MUXA2", 167.22, 11.11, 0, True),
     # ("Jusb1", -4.775, 52.91, -90, False),  # gct4105 usb-c
-    ("Jusb1", 15.6, -11.25, 180, False),  # gct4105 usb-c
+    ("Jusb1", 15.6, -11.75, 180, False),  # gct4105 usb-c
     ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
     ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
     ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),
@@ -69,9 +69,10 @@ COMPONENTS = [
     ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
     ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
     # ("SW1", -3.1, KEY_SPACING * 3, 90, True),
-    ("SW1", 37, -11.45, 180, False),  # Button switch
+    ("SW1", 43.1, -11.3, 90, False),
+    ("SW2", 26, -11.3, 90, False),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
-    ("JTAG1", 27, -9.6, 180, False),
+    ("JTAG1", 34, -11.5, 180, False),
     # ("JTAG2", 11.5, -1.25, 90, False),
     ("BAT1", KEY_SPACING * (1 + 1/4 - 1/32), 80, 0, False),
     ("BAT2", KEY_SPACING * (12 + 1/16 + 1/32), 80, 0, False),

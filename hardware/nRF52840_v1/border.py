@@ -385,10 +385,10 @@ def draw_border(ispcb = False, offset = 0):
 
         # Draw USB pcb extension
         if ispcb:
-            S = switches[1].GetPosition() + VECTOR2I(0, -half - mil(4.3))
+            S = switches[1].GetPosition() + VECTOR2I(0, -half - mil(4.85))
             R = draw_line_arc(up(R), left(S))
 
-            S = R + VECTOR2I(mil(28), mil(5))
+            S = R + VECTOR2I(mil(37.25), mil(5))
             R = draw_line_arc(right(R), up(S))
 
             S = switches[3].GetPosition() + VECTOR2I(0, -half)
@@ -448,7 +448,7 @@ def draw_border(ispcb = False, offset = 0):
         S = switches[15].GetPosition() + VECTOR2I(half + offset, 0)
         R = draw_line_arc(right(R), down(S), fillet_radius_right_bottom + offset)
 
-        S = switches[15].GetPosition() + VECTOR2I(0, -half - offset - mil(1.5))
+        S = switches[15].GetPosition() + VECTOR2I(0, -half - mil(6.5)) # top border is fixed due to usb extension
         R = draw_line_arc(up(R), right(S), fradius)
     else:
         S = switches[72].GetPosition() + VECTOR2I(half, 0)
