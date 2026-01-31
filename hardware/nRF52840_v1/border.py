@@ -21,13 +21,10 @@ import math
 import pcbnew
 from pcbnew import VECTOR2I
 
-IS_PCB_MOUNT = True  # Set to False for Plate generation
-# IS_PCB_MOUNT = False
+# IS_PCB_MOUNT = True  # Set to False for Plate generation
+IS_PCB_MOUNT = False
 
 mil = lambda x: int(x * 1e6)
-
-# USB cutout interferes with switch 16 hole
-# USB_CUTOUT = [mil(8.7), mil(6)]  # GCT USB4125 connector (5.8mm deep + .2)
 
 LAYER = pcbnew.Edge_Cuts
 
@@ -385,7 +382,7 @@ def draw_border(ispcb = False, offset = 0):
 
         # Draw USB pcb extension
         if ispcb:
-            S = switches[1].GetPosition() + VECTOR2I(0, -half - mil(4.85))
+            S = switches[1].GetPosition() + VECTOR2I(0, -half - mil(6.1))
             R = draw_line_arc(up(R), left(S))
 
             S = R + VECTOR2I(mil(37.25), mil(5))
@@ -448,8 +445,8 @@ def draw_border(ispcb = False, offset = 0):
         S = switches[15].GetPosition() + VECTOR2I(half + offset, 0)
         R = draw_line_arc(right(R), down(S), fillet_radius_right_bottom + offset)
 
-        S = switches[15].GetPosition() + VECTOR2I(0, -half - mil(6.5)) # top border is fixed due to usb extension
-        R = draw_line_arc(up(R), right(S), fradius)
+        S = switches[15].GetPosition() + VECTOR2I(0, -half - mil(7.9)) # top border is fixed due to usb extension
+        R = draw_line_arc(up(R), right(S), fillet_radius_laptop - SIDE_WALL)
     else:
         S = switches[72].GetPosition() + VECTOR2I(half, 0)
         R = draw_line_arc(right(R), down(S))
