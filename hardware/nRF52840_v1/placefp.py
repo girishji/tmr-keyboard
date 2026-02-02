@@ -21,8 +21,8 @@ import pcbnew
 KEY_SPACING = 19.00  # Standard key spacing in mm
 SWITCH_COUNT = 72
 
-# IS_PCB_MOUNT = True  # Set to False for Plate generation
-IS_PCB_MOUNT = False
+IS_PCB_MOUNT = True  # Set to False for Plate generation
+# IS_PCB_MOUNT = False
 
 # Mounting Hole Coordinates (Layout specific)
 # Format: (x_mm, y_mm)
@@ -57,7 +57,6 @@ COMPONENTS = [
     ("MDBT1", 161, -1.6, 180, True),  # MCU module
     ("MUXA1", 155.44, 12.27, 135, True),
     ("MUXA2", 167.22, 11.11, 0, True),
-    ("Jusb1", 16, -13.15, 180, False),  # gct4105 usb-c
     ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
     ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
     ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),
@@ -67,9 +66,10 @@ COMPONENTS = [
     ("MUXB7", KEY_SPACING * 9.25, KEY_SPACING * 2 + 4.5, 180, True),
     ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
     ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
-    ("SW1", 43, -12.6, 90, False),
-    ("SW2", 35, -12.6, 90, False),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
+    ("Jusb1", 15.8, -13.4, 180, False),  # gct4105 usb-c
+    ("SW1", 43, -11.8, 90, False),
+    ("SW2", 35, -11.8, 90, False),
     ("JTAG1", 27, -11.2, 180, False),
     ("BAT1", KEY_SPACING * (1 + 1/4 - 1/32), 80, 0, False),
     ("BAT2", KEY_SPACING * (12 + 1/16 + 1/32), 80, 0, False),
