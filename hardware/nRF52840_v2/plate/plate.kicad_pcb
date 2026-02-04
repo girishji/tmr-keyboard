@@ -2173,7 +2173,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2186,7 +2186,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4305,11 +4305,11 @@
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "4d9d4464-700c-4ad3-b05e-d423e6ac5527")
-		(at 77.625 79.5 -20)
+		(at 78.375 79.5)
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S62"
-			(at 0.1 -6.1 340)
+			(at 0.1 -6.1 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "38068594-df1d-4d27-a2c9-d7419735b37a")
@@ -4321,7 +4321,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 340)
+			(at 0.1 8.5 0)
 			(layer "F.Fab")
 			(uuid "9c17270d-5e31-4724-bf13-2ef97c6fb5b8")
 			(effects
@@ -4332,7 +4332,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 340)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2a0d7b4f-1c2b-425b-a342-e86a5c0075f7")
@@ -4344,7 +4344,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 340)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3dd80c89-ed08-46b8-b261-57a4bc684ea7")
@@ -4359,16 +4359,6 @@
 		(sheetname "/")
 		(sheetfile "plate.kicad_sch")
 		(attr through_hole)
-		(fp_line
-			(start -6.6 7)
-			(end 6.6 7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "674079bd-6616-49fc-9f97-1cf9ddf0040e")
-		)
 		(fp_line
 			(start -7 -6.6)
 			(end -7 6.6)
@@ -4390,6 +4380,16 @@
 			(uuid "d48a914d-c932-4263-ae3b-80895174d9a7")
 		)
 		(fp_line
+			(start -6.6 7)
+			(end 6.6 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "674079bd-6616-49fc-9f97-1cf9ddf0040e")
+		)
+		(fp_line
 			(start 7 -6.6)
 			(end 7 6.6)
 			(stroke
@@ -4398,17 +4398,6 @@
 			)
 			(layer "Edge.Cuts")
 			(uuid "3e3745a8-845c-4f2b-88be-b08c9c31cbf7")
-		)
-		(fp_arc
-			(start -6.6 7)
-			(mid -6.882843 6.882843)
-			(end -7 6.6)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "0044bf0d-80fc-4b3a-9336-eca77fa316f2")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -4422,15 +4411,15 @@
 			(uuid "dced5b6b-118d-499c-b4ef-360df7854911")
 		)
 		(fp_arc
-			(start 7 6.6)
-			(mid 6.882843 6.882843)
-			(end 6.6 7)
+			(start -6.6 7)
+			(mid -6.882843 6.882843)
+			(end -7 6.6)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6280448f-5af3-4a77-9609-3f5a836e204c")
+			(uuid "0044bf0d-80fc-4b3a-9336-eca77fa316f2")
 		)
 		(fp_arc
 			(start 6.6 -7)
@@ -4442,6 +4431,17 @@
 			)
 			(layer "Edge.Cuts")
 			(uuid "0d97127b-c788-44b6-af4e-59e9954c3284")
+		)
+		(fp_arc
+			(start 7 6.6)
+			(mid 6.882843 6.882843)
+			(end 6.6 7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "6280448f-5af3-4a77-9609-3f5a836e204c")
 		)
 		(fp_poly
 			(pts
@@ -4456,7 +4456,7 @@
 			(uuid "f92f9bc1-3df5-4423-b8dc-f72473f39fc5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.199999 340)
+			(at 0 -8.199999 0)
 			(layer "F.Fab")
 			(uuid "c309241a-fe2d-47c1-9fda-d9c5661bb2c5")
 			(effects
@@ -8420,7 +8420,7 @@
 		(layer "F.Cu")
 		(uuid "7b9d7dfa-de81-449f-9d00-476ddb48239c")
 		(at 11.7 19 -90)
-		(property "Reference" "USB1"
+		(property "Reference" "Jusb1"
 			(at 0 -0.5 270)
 			(unlocked yes)
 			(layer "User.3")
@@ -8444,7 +8444,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8457,7 +8457,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9087,7 +9087,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9100,7 +9100,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

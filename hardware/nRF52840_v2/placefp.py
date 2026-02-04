@@ -169,7 +169,7 @@ def calculate_switch_positions():
     offs += dim * (1 + 3 / 4)
     positions[58] = (offs, 3 * dim)
 
-    # --- Row 5 (Alice/Angled cluster) ---
+    # --- Row 5 (Angled cluster) ---
     x_offset = 0.6  # Accommodate angled keys
     offs = (1 - 1 / 2 + 1 / 8) * dim - x_offset
     positions[59] = (offs, 4 * dim)
