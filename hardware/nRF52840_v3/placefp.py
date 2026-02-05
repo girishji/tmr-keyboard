@@ -14,6 +14,7 @@
 
 import math
 import pcbnew
+import os
 
 # =============================================================================
 # CONFIGURATION
@@ -21,36 +22,22 @@ import pcbnew
 KEY_SPACING = 19.00  # Standard key spacing in mm
 SWITCH_COUNT = 72
 
-# IS_PCB_MOUNT = True  # Set to False for Plate generation
-IS_PCB_MOUNT = False
-
 # Mounting Hole Coordinates (Layout specific)
 # Format: (x_mm, y_mm)
-HOLES_SMALL = [
+HOLES = [
     (KEY_SPACING * 1.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 7.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 14.5, KEY_SPACING * 0.47),
-    (KEY_SPACING * 0.1, KEY_SPACING * 4 - 3),
-    (KEY_SPACING * 2.25, KEY_SPACING * 2.47),
+    (KEY_SPACING, KEY_SPACING * 4 - 3),
+    # (KEY_SPACING * 2.25, KEY_SPACING * 2.47),
     (KEY_SPACING * 7.25, KEY_SPACING * 2.47),
     (KEY_SPACING * 4.545, KEY_SPACING * 4.4),
     (KEY_SPACING * 9.955, KEY_SPACING * 4.4),
     (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
-    (KEY_SPACING * 14.5, KEY_SPACING * 3.47),
-    (KEY_SPACING * 13.5 - 1.25, KEY_SPACING * 2),
+    (KEY_SPACING * 14.125, KEY_SPACING * 3.4),
+    # (KEY_SPACING * 13.5 - 1.25, KEY_SPACING * 2),
 ]
-
-# HOLES_LARGE = [
-#     (KEY_SPACING * 4.5, KEY_SPACING * 0.47),
-#     (KEY_SPACING * 12.5, KEY_SPACING * 0.47),
-#     (KEY_SPACING * 15.35, KEY_SPACING * 1.35),
-#     (KEY_SPACING * 0.65, KEY_SPACING * .65),
-#     (KEY_SPACING * 5.25, KEY_SPACING * 2.47),
-#     (KEY_SPACING * 9.25, KEY_SPACING * 2.47),
-#     (KEY_SPACING * 0.1, KEY_SPACING * 4.35),
-#     (KEY_SPACING * 13.22, KEY_SPACING * 4.35),
-# ]
 
 COMPONENTS = [
     # ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90, True),  # MCU module
@@ -67,12 +54,12 @@ COMPONENTS = [
     ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
     ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
-    ("Jusb1", 15.8, -13.4, 180, False),  # gct4105 usb-c
-    ("SW1", 43, -11.8, 90, False),
-    ("SW2", 35, -11.8, 90, False),
-    ("JTAG1", 27, -11.2, 180, False),
-    ("BAT1", KEY_SPACING * (1 + 1/4 - 1/32), 80, 0, False),
-    ("BAT2", KEY_SPACING * (12 + 1/16 + 1/32), 80, 0, False),
+    ("Jusb1", -4.5, -3, -90, False),
+    ("SW1", KEY_SPACING * 5.5, 0, -90, True),
+    ("SW2", 46, 52, 90, True),
+    ("JTAG1", 5.3, -2, 0, False),
+    ("BAT1", KEY_SPACING * (1 + 1/32), 80, 0, False),
+    ("BAT2", KEY_SPACING * (12 + 1/4), 80, 0, False),
 ]
 
 
@@ -159,24 +146,26 @@ def calculate_switch_positions():
         positions[i] = (offs + (i - 45) * dim, 3 * dim)
 
     offs += dim * 12
-    positions[57] = (offs + 3 / 8 * dim, 3 * dim) # 1.75u shift
+    positions[57] = (offs + 1 / 4 * dim, 3 * dim) # 1.5u shift
 
-    offs += dim * (1 + 3 / 4)
+    offs += dim * (1 + 1 / 2)
     positions[58] = (offs, 3 * dim)
 
     # --- Row 5 (Angled cluster) ---
-    x_offset = 0.6
+    # x_offset = 0.6
+    x_offset = dim / 4
     offs = (1 - 1 / 2 + 1 / 8) * dim - x_offset
     positions[59] = (offs, 4 * dim)
     positions[60] = (offs + dim * (1 + 1 / 4), 4 * dim)
     positions[61] = (offs + dim * (2 + 1 / 2 - 1 / 8), 4 * dim)
 
     offs = (3 + 1 / 2 + 1 / 8) * dim
-    positions[62] = (offs + dim / 2 - 0.75, 4 * dim + 3.5)
+    positions[62] = (offs + dim / 2 - 1.15, 4 * dim + 4.7)
     # positions[62] = (offs + dim * (1 / 4 + 1/8) - x_offset, 4 * dim)
 
     offs += dim * (1 + 1 / 4 + 1 / 8)
-    positions[63] = (offs + 0.6, 4 * dim + 10)
+    positions[63] = (offs + 0.1, 4 * dim + 11.25)
+    # positions[63] = (offs + 0.6, 4 * dim + 10)
 
     offs += dim
     positions[64] = (offs - 0.6, 4.5 * dim + 7)
@@ -187,16 +176,20 @@ def calculate_switch_positions():
     positions[66] = (offs + dim + dim / 4 + 0.6, 4.5 * dim + 7)
 
     offs += dim * 1.25
-    positions[67] = (offs + dim - 0.6, 4 * dim + 10)
-    positions[68] = (offs + 2 * dim - 1.75, 4 * dim + 0 + 3.5)
+    positions[67] = (offs + dim - 0.1, 4 * dim + 11.25)
+    # positions[67] = (offs + dim - 0.6, 4 * dim + 10)
+    positions[68] = (offs + 2 * dim - 1.15, 4 * dim + 0 + 4.7)
+    # positions[68] = (offs + 2 * dim - 1.75, 4 * dim + 0 + 3.5)
 
     offs += 2 * dim + x_offset
     positions[69] = (offs + dim, 4 * dim)
 
-    offs += (2 + 1 / 8) * dim
+    # offs += (2 + 1 / 8) * dim
+    offs += 2 * dim
     positions[70] = (offs, 4 * dim)
 
-    offs += (1 + 1 / 8) * dim
+    # offs += (1 + 1 / 8) * dim
+    offs += dim
     positions[71] = (offs, 4 * dim)
 
     offs += dim
@@ -291,20 +284,9 @@ def place_mounting_holes(is_pcb):
     """Places mounting holes based on global coordinates."""
     board = pcbnew.GetBoard()
 
-    for i, (x, y) in enumerate(HOLES_SMALL):
+    for i, (x, y) in enumerate(HOLES):
         fp = board.FindFootprintByReference(f"Hs{i+1}")
         set_position_mm(fp, x, y)
-
-    # Place Hs series (Small holes)
-    # if is_pcb:
-    #     for i, (x, y) in enumerate(HOLES_SMALL):
-    #         fp = board.FindFootprintByReference(f"Hs{i+1}")
-    #         set_position_mm(fp, x, y)
-
-    # Place H series (Large holes)
-    # for i, (x, y) in enumerate(HOLES_LARGE):
-    #     fp = board.FindFootprintByReference(f"H{i+1}")
-    #     set_position_mm(fp, x, y)
 
 
 def place_components(is_pcb):
@@ -321,14 +303,24 @@ def place_components(is_pcb):
             fp.Flip(fp.GetPosition(), True)
 
 
-def main():
-    print(f"Starting placement... Mode: {'PCB' if IS_PCB_MOUNT else 'PLATE'}")
+def projname():
+    board = pcbnew.GetBoard()
+    full_path = board.GetFileName()
+    filename = os.path.basename(full_path)
+    return os.path.splitext(filename)[0]
 
-    place_switches_and_stabs(IS_PCB_MOUNT)
-    if IS_PCB_MOUNT:
+
+def main():
+    if projname() not in ["pcb", "plate"]:
+        print(f"Error: unrecognized project {projname()}")
+    ispcb = projname() == "pcb"
+    print(f"Starting placement... Mode: {'PCB' if ispcb else 'PLATE'}")
+
+    place_switches_and_stabs(ispcb)
+    if ispcb:
         place_sw_components()
-    place_components(IS_PCB_MOUNT)
-    place_mounting_holes(IS_PCB_MOUNT)
+    place_components(ispcb)
+    place_mounting_holes(ispcb)
 
     pcbnew.Refresh()
     print("Placement complete.")

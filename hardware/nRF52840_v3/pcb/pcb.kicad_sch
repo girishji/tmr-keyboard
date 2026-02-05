@@ -2614,145 +2614,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Battery_Pack_PS5_1"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "BAT"
-				(at -6.858 8.128 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Battery_Pack_PS5"
-				(at -6.858 5.588 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal"
-				(at -20.828 -25.654 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 4.318 -23.368 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "PS5 battery pack (red->power, black->ground, white->ntc)"
-				(at 2.794 -27.94 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "analog switch selector differencial multiplexer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TSSOP*4.4x9.7mm*P0.65mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Battery_Pack_PS5_1_0_1"
-				(rectangle
-					(start -6.35 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "Battery_Pack_PS5_1_1_1"
-				(pin power_out line
-					(at -8.89 1.27 0)
-					(length 2.54)
-					(name "VBAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -1.27 0)
-					(length 2.54)
-					(name "NTC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 1.27 -6.35 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Battery_Pack_PS5_2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2883,6 +2744,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -6.35 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8289,6 +8168,12 @@
 		(uuid "45d5a891-ea7f-497c-b5a2-5f125a1333b1")
 	)
 	(junction
+		(at 499.11 316.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46375657-6834-4824-85c7-b95f76439274")
+	)
+	(junction
 		(at 69.85 364.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8583,12 +8468,6 @@
 		(uuid "8c64de35-a09f-4f24-b4f3-4d72779da6a8")
 	)
 	(junction
-		(at 499.11 313.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d31bb38-11a6-4cf6-9a5e-9503cb35ec7a")
-	)
-	(junction
 		(at 52.07 355.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8599,6 +8478,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f61a1ab-3d9b-4a98-96a1-101387f33cfe")
+	)
+	(junction
+		(at 501.65 316.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fcf4f1a-18f0-407c-a75b-3e5f95ba9d9c")
 	)
 	(junction
 		(at 119.38 375.92)
@@ -8629,6 +8514,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95a919c1-b44c-4139-9f61-5d4b2430ad15")
+	)
+	(junction
+		(at 524.51 316.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96ee5fcc-19de-4dc7-b856-56e2fddbd64f")
 	)
 	(junction
 		(at 123.19 355.6)
@@ -11286,6 +11177,16 @@
 	)
 	(wire
 		(pts
+			(xy 501.65 316.23) (xy 499.11 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5844a40f-2832-4aa2-b853-319057f98cc7")
+	)
+	(wire
+		(pts
 			(xy 438.15 233.68) (xy 426.72 233.68)
 		)
 		(stroke
@@ -11353,6 +11254,16 @@
 			(type default)
 		)
 		(uuid "5a3fea0b-8e89-4e29-9e76-d91698f54078")
+	)
+	(wire
+		(pts
+			(xy 524.51 316.23) (xy 501.65 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b0476f9-d3f7-4614-9612-2b5aaff209ca")
 	)
 	(wire
 		(pts
@@ -11693,6 +11604,16 @@
 			(type default)
 		)
 		(uuid "6826df29-db02-43cd-a040-194862297ae3")
+	)
+	(wire
+		(pts
+			(xy 501.65 313.69) (xy 501.65 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "695bc402-7569-4f53-a75d-0cbc3c27b4d5")
 	)
 	(wire
 		(pts
@@ -12493,6 +12414,16 @@
 			(type default)
 		)
 		(uuid "843d1827-6f0e-4d36-8788-132968552ef9")
+	)
+	(wire
+		(pts
+			(xy 527.05 316.23) (xy 524.51 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8579336a-17ae-499c-9ef9-d924a4656ab0")
 	)
 	(wire
 		(pts
@@ -13496,6 +13427,16 @@
 	)
 	(wire
 		(pts
+			(xy 524.51 313.69) (xy 524.51 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad334f3a-b28b-4343-b7ca-48e3be71f466")
+	)
+	(wire
+		(pts
 			(xy 57.15 367.03) (xy 57.15 375.92)
 		)
 		(stroke
@@ -14326,16 +14267,6 @@
 	)
 	(wire
 		(pts
-			(xy 499.11 313.69) (xy 524.51 313.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cda907ac-2a4a-4f0d-b685-6ec149897c2c")
-	)
-	(wire
-		(pts
 			(xy 317.5 116.84) (xy 323.85 116.84)
 		)
 		(stroke
@@ -14343,6 +14274,16 @@
 			(type default)
 		)
 		(uuid "cf205150-50b5-4210-b8f6-190863377d64")
+	)
+	(wire
+		(pts
+			(xy 527.05 313.69) (xy 527.05 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfcb1052-ba1e-475f-a9d1-ebfcc30ce61b")
 	)
 	(wire
 		(pts
@@ -19787,7 +19728,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 359.41 364.49 0)
 			(effects
 				(font
@@ -20338,7 +20279,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 359.41 372.11 0)
 			(effects
 				(font
@@ -21182,82 +21123,6 @@
 		)
 	)
 	(symbol
-		(lib_name "Battery_Pack_PS5_1")
-		(lib_id "tmr-lib:Battery_Pack_PS5")
-		(at 523.24 307.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3044e724-6772-4b84-94ae-52e6af08acfd")
-		(property "Reference" "BAT2"
-			(at 529.59 307.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 529.59 308.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
-			(at 502.412 332.994 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 527.558 330.708 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PS5 battery pack (red->power, black->ground, white->ntc)"
-			(at 526.034 335.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "a715119b-48ea-4977-8629-a79ad08cd83e")
-		)
-		(pin "2"
-			(uuid "16e436e8-de8c-43a2-ab01-75c1dedee707")
-		)
-		(pin "1"
-			(uuid "5324721d-ec71-40ba-8bbe-0f1f313014a0")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "BAT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 240.03 307.34 0)
 		(unit 1)
@@ -21702,7 +21567,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tmr-lib:Aliexpress_SW_DIP_TS_1292V_4x6.2x1.8mm"
+		(property "Footprint" "tmr-lib:Aliexpress_SW_TACT_4x4x1.5mm"
 			(at 397.51 303.53 0)
 			(effects
 				(font
@@ -23515,7 +23380,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tmr-lib:GCT_USB4215-03-A_REVA"
+		(property "Footprint" "tmr-lib:USB_C_Receptacle_GCT_USB4085"
 			(at 312.42 240.03 0)
 			(effects
 				(font
@@ -23533,7 +23398,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Connector; USB 3.1 Type C; Receptacle; 24-pin; USB 2.0 Only;"
+		(property "Description" ""
 			(at 312.42 240.03 0)
 			(effects
 				(font
@@ -23542,7 +23407,7 @@
 				(hide yes)
 			)
 		)
-		(property "MANUFACTURER" "XKB Connectivity"
+		(property "MANUFACTURER" ""
 			(at 306.832 291.084 0)
 			(effects
 				(font
@@ -23552,7 +23417,7 @@
 				(hide yes)
 			)
 		)
-		(property "ALTIUM_VALUE" "U262-161N-4BVC11"
+		(property "ALTIUM_VALUE" ""
 			(at 306.832 291.084 0)
 			(effects
 				(font
@@ -23562,7 +23427,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "U262-161N-4BVC11"
+		(property "MPN" ""
 			(at 306.832 291.084 0)
 			(effects
 				(font
@@ -23612,7 +23477,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C319148"
+		(property "LCSC" ""
 			(at 312.42 240.03 0)
 			(effects
 				(font
@@ -25030,7 +24895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 384.81 364.49 0)
 			(effects
 				(font
@@ -25437,7 +25302,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 372.11 364.49 0)
 			(effects
 				(font
@@ -26727,7 +26592,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 397.51 372.11 0)
 			(effects
 				(font
@@ -29532,7 +29397,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 372.11 372.11 0)
 			(effects
 				(font
@@ -29673,7 +29538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 359.41 379.73 0)
 			(effects
 				(font
@@ -29941,7 +29806,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tmr-lib:Aliexpress_SW_DIP_TS_1292V_4x6.2x1.8mm"
+		(property "Footprint" "tmr-lib:Aliexpress_SW_TACT_4x4x1.5mm"
 			(at 499.11 113.03 0)
 			(effects
 				(font
@@ -31378,70 +31243,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 397.51 379.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d468317d-6634-49a3-984e-23b7f071f74f")
-		(property "Reference" "Hs12"
-			(at 400.05 378.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2_Pad"
-			(at 400.05 380.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
-			(at 397.51 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 397.51 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 397.51 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "Hs12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 219.71 186.69 0)
 		(unit 1)
@@ -31789,7 +31590,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 384.81 372.11 0)
 			(effects
 				(font
@@ -32709,6 +32510,85 @@
 		)
 	)
 	(symbol
+		(lib_name "Battery_Pack_PS5_2")
+		(lib_id "tmr-lib:Battery_Pack_PS5")
+		(at 523.24 307.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5007b8f-66a8-44e8-b630-90aecfea14c3")
+		(property "Reference" "BAT2"
+			(at 529.59 307.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 529.59 308.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal"
+			(at 502.412 332.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 527.558 330.708 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PS5 battery pack (red->power, black->ground, white->ntc)"
+			(at 526.034 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6f0b18aa-6b58-45a9-b727-f50b7e65a8f2")
+		)
+		(pin "2"
+			(uuid "de3de748-28bc-4a6d-a614-b7618a25aea1")
+		)
+		(pin "1"
+			(uuid "69368f94-54b3-40b7-b171-63044794b04a")
+		)
+		(pin "MP"
+			(uuid "ee4ff684-7958-497b-96d3-067c12c17bb9")
+		)
+		(instances
+			(project "pcb"
+				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
+					(reference "BAT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Analog_Switch:TMUX1108PW")
 		(at 180.34 213.36 0)
 		(unit 1)
@@ -33057,7 +32937,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 372.11 379.73 0)
 			(effects
 				(font
@@ -33200,70 +33080,6 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "MUXA2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 384.81 379.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef2fd8f0-0d3b-407c-8cf5-3ab9e87f1784")
-		(property "Reference" "Hs11"
-			(at 387.35 378.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2_Pad"
-			(at 387.35 380.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
-			(at 384.81 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 384.81 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 384.81 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "Hs11")
 					(unit 1)
 				)
 			)
@@ -33451,7 +33267,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO7380_Pad_TopBottom"
+		(property "Footprint" "tmr-lib:SMTSO_M1.6"
 			(at 397.51 364.49 0)
 			(effects
 				(font
@@ -34775,6 +34591,9 @@
 		)
 		(pin "1"
 			(uuid "bafb0228-329a-4c63-9571-184e2006f9c5")
+		)
+		(pin "MP"
+			(uuid "a02b4feb-a7f4-440d-b924-d930bea5d9d3")
 		)
 		(instances
 			(project ""

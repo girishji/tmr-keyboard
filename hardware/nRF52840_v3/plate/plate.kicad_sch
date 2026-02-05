@@ -611,7 +611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 115.57 133.35 0)
 			(effects
 				(font
@@ -1180,7 +1180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 161.29 133.35 0)
 			(effects
 				(font
@@ -1244,7 +1244,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.75u"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 194.31 78.74 0)
 			(effects
 				(font
@@ -1622,7 +1622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 93.98 123.19 0)
 			(effects
 				(font
@@ -2568,7 +2568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 182.88 91.44 0)
 			(effects
 				(font
@@ -2757,7 +2757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -2884,7 +2884,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 115.57 143.51 0)
 			(effects
 				(font
@@ -3011,7 +3011,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 115.57 123.19 0)
 			(effects
 				(font
@@ -3327,7 +3327,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 138.43 123.19 0)
 			(effects
 				(font
@@ -3836,7 +3836,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 93.98 143.51 0)
 			(effects
 				(font
@@ -3963,7 +3963,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 93.98 133.35 0)
 			(effects
 				(font
@@ -5205,134 +5205,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 138.43 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc7e0a1a-478f-48a5-9470-7ea28ee3fa75")
-		(property "Reference" "Hs11"
-			(at 140.97 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 140.97 144.7799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
-			(at 138.43 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 138.43 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hs11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 161.29 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df969b95-b832-4283-ad66-b0d3b00e7578")
-		(property "Reference" "Hs12"
-			(at 163.83 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 163.83 144.7799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
-			(at 161.29 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 161.29 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hs12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 194.31 39.37 0)
 		(unit 1)
@@ -5549,7 +5421,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.8mm_M1.6_NoPad"
 			(at 161.29 123.19 0)
 			(effects
 				(font
