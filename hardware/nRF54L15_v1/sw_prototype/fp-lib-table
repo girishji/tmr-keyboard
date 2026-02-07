@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "tmr-lib")(type "KiCad")(uri "/Users/gp/git/tmr-keyboard/tmr-footprints")(options "")(descr ""))
-)
