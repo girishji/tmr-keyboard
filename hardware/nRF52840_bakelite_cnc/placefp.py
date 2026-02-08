@@ -28,44 +28,16 @@ HOLES = [
     (KEY_SPACING * 1.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 7.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 14.5, KEY_SPACING * 0.47),
-    (KEY_SPACING, KEY_SPACING * 4 - 15),
+    (KEY_SPACING * 1.25 + 1.25, KEY_SPACING * 4 - 15),
     # (KEY_SPACING * 2.25, KEY_SPACING * 2.47),
     (KEY_SPACING * 7.25, KEY_SPACING * 2.47),
     (KEY_SPACING * 4.545, KEY_SPACING * 4.4),
     (KEY_SPACING * 9.955, KEY_SPACING * 4.4),
     (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
-    (KEY_SPACING * 14.125, KEY_SPACING * 3.4),
+    (KEY_SPACING * 14 - 1.25, KEY_SPACING * 3.4),
     # (KEY_SPACING * 13.5 - 1.25, KEY_SPACING * 2),
 ]
-
-# # Mounting Hole Coordinates (Layout specific)
-# # Format: (x_mm, y_mm)
-# HOLES_SMALL = [
-#     (KEY_SPACING * 1.5, KEY_SPACING * 0.47),
-#     (KEY_SPACING * 7.5, KEY_SPACING * 0.47),
-#     (KEY_SPACING * 14.5, KEY_SPACING * 0.47),
-#     (KEY_SPACING * 0.1, KEY_SPACING * 4 - 3),
-#     (KEY_SPACING * 2.25, KEY_SPACING * 2.47),
-#     (KEY_SPACING * 7.25, KEY_SPACING * 2.47),
-#     (KEY_SPACING * 4.545, KEY_SPACING * 4.4),
-#     (KEY_SPACING * 9.955, KEY_SPACING * 4.4),
-#     (KEY_SPACING * 5, KEY_SPACING * 1.47),
-#     (KEY_SPACING * 11, KEY_SPACING * 1.47),
-#     (KEY_SPACING * 14.5, KEY_SPACING * 3.47),
-#     (KEY_SPACING * 13.5 - 1.25, KEY_SPACING * 2),
-# ]
-
-# HOLES_LARGE = [
-#     (KEY_SPACING * 4.5, KEY_SPACING * 0.47),
-#     (KEY_SPACING * 12.5, KEY_SPACING * 0.47),
-#     (KEY_SPACING * 15.35, KEY_SPACING * 1.35),
-#     (KEY_SPACING * 0.65, KEY_SPACING * .65),
-#     (KEY_SPACING * 5.25, KEY_SPACING * 2.47),
-#     (KEY_SPACING * 9.25, KEY_SPACING * 2.47),
-#     (KEY_SPACING * 0.1, KEY_SPACING * 4.35),
-#     (KEY_SPACING * 13.22, KEY_SPACING * 4.35),
-# ]
 
 COMPONENTS = [
     # ("M1", KEY_SPACING * 8.25 - 1, 4.4, 90, True),  # MCU module
@@ -82,12 +54,12 @@ COMPONENTS = [
     ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
     ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
-    ("Jusb1", 15.8, -13.4, 180, False),  # gct4105 usb-c
-    ("SW1", 43, -11.8, 90, False),
-    ("SW2", 35, -11.8, 90, False),
-    ("JTAG1", 27, -11.2, 180, False),
-    ("BAT1", KEY_SPACING * (1 + 1/4 - 1/32), 80, 0, False),
-    ("BAT2", KEY_SPACING * (12 + 1/16 + 1/32), 80, 0, False),
+    ("Jusb1", 15.8+5, -13.4, 180, False),  # gct4105 usb-c
+    ("SW1", 43+5, -11.8, 90, False),
+    ("SW2", 35+5, -11.8, 90, False),
+    ("JTAG1", 27+5, -11.2, 180, False),
+    ("BAT1", 23.6, 76, 180, False),
+    ("BAT2", 243.4, 61, 180, False),
 ]
 
 
@@ -153,38 +125,38 @@ def calculate_switch_positions():
     for i in range(31, 42):
         positions[i] = (offs + (i - 30) * dim, 2 * dim)
 
-    offs += 11 * dim
+    offs += (11 - 1/8) * dim
     positions[42] = (offs + (1 + 1/8) * dim, 2 * dim)
 
-    offs += dim * (2 + 1/4)
+    offs += dim * (2 + 1/8)
     positions[43] = (offs, 2 * dim)
 
     offs += dim
     positions[44] = (offs, 2 * dim)
 
     # --- Row 4 ---
-    x_offset = 0.6  # Accommodate angled keys in row 5
-    offs = dim * (-1 / 2 - 1 / 8)
+    offs = dim * (-1 / 2 + 1 / 8)
     positions[45] = (offs + dim, 3 * dim)
 
-    offs += dim * (1 + 3 / 8 + 1 / 8)
+    offs += dim * (1 + 3 / 8)
     positions[46] = (offs + dim, 3 * dim) # 1.75u
 
-    offs += dim * (3 / 8)
+    offs += dim * (3 / 8 - 1 / 8)
     for i in range(47, 57):
         positions[i] = (offs + (i - 45) * dim, 3 * dim)
 
-    offs += dim * 12
-    positions[57] = (offs + 1 / 4 * dim + x_offset/4, 3 * dim) # 1.5u shift
+    offs += dim * (12 - 1/8)
+    positions[57] = (offs + 1 / 4 * dim, 3 * dim) # 1.25u shift
 
-    offs += dim * (1 + 1 / 2)
-    positions[58] = (offs + x_offset/2, 3 * dim)
+    offs += dim * (1 + 1 / 2 - 1/8)
+    positions[58] = (offs, 3 * dim)
 
     # --- Row 5 (Angled cluster) ---
-    offs = (1 - 1 / 2 + 1 / 8) * dim - x_offset
+    x_offset = 0.2  # Accommodate angled keys in row 5
+    offs = (1 - 1 / 2 + 1 / 8) * dim
     positions[59] = (offs, 4 * dim)
-    positions[60] = (offs + dim * (1 + 1 / 4), 4 * dim)
-    positions[61] = (offs + dim * (2 + 1 / 2 - 1 / 8), 4 * dim)
+    positions[60] = (offs + dim * (1 + 1 / 4) - x_offset, 4 * dim)
+    positions[61] = (offs + dim * (2 + 1 / 2 - 1 / 8) - (2 * x_offset) , 4 * dim)
 
     offs = (3 + 1 / 2 + 1 / 8) * dim
     positions[62] = (offs + dim / 2 - 0.75, 4 * dim + 3.5)
@@ -204,17 +176,17 @@ def calculate_switch_positions():
     positions[67] = (offs + dim - 0.6, 4 * dim + 10)
     positions[68] = (offs + 2 * dim - 1.75, 4 * dim + 0 + 3.5)
 
-    offs += 2 * dim + x_offset
+    offs += 2 * dim + (2 * x_offset)
     positions[69] = (offs + dim, 4 * dim)
 
-    offs += (2 + 1 / 8) * dim
-    positions[70] = (offs - x_offset/6, 4 * dim)
+    offs += 2 * dim - (2/3 * x_offset)
+    positions[70] = (offs, 4 * dim)
 
-    offs += (1 + 1 / 8) * dim
-    positions[71] = (offs - x_offset*2/6, 4 * dim)
+    offs += dim - (2/3 * x_offset)
+    positions[71] = (offs, 4 * dim)
 
-    offs += dim
-    positions[72] = (offs - x_offset/2, 4 * dim)
+    offs += dim - (2/3 * x_offset)
+    positions[72] = (offs, 4 * dim)
 
     return positions
 

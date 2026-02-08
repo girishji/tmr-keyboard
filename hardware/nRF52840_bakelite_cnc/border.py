@@ -151,7 +151,7 @@ def draw_cutout_pcb():
 
     angle = -switches[62].GetOrientationDegrees()
     S = switches[62].GetPosition() + rotate(VECTOR2I(-half, 0), angle)
-    R = draw_line_arc(down(R), down(S, angle))
+    R = draw_line_arc(down(R), down(S, angle), mil(1.5))
 
     angle2 = -switches[63].GetOrientationDegrees()
     S = switches[63].GetPosition() + rotate(VECTOR2I(0, -half + mil(1)), angle2)
@@ -180,7 +180,7 @@ def draw_cutout_pcb():
     angle = angle2
     angle2 = -switches[68].GetOrientationDegrees()
     S = switches[68].GetPosition() + rotate(VECTOR2I(half, 0), angle2)
-    R = draw_line_arc(down(R), down(S, angle2))
+    R = draw_line_arc(down(R), down(S, angle2), mil(1.5))
 
     angle = angle2
     angle2 = -switches[67].GetOrientationDegrees()
@@ -377,7 +377,7 @@ def draw_side_wall_bezier(offset = SIDE_WALL):
     E = VECTOR2I(switches[65].GetPosition().x - WRIST_x_offset - WRIST_x_length, switches[45].GetPosition().y + half)
     S = draw_bezier(S, left(S, mil(10)), down(E, mil(20)), E)
 
-    E = E + VECTOR2I(0, -half)
+    E = E + VECTOR2I(0, -int(2*half))
     S = draw_line(S, E)
 
     L_end = E = switches[1].GetPosition() + VECTOR2I(-half, -half - offset)
@@ -462,11 +462,12 @@ def draw_side_wall_bezier(offset = SIDE_WALL):
     E = switches[72].GetPosition() + VECTOR2I(half, half + offset)
     S = draw_line(S, E)
 
-    E = E + VECTOR2I(0, -offset) + rotate(VECTOR2I(offset, 0), 45)
-    S = draw_bezier(S, right(S, mil(2)), down(E, mil(2), 45), E)
+    # E = E + VECTOR2I(0, -offset) + rotate(VECTOR2I(offset, 0), 45)
+    # S = draw_bezier(S, right(S, mil(2)), down(E, mil(2), 45), E)
 
     E = switches[29].GetPosition() + VECTOR2I(int(1.5*half) + offset, half)
-    S = draw_bezier(S, up(S, mil(8), 45), down(E, mil(16)), E)
+    # S = draw_bezier(S, up(S, mil(8), 45), down(E, mil(16)), E)
+    S = draw_bezier(S, right(S, mil(8)), down(E, mil(60)), E)
 
     E = switches[15].GetPosition() + VECTOR2I(half + offset, -half)
     S = draw_line(S, E)
@@ -546,14 +547,13 @@ def draw_side_wall(offset = SIDE_WALL):
     draw_line(R, RLeft)
 
 
-def draw_border(ispcb = False, offset = 0):
+def draw_border(ispcb = False):
     """Draw border."""
     global LAYER
-    outline = ispcb and offset > 0
 
     # (R, S) are start and end points.
 
-    R = switches[65].GetPosition() + VECTOR2I(0, half + offset)
+    R = switches[65].GetPosition() + VECTOR2I(0, half)
     if ispcb:
         angle = -switches[64].GetOrientationDegrees()
         S = switches[64].GetPosition() + rotate(VECTOR2I(half, 0), angle)
@@ -578,23 +578,23 @@ def draw_border(ispcb = False, offset = 0):
         R = draw_line_arc(right(R, angle), right(S, angle2))
 
     angle = angle2
-    S = switches[61].GetPosition() + VECTOR2I(0, half + offset)
+    S = switches[61].GetPosition() + VECTOR2I(0, half)
     R = draw_line_arc(left(R, angle), right(S))
 
     S = switches[59].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
     R = draw_line_arc(left(R), down(S))
 
-    S = switches[45].GetPosition() + VECTOR2I(-half, half)
-    R = draw_line_arc(up(R), right(S))
+    # S = switches[45].GetPosition() + VECTOR2I(-half, half)
+    # R = draw_line_arc(up(R), right(S))
 
-    S = switches[45].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
-    R = draw_line_arc(left(R), down(S))
+    # S = switches[45].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
+    # R = draw_line_arc(left(R), down(S))
 
-    S = switches[45].GetPosition() + VECTOR2I(-half, -half)
-    R = draw_line_arc(up(R), left(S))
+    # S = switches[45].GetPosition() + VECTOR2I(-half, -half)
+    # R = draw_line_arc(up(R), left(S))
 
-    S = switches[30].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
-    R = draw_line_arc(right(R), down(S))
+    # S = switches[30].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
+    # R = draw_line_arc(right(R), down(S))
 
     S = switches[30].GetPosition() + VECTOR2I(-half, -half)
     R = draw_line_arc(up(R), left(S))
@@ -602,14 +602,20 @@ def draw_border(ispcb = False, offset = 0):
     S = switches[16].GetPosition() + VECTOR2I(-int(half * 1.5), 0)
     R = draw_line_arc(right(R), down(S))
 
+    S = switches[1].GetPosition() + VECTOR2I(0, -half)
+    R = draw_line_arc(up(R), left(S))
+
+    S = R + VECTOR2I(mil(3), -mil(5.5))
+    R = draw_line_arc(right(R), down(S))
+
     # Draw USB pcb extension
     if ispcb:
-        S = switches[1].GetPosition() + VECTOR2I(-half, -half - mil(5.5))
+        # S = switches[1].GetPosition() + VECTOR2I(-half, -half - mil(5.5))
 
         S = S + VECTOR2I(mil(5), 0)
         R = draw_line_arc(up(R), left(S))
 
-        S = R + VECTOR2I(mil(37.25), mil(5))
+        S = R + VECTOR2I(mil(38.5), mil(5))
         R = draw_line_arc(right(R), up(S))
 
         S = switches[4].GetPosition() + VECTOR2I(0, -half)
@@ -619,7 +625,7 @@ def draw_border(ispcb = False, offset = 0):
 
     # Right side, starting from bottom middle switch
 
-    R = switches[65].GetPosition() + VECTOR2I(0, half + offset)
+    R = switches[65].GetPosition() + VECTOR2I(0, half)
     if ispcb:
         angle = -switches[66].GetOrientationDegrees()
         S = switches[66].GetPosition() + rotate(VECTOR2I(-half, 0), angle)
@@ -644,19 +650,25 @@ def draw_border(ispcb = False, offset = 0):
         R = draw_line_arc(left(R, angle), left(S, angle2))
 
     angle = angle2
-    S = switches[72].GetPosition() + VECTOR2I(0, half + offset)
+    S = switches[72].GetPosition() + VECTOR2I(0, half)
     R = draw_line_arc(right(R, angle), left(S))
 
     S = switches[72].GetPosition() + VECTOR2I(half, 0)
     R = draw_line_arc(right(R), down(S))
 
-    S = switches[44].GetPosition() + VECTOR2I(int(half * 0.75), half)
+    S = switches[44].GetPosition() + VECTOR2I(half, half)
     R = draw_line_arc(up(R), left(S))
 
     S = switches[44].GetPosition() + VECTOR2I(half, 0)
     R = draw_line_arc(right(R), down(S))
 
-    S = switches[15].GetPosition() + VECTOR2I(0, -half - offset)
+    S = switches[29].GetPosition() + VECTOR2I(int(2*half), half)
+    R = draw_line_arc(up(R), left(S))
+
+    S = switches[15].GetPosition() + VECTOR2I(half, 0)
+    R = draw_line_arc(right(R), down(S))
+
+    S = switches[15].GetPosition() + VECTOR2I(0, -half)
     R = draw_line_arc(up(R), right(S))
 
     if ispcb:
@@ -674,38 +686,6 @@ def draw_border(ispcb = False, offset = 0):
     if not ispcb:
         R = draw_line_arc(left(R), up(RLeft))
     draw_line(R, RLeft)
-
-
-# def draw_wings():
-#     width = mil(40)
-#     skew = 0
-#     # radius = int((fillet_radius_laptop - SIDE_WALL) / 1)
-#     radius = fillet_radius_laptop - mil(2)
-
-#     xmid = int(WRIST_x_offset + WRIST_x_length / 2)
-#     R = switches[65].GetPosition() + VECTOR2I(-int(half * 7.7), half + SIDE_WALL)
-#     S = switches[65].GetPosition() + VECTOR2I(int(-xmid + width/2), half + WRIST_y_offset)
-#     R = draw_line_arc(left(R), up(S, skew), radius)
-#     S = switches[65].GetPosition() + VECTOR2I(int(-xmid + WRIST_x_length/2), half + WRIST_y_offset)
-#     R = draw_line_arc(down(R, skew), left(S), radius)
-
-#     R = switches[59].GetPosition() + VECTOR2I(-half, half + SIDE_WALL)
-#     S = switches[65].GetPosition() + VECTOR2I(int(-xmid - width/2), half + WRIST_y_offset)
-#     R = draw_line_arc(right(R), up(S, skew), radius)
-#     S = switches[65].GetPosition() + VECTOR2I(int(-xmid - WRIST_x_length/2), half + WRIST_y_offset)
-#     R = draw_line_arc(down(R, skew), right(S), radius)
-
-#     R = switches[65].GetPosition() + VECTOR2I(int(half * 7.7), half + SIDE_WALL)
-#     S = switches[65].GetPosition() + VECTOR2I(int(xmid - width/2), half + WRIST_y_offset)
-#     R = draw_line_arc(right(R), up(S, skew), radius)
-#     S = switches[65].GetPosition() + VECTOR2I(int(xmid - WRIST_x_length/2), half + WRIST_y_offset)
-#     R = draw_line_arc(down(R, skew), right(S), radius)
-
-#     R = switches[72].GetPosition() + VECTOR2I(0, half + SIDE_WALL)
-#     S = switches[65].GetPosition() + VECTOR2I(int(xmid + width/2), half + WRIST_y_offset)
-#     R = draw_line_arc(left(R), up(S, skew), radius)
-#     S = switches[65].GetPosition() + VECTOR2I(int(xmid + WRIST_x_length/2), half + WRIST_y_offset)
-#     R = draw_line_arc(down(R, skew), left(S), radius)
 
 
 def remove_border():
