@@ -15,6 +15,7 @@
 # NOTE: There is a 1mm gap between keycaps. Case can be 0.5mm away from
 # keycaps, and pcb can be cut exactly where the key footprint ends (leaving
 # 0.5mm gap away from the keycap).
+# Angle is +ve clockwise, y-axis is +ve downwards
 
 import math
 import os
@@ -35,7 +36,11 @@ fillet_radius_half = mil(0.5)
 fillet_radius_laptop = mil(12)  # Macbook Air has 12mm radius corners
 fillet_radius_right_bottom = mil(4)
 
-WRIST = {'xoffset': mil(64), 'yoffset': mil(28), 'xwidth': mil(88), 'ywidth': mil(65)}
+# WRIST = {'xoffset': mil(64), 'yoffset': mil(28), 'xwidth': mil(88), 'ywidth': mil(65)}
+WRIST_x_offset = mil(64)
+WRIST_y_offset = mil(28)
+WRIST_x_length = mil(88)
+WRIST_y_length = mil(65)
 
 half = mil(dim / 2)
 
@@ -44,15 +49,13 @@ switches = [board.FindFootprintByReference('S' + str(num)) for num in range(COUN
 holes = [board.FindFootprintByReference('H' + str(i)) for i in range(9)]
 hole_count  = sum(h is not None for h in holes)
 
-# Create very short directed line segment from vector X, in one of 4 directions.
+# Create directed line segment from vector X, in one of 4 directions.
 # 'left' is vector (-delta, 0), etc. 'X' is a directed line segment represented
 # by (x, y).
-epsilon_dls = mil(0.1) # Length of very small directed line segment after the arc
-left = lambda X, angle=0: (X, X + rotate(VECTOR2I(-epsilon_dls, 0), angle))
-right = lambda X, angle=0: (X, X + rotate(VECTOR2I(epsilon_dls, 0), angle))
-up = lambda X, angle=0: (X, X + rotate(VECTOR2I(0, -epsilon_dls), angle))
-down = lambda X, angle=0: (X, X + rotate(VECTOR2I(0, epsilon_dls), angle))
-
+left = lambda X, angle=0: (X, X + rotate(VECTOR2I(-mil(0.1), 0), angle))
+right = lambda X, angle=0: (X, X + rotate(VECTOR2I(mil(0.1), 0), angle))
+up = lambda X, angle=0: (X, X + rotate(VECTOR2I(0, -mil(0.1)), angle))
+down = lambda X, angle=0: (X, X + rotate(VECTOR2I(0, mil(0.1)), angle))
 
 def draw_line(start, end):
     board = pcbnew.GetBoard()
@@ -63,6 +66,7 @@ def draw_line(start, end):
     ls.SetLayer(LAYER)
     # ls.SetWidth(int(0.12 * pcbnew.IU_PER_MM))
     board.Add(ls)
+    return end
 
 
 def draw_arc(start, mid, end):
@@ -113,7 +117,7 @@ def arc(A, B, C, D, radius):
 
 
 def rotate(V, theta):
-    """Rotate a vector by angle theta."""
+    """Rotate a vector by angle theta degrees."""
     sin, cos = (math.sin(math.radians(theta)), math.cos(math.radians(theta)))
     return VECTOR2I(int(cos * V.x - sin * V.y), int(sin * V.x + cos * V.y))
 
@@ -285,29 +289,22 @@ def draw_wrist():
 
     def draw_wrist_inner(A):
         R = A
-        S = R + VECTOR2I(-radius, WRIST['ywidth'] - radius)
+        S = R + VECTOR2I(-radius, WRIST_y_length - radius)
         R = draw_line_arc(down(R), right(S), radius)
-        S = R + VECTOR2I(-WRIST['xwidth'] + radius, -radius)
+        S = R + VECTOR2I(-WRIST_x_length + radius, -radius)
         R = draw_line_arc(left(R), down(S), radius)
-        S = R + VECTOR2I(radius, -WRIST['ywidth'] + radius)
+        S = R + VECTOR2I(radius, -WRIST_y_length + radius)
         R = draw_line_arc(up(R), left(S), radius)
         R = draw_line_arc(right(R), up(A), radius)
 
-    A = switches[65].GetPosition() + VECTOR2I(-WRIST['xoffset'], half + WRIST['yoffset'] + radius)
+    A = switches[65].GetPosition() + VECTOR2I(-WRIST_x_offset, half + WRIST_y_offset + radius)
     draw_wrist_inner(A)
-    A = switches[65].GetPosition() + VECTOR2I(WRIST['xoffset'] + WRIST['xwidth'],  half + WRIST['yoffset'] + radius)
+    A = switches[65].GetPosition() + VECTOR2I(WRIST_x_offset + WRIST_x_length,  half + WRIST_y_offset + radius)
     draw_wrist_inner(A)
 
 
-# Set your 4 control points (Start, Control1, Control2, End)
-# These could be the points from S-curve calculation between two parallel lines
-# Ex:
-# bezier_shape.SetStart(pcbnew.VECTOR2I(0, 0))
-# bezier_shape.SetBezierC1(pcbnew.VECTOR2I(mil(10), 0))
-# bezier_shape.SetBezierC2(pcbnew.VECTOR2I(mil(20), mil(10)))
-# bezier_shape.SetEnd(pcbnew.VECTOR2I(mil(30), mil(10)))
+# Draw Bezier curve using start, end, and 2 control points
 def draw_bezier(start_pt, controll, control2, end_pt):
-    # Create a new Bezier shape on the Edge.Cuts layer for your Bakelite case
     board = pcbnew.GetBoard()
     bezier_shape = pcbnew.PCB_SHAPE(board)
     bezier_shape.SetShape(pcbnew.SHAPE_T_BEZIER)
@@ -318,32 +315,181 @@ def draw_bezier(start_pt, controll, control2, end_pt):
     bezier_shape.SetEnd(end_pt)
 
     bezier_shape.SetLayer(LAYER)
+    bezier_shape.SetWidth(mil(0.1))
     board.Add(bezier_shape)
+    return end_pt
 
 
-# Quadratic Bezier (Start, Control, End)
-# P0: Start of curve on Line 1
-# P2: End of curve on Line 2
-# V: The intersection point of the two lines (Control Point P1)
-def draw_smooth_corner(board, p0, v, p2):
-    bezier_shape = pcbnew.PCB_SHAPE(board)
-    bezier_shape.SetShape(pcbnew.SHAPE_T_BEZIER)
+def draw_side_wall_bezier(offset = SIDE_WALL):
+    """Draw outer wall using Bezier curves."""
 
-    # Note: For KiCad 9 SetBezierC1/C2, set both to 'V',
-    # for a quadratic-style curve
-    bezier_shape.SetStart(p0)
-    bezier_shape.SetBezierC1(v)
-    bezier_shape.SetBezierC2(v)
-    bezier_shape.SetEnd(p2)
+    # Battery (PS5) is 40x61x8.5mm
 
-    bezier_shape.SetLayer(LAYER)
-    board.Add(bezier_shape)
+    left = lambda X, length=mil(0.1), angle=0: X + rotate(VECTOR2I(-length, 0), angle)
+    right = lambda X, length=mil(0.1), angle=0: X + rotate(VECTOR2I(length, 0), angle)
+    up = lambda X, length=mil(0.1), angle=0: X + rotate(VECTOR2I(0, -length), angle)
+    down = lambda X, length=mil(0.1), angle=0: X + rotate(VECTOR2I(0, length), angle)
+
+    # LEFT SIDE
+
+    # Wrist rest
+    A = switches[65].GetPosition() + VECTOR2I(0, half)
+    T1 = A + VECTOR2I(-WRIST_x_offset - WRIST_x_length, WRIST_y_offset)
+    T2 = A + VECTOR2I(-WRIST_x_offset, WRIST_y_offset)
+    B2 = A + VECTOR2I(-WRIST_x_offset, WRIST_y_offset + WRIST_y_length)
+    B1 = A + VECTOR2I(-WRIST_x_offset - WRIST_x_length, WRIST_y_offset + WRIST_y_length)
+
+    M, N = mil(25), mil(17)
+
+    S = Start = B2 + VECTOR2I(0, -M)
+    E = B2 + VECTOR2I(-M, 0)
+    S = draw_bezier(S, down(S, N), right(E, N), E)
+
+    E = B1 + VECTOR2I(M, 0)
+    S = draw_line(S, E)
+
+    E = B1 + VECTOR2I(0, -M)
+    S = draw_bezier(S, left(S, N), down(E, N), E)
+
+    E = T1 + VECTOR2I(0, M)
+    S = draw_line(S, E)
+
+    C1 = 11
+    P = E = VECTOR2I(switches[59].GetPosition().x - int(half*0.9), T1.y)
+    S = draw_bezier(S, up(S, N), left(E, mil(C1)), E)
+
+    C2, C3 = 15, 4
+    Q = E = VECTOR2I(mil(69), mil(128))  # 45-deg
+    angleQ = -45
+    S = draw_bezier(S, right(S, N), left(E, mil(C2), -angleQ), E)
+    E = T2 + VECTOR2I(0, M)
+    draw_bezier(S, right(S, mil(C3), angleQ+90), up(E, mil(C3)), E)
+
+    draw_line(E, Start)
+
+    # Segment connecting wrist rest to main body
+    S = P
+    C4 = 12
+    E = VECTOR2I(S.x, A.y + offset)
+    S = draw_bezier(S, right(S, mil(C4)), right(E, mil(C4)), E)
+
+    # Left wall
+    E = VECTOR2I(switches[65].GetPosition().x - WRIST_x_offset - WRIST_x_length, switches[45].GetPosition().y + half)
+    S = draw_bezier(S, left(S, mil(10)), down(E, mil(20)), E)
+
+    E = E + VECTOR2I(0, -half)
+    S = draw_line(S, E)
+
+    L_end = E = switches[1].GetPosition() + VECTOR2I(-half, -half - offset)
+    S = draw_bezier(S, up(S, mil(25)), left(E, mil(20)), E)
+
+    # Segment connecting wrist rest (right edge of left side)
+    S = Q
+    C5, C6 = 30, 12
+    angle = -switches[62].GetOrientationDegrees()
+    E = switches[62].GetPosition() + rotate(VECTOR2I(0, half + offset), angle)
+    S = draw_bezier(S, left(S, mil(C5), angleQ+90), left(E, mil(C6), angle), E)
+
+    # Draw curves to the middle key
+    C7, C8 = 25, 12
+    angle2 = -switches[64].GetOrientationDegrees()
+    E = switches[64].GetPosition() + rotate(VECTOR2I(-half, int(2*half) + offset), angle2)
+    S = draw_bezier(S, right(S, mil(C7), angle), left(E, mil(C8), angle2), E)
+
+    angle = angle2
+    E = S + rotate(VECTOR2I(int(2*half), 0), angle)
+    S = draw_line(S, E)
+
+    E = S + rotate(VECTOR2I(offset, -offset), angle)
+    S = draw_bezier(S, right(S, int(offset/2), angle), down(E, int(offset/2), angle), E)
+
+    E = S + rotate(VECTOR2I(0, -half), angle)
+    S = draw_line(S, E)
+
+    angle2 = -switches[66].GetOrientationDegrees()
+    E = switches[66].GetPosition() + rotate(VECTOR2I(-half - offset, half), angle2)
+    C = mil(12)
+    S = draw_bezier(S, up(S, C, angle), up(E, C, angle2), E)
+
+    # RIGHT SIDE
+
+    angle = angle2
+    E = S + rotate(VECTOR2I(0, half), angle)
+    S = draw_line(S, E)
+
+    E = S + rotate(VECTOR2I(offset, offset), angle)
+    S = draw_bezier(S, down(S, int(offset/2), angle), left(E, int(offset/2), angle), E)
+
+    E = S + rotate(VECTOR2I(int(2*half), 0), angle)
+    S = draw_line(S, E)
+
+    # Wrist rest
+    A = switches[65].GetPosition() + VECTOR2I(0, half)
+    T1 = A + VECTOR2I(WRIST_x_offset + WRIST_x_length, WRIST_y_offset)
+    T2 = A + VECTOR2I(WRIST_x_offset, WRIST_y_offset)
+    B2 = A + VECTOR2I(WRIST_x_offset, WRIST_y_offset + WRIST_y_length)
+    B1 = A + VECTOR2I(WRIST_x_offset + WRIST_x_length, WRIST_y_offset + WRIST_y_length)
+
+    S = Start = B2 + VECTOR2I(0, -M)
+    E = B2 + VECTOR2I(M, 0)
+    S = draw_bezier(S, down(S, N), left(E, N), E)
+
+    E = B1 + VECTOR2I(-M, 0)
+    S = draw_line(S, E)
+
+    E = B1 + VECTOR2I(0, -M)
+    S = draw_bezier(S, right(S, N), down(E, N), E)
+
+    E = T1 + VECTOR2I(0, M)
+    S = draw_line(S, E)
+
+    P = E = VECTOR2I(A.x + (A.x - P.x), P.y)
+    S = draw_bezier(S, up(S, N), right(E, mil(C1)), E)
+
+    Q = E = VECTOR2I(A.x + (A.x - Q.x), Q.y)  # 45-deg
+    S = draw_bezier(S, left(S, N), right(E, mil(C2), -angleQ-90), E)
+    E = T2 + VECTOR2I(0, M)
+    draw_bezier(S, left(S, mil(C3), angleQ), up(E, mil(C3)), E)
+
+    draw_line(E, Start)
+
+    # Segment connecting wrist rest to main body
+    S = P
+    E = VECTOR2I(S.x, A.y + offset)
+    S = draw_bezier(S, left(S, mil(C4)), left(E, mil(C4)), E)
+
+    # Right side wall
+    E = switches[72].GetPosition() + VECTOR2I(half, half + offset)
+    S = draw_line(S, E)
+
+    E = E + VECTOR2I(0, -offset) + rotate(VECTOR2I(offset, 0), 45)
+    S = draw_bezier(S, right(S, mil(2)), down(E, mil(2), 45), E)
+
+    E = switches[29].GetPosition() + VECTOR2I(int(1.5*half) + offset, half)
+    S = draw_bezier(S, up(S, mil(8), 45), down(E, mil(16)), E)
+
+    E = switches[15].GetPosition() + VECTOR2I(half + offset, -half)
+    S = draw_line(S, E)
+
+    E = S + VECTOR2I(-offset, -offset)
+    S = draw_bezier(S, up(S, int(offset/2)), right(E, int(offset/2)), E)
+
+    draw_line(S, L_end)
+
+    # Second curve connecting right wrist rest
+    S = Q
+    angle = -switches[68].GetOrientationDegrees()
+    E = switches[68].GetPosition() + rotate(VECTOR2I(0, half + offset), angle)
+    S = draw_bezier(S, right(S, mil(C5), angleQ), right(E, mil(C6), angle), E)
+
+    angle2 = -switches[66].GetOrientationDegrees()
+    E = switches[66].GetPosition() + rotate(VECTOR2I(half, int(2*half) + offset), angle2)
+    S = draw_bezier(S, left(S, mil(C7), angle), right(E, mil(C8), angle2), E)
 
 
 def draw_side_wall(offset = SIDE_WALL):
     """Draw outer wall."""
 
-    draw_bezier()
     # Left side
 
     R = switches[65].GetPosition() + VECTOR2I(0, half + offset + mil(2))
@@ -364,7 +510,7 @@ def draw_side_wall(offset = SIDE_WALL):
     S = switches[61].GetPosition() + VECTOR2I(0, half + offset)
     R = draw_line_arc(left(R, angle), right(S), offset)
 
-    S = switches[65].GetPosition() + VECTOR2I(-WRIST['xoffset'] - WRIST['xwidth'], 0)
+    S = switches[65].GetPosition() + VECTOR2I(-WRIST_x_offset - WRIST_x_length, 0)
     R = draw_line_arc(left(R), down(S), offset)
 
     RLeft = R
@@ -530,42 +676,42 @@ def draw_border(ispcb = False, offset = 0):
     draw_line(R, RLeft)
 
 
-def draw_wings():
-    width = mil(40)
-    skew = 0
-    # radius = int((fillet_radius_laptop - SIDE_WALL) / 1)
-    radius = fillet_radius_laptop - mil(2)
+# def draw_wings():
+#     width = mil(40)
+#     skew = 0
+#     # radius = int((fillet_radius_laptop - SIDE_WALL) / 1)
+#     radius = fillet_radius_laptop - mil(2)
 
-    xmid = int(WRIST['xoffset'] + WRIST['xwidth'] / 2)
-    R = switches[65].GetPosition() + VECTOR2I(-int(half * 7.7), half + SIDE_WALL)
-    S = switches[65].GetPosition() + VECTOR2I(int(-xmid + width/2), half + WRIST['yoffset'])
-    R = draw_line_arc(left(R), up(S, skew), radius)
-    S = switches[65].GetPosition() + VECTOR2I(int(-xmid + WRIST['xwidth']/2), half + WRIST['yoffset'])
-    R = draw_line_arc(down(R, skew), left(S), radius)
+#     xmid = int(WRIST_x_offset + WRIST_x_length / 2)
+#     R = switches[65].GetPosition() + VECTOR2I(-int(half * 7.7), half + SIDE_WALL)
+#     S = switches[65].GetPosition() + VECTOR2I(int(-xmid + width/2), half + WRIST_y_offset)
+#     R = draw_line_arc(left(R), up(S, skew), radius)
+#     S = switches[65].GetPosition() + VECTOR2I(int(-xmid + WRIST_x_length/2), half + WRIST_y_offset)
+#     R = draw_line_arc(down(R, skew), left(S), radius)
 
-    R = switches[59].GetPosition() + VECTOR2I(-half, half + SIDE_WALL)
-    S = switches[65].GetPosition() + VECTOR2I(int(-xmid - width/2), half + WRIST['yoffset'])
-    R = draw_line_arc(right(R), up(S, skew), radius)
-    S = switches[65].GetPosition() + VECTOR2I(int(-xmid - WRIST['xwidth']/2), half + WRIST['yoffset'])
-    R = draw_line_arc(down(R, skew), right(S), radius)
+#     R = switches[59].GetPosition() + VECTOR2I(-half, half + SIDE_WALL)
+#     S = switches[65].GetPosition() + VECTOR2I(int(-xmid - width/2), half + WRIST_y_offset)
+#     R = draw_line_arc(right(R), up(S, skew), radius)
+#     S = switches[65].GetPosition() + VECTOR2I(int(-xmid - WRIST_x_length/2), half + WRIST_y_offset)
+#     R = draw_line_arc(down(R, skew), right(S), radius)
 
-    R = switches[65].GetPosition() + VECTOR2I(int(half * 7.7), half + SIDE_WALL)
-    S = switches[65].GetPosition() + VECTOR2I(int(xmid - width/2), half + WRIST['yoffset'])
-    R = draw_line_arc(right(R), up(S, skew), radius)
-    S = switches[65].GetPosition() + VECTOR2I(int(xmid - WRIST['xwidth']/2), half + WRIST['yoffset'])
-    R = draw_line_arc(down(R, skew), right(S), radius)
+#     R = switches[65].GetPosition() + VECTOR2I(int(half * 7.7), half + SIDE_WALL)
+#     S = switches[65].GetPosition() + VECTOR2I(int(xmid - width/2), half + WRIST_y_offset)
+#     R = draw_line_arc(right(R), up(S, skew), radius)
+#     S = switches[65].GetPosition() + VECTOR2I(int(xmid - WRIST_x_length/2), half + WRIST_y_offset)
+#     R = draw_line_arc(down(R, skew), right(S), radius)
 
-    R = switches[72].GetPosition() + VECTOR2I(0, half + SIDE_WALL)
-    S = switches[65].GetPosition() + VECTOR2I(int(xmid + width/2), half + WRIST['yoffset'])
-    R = draw_line_arc(left(R), up(S, skew), radius)
-    S = switches[65].GetPosition() + VECTOR2I(int(xmid + WRIST['xwidth']/2), half + WRIST['yoffset'])
-    R = draw_line_arc(down(R, skew), left(S), radius)
+#     R = switches[72].GetPosition() + VECTOR2I(0, half + SIDE_WALL)
+#     S = switches[65].GetPosition() + VECTOR2I(int(xmid + width/2), half + WRIST_y_offset)
+#     R = draw_line_arc(left(R), up(S, skew), radius)
+#     S = switches[65].GetPosition() + VECTOR2I(int(xmid + WRIST_x_length/2), half + WRIST_y_offset)
+#     R = draw_line_arc(down(R, skew), left(S), radius)
 
 
 def remove_border():
     board = pcbnew.GetBoard()
     for t in board.GetDrawings():
-        if t.GetLayer() in [pcbnew.User_5, pcbnew.Edge_Cuts]:
+        if t.GetLayer() in [pcbnew.User_5, pcbnew.User_6, pcbnew.Edge_Cuts]:
             board.Delete(t)
 
 
@@ -592,12 +738,11 @@ def main():
         LAYER = pcbnew.User_5
         draw_wrist()
         draw_side_wall()
+        LAYER = pcbnew.User_6
+        draw_side_wall_bezier()
 
     else:
         draw_cutout_plate()
-
-    LAYER = pcbnew.User_5
-    draw_border_bezier(ispcb)
 
     pcbnew.Refresh()
     # board.Save(board.GetFileName())
