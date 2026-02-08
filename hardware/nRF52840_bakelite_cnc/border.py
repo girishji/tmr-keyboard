@@ -602,15 +602,13 @@ def draw_border(ispcb = False):
     S = switches[16].GetPosition() + VECTOR2I(-int(half * 1.5), 0)
     R = draw_line_arc(right(R), down(S))
 
-    S = switches[1].GetPosition() + VECTOR2I(0, -half)
-    R = draw_line_arc(up(R), left(S))
-
-    S = R + VECTOR2I(mil(3), -mil(5.5))
-    R = draw_line_arc(right(R), down(S))
-
     # Draw USB pcb extension
     if ispcb:
-        # S = switches[1].GetPosition() + VECTOR2I(-half, -half - mil(5.5))
+        S = switches[1].GetPosition() + VECTOR2I(0, -half)
+        R = draw_line_arc(up(R), left(S))
+
+        S = R + VECTOR2I(mil(3), -mil(5.5))
+        R = draw_line_arc(right(R), down(S))
 
         S = S + VECTOR2I(mil(5), 0)
         R = draw_line_arc(up(R), left(S))
@@ -620,6 +618,18 @@ def draw_border(ispcb = False):
 
         S = switches[4].GetPosition() + VECTOR2I(0, -half)
         R = draw_line_arc(down(R), left(S))
+
+    else:  # plate
+        S = switches[1].GetPosition() + VECTOR2I(-half + mil(6), -half)
+        R = draw_line_arc(up(R), left(S))
+
+        R = draw_line(R, S)
+        S = R + VECTOR2I(mil(10.5), mil(1.4))
+        R = draw_line_arc(down(R), left(S), fillet_radius_half)
+
+        S = S + VECTOR2I(0, -mil(1.4))
+        R = draw_line_arc(right(R), down(S), fillet_radius_half)
+        R = draw_line(R, S)
 
     RLeft = R
 
@@ -683,8 +693,6 @@ def draw_border(ispcb = False):
         draw_line(R, S)
         R = S
 
-    if not ispcb:
-        R = draw_line_arc(left(R), up(RLeft))
     draw_line(R, RLeft)
 
 

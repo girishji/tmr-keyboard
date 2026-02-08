@@ -112,68 +112,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Giri:JLC_Order_Num"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JLC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "JLC_Order_Num"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "JLC_Order_Num_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -248,6 +186,68 @@
 					(radius 1.27)
 					(stroke
 						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "tmr-lib:JLC_Order_Num"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JLC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "JLC_Order_Num"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "tmr-lib:JLC_Order_Num"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "JLC_Order_Num_0_1"
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -900,70 +900,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Giri:JLC_Order_Num")
-		(at 191.77 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16a402e1-2a6d-490a-aa5d-2b32f28384f5")
-		(property "Reference" "JLC1"
-			(at 195.58 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "JLC_Order_Num"
-			(at 195.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "tmr-lib:JLC_Order_Num"
-			(at 191.77 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 191.77 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "JLC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 80.01 78.74 0)
 		(unit 1)
@@ -1244,7 +1180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.75u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 194.31 78.74 0)
 			(effects
 				(font
@@ -1370,7 +1306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 194.31 66.04 0)
 			(effects
 				(font
@@ -1938,7 +1874,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.75u"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 68.58 78.74 0)
 			(effects
 				(font
@@ -2289,6 +2225,70 @@
 		)
 	)
 	(symbol
+		(lib_id "tmr-lib:JLC_Order_Num")
+		(at 198.12 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59d33761-f9a2-48e6-b007-105f0e2d1813")
+		(property "Reference" "JLC1"
+			(at 201.93 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JLC_Order_Num"
+			(at 201.93 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:JLC_Order_Num"
+			(at 198.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "JLC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 91.44 53.34 0)
 		(unit 1)
@@ -2568,7 +2568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout"
 			(at 182.88 91.44 0)
 			(effects
 				(font
@@ -5199,134 +5199,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "BAT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 138.43 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc7e0a1a-478f-48a5-9470-7ea28ee3fa75")
-		(property "Reference" "Hs11"
-			(at 140.97 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 140.97 144.7799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
-			(at 138.43 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 138.43 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hs11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 161.29 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df969b95-b832-4283-ad66-b0d3b00e7578")
-		(property "Reference" "Hs12"
-			(at 163.83 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 163.83 144.7799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
-			(at 161.29 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 161.29 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hs12")
 					(unit 1)
 				)
 			)
