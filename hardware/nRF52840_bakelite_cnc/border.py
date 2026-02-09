@@ -20,6 +20,7 @@
 import math
 import os
 import pcbnew
+import csv
 from pcbnew import VECTOR2I
 
 mil = lambda x: int(x * 1e6)
@@ -35,6 +36,9 @@ fillet_radius = mil(1)
 fillet_radius_half = mil(0.5)
 fillet_radius_laptop = mil(12)  # Macbook Air has 12mm radius corners
 fillet_radius_right_bottom = mil(4)
+
+CURVES_FILE = "bezier_curves.csv"
+Bezier_Curves = []
 
 # WRIST = {'xoffset': mil(64), 'yoffset': mil(28), 'xwidth': mil(88), 'ywidth': mil(65)}
 WRIST_x_offset = mil(64)
@@ -305,6 +309,8 @@ def draw_wrist():
 
 # Draw Bezier curve using start, end, and 2 control points
 def draw_bezier(start_pt, controll, control2, end_pt):
+    global Bezier_Curves
+
     board = pcbnew.GetBoard()
     bezier_shape = pcbnew.PCB_SHAPE(board)
     bezier_shape.SetShape(pcbnew.SHAPE_T_BEZIER)
@@ -317,6 +323,8 @@ def draw_bezier(start_pt, controll, control2, end_pt):
     bezier_shape.SetLayer(LAYER)
     bezier_shape.SetWidth(mil(0.1))
     board.Add(bezier_shape)
+
+    Bezier_Curves.append([start_pt, controll, control2, end_pt])
     return end_pt
 
 
@@ -709,6 +717,30 @@ def projname():
     filename = os.path.basename(full_path)
     return os.path.splitext(filename)[0]
 
+def get_file_path():
+    """
+    Constructs the absolute path to the CSV file, typically in the project directory.
+    """
+    board_path = pcbnew.GetBoard().GetFileName()
+    if board_path:
+        project_dir = os.path.dirname(board_path)
+    else:
+        # Fallback if board is not saved, or using KIPRJMOD environment variable
+        project_dir = os.getenv("KIPRJMOD", ".")
+
+    return os.path.join(project_dir, CURVES_FILE)
+
+
+def save_bezier_curves():
+    file_path = get_file_path()
+    try:
+        with open(file_path, "w", newline="") as f:
+            writer = csv.writer(f)
+            for s, c1, c2, e in Bezier_Curves:
+                writer.writerow([s.x, s.y, c1.x, c2.y, c2.x, c2.y, e.x, e.y])
+        print(f"Successfully saved {len(Bezier_Curves)} curves to {file_path}")
+    except IOError as e:
+        print(f"Error saving file at {file_path}: {e}")
 
 def main():
     global LAYER
@@ -728,12 +760,13 @@ def main():
         draw_side_wall()
         LAYER = pcbnew.User_6
         draw_side_wall_bezier()
+        save_bezier_curves()
 
     else:
         draw_cutout_plate()
 
+    # draw_side_wall_bezier()
     pcbnew.Refresh()
-    # board.Save(board.GetFileName())
 
 
 main()
