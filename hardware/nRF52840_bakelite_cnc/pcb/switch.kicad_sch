@@ -648,7 +648,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:C_0402_1005Metric"
+		(property "Footprint" "tmr-lib:C_0402_1005Metric_Cvout"
 			(at 140.97 69.85 0)
 			(effects
 				(font
@@ -1352,7 +1352,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:C_0402_1005Metric"
+		(property "Footprint" "tmr-lib:C_0402_1005Metric_Cvcc"
 			(at 111.76 59.69 0)
 			(effects
 				(font

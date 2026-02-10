@@ -35,7 +35,7 @@ HOLES = [
     (KEY_SPACING * 9.955, KEY_SPACING * 4.4),
     (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
-    (KEY_SPACING * 14 - 1.25, KEY_SPACING * 3.4),
+    (KEY_SPACING * 14 - 1.25, KEY_SPACING * 3),
     # (KEY_SPACING * 13.5 - 1.25, KEY_SPACING * 2),
 ]
 
@@ -58,8 +58,8 @@ COMPONENTS = [
     ("SW1", 43+5, -11.8, 90, False),
     ("SW2", 35+5, -11.8, 90, False),
     ("JTAG1", 27+5, -11.2, 180, False),
-    ("BAT1", 23.6, 76, 180, False),
-    ("BAT2", 243.4, 61, 180, False),
+    ("BAT1", 23.6, 80, 0, False),
+    ("BAT2", 243.5, 63, 0, False),
 ]
 
 
@@ -134,6 +134,9 @@ def calculate_switch_positions():
     offs += dim
     positions[44] = (offs, 2 * dim)
 
+    offs += dim
+    positions[72] = (offs, 2 * dim)
+
     # --- Row 4 ---
     offs = dim * (-1 / 2 + 1 / 8)
     positions[45] = (offs + dim, 3 * dim)
@@ -150,6 +153,9 @@ def calculate_switch_positions():
 
     offs += dim * (1 + 1 / 2 - 1/8)
     positions[58] = (offs, 3 * dim)
+
+    offs += dim
+    positions[71] = (offs, 3 * dim)
 
     # --- Row 5 (Angled cluster) ---
     x_offset = 0.2  # Accommodate angled keys in row 5
@@ -179,14 +185,15 @@ def calculate_switch_positions():
     offs += 2 * dim + (2 * x_offset)
     positions[69] = (offs + dim, 4 * dim)
 
-    offs += 2 * dim - (2/3 * x_offset)
+    # offs += 2 * dim - (2/3 * x_offset)
+    offs += (2 + 1/8) * dim
     positions[70] = (offs, 4 * dim)
 
-    offs += dim - (2/3 * x_offset)
-    positions[71] = (offs, 4 * dim)
+    # offs += dim - (2/3 * x_offset)
+    # positions[71] = (offs, 4 * dim)
 
-    offs += dim - (2/3 * x_offset)
-    positions[72] = (offs, 4 * dim)
+    # offs += dim - (2/3 * x_offset)
+    # positions[72] = (offs, 4 * dim)
 
     return positions
 

@@ -649,8 +649,8 @@ def draw_border(ispcb = False):
         S = switches[66].GetPosition() + rotate(VECTOR2I(-half, 0), angle)
         R = draw_line_arc(right(R), up(S, angle))
 
-        angle2 = -switches[67].GetOrientationDegrees()
-        S = switches[67].GetPosition() + rotate(VECTOR2I(0, half - mil(0.5)), angle2)
+        angle2 = -switches[68].GetOrientationDegrees()
+        S = switches[68].GetPosition() + rotate(VECTOR2I(0, half - mil(0.5)), angle2)
         R = draw_line_arc(down(R, angle), left(S, angle2))
     else:
         angle = -switches[66].GetOrientationDegrees()
@@ -668,23 +668,47 @@ def draw_border(ispcb = False):
         R = draw_line_arc(left(R, angle), left(S, angle2))
 
     angle = angle2
-    S = switches[72].GetPosition() + VECTOR2I(0, half)
+    S = switches[70].GetPosition() + VECTOR2I(0, half)
     R = draw_line_arc(right(R, angle), left(S))
 
-    S = switches[72].GetPosition() + VECTOR2I(half, 0)
+    S = S + VECTOR2I(int(1.25*half), -half)
     R = draw_line_arc(right(R), down(S))
 
-    S = switches[44].GetPosition() + VECTOR2I(half, half)
+    S = switches[71].GetPosition() + VECTOR2I(0, half)
     R = draw_line_arc(up(R), left(S))
 
-    S = switches[44].GetPosition() + VECTOR2I(half, 0)
+    S = S + VECTOR2I(half, -half)
     R = draw_line_arc(right(R), down(S))
 
-    S = switches[29].GetPosition() + VECTOR2I(int(2*half), half)
+    S = switches[72].GetPosition() + VECTOR2I(half, half)
     R = draw_line_arc(up(R), left(S))
+
+    S = S + VECTOR2I(0, -half)
+    R = draw_line_arc(right(R), down(S))
+
+    S = S + VECTOR2I(-half, -half)
+    R = draw_line_arc(up(R), right(S))
 
     S = switches[15].GetPosition() + VECTOR2I(half, 0)
-    R = draw_line_arc(right(R), down(S))
+    R = draw_line_arc(left(R), down(S))
+
+    # # S = switches[72].GetPosition() + VECTOR2I(0, half)
+    # # R = draw_line_arc(right(R, angle), left(S))
+
+    # # S = switches[72].GetPosition() + VECTOR2I(half, 0)
+    # # R = draw_line_arc(right(R), down(S))
+
+    # # S = switches[44].GetPosition() + VECTOR2I(half, half)
+    # # R = draw_line_arc(up(R), left(S))
+
+    # # S = switches[44].GetPosition() + VECTOR2I(half, 0)
+    # # R = draw_line_arc(right(R), down(S))
+
+    # # S = switches[29].GetPosition() + VECTOR2I(int(2*half), half)
+    # # R = draw_line_arc(up(R), left(S))
+
+    # # S = switches[15].GetPosition() + VECTOR2I(half, 0)
+    # # R = draw_line_arc(right(R), down(S))
 
     S = switches[15].GetPosition() + VECTOR2I(0, -half)
     R = draw_line_arc(up(R), right(S))
@@ -757,15 +781,14 @@ def main():
         draw_cutout_pcb()
         LAYER = pcbnew.User_5
         draw_wrist()
-        draw_side_wall()
-        LAYER = pcbnew.User_6
-        draw_side_wall_bezier()
-        save_bezier_curves()
+        # draw_side_wall()
+        # LAYER = pcbnew.User_6
+        # draw_side_wall_bezier()
+        # save_bezier_curves()
 
     else:
         draw_cutout_plate()
 
-    # draw_side_wall_bezier()
     pcbnew.Refresh()
 
 
