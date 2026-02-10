@@ -31,8 +31,9 @@ dim = 19.00
 COUNT = 72
 board = pcbnew.GetBoard()
 
-SIDE_WALL = mil(7.5)  # 7mm sidewall of housing + .5mm gap
-fillet_radius = mil(1)
+SIDE_WALL = mil(6.5 + 0.5)  #  .5mm gap
+# fillet_radius = mil(1)
+fillet_radius = mil(1.5)  # outer corners (for ease of CNC of case)
 fillet_radius_half = mil(0.5)
 fillet_radius_laptop = mil(12)  # Macbook Air has 12mm radius corners
 fillet_radius_right_bottom = mil(4)
@@ -291,20 +292,24 @@ def draw_wrist():
     """Draw wrist rests."""
     radius = mil(12)
 
-    def draw_wrist_inner(A):
+    def draw_wrist_inner(A, rightside=False):
         R = A
         S = R + VECTOR2I(-radius, WRIST_y_length - radius)
         R = draw_line_arc(down(R), right(S), radius)
-        S = R + VECTOR2I(-WRIST_x_length + radius, -radius)
+        if rightside:
+            S = R + VECTOR2I(-WRIST_x_length - RIGHT_SIDE_BONUS + radius, -radius)
+        else:
+            S = R + VECTOR2I(-WRIST_x_length + radius, -radius)
         R = draw_line_arc(left(R), down(S), radius)
         S = R + VECTOR2I(radius, -WRIST_y_length + radius)
         R = draw_line_arc(up(R), left(S), radius)
         R = draw_line_arc(right(R), up(A), radius)
 
+    RIGHT_SIDE_BONUS = half
     A = switches[65].GetPosition() + VECTOR2I(-WRIST_x_offset, half + WRIST_y_offset + radius)
     draw_wrist_inner(A)
-    A = switches[65].GetPosition() + VECTOR2I(WRIST_x_offset + WRIST_x_length,  half + WRIST_y_offset + radius)
-    draw_wrist_inner(A)
+    A = switches[65].GetPosition() + VECTOR2I(WRIST_x_offset + WRIST_x_length + RIGHT_SIDE_BONUS,  half + WRIST_y_offset + radius)
+    draw_wrist_inner(A, True)
 
 
 # Draw Bezier curve using start, end, and 2 control points
@@ -463,25 +468,16 @@ def draw_side_wall_bezier(offset = SIDE_WALL):
 
     # Segment connecting wrist rest to main body
     S = P
-    E = VECTOR2I(S.x, A.y + offset)
+    E = VECTOR2I(S.x, A.y + offset - int(2*half))
     S = draw_bezier(S, left(S, mil(C4)), left(E, mil(C4)), E)
 
+    W = switches[71].GetPosition() + VECTOR2I(half, 0)
+    E = VECTOR2I(W.x, S.y)
+    S = draw_line(S, E)
+
     # Right side wall
-    E = switches[72].GetPosition() + VECTOR2I(half, half + offset)
-    S = draw_line(S, E)
-
-    # E = E + VECTOR2I(0, -offset) + rotate(VECTOR2I(offset, 0), 45)
-    # S = draw_bezier(S, right(S, mil(2)), down(E, mil(2), 45), E)
-
-    E = switches[29].GetPosition() + VECTOR2I(int(1.5*half) + offset, half)
-    # S = draw_bezier(S, up(S, mil(8), 45), down(E, mil(16)), E)
-    S = draw_bezier(S, right(S, mil(8)), down(E, mil(60)), E)
-
-    E = switches[15].GetPosition() + VECTOR2I(half + offset, -half)
-    S = draw_line(S, E)
-
-    E = S + VECTOR2I(-offset, -offset)
-    S = draw_bezier(S, up(S, int(offset/2)), right(E, int(offset/2)), E)
+    E = switches[15].GetPosition() + VECTOR2I(half + offset, -half - offset)
+    S = draw_bezier(S, right(S, mil(18)), right(E, mil(16)), E)
 
     draw_line(S, L_end)
 
@@ -538,14 +534,21 @@ def draw_side_wall(offset = SIDE_WALL):
     R = draw_line_arc(right(R, angle), down(S, angle), offset)
 
     angle2 = -switches[68].GetOrientationDegrees()
-    S = switches[68].GetPosition() + rotate(VECTOR2I(0, int(half + offset)), angle2)
+    S = switches[68].GetPosition() + rotate(VECTOR2I(0, half + offset), angle2)
     R = draw_line_arc(up(R, angle), left(S, angle2))
 
-    S = switches[72].GetPosition() + VECTOR2I(0, half + offset)
+    angle = angle2
+    S = switches[70].GetPosition() + VECTOR2I(0, half + offset)
     R = draw_line_arc(right(R, angle), left(S), offset)
 
-    S = switches[15].GetPosition() + VECTOR2I(half + offset, 0)
-    R = draw_line_arc(right(R), down(S), fillet_radius_right_bottom + offset)
+    S = S + VECTOR2I(int(1.25*half) + offset, 0)
+    R = draw_line_arc(right(R), down(S), offset)
+
+    S = switches[71].GetPosition() + VECTOR2I(0, half + offset)
+    R = draw_line_arc(up(R), left(S), offset)
+
+    S = switches[72].GetPosition() + VECTOR2I(half + offset, 0)
+    R = draw_line_arc(right(R), down(S), offset)
 
     S = switches[15].GetPosition() + VECTOR2I(0, -half - offset)
     R = draw_line_arc(up(R), right(S), offset)
@@ -628,6 +631,7 @@ def draw_border(ispcb = False):
         R = draw_line_arc(down(R), left(S))
 
     else:  # plate
+        # Notch for USB receptacle
         S = switches[1].GetPosition() + VECTOR2I(-half + mil(6), -half)
         R = draw_line_arc(up(R), left(S))
 
@@ -781,10 +785,10 @@ def main():
         draw_cutout_pcb()
         LAYER = pcbnew.User_5
         draw_wrist()
-        # draw_side_wall()
-        # LAYER = pcbnew.User_6
-        # draw_side_wall_bezier()
-        # save_bezier_curves()
+        draw_side_wall()
+        LAYER = pcbnew.User_6
+        draw_side_wall_bezier()
+        save_bezier_curves()
 
     else:
         draw_cutout_plate()
