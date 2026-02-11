@@ -31,9 +31,9 @@ dim = 19.00
 COUNT = 72
 board = pcbnew.GetBoard()
 
-SIDE_WALL = mil(6.5 + 0.5)  #  .5mm gap
-# fillet_radius = mil(1)
-fillet_radius = mil(1.5)  # outer corners (for ease of CNC of case)
+SIDE_WALL = mil(6 + 0.5)  #  .5mm gap
+fillet_radius = mil(1)
+# fillet_radius = mil(1.5)  # outer corners for Bakelite
 fillet_radius_half = mil(0.5)
 fillet_radius_laptop = mil(12)  # Macbook Air has 12mm radius corners
 fillet_radius_right_bottom = mil(4)
