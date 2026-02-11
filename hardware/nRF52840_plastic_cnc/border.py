@@ -595,17 +595,17 @@ def draw_border(ispcb = False):
     S = switches[59].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
     R = draw_line_arc(left(R), down(S))
 
-    # S = switches[45].GetPosition() + VECTOR2I(-half, half)
-    # R = draw_line_arc(up(R), right(S))
+    S = switches[45].GetPosition() + VECTOR2I(-half, half)
+    R = draw_line_arc(up(R), right(S))
 
-    # S = switches[45].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
-    # R = draw_line_arc(left(R), down(S))
+    S = switches[45].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
+    R = draw_line_arc(left(R), down(S))
 
-    # S = switches[45].GetPosition() + VECTOR2I(-half, -half)
-    # R = draw_line_arc(up(R), left(S))
+    S = switches[45].GetPosition() + VECTOR2I(-half, -half)
+    R = draw_line_arc(up(R), left(S))
 
-    # S = switches[30].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
-    # R = draw_line_arc(right(R), down(S))
+    S = switches[30].GetPosition() + VECTOR2I(-int(half * 1.25), 0)
+    R = draw_line_arc(right(R), down(S))
 
     S = switches[30].GetPosition() + VECTOR2I(-half, -half)
     R = draw_line_arc(up(R), left(S))

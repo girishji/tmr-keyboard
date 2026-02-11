@@ -19796,7 +19796,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ee8964a-0a58-4c4f-a61a-e19d66475a16")
-		(property "Reference" "Hs1"
+		(property "Reference" "H1"
 			(at 361.95 363.2199 0)
 			(effects
 				(font
@@ -19844,7 +19844,7 @@
 		(instances
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "Hs1")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -21915,7 +21915,7 @@
 	)
 	(symbol
 		(lib_id "tmr-lib:JLC_Order_Num")
-		(at 391.16 392.43 0)
+		(at 392.43 410.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21924,7 +21924,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e431516-5ecf-4e1e-a0ff-7d87153dcbf7")
 		(property "Reference" "JLC1"
-			(at 394.97 391.1599 0)
+			(at 396.24 408.9399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21933,7 +21933,7 @@
 			)
 		)
 		(property "Value" "JLC_Order_Num"
-			(at 394.97 393.6999 0)
+			(at 396.24 411.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21942,7 +21942,7 @@
 			)
 		)
 		(property "Footprint" "tmr-lib:JLC_Order_Num"
-			(at 391.16 392.43 0)
+			(at 392.43 410.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21951,7 +21951,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 391.16 392.43 0)
+			(at 392.43 410.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21960,7 +21960,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 391.16 392.43 0)
+			(at 392.43 410.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1874,7 +1874,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.75u"
 			(at 68.58 78.74 0)
 			(effects
 				(font

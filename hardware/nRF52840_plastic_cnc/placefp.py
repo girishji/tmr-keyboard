@@ -28,15 +28,13 @@ HOLES = [
     (KEY_SPACING * 1.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 7.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 14.5, KEY_SPACING * 0.47),
-    (KEY_SPACING * 1.25 + 1.25, KEY_SPACING * 4 - 15),
-    # (KEY_SPACING * 2.25, KEY_SPACING * 2.47),
+    (KEY_SPACING * 1.125, KEY_SPACING * 4 - 15),
     (KEY_SPACING * 7.25, KEY_SPACING * 2.47),
     (KEY_SPACING * 4.545, KEY_SPACING * 4.4),
     (KEY_SPACING * 9.955, KEY_SPACING * 4.4),
     (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
     (KEY_SPACING * 14 - 1.25, KEY_SPACING * 3),
-    # (KEY_SPACING * 13.5 - 1.25, KEY_SPACING * 2),
 ]
 
 COMPONENTS = [
@@ -58,8 +56,8 @@ COMPONENTS = [
     ("SW1", 43+5, -11.3, 90, False),
     ("SW2", 35+5, -11.3, 90, False),
     ("JTAG1", 27+5, -11.2, 180, False),
-    ("BAT1", 23.6, 80, 0, False),
-    ("BAT2", 229.5, 78.5, 0, False),
+    ("BAT1", 23, 80, 0, False),
+    ("BAT2", 230.2, 78.5, 0, False),
 ]
 
 
@@ -138,13 +136,13 @@ def calculate_switch_positions():
     positions[72] = (offs, 2 * dim)
 
     # --- Row 4 ---
-    offs = dim * (-1 / 2 + 1 / 8)
+    offs = dim * (-1 / 2 + 1 / 8 - 1/4)
     positions[45] = (offs + dim, 3 * dim)
 
-    offs += dim * (1 + 3 / 8)
+    offs += dim * (1 + 3 / 8 + 1/8)
     positions[46] = (offs + dim, 3 * dim) # 1.75u
 
-    offs += dim * (3 / 8 - 1 / 8)
+    offs += dim * (3 / 8)
     for i in range(47, 57):
         positions[i] = (offs + (i - 45) * dim, 3 * dim)
 
@@ -158,11 +156,11 @@ def calculate_switch_positions():
     positions[71] = (offs, 3 * dim)
 
     # --- Row 5 (Angled cluster) ---
-    x_offset = 0.2  # Accommodate angled keys in row 5
-    offs = (1 - 1 / 2 + 1 / 8) * dim
+    x_offset = 1  # Accommodate angled keys in row 5
+    offs = (1 - 1 / 2 + 1 / 8) * dim - x_offset
     positions[59] = (offs, 4 * dim)
-    positions[60] = (offs + dim * (1 + 1 / 4) - x_offset, 4 * dim)
-    positions[61] = (offs + dim * (2 + 1 / 2 - 1 / 8) - (2 * x_offset) , 4 * dim)
+    positions[60] = (offs + dim * (1 + 1 / 4), 4 * dim)
+    positions[61] = (offs + dim * (2 + 1 / 2 - 1 / 8), 4 * dim)
 
     offs = (3 + 1 / 2 + 1 / 8) * dim
     positions[62] = (offs + dim / 2 - 0.75, 4 * dim + 3.5)
@@ -182,18 +180,11 @@ def calculate_switch_positions():
     positions[67] = (offs + dim - 0.6, 4 * dim + 10)
     positions[68] = (offs + 2 * dim - 1.75, 4 * dim + 0 + 3.5)
 
-    offs += 2 * dim + (2 * x_offset)
+    offs += 2 * dim + x_offset
     positions[69] = (offs + dim, 4 * dim)
 
-    # offs += 2 * dim - (2/3 * x_offset)
     offs += (2 + 1/8) * dim
     positions[70] = (offs, 4 * dim)
-
-    # offs += dim - (2/3 * x_offset)
-    # positions[71] = (offs, 4 * dim)
-
-    # offs += dim - (2/3 * x_offset)
-    # positions[72] = (offs, 4 * dim)
 
     return positions
 
