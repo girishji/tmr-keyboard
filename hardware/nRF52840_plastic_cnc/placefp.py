@@ -278,17 +278,8 @@ def place_mounting_holes(is_pcb):
     for i, (x, y) in enumerate(HOLES):
         fp = board.FindFootprintByReference(f"Hs{i+1}")
         set_position_mm(fp, x, y)
-
-    # Place Hs series (Small holes)
-    # if is_pcb:
-    #     for i, (x, y) in enumerate(HOLES_SMALL):
-    #         fp = board.FindFootprintByReference(f"Hs{i+1}")
-    #         set_position_mm(fp, x, y)
-
-    # Place H series (Large holes)
-    # for i, (x, y) in enumerate(HOLES_LARGE):
-    #     fp = board.FindFootprintByReference(f"H{i+1}")
-    #     set_position_mm(fp, x, y)
+        fp = board.FindFootprintByReference(f"H{i+1}")  # marker for heatsink nut
+        set_position_mm(fp, x, y)
 
 
 def place_components(is_pcb):

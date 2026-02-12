@@ -241,7 +241,7 @@ def draw_cutout_plate():
 
     angle2 = -switches[62].GetOrientationDegrees()
     S = switches[62].GetPosition() + rotate(VECTOR2I(-half, 0), angle2)
-    R = draw_line_arc(down(R), down(S, angle2))
+    R = draw_line_arc(down(R), down(S, angle2), mil(1.5))
 
     angle = angle2
     S = Rstart
@@ -280,7 +280,7 @@ def draw_cutout_plate():
 
     angle2 = -switches[68].GetOrientationDegrees()
     S = switches[68].GetPosition() + rotate(VECTOR2I(half, 0), angle2)
-    R = draw_line_arc(down(R), down(S, angle2))
+    R = draw_line_arc(down(R), down(S, angle2), mil(1.5))
 
     angle = angle2
     S = Rstart
