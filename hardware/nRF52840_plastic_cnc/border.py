@@ -305,7 +305,7 @@ def draw_wrist():
         R = draw_line_arc(up(R), left(S), radius)
         R = draw_line_arc(right(R), up(A), radius)
 
-    RIGHT_SIDE_BONUS = half
+    RIGHT_SIDE_BONUS = mil(5)
     A = switches[65].GetPosition() + VECTOR2I(-WRIST_x_offset, half + WRIST_y_offset + radius)
     draw_wrist_inner(A)
     A = switches[65].GetPosition() + VECTOR2I(WRIST_x_offset + WRIST_x_length + RIGHT_SIDE_BONUS,  half + WRIST_y_offset + radius)
@@ -618,13 +618,13 @@ def draw_border(ispcb = False):
         S = switches[1].GetPosition() + VECTOR2I(0, -half)
         R = draw_line_arc(up(R), left(S))
 
-        S = R + VECTOR2I(mil(3), -mil(5.5))
+        S = R + VECTOR2I(mil(3.6), -mil(5.5))
         R = draw_line_arc(right(R), down(S))
 
         S = S + VECTOR2I(mil(5), 0)
         R = draw_line_arc(up(R), left(S))
 
-        S = R + VECTOR2I(mil(38.5), mil(5))
+        S = R + VECTOR2I(mil(28.5), mil(5))
         R = draw_line_arc(right(R), up(S))
 
         S = switches[4].GetPosition() + VECTOR2I(0, -half)
