@@ -21729,7 +21729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tmr-lib:Aliexpress_SW_DIP_TS_1292V_4x6.2x1.8mm"
+		(property "Footprint" "tmr-lib:Aliexpress_SW_TACT_4x4x1.5mm"
 			(at 397.51 303.53 0)
 			(effects
 				(font
@@ -29968,7 +29968,7 @@
 				)
 			)
 		)
-		(property "Footprint" "tmr-lib:Aliexpress_SW_DIP_TS_1292V_4x6.2x1.8mm"
+		(property "Footprint" "tmr-lib:Aliexpress_SW_TACT_4x4x1.5mm"
 			(at 499.11 113.03 0)
 			(effects
 				(font

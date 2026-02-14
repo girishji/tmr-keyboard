@@ -1,0 +1,131 @@
+(footprint "Aliexpress_SW_DIP_TS_1292V_4x6.2x1.8mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "1x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x4.1mm")
+	(tags "DIP Switch SPST Piano 7.62mm 300mil")
+	(property "Reference" "REF**"
+		(at 0 -4.85 0)
+		(layer "F.SilkS")
+		(uuid "2be71ebe-7fe0-437d-9e6f-cd24cd6a27b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Aliexpress_SW_DIP_TS_1292V_4x6.2x1.8mm"
+		(at 3.55 4.3 0)
+		(layer "F.Fab")
+		(uuid "092968bc-fbfc-4dbd-9431-134b32b2ad7d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "473879a2-8f17-4d46-8701-ad197c972531")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "39f71b6d-e669-40ed-8d5f-a01cb1b76dc3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -3.4 -3.85)
+		(end 2.9 3.85)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3371bb6f-3644-408d-9c62-64e5ddc7e393")
+	)
+	(fp_rect
+		(start -3.1 -2)
+		(end 3.1 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "04c12d8c-fa56-49ae-a18f-5d7725c33801")
+	)
+	(fp_rect
+		(start 3.1 -1.2)
+		(end 4.3 1.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "06f3f3fc-a91d-4cc0-ad52-ae2a0fe433e3")
+	)
+	(pad "" np_thru_hole circle
+		(at -1.5 0)
+		(size 0.9 0.9)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(uuid "e934710a-0ca8-412f-9ab6-a8f5efc45b10")
+	)
+	(pad "" np_thru_hole circle
+		(at 1.5 0)
+		(size 0.9 0.9)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(uuid "be51f40b-2c5b-4782-8ff8-b20a8065c842")
+	)
+	(pad "1" smd roundrect
+		(at -1.7 -2.9 180)
+		(size 1.4 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "61738ca1-516e-4457-bd29-7902bcaf0f88")
+	)
+	(pad "1" smd roundrect
+		(at -1.7 2.9 180)
+		(size 1.4 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "446b66a3-19d9-4759-81b1-c46658c015bb")
+	)
+	(pad "2" smd roundrect
+		(at 1.7 -2.9 180)
+		(size 1.4 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "74016d29-9689-4770-8ce1-f3ec5f83b4fb")
+	)
+	(pad "2" smd roundrect
+		(at 1.7 2.9 180)
+		(size 1.4 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1785714286)
+		(uuid "852243f7-8492-4168-bc74-341dd947d6a6")
+	)
+	(embedded_fonts no)
+)

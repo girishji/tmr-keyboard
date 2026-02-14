@@ -1706,7 +1706,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "tmr-lib:Gateron_Kailh_Lowpro_Switch"
+		(property "Footprint" "tmr-lib:Gateron_Lowpro_Switch"
 			(at 97.79 64.77 0)
 			(effects
 				(font

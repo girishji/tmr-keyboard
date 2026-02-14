@@ -52,10 +52,10 @@ COMPONENTS = [
     ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
     ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
-    ("Jusb1", 28.5, -3, -90, False),  # gct4105 usb-c
+    ("Jusb1", 4.5, -1, -90, False),  # gct4105 usb-c
     ("SW1", 38, -11.3, 90, False),
-    ("SW2", 30, -11.3, 90, False),
-    ("JTAG1", 27+5, -11.2, 180, False),
+    ("SW2", 14, 24, -90, True),
+    ("JTAG1", 28.5, -3, -90, False),
     ("BAT1", 23, 80, 0, False),
     ("BAT2", 230.2, 78.5, 0, False),
 ]

@@ -391,11 +391,11 @@ def draw_side_wall_bezier(offset = SIDE_WALL):
     E = VECTOR2I(switches[65].GetPosition().x - WRIST_x_offset - WRIST_x_length, switches[45].GetPosition().y + half)
     S = draw_bezier(S, left(S, mil(10)), down(E, mil(20)), E)
 
-    E = E + VECTOR2I(0, -int(2*half))
-    S = draw_line(S, E)
+    # E = E + VECTOR2I(0, -int(2*half))
+    # S = draw_line(S, E)
 
     L_end = E = switches[1].GetPosition() + VECTOR2I(-half, -half - offset)
-    S = draw_bezier(S, up(S, mil(25)), left(E, mil(20)), E)
+    S = draw_bezier(S, up(S, mil(28)), left(E, mil(17)), E)
 
     # Segment connecting wrist rest (right edge of left side)
     S = Q
@@ -615,34 +615,37 @@ def draw_border(ispcb = False):
     R = draw_line_arc(right(R), down(S))
 
     # Draw USB pcb extension
-    if ispcb:
-        S = switches[1].GetPosition() + VECTOR2I(0, -half)
-        R = draw_line_arc(up(R), left(S))
+    # if ispcb:
+        # S = switches[1].GetPosition() + VECTOR2I(0, -half)
+        # R = draw_line_arc(up(R), left(S))
 
-        S = R + VECTOR2I(mil(3.6), -mil(5.5))
-        R = draw_line_arc(right(R), down(S))
+        # S = R + VECTOR2I(mil(3.6), -mil(5.5))
+        # R = draw_line_arc(right(R), down(S))
 
-        S = S + VECTOR2I(mil(5), 0)
-        R = draw_line_arc(up(R), left(S))
+        # S = S + VECTOR2I(mil(5), 0)
+        # R = draw_line_arc(up(R), left(S))
 
-        S = R + VECTOR2I(mil(28.5), mil(5))
-        R = draw_line_arc(right(R), up(S))
+        # S = R + VECTOR2I(mil(28.5), mil(5))
+        # R = draw_line_arc(right(R), up(S))
 
-        S = switches[4].GetPosition() + VECTOR2I(0, -half)
-        R = draw_line_arc(down(R), left(S))
+        # S = switches[4].GetPosition() + VECTOR2I(0, -half)
+        # R = draw_line_arc(down(R), left(S))
 
-    else:  # plate
-        # Notch for USB receptacle
-        S = switches[1].GetPosition() + VECTOR2I(-half + mil(6), -half)
-        R = draw_line_arc(up(R), left(S))
+    # else:  # plate
+    #     # Notch for USB receptacle
+    #     S = switches[1].GetPosition() + VECTOR2I(-half + mil(6), -half)
+    #     R = draw_line_arc(up(R), left(S))
 
-        R = draw_line(R, S)
-        S = R + VECTOR2I(mil(10.5), mil(1.4))
-        R = draw_line_arc(down(R), left(S), fillet_radius_half)
+    #     R = draw_line(R, S)
+    #     S = R + VECTOR2I(mil(10.5), mil(1.4))
+    #     R = draw_line_arc(down(R), left(S), fillet_radius_half)
 
-        S = S + VECTOR2I(0, -mil(1.4))
-        R = draw_line_arc(right(R), down(S), fillet_radius_half)
-        R = draw_line(R, S)
+    #     S = S + VECTOR2I(0, -mil(1.4))
+    #     R = draw_line_arc(right(R), down(S), fillet_radius_half)
+    #     R = draw_line(R, S)
+
+    S = switches[1].GetPosition() + VECTOR2I(0, -half)
+    R = draw_line_arc(up(R), left(S))
 
     RLeft = R
 
