@@ -53,8 +53,8 @@ COMPONENTS = [
     ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
     ("Jusb1", 4.5, -1, -90, False),  # gct4105 usb-c
-    ("SW1", 38, -11.3, 90, False),
-    ("SW2", 14, 24, -90, True),
+    ("SW1", 104.5, 1.5, 90, True),
+    ("SW2", 14, 20, -90, True),
     ("JTAG1", 28.5, -3, -90, False),
     ("BAT1", 23, 80, 0, False),
     ("BAT2", 230.2, 78.5, 0, False),
