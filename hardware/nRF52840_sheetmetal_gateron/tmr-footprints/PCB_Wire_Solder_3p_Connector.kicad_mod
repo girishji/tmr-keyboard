@@ -1,0 +1,153 @@
+(footprint "PCB_Wire_Solder_3p_Connector"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Through hole IDC box header, 2x04, 2.54mm pitch, DIN 41651 / IEC 60603-13, double rows, https://docs.google.com/spreadsheets/d/16SsEcesNF15N3Lb4niX7dcUr-NY5_MFPQhobNuNppn4/edit#gid=0")
+	(tags "Through hole vertical IDC box header THT 2x04 2.54mm double row")
+	(property "Reference" "REF**"
+		(at 0.25 -2 0)
+		(layer "Eco2.User")
+		(uuid "65562621-3e44-4756-a540-17e701b435ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PCB_Wire_Solder_3p_Connector"
+		(at 0.5 4.25 0)
+		(layer "F.Fab")
+		(uuid "29ffde90-4118-4b71-a14c-6fd8980ee376")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "93b959da-319d-4209-8bc7-7f6d5fc05210")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8637925e-90f0-43cb-8f70-30ccf3bb2096")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -4.25 -0.5)
+		(end -4.25 0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "eaf656b9-7290-4969-bdab-bafbd2febc69")
+	)
+	(fp_line
+		(start -4.25 0.5)
+		(end -3.25 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0d1582ae-aa80-4921-acd4-23227db6f6fc")
+	)
+	(fp_line
+		(start -3.25 0)
+		(end -4.25 -0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3b8c55fc-d07c-4e02-abb3-9667a10503ec")
+	)
+	(fp_rect
+		(start -3 -1.25)
+		(end 3 3.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cef425a2-9d0d-4354-ae7f-cd204454c091")
+	)
+	(pad "" np_thru_hole circle
+		(at -2 2.5 90)
+		(size 1 1)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "9b175d81-0298-4094-b6c5-ef31305fdf00")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 2.5 90)
+		(size 1 1)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "163a3e54-7515-433d-aa36-d1fe20a4353d")
+	)
+	(pad "" np_thru_hole circle
+		(at 2 2.5 90)
+		(size 1 1)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "a8cbf7dc-8ad4-47e4-871f-b6e575865c6b")
+	)
+	(pad "1" thru_hole roundrect
+		(at -2 0 90)
+		(size 1.4 1.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.147059)
+		(uuid "eb3b63c8-6352-42f8-b146-e1690b61a15f")
+	)
+	(pad "2" thru_hole roundrect
+		(at 0 0 90)
+		(size 1.4 1.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.147059)
+		(uuid "137b0417-f24a-41c7-ae3d-9485acf5f13c")
+	)
+	(pad "3" thru_hole roundrect
+		(at 2 0 90)
+		(size 1.4 1.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.147059)
+		(uuid "03a33163-f427-48cd-9a8c-5b97b872c103")
+	)
+	(group ""
+		(uuid "384885ac-d34a-483d-b981-0f1a63ff86c2")
+		(members "9b175d81-0298-4094-b6c5-ef31305fdf00")
+	)
+	(group ""
+		(uuid "dd09ba27-5906-473d-80f6-921770f87448")
+		(members "a8cbf7dc-8ad4-47e4-871f-b6e575865c6b")
+	)
+	(embedded_fonts no)
+)
