@@ -38,22 +38,18 @@ HOLES = [
 ]
 
 COMPONENTS = [
-    # ("MDBT1", 161, -1.6, 180, True),  # MCU module
-    ("M1", 161, -1.6, 180, True),  # MCU module
-    ("MUXA1", 155.44, 12.27, 135, True),
-    ("MUXA2", 167.22, 11.11, 0, True),
-    # ("MUXB1", KEY_SPACING * 6.5, 4.5, 180, True),
+    ("M1", 156.3, 4.6, 90, True),  # MCU module
+    ("MUXA1", 156.5, 9.5, 135, True),
+    ("MUXA2", 166.75, 10, 0, True),
     ("MUXB1", 122.5, 4.5, 180, True),
-    ("MUXB2", KEY_SPACING * 6, KEY_SPACING + 4.5, 180, True),
-    ("MUXB3", KEY_SPACING * 6.25, KEY_SPACING * 2 + 4.5, 180, True),
-    # ("MUXB4", KEY_SPACING * 6.75 + 1.5, KEY_SPACING * 3 + 4.5, 180, True),
+    ("MUXB2", 112, 23.5, 180, True),
+    ("MUXB3", 117.5, 42.5, 180, True),
     ("MUXB4", 127, 61.5, 180, True),
-    ("MUXB5", KEY_SPACING * 9.5, 4.5, 0, True),
-    ("MUXB6", KEY_SPACING * 10, KEY_SPACING + 4.5, 0, True),
-    ("MUXB7", KEY_SPACING * 9.25, KEY_SPACING * 2 + 4.5, 180, True),
-    # ("MUXB8", KEY_SPACING * 7.75 + 0.25, KEY_SPACING * 3 + 4.5, 180, True),
-    ("MUXB8", 145, 61.5, 180, True),
-    ("LEDDR1", KEY_SPACING * 7.25, 32.6, 180, True),
+    ("MUXB5", 178.75, 4.5, 0, True),
+    ("MUXB6", 188.25, KEY_SPACING + 4.5, 0, True),
+    ("MUXB7", 174.25, KEY_SPACING * 2 + 4.5, 180, True),
+    ("MUXB8", 146, 61.5, 180, True),
+    ("LEDDR1", 139.5, 32.0, 180, True),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
     ("Jusb1", 8.4025, -3.975, -90, False),  # gct usb4085
     ("SW1", 104.5, 1.5, 90, True),
@@ -290,6 +286,8 @@ def place_sw_components():
     for (sym, pos, rot_deg) in offset_mm:
         offset_vec = pcbnew.VECTOR2I(mm_to_nm(pos[0]), mm_to_nm(pos[1]))
         for i in range(1, SWITCH_COUNT + 1):
+            if i == 9:
+                continue
             # if sym == 'Cvout' and i == 9:
             #     continue
             # if sym == 'Cvcc' and i == 8:

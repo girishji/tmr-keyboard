@@ -116,6 +116,7 @@ def remove_via(A):
 
 def draw_switch_tracks(idx):
     e = mm_to_nm(0.1)
+    angle = -switches[idx].GetOrientationDegrees()
     cvout = board.FindFootprintByReference(f'Cvout{idx}')
     pads = list(cvout.Pads())
     C1, C2a, C2b, C2c = [pads[i].GetPosition() for i in range(4)]
@@ -125,12 +126,12 @@ def draw_switch_tracks(idx):
     T1, T2, T3, T4 = [pads[i].GetPosition() for i in range(4)]
 
     net = pads[0].GetNetname()
-    draw_intersecting_tracks(C1, C1 + rotate(VECTOR2I(e, 0), -45), T1, T1 + VECTOR2I(-e, 0), net)
+    draw_intersecting_tracks(C1, C1 + rotate(VECTOR2I(e, 0), -45 + angle), T1, T1 + rotate(VECTOR2I(-e, 0), angle), net)
 
     net = pads[1].GetNetname()
-    draw_intersecting_tracks(T2, T2 + rotate(VECTOR2I(-e, 0), 45), C2c, C2c + VECTOR2I(e, 0), net)
+    draw_intersecting_tracks(T2, T2 + rotate(VECTOR2I(-e, 0), 45 + angle), C2c, C2c + rotate(VECTOR2I(e, 0), angle), net)
 
-    draw_intersecting_tracks(T2, T2 + rotate(VECTOR2I(-e, 0), -45), T4, T4 + VECTOR2I(0, -e), net)
+    draw_intersecting_tracks(T2, T2 + rotate(VECTOR2I(-e, 0), -45 + angle), T4, T4 + rotate(VECTOR2I(0, -e), angle), net)
 
     cvout = board.FindFootprintByReference(f'Cvcc{idx}')
     pads = list(cvout.Pads())
@@ -143,7 +144,7 @@ def draw_switch_tracks(idx):
     remove_track(A, T4)
     draw_track(A, T4, net)
     net = pads[1].GetNetname()
-    draw_intersecting_tracks(A, A + rotate(VECTOR2I(-e, 0), -45), C2, C2 + VECTOR2I(0, -e), net)
+    draw_intersecting_tracks(A, A + rotate(VECTOR2I(-e, 0), -45 + angle), C2, C2 + rotate(VECTOR2I(0, -e), angle), net)
 
 
 def draw_intersecting_tracks(A, B, C, D, net):
@@ -211,8 +212,6 @@ def main():
     for i in range(1, SWITCH_COUNT + 1):
         if switches[i] and not i in EXCLUDE:
             draw_switch_tracks(i)
-
-    # draw_switch_tracks(2)
 
     pcbnew.Refresh()
 

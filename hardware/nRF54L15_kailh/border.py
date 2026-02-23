@@ -617,8 +617,8 @@ def draw_border(ispcb = False):
 
     # Draw USB pcb extension
     if ispcb:
-        USB_WIDTH = mil(11)
-        S = switches[1].GetPosition() + VECTOR2I(-half - mil(6.8), -half + mil(3) + USB_WIDTH)
+        USB_WIDTH = mil(12)
+        S = switches[1].GetPosition() + VECTOR2I(-half - mil(6.9), -half + mil(3) + USB_WIDTH)
         R = draw_line_arc(up(R), right(S))
         R = draw_line(R, S)
 
@@ -689,15 +689,17 @@ def draw_border(ispcb = False):
 
     if ispcb:
         # Draw cutout for nrf board's antennae
-        S = VECTOR2I(mil(168), -half)
+        S = VECTOR2I(mil(175), -half)
         draw_line(R, S)
         R = S
-        S = R + VECTOR2I(-mil(10), mil(3.4))
+        S = R + VECTOR2I(-mil(6.8), mil(3))
         R = draw_line_arc(down(R), right(S), fillet_radius_half)
-        S = VECTOR2I(mil(155.5), -half)
+        R = draw_line(R, S)
+        S = R + VECTOR2I(-mil(10.5), mil(1.55))
+        R = draw_line_arc(down(R), right(S), fillet_radius_half)
+        S = S + VECTOR2I(0, -mil(3+1.6))
         R = draw_line_arc(left(R), down(S), fillet_radius_half)
-        draw_line(R, S)
-        R = S
+        R = draw_line(R, S)
 
     draw_line(R, RLeft)
 
