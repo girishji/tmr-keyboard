@@ -7,7 +7,7 @@
 	(tags "Texas TSSOP SO SOT-23-THIN")
 	(property "Reference" "REF**"
 		(at 0 -3.05 0)
-		(layer "F.SilkS")
+		(layer "Eco2.User")
 		(uuid "27112fab-dee2-4c22-b1b5-d95207606ff2")
 		(effects
 			(font
