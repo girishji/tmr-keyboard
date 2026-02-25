@@ -1,0 +1,183 @@
+(footprint "Switch_Cutout_powdercoat"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
+	(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
+	(property "Reference" "REF**"
+		(at 0.1 -6.1 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a3668681-09b1-48f0-a7b1-f6b24183a469")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_1u"
+		(at 0.1 8.5 0)
+		(layer "F.Fab")
+		(uuid "563c12e4-8f8c-446c-a11f-94f5aa93b994")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe0264ec-854e-422b-b79a-fd520b6c921e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1cd635e5-a07e-477a-a47c-20f4fa34d96c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -7.05 -6.75)
+		(end -7.05 6.75)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "a22d0828-2ea8-48f8-b32f-d65f3e26f8eb")
+	)
+	(fp_line
+		(start -6.75 -7.05)
+		(end 6.75 -7.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "b9937346-f6e7-4a0d-8b88-940809bc0c5f")
+	)
+	(fp_line
+		(start -6.75 7.05)
+		(end 6.75 7.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "7614d1b3-3ead-4914-90b1-e5e05187dd06")
+	)
+	(fp_line
+		(start 7.05 -6.75)
+		(end 7.05 6.75)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "fec4b375-0141-4757-9198-710b89879560")
+	)
+	(fp_arc
+		(start -7.05 -6.75)
+		(mid -6.962132 -6.962132)
+		(end -6.75 -7.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "b5a26653-4e77-4514-a8f1-63ca7c4f9ab9")
+	)
+	(fp_arc
+		(start -6.75 7.05)
+		(mid -6.962132 6.962132)
+		(end -7.05 6.75)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d3ea5011-250b-4076-bf21-0457c1dc2816")
+	)
+	(fp_arc
+		(start 6.75 -7.05)
+		(mid 6.962132 -6.962132)
+		(end 7.05 -6.75)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "dc4bf440-2891-440b-98cc-4ec7ceadee72")
+	)
+	(fp_arc
+		(start 7.05 6.75)
+		(mid 6.962132 6.962132)
+		(end 6.75 7.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "a82cec30-45c1-49b3-b9e6-e30cc49eb759")
+	)
+	(fp_rect
+		(start 9.5 -9.5)
+		(end -9.5 9.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "User.3")
+		(uuid "68a98b98-eec7-4089-8e11-9eab3bbd3a17")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -8.2 0)
+		(layer "F.Fab")
+		(uuid "9d984d1b-8097-407f-92f3-3ef68867dcfa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(group ""
+		(uuid "c28abc10-bba7-4787-ae09-9f0b65368557")
+		(members "7614d1b3-3ead-4914-90b1-e5e05187dd06" "a22d0828-2ea8-48f8-b32f-d65f3e26f8eb"
+			"a82cec30-45c1-49b3-b9e6-e30cc49eb759" "b5a26653-4e77-4514-a8f1-63ca7c4f9ab9"
+			"b9937346-f6e7-4a0d-8b88-940809bc0c5f" "d3ea5011-250b-4076-bf21-0457c1dc2816"
+			"dc4bf440-2891-440b-98cc-4ec7ceadee72" "fec4b375-0141-4757-9198-710b89879560"
+		)
+	)
+	(embedded_fonts no)
+	(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
+		(hide yes)
+		(offset
+			(xyz 0 0 -3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

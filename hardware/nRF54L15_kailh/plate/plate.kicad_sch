@@ -359,7 +359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 125.73 53.34 0)
 			(effects
 				(font
@@ -422,7 +422,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 148.59 66.04 0)
 			(effects
 				(font
@@ -485,7 +485,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u_powdercoat"
 			(at 68.58 91.44 0)
 			(effects
 				(font
@@ -548,7 +548,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 137.16 66.04 0)
 			(effects
 				(font
@@ -611,7 +611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.7mm_M1.6_NoPad"
 			(at 115.57 133.35 0)
 			(effects
 				(font
@@ -675,7 +675,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 205.74 78.74 0)
 			(effects
 				(font
@@ -711,70 +711,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 63.5 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0faa0f17-e1c9-4ac8-ab14-8fb2b36b0fbc")
-		(property "Reference" "H5"
-			(at 66.04 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 66.04 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 63.5 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 63.5 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 102.87 53.34 0)
 		(unit 1)
@@ -802,7 +738,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 102.87 53.34 0)
 			(effects
 				(font
@@ -865,7 +801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 114.3 78.74 0)
 			(effects
 				(font
@@ -901,70 +837,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 81.28 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1489c544-46a1-4669-b86b-da760f4ce51f")
-		(property "Reference" "H2"
-			(at 83.82 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 83.82 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 81.28 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 81.28 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 114.3 91.44 0)
 		(unit 1)
@@ -992,7 +864,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_2u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_2u_powdercoat"
 			(at 114.3 91.44 0)
 			(effects
 				(font
@@ -1055,7 +927,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 80.01 78.74 0)
 			(effects
 				(font
@@ -1118,7 +990,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 114.3 39.37 0)
 			(effects
 				(font
@@ -1181,7 +1053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 68.58 53.34 0)
 			(effects
 				(font
@@ -1244,7 +1116,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.7mm_M1.6_NoPad"
 			(at 161.29 133.35 0)
 			(effects
 				(font
@@ -1308,7 +1180,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u_powdercoat"
 			(at 194.31 78.74 0)
 			(effects
 				(font
@@ -1371,7 +1243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 194.31 53.34 0)
 			(effects
 				(font
@@ -1434,7 +1306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 194.31 66.04 0)
 			(effects
 				(font
@@ -1497,7 +1369,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 68.58 66.04 0)
 			(effects
 				(font
@@ -1560,7 +1432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 102.87 66.04 0)
 			(effects
 				(font
@@ -1623,7 +1495,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u_powdercoat"
 			(at 57.15 78.74 0)
 			(effects
 				(font
@@ -1750,7 +1622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 57.15 39.37 0)
 			(effects
 				(font
@@ -1813,7 +1685,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 205.74 91.44 0)
 			(effects
 				(font
@@ -1876,7 +1748,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 125.73 39.37 0)
 			(effects
 				(font
@@ -1939,7 +1811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 148.59 39.37 0)
 			(effects
 				(font
@@ -2002,7 +1874,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.75u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.75u_powdercoat"
 			(at 68.58 78.74 0)
 			(effects
 				(font
@@ -2065,7 +1937,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 171.45 91.44 0)
 			(effects
 				(font
@@ -2128,7 +2000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 171.45 39.37 0)
 			(effects
 				(font
@@ -2191,7 +2063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 194.31 91.44 0)
 			(effects
 				(font
@@ -2254,7 +2126,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -2317,7 +2189,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 148.59 91.44 0)
 			(effects
 				(font
@@ -2444,7 +2316,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 91.44 53.34 0)
 			(effects
 				(font
@@ -2507,7 +2379,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 102.87 39.37 0)
 			(effects
 				(font
@@ -2570,7 +2442,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 91.44 39.37 0)
 			(effects
 				(font
@@ -2633,7 +2505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_2u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_2u_powdercoat"
 			(at 137.16 91.44 0)
 			(effects
 				(font
@@ -2696,7 +2568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u_powdercoat"
 			(at 182.88 91.44 0)
 			(effects
 				(font
@@ -2759,7 +2631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 68.58 39.37 0)
 			(effects
 				(font
@@ -2822,7 +2694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 125.73 78.74 0)
 			(effects
 				(font
@@ -2885,7 +2757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.7mm_M1.6_NoPad"
 			(at 138.43 133.35 0)
 			(effects
 				(font
@@ -2949,7 +2821,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 137.16 53.34 0)
 			(effects
 				(font
@@ -3049,70 +2921,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 81.28 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "729ac33c-e6e0-4c1f-96d6-612bdadfe353")
-		(property "Reference" "H6"
-			(at 83.82 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 83.82 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 81.28 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 81.28 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 91.44 78.74 0)
 		(unit 1)
@@ -3140,7 +2948,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 91.44 78.74 0)
 			(effects
 				(font
@@ -3170,70 +2978,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 116.84 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "792c7039-ebe7-4129-a32b-fa03fda3bfc7")
-		(property "Reference" "H4"
-			(at 119.38 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 119.38 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 116.84 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 116.84 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -3331,7 +3075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 80.01 53.34 0)
 			(effects
 				(font
@@ -3394,7 +3138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 171.45 78.74 0)
 			(effects
 				(font
@@ -3457,7 +3201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 80.01 66.04 0)
 			(effects
 				(font
@@ -3520,7 +3264,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 102.87 78.74 0)
 			(effects
 				(font
@@ -3550,70 +3294,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 81.28 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "84deeac3-43d4-4eee-9a07-37cfae20e1da")
-		(property "Reference" "H10"
-			(at 83.82 176.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 83.82 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 81.28 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 81.28 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H10")
 					(unit 1)
 				)
 			)
@@ -3751,70 +3431,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 63.5 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8757d467-fcef-42d3-8277-d5ac83c51a24")
-		(property "Reference" "H1"
-			(at 66.04 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 66.04 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 63.5 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 63.5 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 160.02 39.37 0)
 		(unit 1)
@@ -3842,7 +3458,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 160.02 39.37 0)
 			(effects
 				(font
@@ -3905,7 +3521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 114.3 66.04 0)
 			(effects
 				(font
@@ -3968,7 +3584,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 57.15 53.34 0)
 			(effects
 				(font
@@ -4031,7 +3647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 205.74 66.04 0)
 			(effects
 				(font
@@ -4094,7 +3710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 160.02 78.74 0)
 			(effects
 				(font
@@ -4157,7 +3773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 171.45 53.34 0)
 			(effects
 				(font
@@ -4194,70 +3810,6 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 99.06 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95f8417a-8a85-497d-8e2a-191bff76f8ac")
-		(property "Reference" "H7"
-			(at 101.6 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 101.6 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 99.06 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.06 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 99.06 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
 		(at 93.98 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4284,7 +3836,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.1mm"
+		(property "Footprint" "tmr-lib:MountingHole_1.7mm_M1.6_NoPad"
 			(at 93.98 143.51 0)
 			(effects
 				(font
@@ -4348,7 +3900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 182.88 78.74 0)
 			(effects
 				(font
@@ -4378,70 +3930,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 99.06 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa20127e-dd71-4580-a321-f8d0ab5ed1bb")
-		(property "Reference" "H3"
-			(at 101.6 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 101.6 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 99.06 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 99.06 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 99.06 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -4539,7 +4027,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 91.44 91.44 0)
 			(effects
 				(font
@@ -4602,7 +4090,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 137.16 39.37 0)
 			(effects
 				(font
@@ -4665,7 +4153,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 182.88 39.37 0)
 			(effects
 				(font
@@ -4728,7 +4216,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 182.88 66.04 0)
 			(effects
 				(font
@@ -4791,7 +4279,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u_powdercoat"
 			(at 57.15 66.04 0)
 			(effects
 				(font
@@ -4854,7 +4342,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 137.16 78.74 0)
 			(effects
 				(font
@@ -4917,7 +4405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 125.73 91.44 0)
 			(effects
 				(font
@@ -4980,7 +4468,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 148.59 78.74 0)
 			(effects
 				(font
@@ -5043,7 +4531,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 160.02 53.34 0)
 			(effects
 				(font
@@ -5173,7 +4661,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 160.02 91.44 0)
 			(effects
 				(font
@@ -5236,7 +4724,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 148.59 53.34 0)
 			(effects
 				(font
@@ -5272,70 +4760,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 116.84 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cadbadc9-2f16-4b50-8f46-58c4023882e8")
-		(property "Reference" "H8"
-			(at 119.38 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 119.38 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 116.84 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 116.84 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 217.17 39.37 0)
 		(unit 1)
@@ -5363,7 +4787,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 217.17 39.37 0)
 			(effects
 				(font
@@ -5426,7 +4850,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 217.17 66.04 0)
 			(effects
 				(font
@@ -5489,7 +4913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 80.01 39.37 0)
 			(effects
 				(font
@@ -5552,7 +4976,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 80.01 91.44 0)
 			(effects
 				(font
@@ -5615,7 +5039,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 160.02 66.04 0)
 			(effects
 				(font
@@ -5678,7 +5102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 125.73 66.04 0)
 			(effects
 				(font
@@ -5781,70 +5205,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 63.5 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da7a866c-66b7-4cd1-a3ee-1c9e0f24d8c2")
-		(property "Reference" "H9"
-			(at 66.04 176.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M2 Heat Sink Nut Marker (3.2mm,4.6mm flange)"
-			(at 66.04 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:M2_HeatSinkNut_Flanged"
-			(at 63.5 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 63.5 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "plate"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "H9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 194.31 39.37 0)
 		(unit 1)
@@ -5872,7 +5232,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 194.31 39.37 0)
 			(effects
 				(font
@@ -5935,7 +5295,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 171.45 66.04 0)
 			(effects
 				(font
@@ -5998,7 +5358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 205.74 53.34 0)
 			(effects
 				(font
@@ -6125,7 +5485,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u_powdercoat"
 			(at 57.15 91.44 0)
 			(effects
 				(font
@@ -6188,7 +5548,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 102.87 91.44 0)
 			(effects
 				(font
@@ -6251,7 +5611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 182.88 53.34 0)
 			(effects
 				(font
@@ -6314,7 +5674,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 91.44 66.04 0)
 			(effects
 				(font
@@ -6377,7 +5737,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_powdercoat"
 			(at 114.3 53.34 0)
 			(effects
 				(font

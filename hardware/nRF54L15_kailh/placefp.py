@@ -51,7 +51,7 @@ COMPONENTS = [
     ("MUXB8", 146, 61.5, 180, True),
     ("LEDDR1", 139.5, 32.0, 180, True),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
-    ("Jusb1", 8.4025, -3.975, -90, False),  # gct usb4085
+    ("Jusb1", 19, -12, 180, False),  # gct usb4085
     ("SW1", 104.5, 1.5, 90, True),
     ("SW2", 14, 20, -90, True),
     ("JTAG1", 28.5, -3, -90, False),
