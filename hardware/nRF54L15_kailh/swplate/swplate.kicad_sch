@@ -2868,7 +2868,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:DowelHole_3.0mm_M3_powdercoat"
+		(property "Footprint" "tmr-lib:DowelHole_3.2mm_M3_powdercoat"
 			(at 184.15 151.13 0)
 			(effects
 				(font
@@ -6370,7 +6370,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:DowelHole_3.0mm_M3_powdercoat"
+		(property "Footprint" "tmr-lib:DowelHole_3.2mm_M3_powdercoat"
 			(at 163.83 151.13 0)
 			(effects
 				(font
