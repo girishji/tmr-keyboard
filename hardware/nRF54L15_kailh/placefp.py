@@ -15,6 +15,7 @@
 import math
 import os
 import pcbnew
+from pcbnew import VECTOR2I
 
 # =============================================================================
 # CONFIGURATION
@@ -24,7 +25,8 @@ SWITCH_COUNT = 72
 
 # Mounting Hole Coordinates (Layout specific)
 # Format: (x_mm, y_mm)
-HOLES = [
+# pcb screws
+HOLES_Hs = [
     (KEY_SPACING * 1.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 7.5, KEY_SPACING * 0.47),
     (KEY_SPACING * 14.5, KEY_SPACING * 0.47),
@@ -35,6 +37,24 @@ HOLES = [
     (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
     (KEY_SPACING * 14 - 1.25, KEY_SPACING * 3),
+]
+
+# housing screws
+HOLES_H = [
+    (3, 2.25),
+    (104.5, -14.25),
+    (199.5, -14.25),
+    (300, -4),
+    (-9.7, 71),
+    (94.25, 102.25),
+    (181.25, 102.25),
+    (309, 55),
+]
+
+# Dowells
+HOLES_D = [
+    (4.55, -4.45),
+    (262, 72),
 ]
 
 COMPONENTS = [
@@ -51,14 +71,20 @@ COMPONENTS = [
     ("MUXB8", 146, 61.5, 180, True),
     ("LEDDR1", 139.5, 32.0, 180, True),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
-    ("Jusb1", 19, -12, 180, False),  # gct usb4085
+    ("Jusb1", 19, -12, 180, False),  # usb receptacle
     ("SW1", 104.5, 1.5, 90, True),
     ("SW2", 14, 20, -90, True),
     ("JTAG1", 28.5, -3, -90, False),
     ("BAT1", 23 - KEY_SPACING/4, 80, 0, False),
-    ("BAT2", 230.35 + KEY_SPACING/8, 81.1, 0, False),
+    ("BAT2", 234, 80, 0, False),
 ]
 
+# XXX: SYNC THIS IN border.py
+WRIST_x_offset = pcbnew.FromMM(64)
+WRIST_y_offset = pcbnew.FromMM(28+2)  # XXX: Used to be 28
+WRIST_x_length = pcbnew.FromMM(88)
+WRIST_y_length = pcbnew.FromMM(65)
+WRIST_right_X_extra = pcbnew.FromMM(5)
 
 # =============================================================================
 # HELPER FUNCTIONS
@@ -93,8 +119,22 @@ def rotate_point(point, origin, angle_deg):
     return pcbnew.VECTOR2I(int(origin.x + rx), int(origin.y + ry))
 
 
+def wrist_rest_corners():
+    board = pcbnew.GetBoard()
+    A = board.FindFootprintByReference('S65').GetPosition() + VECTOR2I(0, int(mm_to_nm(KEY_SPACING)/2))
+    L1 = A + VECTOR2I(-WRIST_x_offset - WRIST_x_length, WRIST_y_offset)
+    L2 = A + VECTOR2I(-WRIST_x_offset, WRIST_y_offset)
+    L3 = A + VECTOR2I(-WRIST_x_offset, WRIST_y_offset + WRIST_y_length)
+    L4 = A + VECTOR2I(-WRIST_x_offset - WRIST_x_length, WRIST_y_offset + WRIST_y_length)
+    R1 = A + VECTOR2I(WRIST_x_offset + WRIST_x_length + WRIST_right_X_extra, WRIST_y_offset)
+    R2 = A + VECTOR2I(WRIST_x_offset, WRIST_y_offset)
+    R3 = A + VECTOR2I(WRIST_x_offset, WRIST_y_offset + WRIST_y_length)
+    R4 = A + VECTOR2I(WRIST_x_offset + WRIST_x_length + WRIST_right_X_extra, WRIST_y_offset + WRIST_y_length)
+    return [L1, L2, L3, L4, R1, R2, R3, R4]
+
+
 # =============================================================================
-# LOGIC
+# PLACEMENT
 # =============================================================================
 def calculate_switch_positions():
     """
@@ -155,7 +195,6 @@ def calculate_switch_positions():
     positions[71] = (offs, 3 * dim)
 
     # --- Row 5 (Angled cluster) ---
-    # x_offset = 0.6
     x_offset = dim / 4
     offs = (1 - 1 / 2 + 1 / 8) * dim - x_offset
     positions[59] = (offs, 4 * dim)
@@ -164,11 +203,9 @@ def calculate_switch_positions():
 
     offs = (3 + 1 / 2 + 1 / 8) * dim
     positions[62] = (offs + dim / 2 - 1.15, 4 * dim + 4.7)
-    # positions[62] = (offs + dim * (1 / 4 + 1/8) - x_offset, 4 * dim)
 
     offs += dim * (1 + 1 / 4 + 1 / 8)
     positions[63] = (offs + 0.1, 4 * dim + 11.25)
-    # positions[63] = (offs + 0.6, 4 * dim + 10)
 
     offs += dim
     positions[64] = (offs - 0.6, 4.5 * dim + 7)
@@ -180,47 +217,13 @@ def calculate_switch_positions():
 
     offs += dim * 1.25
     positions[67] = (offs + dim - 0.1, 4 * dim + 11.25)
-    # positions[67] = (offs + dim - 0.6, 4 * dim + 10)
     positions[68] = (offs + 2 * dim - 1.15, 4 * dim + 0 + 4.7)
-    # positions[68] = (offs + 2 * dim - 1.75, 4 * dim + 0 + 3.5)
 
-    offs += 2 * dim + x_offset
-    positions[69] = (offs + dim, 4 * dim)
+    offs += 3 * dim + x_offset
+    positions[69] = (offs, 4 * dim)
 
-    # offs += (2 + 1 / 8) * dim
-    offs += 2 * dim
+    offs += 1.125 * dim
     positions[70] = (offs, 4 * dim)
-
-    # # --- Row 5 (Angled cluster) ---
-    # x_offset = 1  # Accommodate angled keys in row 5
-    # offs = (1 - 1 / 2 + 1 / 8) * dim - x_offset
-    # positions[59] = (offs, 4 * dim)
-    # positions[60] = (offs + dim * (1 + 1 / 4), 4 * dim)
-    # positions[61] = (offs + dim * (2 + 1 / 2 - 1 / 8), 4 * dim)
-
-    # offs = (3 + 1 / 2 + 1 / 8) * dim
-    # positions[62] = (offs + dim / 2 - 0.75, 4 * dim + 3.5)
-
-    # offs += dim * (1 + 1 / 4 + 1 / 8)
-    # positions[63] = (offs + 0.6, 4 * dim + 10)
-
-    # offs += dim
-    # positions[64] = (offs - 0.6, 4.5 * dim + 7)
-
-    # offs += dim * 1.25
-    # positions[65] = (offs, 4 * dim)
-
-    # positions[66] = (offs + dim + dim / 4 + 0.6, 4.5 * dim + 7)
-
-    # offs += dim * 1.25
-    # positions[67] = (offs + dim - 0.6, 4 * dim + 10)
-    # positions[68] = (offs + 2 * dim - 1.75, 4 * dim + 0 + 3.5)
-
-    # offs += 2 * dim + x_offset
-    # positions[69] = (offs + dim, 4 * dim)
-
-    # offs += (2 + 1/8) * dim
-    # positions[70] = (offs, 4 * dim)
 
     return positions
 
@@ -313,11 +316,25 @@ def place_mounting_holes(is_pcb):
     """Places mounting holes based on global coordinates."""
     board = pcbnew.GetBoard()
 
-    for i, (x, y) in enumerate(HOLES):
+    for i, (x, y) in enumerate(HOLES_Hs):
         fp = board.FindFootprintByReference(f"Hs{i+1}")
         set_position_mm(fp, x, y)
-        fp = board.FindFootprintByReference(f"H{i+1}")  # marker for heatsink nut
+    for i, (x, y) in enumerate(HOLES_H[:8]):
+        fp = board.FindFootprintByReference(f"H{i+1}")  # mounting screws for housing
         set_position_mm(fp, x, y)
+    # holes in wrist rest
+    L1, L2, L3, L4, R1, R2, R3, R4 = wrist_rest_corners()
+    holes = [board.FindFootprintByReference(f'H{i}') for i in range(16+1)]
+    d = 8
+    holes[9].SetPosition(pcbnew.VECTOR2I(L1.x+mm_to_nm(d), L1.y+mm_to_nm(d)))
+    holes[10].SetPosition(pcbnew.VECTOR2I(L2.x+mm_to_nm(-d), L2.y+mm_to_nm(15.5)))
+    holes[11].SetPosition(pcbnew.VECTOR2I(L3.x+mm_to_nm(-d), L3.y+mm_to_nm(-d)))
+    holes[12].SetPosition(pcbnew.VECTOR2I(L4.x+mm_to_nm(d), L4.y+mm_to_nm(-d)))
+
+    holes[13].SetPosition(pcbnew.VECTOR2I(R1.x+mm_to_nm(-d), R1.y+mm_to_nm(d)))
+    holes[14].SetPosition(pcbnew.VECTOR2I(R2.x+mm_to_nm(d), R2.y+mm_to_nm(15.5)))
+    holes[15].SetPosition(pcbnew.VECTOR2I(R3.x+mm_to_nm(d), R3.y+mm_to_nm(-d)))
+    holes[16].SetPosition(pcbnew.VECTOR2I(R4.x+mm_to_nm(-d), R4.y+mm_to_nm(-d)))
 
 
 def place_components(is_pcb):
@@ -325,7 +342,7 @@ def place_components(is_pcb):
     board = pcbnew.GetBoard()
 
     for i, (fpname, x, y, deg, flip) in enumerate(COMPONENTS):
-        if not is_pcb and fpname not in ['Jusb1', 'BAT1', 'BAT2']:
+        if not is_pcb and fpname not in ['Jusb1']:
             continue
         fp = board.FindFootprintByReference(fpname)
         set_position_mm(fp, x, y)
@@ -342,16 +359,21 @@ def projname():
 
 
 def main():
-    if projname() not in ["pcb", "plate"]:
+    if projname() not in ["pcb", "swplate", "topcase"]:
         print(f"Error: unrecognized project {projname()}")
-    ispcb = projname() == "pcb"
-    print(f"Starting placement... Mode: {'PCB' if ispcb else 'PLATE'}")
 
-    place_switches_and_stabs(ispcb)
-    if ispcb:
+    if projname() == "pcb":
+        place_switches_and_stabs(True)
         place_sw_components()
-    place_components(ispcb)
-    place_mounting_holes(ispcb)
+        place_components(True)
+        place_mounting_holes(True)
+    elif projname() == "swplate":
+        place_switches_and_stabs(False)
+        place_components(False)
+        place_mounting_holes(False)
+    elif projname() == "topcase":
+        place_switches_and_stabs(False)
+        place_mounting_holes(False)
 
     pcbnew.Refresh()
     print("Placement complete.")
