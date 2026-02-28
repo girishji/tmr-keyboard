@@ -369,11 +369,10 @@ def draw_border_bezier(proj=""):
     global LAYER
     # PS5 battery size is 40x61x8.5mm
 
-    # when two materials meet, they are never perfectly flush because the human
-    # eye is incredibly good at spotting a 0.1mm misalignment. By making the
-    # middle plate slightly smaller (0.2mm all around) we hide misalignment,
-    # provide contrast, and provide relief for "edge beads" common during
-    # powder coating.
+    # when two layers meet (one on top of another), they are never perfectly
+    # flush because the human eye is good at spotting a 0.1mm misalignment. By
+    # making the middle plate slightly smaller (0.2mm all around) we hide misalignment,
+    # and provide relief for "edge beads" common during powder coating.
     reveal = 0
     if proj == "swplate":
         reveal = mil(0.2)
@@ -405,15 +404,15 @@ def draw_border_bezier(proj=""):
     E = T1 + VECTOR2I(reveal, M)
     S = draw_line(S, E)
 
-    # left side top corner
+    # left side top corner of wrist rest
     C1 = 12
     P = E = VECTOR2I(switches[59].GetPosition().x - mil(3) + reveal, T1.y + reveal)
     S = draw_bezier(*up(S, N), *left(E, mil(C1)))
 
-    # 20-deg tangential intermediate point
-    C2, C3 = 15, 9
-    Q = E = VECTOR2I(mil(59.5) - reveal, mil(122.5) + reveal)
-    angleQ = 20
+    # angled tangential pt
+    C2, C3 = 15, 6.5
+    Q = E = VECTOR2I(mil(65.5) - reveal, mil(125) + reveal)
+    angleQ = 38
     if proj != "wristrest":
         LAYER = pcbnew.User_6
     S = draw_bezier(*right(S, N), *left(E, mil(C2), angleQ))
@@ -425,7 +424,7 @@ def draw_border_bezier(proj=""):
 
     # Segment connecting wrist rest to main body
     S = P
-    C4, C4a = 7, 19
+    C4, C4a = 33.5, 17
     E = VECTOR2I(S.x - mil(7), A.y + offset - reveal)
     S = draw_bezier(*right(S, mil(C4)), *right(E, mil(C4a)))
 
@@ -453,31 +452,28 @@ def draw_border_bezier(proj=""):
         E = S + VECTOR2I(mil(Ux), 0)
         S = draw_line(S, E)
 
-    Cn = mil(10)
-    E = VECTOR2I(switches[2].GetPosition() + VECTOR2I(half, -half-offset+reveal))
-    S = draw_bezier(*right(S, Cn), *left(E, Cn))
-
-    E = switches[4].GetPosition() + VECTOR2I(half, -half - offset+reveal)
-    S = draw_line(S, E)
+    Cn, Cm = mil(6), mil(36)
+    E = VECTOR2I(switches[3].GetPosition() + VECTOR2I(half, -half-offset+reveal))
+    S = draw_bezier(*right(S, Cn), *left(E, Cm))
 
     E = VECTOR2I(switches[5].GetPosition() + VECTOR2I(half, -half-offset-mil(3.5) + reveal))
-    S = draw_bezier(*right(S, Cn), *left(E, Cn))
+    S = draw_bezier(*right(S, Cm), *left(E, Cn + mil(4)))
 
-    E = switches[6].GetPosition() + VECTOR2I(half, -half - offset + reveal)
-    S = draw_bezier(*right(S, Cn), *left(E, Cn))
-
-    E = switches[9].GetPosition() + VECTOR2I(half, -half - offset + reveal)
-    S = draw_line(S, E)
+    E = VECTOR2I(switches[8].GetPosition() + VECTOR2I(0, -half-offset+ reveal))
+    S = draw_bezier(*right(S, Cn), *left(E, Cm))
 
     E = VECTOR2I(switches[10].GetPosition() + VECTOR2I(half, -half-offset-mil(3.5) + reveal))
-    S = draw_bezier(*right(S, Cn), *left(E, Cn))
+    S = draw_bezier(*right(S, Cm), *left(E, Cn))
 
-    E = switches[11].GetPosition() + VECTOR2I(half, -half - offset + reveal)
-    L_end = S = draw_bezier(*right(S, Cn), *left(E, Cn))
+    E = switches[15].GetPosition() + VECTOR2I(half, -half - offset + reveal)
+    L_end = S = draw_bezier(*right(S, Cn + mil(2)), *left(E, mil(95)))
+
+    # E = switches[11].GetPosition() + VECTOR2I(half, -half - offset + reveal)
+    # L_end = S = draw_bezier(*right(S, Cn), *left(E, Cn))
 
     # Segment connecting wrist rest (right edge of left side)
     S = Q
-    C5, C6 = 15, 24
+    C5, C6 = 52, 24
     angle = -switches[62].GetOrientationDegrees()
     E = switches[62].GetPosition() + rotate(VECTOR2I(-reveal, half + offset - reveal), angle)
     S = draw_bezier(*left(S, mil(C5), angleQ), *left(E, mil(C6), angle))
@@ -556,16 +552,12 @@ def draw_border_bezier(proj=""):
 
     # Segment connecting wrist rest to main body
     S = P
-    E = switches[71].GetPosition() + VECTOR2I(-half - reveal, half+offset - reveal)
-    S = draw_bezier(*left(S, mil(16)), *left(E, mil(34)))
-
-    W = switches[71].GetPosition() + VECTOR2I(half+int(0.5*offset), 0)
-    E = VECTOR2I(W.x - reveal, S.y)
-    S = draw_line(S, E)
+    E = switches[71].GetPosition() + VECTOR2I(half - reveal, half+offset - reveal)
+    S = draw_bezier(*left(S, mil(42)), *left(E, mil(44)))
 
     # Right side wall
     E = switches[72].GetPosition() + VECTOR2I(half+offset - reveal, 0)
-    S = draw_bezier(*right(S, mil(5)), *down(E, mil(20)))
+    S = draw_bezier(*right(S, mil(10)), *down(E, mil(20)))
 
     E = switches[15].GetPosition() + VECTOR2I(half + int(0.3*offset) - reveal, -half - offset + reveal)
     S = draw_bezier(*up(S, mil(24)), *right(E, mil(8)))
@@ -739,6 +731,30 @@ def draw_border(ispcb = False, offset=0):
     draw_line(R, RLeft)
 
 
+def draw_slots():
+    def slot(anchor, startx, endx):
+        rad = mil(2.5)
+        rot = lambda X: rotate(X, 45)
+        S = anchor + rot(VECTOR2I(startx, 0))
+        E = anchor + rot(VECTOR2I(endx, 0))
+        draw_line(S, E)
+        S2, E2 = S + rot(VECTOR2I(0, rad+rad)), E + rot(VECTOR2I(0, rad+rad))
+        draw_arc(S, S + rot(VECTOR2I(-rad, rad)), S2)
+        draw_arc(E, E + rot(VECTOR2I(rad, rad)), E2)
+        draw_line(S2, E2)
+
+    A = VECTOR2I(mil(-18), mil(25))
+    dy = lambda n: VECTOR2I(0, mil(math.sqrt(2) * 9 * n))
+    slot(A, mil(94), mil(96))
+    slot(A + dy(1), mil(75), mil(91))
+    slot(A + dy(2), mil(57), mil(86))
+    slot(A + dy(3), mil(53.6), mil(70.5))
+    slot(A + dy(4), mil(52.6), mil(53.5))
+    # slot(A + dy(5), mil(56.6), mil(90))
+    # slot(A + dy(6), mil(60.6), mil(90.5))
+    # slot(A + dy(7), mil(70.6), mil(90.5))
+
+
 def remove_border():
     board = pcbnew.GetBoard()
     for t in board.GetDrawings():
@@ -790,6 +806,7 @@ def main():
     elif projname() == "swplate":
         draw_border_bezier("swplate")
         draw_wrist_cavity()
+        # draw_slots()
         LAYER = pcbnew.User_6
         draw_border(ispcb=False, offset=GAP)
         draw_border(ispcb=False, offset=SIDE_WALL)
