@@ -366,18 +366,17 @@ def draw_bezier(start_pt, controll, end_pt, control2):
     return end_pt
 
 
-def draw_border_bezier(proj=""):
+def draw_border_bezier(proj="", reveal=0):
     """Draw outer wall using Bezier curves."""
-    global LAYER
-    # PS5 battery size is 40x61x8.5mm
-
-    # when two layers meet (one on top of another), they are never perfectly
+    # 'reveal': when two layers meet (one on top of another), they are never perfectly
     # flush because the human eye is good at spotting a 0.1mm misalignment. By
     # making the middle plate slightly smaller (0.2mm all around) we hide misalignment,
     # and provide relief for "edge beads" common during powder coating.
-    reveal = 0
-    if proj == "swplate":
-        reveal = mil(0.2)
+
+    # PS5 battery size is 40x61x8.5mm
+
+    global LAYER
+
 
     offset = SIDE_WALL
 
@@ -462,16 +461,27 @@ def draw_border_bezier(proj=""):
     S = draw_bezier(*right(S, Cm), *left(E, Cn))
 
     E = VECTOR2I(switches[8].GetPosition() + VECTOR2I(0, -half-offset+ reveal))
-    S = draw_bezier(*right(S, Cn), *left(E, Cm))
+    S = S_save = draw_bezier(*right(S, Cn), *left(E, Cm))
+
+    # cutout for ble antenna
+    if proj == "botcover":
+        S = switches[8].GetPosition() + VECTOR2I(mil(5), -half + mil(4.5))
+        E = S + VECTOR2I(0, -mil(5))
+        S = draw_line(S, E)
+        E = S + VECTOR2I(mil(11), 0)
+        S = draw_line(S, E)
+        E = S + VECTOR2I(0, mil(5))
+        S = draw_line(S, E)
+        E = S + VECTOR2I(-mil(11), 0)
+        S = draw_line(S, E)
+        S = S_save
+
 
     E = VECTOR2I(switches[10].GetPosition() + VECTOR2I(half, -half-offset-mil(3.5) + reveal))
     S = draw_bezier(*right(S, Cm), *left(E, Cn))
 
     E = switches[15].GetPosition() + VECTOR2I(half, -half - offset + reveal)
     L_end = S = draw_bezier(*right(S, Cn + mil(2)), *left(E, mil(95)))
-
-    # E = switches[11].GetPosition() + VECTOR2I(half, -half - offset + reveal)
-    # L_end = S = draw_bezier(*right(S, Cn), *left(E, Cn))
 
     # Segment connecting wrist rest (right edge of left side)
     S = Q
@@ -786,6 +796,129 @@ def draw_border(proj, offset=0):
     draw_line(R, RLeft)
 
 
+def get_hexagon_params(D, W):
+    """
+    D = Flat-to-Flat Diameter (Hole width)
+    W = Web Thickness (Metal between holes)
+    """
+    # 1. Fundamental Dimensions
+    R = D / math.sqrt(3)  # Radius (Center to Vertex)
+    s = R                 # Side length is equal to Radius
+
+    # 2. Tiling Steps (Pitch)
+    # Dx is the horizontal distance between centers in a row
+    Dx = D + W
+
+    # Dy is the vertical distance between rows in a staggered grid
+    # Dy = Dx * sin(60 degrees)
+    Dy = Dx * (math.sqrt(3) / 2)
+
+    # 3. Vertices for Pointy-Top (Vertical) Hexagon centered at (0,0)
+    # Ordered from Top Clockwise
+    vertices = [
+        (0, R),                          # Top
+        (D/2, R/2),                      # Top Right
+        (D/2, -R/2),                     # Bottom Right
+        (0, -R),                         # Bottom
+        (-D/2, -R/2),                    # Bottom Left
+        (-D/2, R/2)                      # Top Left
+    ]
+
+    return {
+        "R": R,
+        "Dx": Dx,
+        "Dy": Dy,
+        "vertices": vertices
+    }
+
+
+def draw_hexagon_mesh():
+    D, W = 3.5, 1.9
+    params = get_hexagon_params(D, W)
+    Dx = mil(params["Dx"])
+    Dy = mil(params["Dy"])
+    vertices = params["vertices"]
+
+    def draw_hexagon(Orig):
+        for (A, B) in zip(vertices, vertices[1:] + vertices[:1]):
+            draw_line(Orig + VECTOR2I(mil(A[0]), mil(A[1])), Orig + VECTOR2I(mil(B[0]), mil(B[1])))
+        A, B = vertices[5], vertices[0]
+
+    row = 0
+    offset = VECTOR2I(mil(4.2), mil(-4.8))
+    for i in range(1, SWITCH_COUNT+1):
+        if i in [6, 8, 9, 15, 16, 20, 24, 35, 36, 38, 50, 51, 62, 63, 64, 66, 67, 68, 70, 71, 72]:
+            continue
+        O = switches[i].GetPosition() + offset
+        if i >= 16:
+            if i != 46:
+                draw_hexagon(O + VECTOR2I(-int(Dx/2), -Dy))
+                draw_hexagon(O + VECTOR2I(int(Dx/2), -Dy))
+            draw_hexagon(O + VECTOR2I(int(1.5 * Dx), -Dy))
+        if i != 8:
+            draw_hexagon(O + VECTOR2I(Dx, 0))
+        draw_hexagon(O + VECTOR2I(int(Dx/2), Dy))
+        draw_hexagon(O + VECTOR2I(int(1.5*Dx), Dy))
+        draw_hexagon(O + VECTOR2I(0, int(2*Dy)))
+        draw_hexagon(O + VECTOR2I(Dx, int(2*Dy)))
+        if i in [45, 46, 59]:
+            draw_hexagon(O + VECTOR2I(int(2.5 * Dx), -Dy))
+            draw_hexagon(O + VECTOR2I(2*Dx, 0))
+            if i != 59:
+                draw_hexagon(O + VECTOR2I(int(2.5*Dx), Dy))
+                draw_hexagon(O + VECTOR2I(2*Dx, int(2*Dy)))
+
+    O = switches[61].GetPosition() + offset
+    draw_hexagon(O + VECTOR2I(int(2.5*Dx), -Dy))
+    draw_hexagon(O + VECTOR2I(int(2*Dx), 0))
+    draw_hexagon(O + VECTOR2I(int(3*Dx), 0))
+    draw_hexagon(O + VECTOR2I(int(2.5*Dx), Dy))
+
+    O = switches[48].GetPosition() + offset
+    for i in range(5):
+        draw_hexagon(O + VECTOR2I(int((i-1.5)*Dx), int(3*Dy)))
+        draw_hexagon(O + VECTOR2I(int((i-1)*Dx), int(4*Dy)))
+        if i != 4:
+            draw_hexagon(O + VECTOR2I(int((i+0.5)*Dx), int(5*Dy)))
+
+    O = switches[49].GetPosition() + offset
+    for i in range(5):
+        draw_hexagon(O + VECTOR2I(int((i+0.5)*Dx), int(3*Dy)))
+        draw_hexagon(O + VECTOR2I(int((i+1)*Dx), int(4*Dy)))
+        if i != 4:
+            draw_hexagon(O + VECTOR2I(int((i+1.5)*Dx), int(5*Dy)))
+        if i < 4:
+            draw_hexagon(O + VECTOR2I(int((i+1)*Dx), int(6*Dy)))
+
+    O = switches[65].GetPosition() + offset
+    for i in range(12):
+        if not i in [1, 2, 8, 9]:
+            draw_hexagon(O + VECTOR2I(int((i+2.5)*Dx), -Dy))
+        if i != 9:
+            draw_hexagon(O + VECTOR2I(int((i+2)*Dx), 0))
+        if not i in [7, 8, 9]:
+            draw_hexagon(O + VECTOR2I(int((i+2.5)*Dx), Dy))
+        if i < 5:
+            draw_hexagon(O + VECTOR2I(int((i+2)*Dx), int(2*Dy)))
+
+    # Holes under battery
+    D, W = 3, 10
+    params = get_hexagon_params(D, W)
+    Dx = mil(params["Dx"])
+    Dy = mil(params["Dy"])
+    vertices = params["vertices"]
+
+    O = VECTOR2I(mil(6), mil(120))
+    for i in list(range(5)) + list(range(17, 22)):
+        if i < 4 or (i > 10 and i < 31):
+            draw_hexagon(O + VECTOR2I(int(i*Dx), Dy))
+        if i != 24:
+            draw_hexagon(O + VECTOR2I(int((i - 0.5)*Dx), int(2*Dy)))
+        draw_hexagon(O + VECTOR2I(int(i*Dx), int(3*Dy)))
+        if i > 0:
+            draw_hexagon(O + VECTOR2I(int((i - 0.5)*Dx), int(4*Dy)))
+
+
 def remove_border():
     board = pcbnew.GetBoard()
     for t in board.GetDrawings():
@@ -835,7 +968,7 @@ def main():
     if projname() == "pcb":
         draw_border(projname())
     elif projname() == "swplate":
-        draw_border_bezier(projname())
+        draw_border_bezier(projname(), reveal=mil(0.2))
         draw_wrist_cavity()
         LAYER = pcbnew.User_6
         draw_border(projname(), offset=GAP)
@@ -853,6 +986,12 @@ def main():
         draw_border(projname(), offset=GAP)
         draw_border_bezier(projname())
         draw_wrist_cavity()
+        LAYER = pcbnew.User_6
+        draw_border(projname(), offset=SIDE_WALL)
+        draw_wrist()
+    elif projname() == "botcover":
+        draw_border_bezier(projname(), reveal=mil(0.2))
+        draw_hexagon_mesh()
         LAYER = pcbnew.User_6
         draw_border(projname(), offset=SIDE_WALL)
         draw_wrist()
