@@ -24715,6 +24715,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 359.41 391.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "752e7176-a05a-40a4-bb9f-9f8350357909")
+		(property "Reference" "Hm1"
+			(at 361.95 389.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4_smtso"
+			(at 361.95 392.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:SMTSO_M1.4_M1.6"
+			(at 359.41 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 359.41 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 359.41 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pcb"
+				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
+					(reference "Hm1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_Small_Filled")
 		(at 116.84 349.25 180)
 		(unit 1)
@@ -25976,7 +26040,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:SMTSO_M1.6"
+		(property "Footprint" "tmr-lib:SMTSO_M1.4_M1.6"
 			(at 397.51 372.11 0)
 			(effects
 				(font
@@ -28835,7 +28899,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:SMTSO_M1.6"
+		(property "Footprint" "tmr-lib:SMTSO_M1.4_M1.6"
 			(at 372.11 372.11 0)
 			(effects
 				(font
@@ -28976,7 +29040,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:SMTSO_M1.6"
+		(property "Footprint" "tmr-lib:SMTSO_M1.4_M1.6"
 			(at 359.41 379.73 0)
 			(effects
 				(font
@@ -30936,7 +31000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:SMTSO_M1.6"
+		(property "Footprint" "tmr-lib:SMTSO_M1.4_M1.6"
 			(at 384.81 372.11 0)
 			(effects
 				(font
@@ -32453,6 +32517,70 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 381 391.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f994dc1a-94b6-448d-9c0a-d548a0932300")
+		(property "Reference" "Hm2"
+			(at 383.54 389.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4_smtso"
+			(at 383.54 392.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:SMTSO_M1.4_M1.6"
+			(at 381 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 381 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 381 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "pcb"
+				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
+					(reference "Hm2")
 					(unit 1)
 				)
 			)

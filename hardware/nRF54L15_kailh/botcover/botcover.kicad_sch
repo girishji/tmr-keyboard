@@ -224,69 +224,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 71.12 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "00f67324-af0b-4bdd-bd54-1defa526f90b")
-		(property "Reference" "Hr16"
-			(at 73.66 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 73.66 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 71.12 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 71.12 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 134.62 48.26 0)
 		(unit 1)
@@ -351,15 +288,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 91.44 142.24 0)
+		(at 40.64 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "03dd2009-a29e-48b2-83df-1f5a59db9bc8")
-		(property "Reference" "Hr18"
-			(at 93.98 140.9699 0)
+		(uuid "054fc19f-f2ae-4296-a66f-4a8a6fc1b028")
+		(property "Reference" "Hr2"
+			(at 43.18 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -367,8 +304,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 93.98 143.5099 0)
+		(property "Value" "M1.4"
+			(at 43.18 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -376,8 +313,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 91.44 142.24 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 40.64 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -386,7 +323,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 142.24 0)
+			(at 40.64 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -395,7 +332,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 91.44 142.24 0)
+			(at 40.64 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -404,72 +341,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 81.28 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "06494359-0da6-4d4e-adf2-93516f9a4a06")
-		(property "Reference" "Hr27"
-			(at 83.82 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 83.82 152.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 81.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr27")
+					(reference "Hr2")
 					(unit 1)
 				)
 			)
@@ -603,6 +477,69 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 121.92 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0791b63e-c1d8-4d54-be7e-d39b1bb36d82")
+		(property "Reference" "Hr20"
+			(at 124.46 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 124.46 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 121.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 121.92 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 123.19 48.26 0)
 		(unit 1)
@@ -660,258 +597,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 50.8 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "09e20aad-580e-47cf-a0d6-04a5f4fa522a")
-		(property "Reference" "Hr14"
-			(at 53.34 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 53.34 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 50.8 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 50.8 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 60.96 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "09fba32e-6513-423a-9324-9b73b7882a02")
-		(property "Reference" "Hr15"
-			(at 63.5 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 63.5 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 60.96 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 60.96 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 111.76 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "0b441d5d-1f9f-4ccc-b506-13c039b96ee8")
-		(property "Reference" "Hr20"
-			(at 114.3 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 114.3 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 111.76 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 111.76 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 71.12 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "0bc1eb04-3a19-499a-97ce-f9c1165193e6")
-		(property "Reference" "Hr6"
-			(at 73.66 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 73.66 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 71.12 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 71.12 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr6")
 					(unit 1)
 				)
 			)
@@ -982,15 +667,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 40.64 151.13 0)
+		(at 60.96 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "0eeddde6-7b33-42b9-a8d6-ed260b34d6be")
-		(property "Reference" "Hr23"
-			(at 43.18 149.8599 0)
+		(uuid "0c8976bc-f1ee-4740-bf33-7125d4f1ff38")
+		(property "Reference" "Hr14"
+			(at 63.5 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -998,8 +683,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 43.18 152.3999 0)
+		(property "Value" "M1.4"
+			(at 63.5 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1007,8 +692,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 40.64 151.13 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 60.96 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1017,7 +702,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 151.13 0)
+			(at 60.96 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1026,7 +711,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 40.64 151.13 0)
+			(at 60.96 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1035,9 +720,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr23")
+					(reference "Hr14")
 					(unit 1)
 				)
 			)
@@ -1235,15 +920,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 81.28 168.91 0)
+		(at 91.44 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "14a92049-82aa-4828-a3eb-0245f9fb979f")
-		(property "Reference" "Hr47"
-			(at 83.82 167.6399 0)
+		(uuid "13b2015e-3ce8-4033-a9dd-e732da7159dd")
+		(property "Reference" "Hr17"
+			(at 93.98 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1251,8 +936,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 83.82 170.1799 0)
+		(property "Value" "M1.4"
+			(at 93.98 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1260,8 +945,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 81.28 168.91 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 91.44 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1270,7 +955,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 168.91 0)
+			(at 91.44 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1279,7 +964,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 81.28 168.91 0)
+			(at 91.44 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1288,9 +973,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr47")
+					(reference "Hr17")
 					(unit 1)
 				)
 			)
@@ -1354,69 +1039,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S64")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 101.6 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "15896161-f41e-4f17-bb67-043272d12bcb")
-		(property "Reference" "Hr9"
-			(at 104.14 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 104.14 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 101.6 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 101.6 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 101.6 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr9")
 					(unit 1)
 				)
 			)
@@ -1741,15 +1363,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 40.64 133.35 0)
+		(at 60.96 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "28ca71e6-d685-4d7a-8777-65205b2c1708")
-		(property "Reference" "Hr3"
-			(at 43.18 132.0799 0)
+		(uuid "236153f0-74e4-4d77-b4b9-4df1bfb96262")
+		(property "Reference" "Hr4"
+			(at 63.5 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1757,8 +1379,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 43.18 134.6199 0)
+		(property "Value" "M1.4"
+			(at 63.5 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1766,8 +1388,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 40.64 133.35 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 60.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1776,7 +1398,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 133.35 0)
+			(at 60.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1785,7 +1407,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 40.64 133.35 0)
+			(at 60.96 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1794,9 +1416,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr3")
+					(reference "Hr4")
 					(unit 1)
 				)
 			)
@@ -1804,15 +1426,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 20.32 133.35 0)
+		(at 40.64 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "29c3fd85-f875-4f1a-8eab-baba32e2b384")
-		(property "Reference" "Hr1"
-			(at 22.86 132.0799 0)
+		(uuid "25f8d2cd-b058-4db6-9701-5bd21d2561c2")
+		(property "Reference" "Hr22"
+			(at 43.18 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1820,8 +1442,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 22.86 134.6199 0)
+		(property "Value" "M1.4"
+			(at 43.18 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1829,8 +1451,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 20.32 133.35 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 40.64 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1839,7 +1461,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 20.32 133.35 0)
+			(at 40.64 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1848,7 +1470,70 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 20.32 133.35 0)
+			(at 40.64 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 30.48 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "29c3fd85-f875-4f1a-8eab-baba32e2b384")
+		(property "Reference" "Hr1"
+			(at 33.02 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 33.02 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 30.48 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 30.48 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1860,321 +1545,6 @@
 			(project ""
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "Hr1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 20.32 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2b2adcd8-bec7-470c-b532-94578f4cf633")
-		(property "Reference" "Hr11"
-			(at 22.86 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 22.86 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 20.32 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 20.32 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 20.32 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 40.64 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2bb0ae56-a85d-4c61-b23a-471e5cdfa594")
-		(property "Reference" "Hr53"
-			(at 43.18 176.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 43.18 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 71.12 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2c53806e-35e4-4ed8-82a3-60ab60d23286")
-		(property "Reference" "Hr36"
-			(at 73.66 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 73.66 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 71.12 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 71.12 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 50.8 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2f21ee62-936a-4ce0-a813-73c3bc8d9c43")
-		(property "Reference" "Hr4"
-			(at 53.34 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 53.34 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 50.8 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 50.8 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 20.32 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2f87ec83-793b-42f8-9040-06bb689ce526")
-		(property "Reference" "Hr31"
-			(at 22.86 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 22.86 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 20.32 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 20.32 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 20.32 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr31")
 					(unit 1)
 				)
 			)
@@ -2308,15 +1678,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 30.48 151.13 0)
+		(at 81.28 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "3197de2d-f075-48e1-9be8-8ccf5f49e8fb")
-		(property "Reference" "Hr22"
-			(at 33.02 149.8599 0)
+		(uuid "31416ca5-03bc-44f9-870b-4a6d93d19d99")
+		(property "Reference" "Hr6"
+			(at 83.82 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2324,8 +1694,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 33.02 152.3999 0)
+		(property "Value" "M1.4"
+			(at 83.82 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2333,8 +1703,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 30.48 151.13 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 81.28 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2343,7 +1713,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 151.13 0)
+			(at 81.28 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2352,7 +1722,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 30.48 151.13 0)
+			(at 81.28 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2361,9 +1731,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr22")
+					(reference "Hr6")
 					(unit 1)
 				)
 			)
@@ -2371,15 +1741,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 151.13 0)
+		(at 71.12 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "338ff7dd-3a62-4265-9331-db5de8948f7d")
-		(property "Reference" "Hr29"
-			(at 104.14 149.8599 0)
+		(uuid "34600cc2-7995-4215-b22e-12a4d6000d87")
+		(property "Reference" "Hr25"
+			(at 73.66 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2387,8 +1757,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 104.14 152.3999 0)
+		(property "Value" "M1.4"
+			(at 73.66 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2396,8 +1766,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 101.6 151.13 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 71.12 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2406,7 +1776,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 151.13 0)
+			(at 71.12 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2415,7 +1785,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 151.13 0)
+			(at 71.12 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2424,72 +1794,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 30.48 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "35df189b-51aa-4f4a-88c1-832ada269965")
-		(property "Reference" "Hr2"
-			(at 33.02 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 33.02 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 30.48 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 30.48 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr2")
+					(reference "Hr25")
 					(unit 1)
 				)
 			)
@@ -2622,69 +1929,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 20.32 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "3ac7b716-f43d-4567-9d86-ee72d4735b4f")
-		(property "Reference" "Hr21"
-			(at 22.86 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 22.86 152.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 20.32 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 20.32 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 20.32 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 88.9 48.26 0)
 		(unit 1)
@@ -2749,15 +1993,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 168.91 0)
+		(at 71.12 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "3d44582a-062a-453f-a42b-dde0fe8396ac")
-		(property "Reference" "Hr49"
-			(at 104.14 167.6399 0)
+		(uuid "42fdab4b-1f2f-4f81-9d14-c36dcf92da28")
+		(property "Reference" "Hr5"
+			(at 73.66 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2765,8 +2009,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 104.14 170.1799 0)
+		(property "Value" "M1.4"
+			(at 73.66 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2774,8 +2018,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 101.6 168.91 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 71.12 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2784,7 +2028,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 168.91 0)
+			(at 71.12 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2793,7 +2037,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 168.91 0)
+			(at 71.12 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2802,9 +2046,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr49")
+					(reference "Hr5")
 					(unit 1)
 				)
 			)
@@ -3252,6 +2496,69 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 111.76 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f7edc77-4d82-4f28-ad8c-4b0638f7a735")
+		(property "Reference" "Hr9"
+			(at 114.3 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 114.3 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 111.76 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 111.76 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 157.48 21.59 0)
 		(unit 1)
@@ -3505,69 +2812,6 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 101.6 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "56780b6c-5a5b-4112-ba05-386d70b46b9d")
-		(property "Reference" "Hr19"
-			(at 104.14 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 104.14 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 101.6 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 101.6 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 101.6 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
 		(at 156.21 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3694,69 +2938,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 91.44 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "5a7750e2-2aaa-4bcd-9034-f8eeec6c8f89")
-		(property "Reference" "Hr28"
-			(at 93.98 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 93.98 152.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 91.44 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 91.44 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 88.9 21.59 0)
 		(unit 1)
@@ -3877,69 +3058,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 91.44 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "60cec867-6ec8-4367-b0e3-ec9658743779")
-		(property "Reference" "Hr48"
-			(at 93.98 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 93.98 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 91.44 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 91.44 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr48")
 					(unit 1)
 				)
 			)
@@ -4136,6 +3254,69 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 121.92 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6792f824-c74d-4f80-a6da-6e36c9eac725")
+		(property "Reference" "Hr10"
+			(at 124.46 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 124.46 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 121.92 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 121.92 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 54.61 21.59 0)
 		(unit 1)
@@ -4256,6 +3437,69 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 101.6 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a2d434b-9c93-4fa7-933e-16d8c280d3ee")
+		(property "Reference" "Hr18"
+			(at 104.14 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 104.14 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 101.6 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 101.6 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr18")
 					(unit 1)
 				)
 			)
@@ -4390,6 +3634,69 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
+		(at 30.48 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f5e8724-c469-4305-8170-98292f8c97d6")
+		(property "Reference" "Hr11"
+			(at 33.02 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 33.02 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 30.48 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 30.48 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
 		(at 74.93 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4447,6 +3754,70 @@
 			(project "swplate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "H15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 38.1 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "752e7176-a05a-40a4-bb9f-9f8350357909")
+		(property "Reference" "Hm1"
+			(at 40.64 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 40.64 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 38.1 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 38.1 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hm1")
 					(unit 1)
 				)
 			)
@@ -4517,15 +3888,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 20.32 168.91 0)
+		(at 30.48 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "78675792-65c2-4e37-99c4-39da0fe350ba")
-		(property "Reference" "Hr41"
-			(at 22.86 167.6399 0)
+		(uuid "75eadb42-5a62-4845-9f0f-ad66214d183e")
+		(property "Reference" "Hr21"
+			(at 33.02 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4533,8 +3904,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 22.86 170.1799 0)
+		(property "Value" "M1.4"
+			(at 33.02 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4542,8 +3913,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 20.32 168.91 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 30.48 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4552,7 +3923,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 20.32 168.91 0)
+			(at 30.48 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4561,7 +3932,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 20.32 168.91 0)
+			(at 30.48 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4570,72 +3941,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 30.48 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "79525706-9476-499f-8668-d886eb3ef219")
-		(property "Reference" "Hr52"
-			(at 33.02 176.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 33.02 179.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 30.48 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 30.48 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr52")
+					(reference "Hr21")
 					(unit 1)
 				)
 			)
@@ -4707,15 +4015,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 40.64 168.91 0)
+		(at 101.6 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "7b2f19de-4315-49e4-80f1-59e238f7f25c")
-		(property "Reference" "Hr43"
-			(at 43.18 167.6399 0)
+		(uuid "7b23c44d-d53e-4bba-8d6f-2fa142757bb5")
+		(property "Reference" "Hr8"
+			(at 104.14 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4723,8 +4031,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 43.18 170.1799 0)
+		(property "Value" "M1.4"
+			(at 104.14 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,8 +4040,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 40.64 168.91 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 101.6 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4742,7 +4050,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 168.91 0)
+			(at 101.6 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4751,7 +4059,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 40.64 168.91 0)
+			(at 101.6 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4760,72 +4068,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 111.76 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "7caa0bc4-43fb-45f9-85cd-41e0dfd02571")
-		(property "Reference" "Hr50"
-			(at 114.3 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 114.3 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 111.76 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 111.76 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr50")
+					(reference "Hr8")
 					(unit 1)
 				)
 			)
@@ -4889,6 +4134,69 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 71.12 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f329b14-5fee-4602-8455-d3ecb00703df")
+		(property "Reference" "Hr15"
+			(at 73.66 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 73.66 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 71.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 71.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr15")
 					(unit 1)
 				)
 			)
@@ -5021,69 +4329,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 40.64 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "83f857c4-c9db-416f-bc2d-1dde453c78b4")
-		(property "Reference" "Hr33"
-			(at 43.18 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 43.18 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 40.64 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 40.64 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 88.9 60.96 0)
 		(unit 1)
@@ -5141,69 +4386,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 91.44 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "8661ef55-2e0a-4380-993b-4146d9fc10dc")
-		(property "Reference" "Hr8"
-			(at 93.98 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 93.98 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 91.44 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 91.44 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 91.44 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr8")
 					(unit 1)
 				)
 			)
@@ -5274,15 +4456,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 60.96 160.02 0)
+		(at 81.28 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "8943170b-ccbe-4eaf-a7e7-041b59572c3f")
-		(property "Reference" "Hr35"
-			(at 63.5 158.7499 0)
+		(uuid "8e3105d5-d64b-47af-9a39-411b7546788f")
+		(property "Reference" "Hr16"
+			(at 83.82 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5290,8 +4472,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 63.5 161.2899 0)
+		(property "Value" "M1.4"
+			(at 83.82 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5299,8 +4481,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 60.96 160.02 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 81.28 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5309,7 +4491,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 60.96 160.02 0)
+			(at 81.28 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5318,7 +4500,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 60.96 160.02 0)
+			(at 81.28 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5327,9 +4509,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr35")
+					(reference "Hr16")
 					(unit 1)
 				)
 			)
@@ -5525,69 +4707,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 60.96 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "93bb2add-b432-453a-8d97-e78ed001a236")
-		(property "Reference" "Hr45"
-			(at 63.5 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 63.5 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 60.96 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 60.96 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 146.05 60.96 0)
 		(unit 1)
@@ -5645,69 +4764,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S54")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 60.96 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "94869c6c-cc6a-4a6f-a5c5-6b2dc5c6da7c")
-		(property "Reference" "Hr25"
-			(at 63.5 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 63.5 152.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 60.96 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 60.96 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr25")
 					(unit 1)
 				)
 			)
@@ -5778,15 +4834,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 40.64 142.24 0)
+		(at 101.6 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "9dd5782f-c9cc-4bb4-bf30-bde453f4f0f4")
-		(property "Reference" "Hr13"
-			(at 43.18 140.9699 0)
+		(uuid "9c3c5d81-2434-4bcf-a621-899a8b28fc81")
+		(property "Reference" "Hr28"
+			(at 104.14 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5794,61 +4850,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 43.18 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 40.64 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 40.64 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 101.6 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "9fe63730-eb36-42e0-acf0-817b40baa8b4")
-		(property "Reference" "Hr39"
+		(property "Value" "M1.4"
 			(at 104.14 158.7499 0)
 			(effects
 				(font
@@ -5857,17 +4859,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 104.14 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 101.6 160.02 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 101.6 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5876,7 +4869,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 160.02 0)
+			(at 101.6 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5885,7 +4878,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 101.6 160.02 0)
+			(at 101.6 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5894,72 +4887,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 81.28 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "a2233e68-7e32-4b24-9024-c4b8ae500012")
-		(property "Reference" "Hr7"
-			(at 83.82 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 83.82 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 81.28 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 81.28 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr7")
+					(reference "Hr28")
 					(unit 1)
 				)
 			)
@@ -6030,15 +4960,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 50.8 160.02 0)
+		(at 91.44 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "a642f9f5-b8e4-4011-a8f6-57d96849fb9c")
-		(property "Reference" "Hr34"
-			(at 53.34 158.7499 0)
+		(uuid "ac274a5f-951c-4a8d-bb9e-797e150c2851")
+		(property "Reference" "Hr7"
+			(at 93.98 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6046,8 +4976,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 53.34 161.2899 0)
+		(property "Value" "M1.4"
+			(at 93.98 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6055,8 +4985,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 50.8 160.02 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 91.44 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6065,7 +4995,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 160.02 0)
+			(at 91.44 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6074,7 +5004,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 50.8 160.02 0)
+			(at 91.44 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6083,72 +5013,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 81.28 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "ad075335-3880-4639-8336-c65a73ac4035")
-		(property "Reference" "Hr17"
-			(at 83.82 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 83.82 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 81.28 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 81.28 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr17")
+					(reference "Hr7")
 					(unit 1)
 				)
 			)
@@ -6408,69 +5275,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 111.76 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "b3bac74e-2995-469c-923a-638f11c832ae")
-		(property "Reference" "Hr10"
-			(at 114.3 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 114.3 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 111.76 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 111.76 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 168.91 48.26 0)
 		(unit 1)
@@ -6535,15 +5339,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 71.12 168.91 0)
+		(at 81.28 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "b83423b8-16f0-4d39-aa88-c1688f508a8c")
-		(property "Reference" "Hr46"
-			(at 73.66 167.6399 0)
+		(uuid "b68ffceb-8a18-490a-8718-633188435592")
+		(property "Reference" "Hr26"
+			(at 83.82 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6551,8 +5355,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 73.66 170.1799 0)
+		(property "Value" "M1.4"
+			(at 83.82 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6560,8 +5364,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 71.12 168.91 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 81.28 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6570,7 +5374,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 168.91 0)
+			(at 81.28 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6579,7 +5383,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 71.12 168.91 0)
+			(at 81.28 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6588,9 +5392,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr46")
+					(reference "Hr26")
 					(unit 1)
 				)
 			)
@@ -6724,15 +5528,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 30.48 142.24 0)
+		(at 50.8 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "be5e8d4d-6434-4828-bdce-1d33a60e98de")
-		(property "Reference" "Hr12"
-			(at 33.02 140.9699 0)
+		(uuid "bd01b63c-95ac-485a-8f5e-43a409359a59")
+		(property "Reference" "Hr3"
+			(at 53.34 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6740,8 +5544,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 33.02 143.5099 0)
+		(property "Value" "M1.4"
+			(at 53.34 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6749,8 +5553,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 30.48 142.24 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 50.8 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6759,7 +5563,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 142.24 0)
+			(at 50.8 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6768,7 +5572,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 30.48 142.24 0)
+			(at 50.8 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6777,9 +5581,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr12")
+					(reference "Hr3")
 					(unit 1)
 				)
 			)
@@ -6787,15 +5591,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 91.44 160.02 0)
+		(at 50.8 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "bf4be6b9-b635-4420-bc4d-f13eeab0d05e")
-		(property "Reference" "Hr38"
-			(at 93.98 158.7499 0)
+		(uuid "bede01bf-0f4e-413f-a43b-11b1bb63705a")
+		(property "Reference" "Hr23"
+			(at 53.34 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6803,8 +5607,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 93.98 161.2899 0)
+		(property "Value" "M1.4"
+			(at 53.34 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6812,8 +5616,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 91.44 160.02 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 50.8 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6822,7 +5626,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 160.02 0)
+			(at 50.8 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6831,7 +5635,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 91.44 160.02 0)
+			(at 50.8 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,9 +5644,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr38")
+					(reference "Hr23")
 					(unit 1)
 				)
 			)
@@ -7103,15 +5907,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 71.12 151.13 0)
+		(at 40.64 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "c5719cae-8f0e-4d0a-ab5c-ad577cfa250b")
-		(property "Reference" "Hr26"
-			(at 73.66 149.8599 0)
+		(uuid "c34ca244-9c89-4057-8a9a-551b7cbb151f")
+		(property "Reference" "Hr12"
+			(at 43.18 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7119,8 +5923,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 73.66 152.3999 0)
+		(property "Value" "M1.4"
+			(at 43.18 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7128,8 +5932,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 71.12 151.13 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 40.64 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7138,7 +5942,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 151.13 0)
+			(at 40.64 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7147,7 +5951,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 71.12 151.13 0)
+			(at 40.64 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7156,9 +5960,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr26")
+					(reference "Hr12")
 					(unit 1)
 				)
 			)
@@ -7356,15 +6160,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 50.8 168.91 0)
+		(at 111.76 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "c875561c-0b8a-47a2-9504-8f98571a1a58")
-		(property "Reference" "Hr44"
-			(at 53.34 167.6399 0)
+		(uuid "c7f7ac79-bcd4-42d3-a86b-eb779f92ee90")
+		(property "Reference" "Hr29"
+			(at 114.3 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7372,8 +6176,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 53.34 170.1799 0)
+		(property "Value" "M1.4"
+			(at 114.3 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7381,8 +6185,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 50.8 168.91 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 111.76 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7391,7 +6195,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 168.91 0)
+			(at 111.76 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7400,7 +6204,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 50.8 168.91 0)
+			(at 111.76 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7409,9 +6213,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr44")
+					(reference "Hr29")
 					(unit 1)
 				)
 			)
@@ -7539,69 +6343,6 @@
 			(project "swplate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "H14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 60.96 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "cf478756-5c29-4cee-a904-71179b3a4427")
-		(property "Reference" "Hr5"
-			(at 63.5 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 63.5 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 60.96 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 60.96 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr5")
 					(unit 1)
 				)
 			)
@@ -7791,69 +6532,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S61")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 50.8 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "d0b47d07-7792-41c8-ab2c-540dd918638a")
-		(property "Reference" "Hr24"
-			(at 53.34 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 53.34 152.3999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 50.8 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 50.8 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr24")
 					(unit 1)
 				)
 			)
@@ -8051,15 +6729,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 20.32 177.8 0)
+		(at 91.44 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "d760c4c5-b6ea-4f42-a06f-02f20386c2c5")
-		(property "Reference" "Hr51"
-			(at 22.86 176.5299 0)
+		(uuid "dd5f1f4f-cb0e-4beb-9582-b12186eaa530")
+		(property "Reference" "Hr27"
+			(at 93.98 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8067,8 +6745,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 22.86 179.0699 0)
+		(property "Value" "M1.4"
+			(at 93.98 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8076,8 +6754,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 20.32 177.8 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 91.44 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8086,7 +6764,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 20.32 177.8 0)
+			(at 91.44 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8095,7 +6773,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 20.32 177.8 0)
+			(at 91.44 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8104,9 +6782,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr51")
+					(reference "Hr27")
 					(unit 1)
 				)
 			)
@@ -8178,69 +6856,6 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 30.48 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "e0a19bcd-6f1a-4433-868e-9378be8337ac")
-		(property "Reference" "Hr42"
-			(at 33.02 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 33.02 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 30.48 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 30.48 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
 		(at 74.93 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8305,15 +6920,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 111.76 151.13 0)
+		(at 111.76 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "e329975f-8e95-4aaf-be89-dd03288799a2")
-		(property "Reference" "Hr30"
-			(at 114.3 149.8599 0)
+		(uuid "e2fabb9e-c6fc-48f1-8e6d-adc3d7ddab02")
+		(property "Reference" "Hr19"
+			(at 114.3 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8321,8 +6936,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 114.3 152.3999 0)
+		(property "Value" "M1.4"
+			(at 114.3 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8330,8 +6945,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 111.76 151.13 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 111.76 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8340,7 +6955,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 151.13 0)
+			(at 111.76 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8349,7 +6964,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 111.76 151.13 0)
+			(at 111.76 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8358,72 +6973,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 30.48 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "e53af0b4-f7ff-4d66-95f7-e1b8e50abeab")
-		(property "Reference" "Hr32"
-			(at 33.02 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 33.02 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 30.48 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 30.48 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr32")
+					(reference "Hr19")
 					(unit 1)
 				)
 			)
@@ -8613,69 +7165,6 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 111.76 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "ede758f4-6d25-4443-90de-35fe8e9faef8")
-		(property "Reference" "Hr40"
-			(at 114.3 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Rivet"
-			(at 114.3 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 111.76 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 111.76 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "botcase"
-				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr40")
 					(unit 1)
 				)
 			)
@@ -8873,6 +7362,69 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 60.96 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f2906fbb-c134-498d-93c9-244f759da940")
+		(property "Reference" "Hr24"
+			(at 63.5 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 63.5 158.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 60.96 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 60.96 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "tmr-lib:SWHole")
 		(at 88.9 73.66 0)
 		(unit 1)
@@ -9000,15 +7552,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 81.28 160.02 0)
+		(at 59.69 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "f93c11a2-f506-497f-9576-07afa0410ffd")
-		(property "Reference" "Hr37"
-			(at 83.82 158.7499 0)
+		(fields_autoplaced yes)
+		(uuid "f994dc1a-94b6-448d-9c0a-d548a0932300")
+		(property "Reference" "Hm2"
+			(at 62.23 171.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9016,8 +7569,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Rivet"
-			(at 83.82 161.2899 0)
+		(property "Value" "M1.4"
+			(at 62.23 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9025,8 +7578,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:RivetClearanceHole_1.5mm"
-			(at 81.28 160.02 0)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 59.69 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9035,7 +7588,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 160.02 0)
+			(at 59.69 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9044,7 +7597,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 81.28 160.02 0)
+			(at 59.69 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9053,9 +7606,9 @@
 			)
 		)
 		(instances
-			(project "botcase"
+			(project "botcover"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
-					(reference "Hr37")
+					(reference "Hm2")
 					(unit 1)
 				)
 			)
@@ -9182,6 +7735,69 @@
 			(project "plate"
 				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
 					(reference "S21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 50.8 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffff92ac-9614-46a7-b49d-68fd77e93931")
+		(property "Reference" "Hr13"
+			(at 53.34 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M1.4"
+			(at 53.34 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 50.8 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "botcover"
+				(path "/4c67809e-1748-4898-89f6-ff92314048f2"
+					(reference "Hr13")
 					(unit 1)
 				)
 			)

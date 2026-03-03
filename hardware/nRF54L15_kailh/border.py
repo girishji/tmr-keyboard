@@ -564,7 +564,7 @@ def draw_border_bezier(proj="", reveal=0):
 
     # Segment connecting wrist rest to main body
     S = P
-    Cr1, Cr2 = 50, 34
+    Cr1, Cr2 = 48, 36.5
     E = switches[71].GetPosition() + VECTOR2I(half - reveal, half+offset - reveal)
     S = draw_bezier(*left(S, mil(Cr1)), *left(E, mil(Cr2)))
 
@@ -847,14 +847,12 @@ def draw_hexagon_mesh():
     row = 0
     offset = VECTOR2I(mil(4.2), mil(-4.8))
     for i in range(1, SWITCH_COUNT+1):
-        if i in [6, 8, 9, 15, 16, 20, 24, 35, 36, 38, 50, 51, 62, 63, 64, 66, 67, 68, 70, 71, 72]:
+        if i in [6, 8, 9, 15, 16, 20, 24, 34, 35, 36, 38, 40, 50, 51, 62, 63, 64, 66, 67, 68, 70, 71, 72]:
             continue
         O = switches[i].GetPosition() + offset
         if i >= 16:
-            if i != 46:
-                draw_hexagon(O + VECTOR2I(-int(Dx/2), -Dy))
+            if not i in [22, 23, 30, 31, 39, 46, 49, 52, 53, 65]:
                 draw_hexagon(O + VECTOR2I(int(Dx/2), -Dy))
-            draw_hexagon(O + VECTOR2I(int(1.5 * Dx), -Dy))
         if i != 8:
             draw_hexagon(O + VECTOR2I(Dx, 0))
         draw_hexagon(O + VECTOR2I(int(Dx/2), Dy))
@@ -868,6 +866,7 @@ def draw_hexagon_mesh():
                 draw_hexagon(O + VECTOR2I(int(2.5*Dx), Dy))
                 draw_hexagon(O + VECTOR2I(2*Dx, int(2*Dy)))
 
+    # holes in the empty space above last row
     O = switches[61].GetPosition() + offset
     draw_hexagon(O + VECTOR2I(int(2.5*Dx), -Dy))
     draw_hexagon(O + VECTOR2I(int(2*Dx), 0))
@@ -875,23 +874,24 @@ def draw_hexagon_mesh():
     draw_hexagon(O + VECTOR2I(int(2.5*Dx), Dy))
 
     O = switches[48].GetPosition() + offset
-    for i in range(5):
+    for i in range(1, 5):
         draw_hexagon(O + VECTOR2I(int((i-1.5)*Dx), int(3*Dy)))
         draw_hexagon(O + VECTOR2I(int((i-1)*Dx), int(4*Dy)))
         if i != 4:
             draw_hexagon(O + VECTOR2I(int((i+0.5)*Dx), int(5*Dy)))
 
     O = switches[49].GetPosition() + offset
-    for i in range(5):
+    for i in range(3):
         draw_hexagon(O + VECTOR2I(int((i+0.5)*Dx), int(3*Dy)))
         draw_hexagon(O + VECTOR2I(int((i+1)*Dx), int(4*Dy)))
-        if i != 4:
+        if i != 2:
             draw_hexagon(O + VECTOR2I(int((i+1.5)*Dx), int(5*Dy)))
-        if i < 4:
-            draw_hexagon(O + VECTOR2I(int((i+1)*Dx), int(6*Dy)))
+        draw_hexagon(O + VECTOR2I(int((i+1)*Dx), int(6*Dy)))
 
     O = switches[65].GetPosition() + offset
     for i in range(12):
+        if i in [1, 3]:
+            continue
         if not i in [1, 2, 8, 9]:
             draw_hexagon(O + VECTOR2I(int((i+2.5)*Dx), -Dy))
         if i != 9:
@@ -991,7 +991,7 @@ def main():
         draw_wrist()
     elif projname() == "botcover":
         draw_border_bezier(projname(), reveal=mil(0.2))
-        draw_hexagon_mesh()
+        # draw_hexagon_mesh()
         LAYER = pcbnew.User_6
         draw_border(projname(), offset=SIDE_WALL)
         draw_wrist()
