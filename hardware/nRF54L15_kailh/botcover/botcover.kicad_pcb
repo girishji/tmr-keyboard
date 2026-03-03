@@ -48561,7 +48561,7 @@
 		(layer "User.6")
 		(uuid "fe14a907-504a-4325-86b2-cce4d2ed5840")
 	)
-	(gr_text "NOTE: \n- Use FreeCAD to generate STEP file to preserve Bezier curves.\n  KiCad facets the Bezier curves."
+	(gr_text "NOTE: \n- Use FreeCAD to generate STEP file to preserve Bezier curves.\n  KiCad facets the Bezier curves.\n- Do not include hexagons in edge_cuts since FreeCAD fails trying\n  to deal with many lines. Import the step file into Fusion, along\n  with dxf of Layer which contains hexagons. Cut hexagons and countersink holes"
 		(at 81.13 154.65 0)
 		(layer "F.Fab")
 		(uuid "75d59afb-83ca-4291-b182-28e60fa16964")
