@@ -4,6 +4,9 @@
 **/.venv/
 */.venv/
 
+*.dxf
+*.stp
+
 *.zip
 */.DS_Store
 .DS_Store

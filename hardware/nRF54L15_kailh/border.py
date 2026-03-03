@@ -991,6 +991,7 @@ def main():
         draw_wrist()
     elif projname() == "botcover":
         draw_border_bezier(projname(), reveal=mil(0.2))
+        LAYER = pcbnew.User_5
         draw_hexagon_mesh()
         LAYER = pcbnew.User_6
         draw_border(projname(), offset=SIDE_WALL)
