@@ -366,28 +366,15 @@ def draw_bezier(start_pt, controll, end_pt, control2):
     return end_pt
 
 
-def draw_border_bezier(proj="", reveal=0):
-    """Draw outer wall using Bezier curves."""
-    # 'reveal': when two layers meet (one on top of another), they are never perfectly
-    # flush because the human eye is good at spotting a 0.1mm misalignment. By
-    # making the middle plate slightly smaller (0.2mm all around) we hide misalignment,
-    # and provide relief for "edge beads" common during powder coating.
-
-    # PS5 battery size is 40x61x8.5mm
-
+def draw_wristrest_border_bezier(proj="", reveal=0):
     global LAYER
-
-
-    offset = SIDE_WALL
 
     left = lambda X, length=mil(0.1), angle=0: (X, X + rotate(VECTOR2I(-length, 0), angle))
     right = lambda X, length=mil(0.1), angle=0: (X, X + rotate(VECTOR2I(length, 0), angle))
     up = lambda X, length=mil(0.1), angle=0: (X, X + rotate(VECTOR2I(0, -length), angle))
     down = lambda X, length=mil(0.1), angle=0: (X, X + rotate(VECTOR2I(0, length), angle))
 
-    # LEFT SIDE
-
-    # Wrist rest
+    # Left wrist rest
     A = switches[65].GetPosition() + VECTOR2I(0, half)
     T1, T2, B2, B1 = wrist_rest_corners()[:4]
     M, N = mil(24), mil(19)
@@ -407,12 +394,12 @@ def draw_border_bezier(proj="", reveal=0):
 
     # left side top corner of wrist rest
     C1 = 12
-    P = E = VECTOR2I(switches[59].GetPosition().x - mil(3) + reveal, T1.y + reveal)
+    P1 = E = VECTOR2I(switches[59].GetPosition().x - mil(3) + reveal, T1.y + reveal)
     S = draw_bezier(*up(S, N), *left(E, mil(C1)))
 
     # angled tangential pt
     C2, C3 = 15, 6.5
-    Q = E = VECTOR2I(mil(65.5) - reveal, mil(125) + reveal)
+    Q1 = E = VECTOR2I(mil(65.5) - reveal, mil(125) + reveal)
     angleQ = 38
     if proj != "wristrest":
         LAYER = pcbnew.User_6
@@ -423,8 +410,75 @@ def draw_border_bezier(proj="", reveal=0):
     draw_bezier(*right(S, mil(C3), angleQ), *up(E, mil(C3)))
     draw_line(E, Start)
 
+    # Right wrist rest
+    A = switches[65].GetPosition() + VECTOR2I(0, half)
+    T1, T2, B2, B1 = wrist_rest_corners()[4:]
+
+    S = Start = B2 + VECTOR2I(reveal, -M)
+    E = B2 + VECTOR2I(M, -reveal)
+    S = draw_bezier(*down(S, N), *left(E, N))
+
+    E = B1 + VECTOR2I(-M, -reveal)
+    S = draw_line(S, E)
+
+    E = B1 + VECTOR2I(-reveal, -M)
+    S = draw_bezier(*right(S, N), *down(E, N))
+
+    E = T1 + VECTOR2I(-reveal, M)
+    S = draw_line(S, E)
+
+    P2 = E = VECTOR2I(A.x + (A.x - P1.x) + WRIST_right_X_extra - reveal, P1.y + reveal)
+    S = draw_bezier(*up(S, N), *right(E, mil(C1)))
+
+    E = S + VECTOR2I(-WRIST_right_X_extra, 0)
+    if proj != "wristrest":
+        LAYER = pcbnew.User_6
+    S = draw_line(S, E)
+    if proj != "wristrest":
+        LAYER = pcbnew.Edge_Cuts
+
+    # 20-deg tangential intermediate point
+    Q2 = E = VECTOR2I(A.x + (A.x - Q1.x) + reveal, Q1.y + reveal)
+    if proj != "wristrest":
+        LAYER = pcbnew.User_6
+    S = draw_bezier(*left(S, N), *right(E, mil(C2), -angleQ))
+    if proj != "wristrest":
+        LAYER = pcbnew.Edge_Cuts
+    E = T2 + VECTOR2I(reveal, M)
+    draw_bezier(*left(S, mil(C3), -angleQ), *up(E, mil(C3)))
+
+    draw_line(E, Start)
+
+    return (P1, Q1, P2, Q2, angleQ)
+
+
+def draw_border_bezier(proj="", reveal=0):
+    """Draw outer wall using Bezier curves."""
+    # 'reveal': when two layers meet (one on top of another), they are never perfectly
+    # flush because the human eye is good at spotting a 0.1mm misalignment. By
+    # making the middle plate slightly smaller (0.2mm all around) we hide misalignment,
+    # and provide relief for "edge beads" common during powder coating.
+
+    # PS5 battery size is 40x61x8.5mm
+
+    if proj == "wristrest":
+        draw_wristrest_border_bezier(proj, reveal)
+        return
+
+    offset = SIDE_WALL
+
+    P1, Q1, P2, Q2, angleQ = draw_wristrest_border_bezier(proj, reveal)
+
+    left = lambda X, length=mil(0.1), angle=0: (X, X + rotate(VECTOR2I(-length, 0), angle))
+    right = lambda X, length=mil(0.1), angle=0: (X, X + rotate(VECTOR2I(length, 0), angle))
+    up = lambda X, length=mil(0.1), angle=0: (X, X + rotate(VECTOR2I(0, -length), angle))
+    down = lambda X, length=mil(0.1), angle=0: (X, X + rotate(VECTOR2I(0, length), angle))
+
+    # LEFT SIDE
+
     # Segment connecting wrist rest to main body
-    S = P
+    S = P1
+    A = switches[65].GetPosition() + VECTOR2I(0, half)
     C4, C4a = 35, 17
     E = VECTOR2I(S.x - mil(7), A.y + offset - reveal)
     S = draw_bezier(*right(S, mil(C4)), *right(E, mil(C4a)))
@@ -484,7 +538,7 @@ def draw_border_bezier(proj="", reveal=0):
     L_end = S = draw_bezier(*right(S, Cn + mil(2)), *left(E, mil(95)))
 
     # Segment connecting wrist rest (right edge of left side)
-    S = Q
+    S = Q1
     C5, C6 = 52, 24
     angle = -switches[62].GetOrientationDegrees()
     E = switches[62].GetPosition() + rotate(VECTOR2I(-reveal, half + offset - reveal), angle)
@@ -523,47 +577,8 @@ def draw_border_bezier(proj="", reveal=0):
     E = S + rotate(VECTOR2I(0, -int(2*half) + reveal), angle)
     S = draw_line(S, E)
 
-    # Wrist rest
-    A = switches[65].GetPosition() + VECTOR2I(0, half)
-    T1, T2, B2, B1 = wrist_rest_corners()[4:]
-
-    S = Start = B2 + VECTOR2I(reveal, -M)
-    E = B2 + VECTOR2I(M, -reveal)
-    S = draw_bezier(*down(S, N), *left(E, N))
-
-    E = B1 + VECTOR2I(-M, -reveal)
-    S = draw_line(S, E)
-
-    E = B1 + VECTOR2I(-reveal, -M)
-    S = draw_bezier(*right(S, N), *down(E, N))
-
-    E = T1 + VECTOR2I(-reveal, M)
-    S = draw_line(S, E)
-
-    P = E = VECTOR2I(A.x + (A.x - P.x) + WRIST_right_X_extra - reveal, P.y + reveal)
-    S = draw_bezier(*up(S, N), *right(E, mil(C1)))
-
-    E = S + VECTOR2I(-WRIST_right_X_extra, 0)
-    if proj != "wristrest":
-        LAYER = pcbnew.User_6
-    S = draw_line(S, E)
-    if proj != "wristrest":
-        LAYER = pcbnew.Edge_Cuts
-
-    # 20-deg tangential intermediate point
-    Q = E = VECTOR2I(A.x + (A.x - Q.x) + reveal, Q.y + reveal)
-    if proj != "wristrest":
-        LAYER = pcbnew.User_6
-    S = draw_bezier(*left(S, N), *right(E, mil(C2), -angleQ))
-    if proj != "wristrest":
-        LAYER = pcbnew.Edge_Cuts
-    E = T2 + VECTOR2I(reveal, M)
-    draw_bezier(*left(S, mil(C3), -angleQ), *up(E, mil(C3)))
-
-    draw_line(E, Start)
-
     # Segment connecting wrist rest to main body
-    S = P
+    S = P2
     Cr1, Cr2 = 48, 36.5
     E = switches[71].GetPosition() + VECTOR2I(half - reveal, half+offset - reveal)
     S = draw_bezier(*left(S, mil(Cr1)), *left(E, mil(Cr2)))
@@ -578,7 +593,7 @@ def draw_border_bezier(proj="", reveal=0):
     draw_line(S, L_end)
 
     # Second curve connecting right wrist rest
-    S = Q
+    S = Q2
     angle = -switches[68].GetOrientationDegrees()
     E = switches[68].GetPosition() + rotate(VECTOR2I(reveal, half + offset - reveal), angle)
     S = draw_bezier(*right(S, mil(C5), -angleQ), *right(E, mil(C6), angle))
@@ -816,12 +831,12 @@ def get_hexagon_params(D, W):
     # 3. Vertices for Pointy-Top (Vertical) Hexagon centered at (0,0)
     # Ordered from Top Clockwise
     vertices = [
-        (0, R),                          # Top
-        (D/2, R/2),                      # Top Right
-        (D/2, -R/2),                     # Bottom Right
-        (0, -R),                         # Bottom
-        (-D/2, -R/2),                    # Bottom Left
-        (-D/2, R/2)                      # Top Left
+        VECTOR2I(0, int(mil(R))),                          # Top
+        VECTOR2I(int(mil(D/2)), int(mil(R/2))),            # Top Right
+        VECTOR2I(int(mil(D/2)), int(mil(-R/2))),           # Bottom Right
+        VECTOR2I(0, int(mil(-R))),                         # Bottom
+        VECTOR2I(int(mil(-D/2)), int(mil(-R/2))),          # Bottom Left
+        VECTOR2I(int(mil(-D/2)), int(mil(R/2)))            # Top Left
     ]
 
     return {
@@ -839,10 +854,15 @@ def draw_hexagon_mesh():
     Dy = mil(params["Dy"])
     vertices = params["vertices"]
 
+    def mid_pt(A, B):
+        return A + ((B - A) / 2)
+
+    # hexagon using bezier curves
     def draw_hexagon(Orig):
         for (A, B) in zip(vertices, vertices[1:] + vertices[:1]):
-            draw_line(Orig + VECTOR2I(mil(A[0]), mil(A[1])), Orig + VECTOR2I(mil(B[0]), mil(B[1])))
-        A, B = vertices[5], vertices[0]
+            draw_line(Orig + A, Orig + B)
+        # for (A, B, C) in zip(vertices, vertices[1:] + vertices[:1], vertices[2:] + vertices[:2]):
+        #     draw_bezier(Orig + mid_pt(A, B), Orig + B, Orig + mid_pt(B, C), Orig + B)
 
     row = 0
     offset = VECTOR2I(mil(4.2), mil(-4.8))
@@ -901,7 +921,7 @@ def draw_hexagon_mesh():
         if i < 5:
             draw_hexagon(O + VECTOR2I(int((i+2)*Dx), int(2*Dy)))
 
-    # Holes under battery
+    # Holes under battery compartment
     D, W = 3, 10
     params = get_hexagon_params(D, W)
     Dx = mil(params["Dx"])
@@ -960,7 +980,7 @@ def save_bezier_curves():
 def main():
     global LAYER
 
-    if projname() not in ["pcb", "swplate", "topcase", "botcase", "botcover"]:
+    if projname() not in ["pcb", "swplate", "topcase", "botcase", "botcover", "wristrest"]:
         print(f"Error: unrecognized project {projname()}")
 
     remove_border()
@@ -996,6 +1016,10 @@ def main():
         LAYER = pcbnew.User_6
         draw_border(projname(), offset=SIDE_WALL)
         draw_wrist()
+    elif projname() == "wristrest":
+        draw_border_bezier(projname())
+        LAYER = pcbnew.User_6
+        draw_wrist_cavity()
 
     pcbnew.Refresh()
     pcbnew.Refresh()  # Bezier curves need Refresh() twice (bug)

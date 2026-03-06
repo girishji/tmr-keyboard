@@ -313,7 +313,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 40.64 137.16 0)
 			(effects
 				(font
@@ -503,7 +503,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 121.92 147.32 0)
 			(effects
 				(font
@@ -692,7 +692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 60.96 147.32 0)
 			(effects
 				(font
@@ -945,7 +945,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 91.44 147.32 0)
 			(effects
 				(font
@@ -1388,7 +1388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 60.96 137.16 0)
 			(effects
 				(font
@@ -1451,7 +1451,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 40.64 157.48 0)
 			(effects
 				(font
@@ -1514,7 +1514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 30.48 137.16 0)
 			(effects
 				(font
@@ -1703,7 +1703,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 81.28 137.16 0)
 			(effects
 				(font
@@ -1766,7 +1766,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 71.12 157.48 0)
 			(effects
 				(font
@@ -2018,7 +2018,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 71.12 137.16 0)
 			(effects
 				(font
@@ -2522,7 +2522,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 111.76 137.16 0)
 			(effects
 				(font
@@ -3280,7 +3280,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 121.92 137.16 0)
 			(effects
 				(font
@@ -3469,7 +3469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 101.6 147.32 0)
 			(effects
 				(font
@@ -3659,7 +3659,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 30.48 147.32 0)
 			(effects
 				(font
@@ -3787,7 +3787,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 38.1 172.72 0)
 			(effects
 				(font
@@ -3913,7 +3913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 30.48 157.48 0)
 			(effects
 				(font
@@ -4040,7 +4040,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 101.6 137.16 0)
 			(effects
 				(font
@@ -4166,7 +4166,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 71.12 147.32 0)
 			(effects
 				(font
@@ -4481,7 +4481,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 81.28 147.32 0)
 			(effects
 				(font
@@ -4859,7 +4859,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 101.6 157.48 0)
 			(effects
 				(font
@@ -4985,7 +4985,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 91.44 137.16 0)
 			(effects
 				(font
@@ -5364,7 +5364,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 81.28 157.48 0)
 			(effects
 				(font
@@ -5553,7 +5553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 50.8 137.16 0)
 			(effects
 				(font
@@ -5616,7 +5616,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 50.8 157.48 0)
 			(effects
 				(font
@@ -5932,7 +5932,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 40.64 147.32 0)
 			(effects
 				(font
@@ -6185,7 +6185,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 111.76 157.48 0)
 			(effects
 				(font
@@ -6754,7 +6754,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 91.44 157.48 0)
 			(effects
 				(font
@@ -6945,7 +6945,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 111.76 147.32 0)
 			(effects
 				(font
@@ -7388,7 +7388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 60.96 157.48 0)
 			(effects
 				(font
@@ -7578,7 +7578,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 59.69 172.72 0)
 			(effects
 				(font
@@ -7767,7 +7767,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_1.5mm_M1.4_NoPad"
+		(property "Footprint" "tmr-lib:MountingHole_1.6mm_M1.4_NoPad"
 			(at 50.8 147.32 0)
 			(effects
 				(font

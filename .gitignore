@@ -17,6 +17,12 @@
 **/jlcpcb/
 */jlcpcb/
 
+**/fusion/
+*/fusion/
+
+**/freecad/
+*/freecad/
+
 # Temporary files
 *.000
 *.bak

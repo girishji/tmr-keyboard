@@ -386,7 +386,7 @@ def projname():
 
 
 def main():
-    if projname() not in ["pcb", "swplate", "topcase", "botcase", "botcover"]:
+    if projname() not in ["pcb", "swplate", "topcase", "botcase", "botcover", "wristrest"]:
         print(f"Error: unrecognized project {projname()}")
 
     if projname() == "pcb":
@@ -398,11 +398,11 @@ def main():
         place_switches_and_stabs(False)
         place_components(False)
         place_mounting_holes(False)
-    elif projname() in ["topcase", "botcase"]:
+    elif projname() in ["botcase"]:
         place_switches_and_stabs(False)
         place_components(False)
         place_mounting_holes(False)
-    elif projname() in ["botcover"]:
+    elif projname() in ["topcase", "botcover", "wristrest"]:
         place_switches_and_stabs(False)
         place_mounting_holes(False)
 
