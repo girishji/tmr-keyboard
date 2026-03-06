@@ -369,8 +369,12 @@ def place_components(is_pcb):
     board = pcbnew.GetBoard()
 
     for i, (fpname, x, y, deg, flip) in enumerate(COMPONENTS):
-        if not is_pcb and fpname not in ['Jusb1']:
-            continue
+        if not is_pcb:
+            if fpname not in ['Jusb1', 'SW1', 'SW2']:
+                continue
+            fp = board.FindFootprintByReference(fpname)
+            if not fp:
+                continue
         fp = board.FindFootprintByReference(fpname)
         set_position_mm(fp, x, y)
         fp.SetOrientationDegrees(deg)
@@ -398,11 +402,11 @@ def main():
         place_switches_and_stabs(False)
         place_components(False)
         place_mounting_holes(False)
-    elif projname() in ["botcase"]:
+    elif projname() in ["botcase", "botcover"]:
         place_switches_and_stabs(False)
         place_components(False)
         place_mounting_holes(False)
-    elif projname() in ["topcase", "botcover", "wristrest"]:
+    elif projname() in ["topcase", "wristrest"]:
         place_switches_and_stabs(False)
         place_mounting_holes(False)
 

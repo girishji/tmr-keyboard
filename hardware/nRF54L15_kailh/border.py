@@ -867,7 +867,7 @@ def draw_hexagon_mesh():
     row = 0
     offset = VECTOR2I(mil(4.2), mil(-4.8))
     for i in range(1, SWITCH_COUNT+1):
-        if i in [6, 8, 9, 15, 16, 20, 24, 34, 35, 36, 38, 40, 50, 51, 62, 63, 64, 66, 67, 68, 70, 71, 72]:
+        if i in [5, 6, 8, 9, 15, 16, 20, 24, 34, 35, 36, 38, 40, 50, 51, 62, 63, 64, 66, 67, 68, 70, 71, 72]:
             continue
         O = switches[i].GetPosition() + offset
         if i >= 16:
