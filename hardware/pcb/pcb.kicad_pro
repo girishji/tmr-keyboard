@@ -491,7 +491,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "nRF54L15_gateron_kailh_TMR2615.kicad_pro",
+    "filename": "pcb.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -648,7 +648,7 @@
       "plot": "./jlcpcb/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "nRF54L15_gateron_kailh_TMR2615.step",
+      "step": "pcb.step",
       "svg": "",
       "vrml": ""
     },

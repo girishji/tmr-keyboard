@@ -1,0 +1,104 @@
+(footprint "Button_Switch_3x4x2.5"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "https://www.e-switch.com/system/asset/product_line/data_sheet/213/TL3305.pdf")
+	(tags "TL3305 Series Tact Switch")
+	(property "Reference" "REF**"
+		(at 0 -3.2 0)
+		(layer "F.SilkS")
+		(uuid "abd88d38-71ef-4868-af0f-cdb204c79adf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Button_Switch_3x4x2.5"
+		(at 0 3.2 0)
+		(layer "F.Fab")
+		(uuid "bd3db0d7-97f9-4de8-8e74-78466e60db2c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b07c92d2-0638-44fb-b300-914ad1094cae")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91009dcd-cc70-4a34-8c33-775ee7c7e5fb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -3 -1.65)
+		(end 3 1.65)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "025df17f-8295-4676-9e5d-c3648c0b5033")
+	)
+	(pad "1" smd rect
+		(at -2.15 -1.075)
+		(size 1.2 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3df86904-ca04-47e0-82bd-9cc5c3e080cd")
+	)
+	(pad "1" smd rect
+		(at 2.15 -1.075)
+		(size 1.2 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7885de93-f792-48cf-b628-b963a9feb676")
+	)
+	(pad "2" smd rect
+		(at -2.15 1.075)
+		(size 1.2 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f533fe96-f8ec-4ee9-868b-445af57111c6")
+	)
+	(pad "2" smd rect
+		(at 2.15 1.075)
+		(size 1.2 0.65)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9c6a51cf-fbaa-42a2-956a-951b074a4b75")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_TL3305C.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

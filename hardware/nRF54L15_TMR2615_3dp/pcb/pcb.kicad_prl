@@ -59,7 +59,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "nRF54L15_gateron_kailh_TMR2615.kicad_prl",
+    "filename": "pcb.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
