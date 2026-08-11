@@ -1,3 +1,27 @@
+Minew module says min voltage is 2.3V (not 1.8V) for BLE to function correctly. Set the npm1300 power ic accordingly.
+
+--
+
+To preserve Bézier curves, export (plot) edge_cuts as svg file. Import this into FreeCAD by choosing the 'svg geometry' option.
+
+--
+
+
 make right-arrow 1.25x or larger. keep it in the same position as before.
 do not make alt 1.25x since that moves right arrow further to the right
 right arrow needs to be accessible for right hand pinkie for word completion
+
+--
+
+For a strong keyboard case using MJF, **PA12** is the standard workhorse, but **PA11** offers superior impact resistance, and **PAC Nylon** (often referred to as PA12-GB or glass-filled variants, or translucent-grade engineering variants depending on the specific supplier lineup) changes the rigidity profile.
+
+# Material Comparison for Keyboard Cases
+
+| Property | PA12 (Polyamide 12) | PA11 (Polyamide 11) | PAC / Glass-Filled Nylon |
+| --- | --- | --- | --- |
+| **Stiffness / Rigidity** | High (great structural stability) | Moderate (higher elongation at break) | **Very High** (reinforced) |
+| **Impact Resistance** | Good | **Excellent** (more ductile, absorbs shock better) | Lower (more brittle, prone to snapping under sudden heavy stress) |
+| **Dimensional Accuracy** | Excellent (very stable shrinkage rate) | Good (slightly higher warping tendencies) | Excellent |
+| **Primary Use Case** | General housings, structural parts, threaded inserts | Parts requiring high ductility, living hinges, drop-resistant items | Rigid plates, thick structural frames needing zero flex |
+
+--

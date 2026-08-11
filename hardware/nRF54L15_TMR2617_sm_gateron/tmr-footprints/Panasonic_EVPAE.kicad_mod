@@ -1,0 +1,204 @@
+(footprint "Panasonic_EVPAE"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "http://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE5.pdf")
+	(tags "SMD SMT SPST EVQPUK EVQPUB")
+	(property "Reference" "REF**"
+		(at 0.3 -3.1 0)
+		(layer "F.SilkS")
+		(uuid "f944b2bf-891f-4e09-bcfb-97010ca86a90")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(property "Value" "Panasonic_EVPAE"
+		(at 0 3.5 0)
+		(layer "F.Fab")
+		(uuid "d7cd045f-a860-44f9-ae08-dc6854fd0445")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "46c9a8c3-11e7-4e4d-a311-5dd2a12c4d6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea210dd2-d1ab-4f0e-94a6-fdad241e181f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -1.125 1.35)
+		(end 1.125 1.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "a6e84065-66ea-48c8-8fb0-7f3416663def")
+	)
+	(fp_line
+		(start -1.9 0.3)
+		(end -1.9 1.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "06854335-f86a-487d-9edf-1e78abfc51e6")
+	)
+	(fp_line
+		(start -1.9 1.35)
+		(end -4.08 1.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "882b040b-ada6-43f7-9d77-1844c6e7a637")
+	)
+	(fp_line
+		(start 1.6 0)
+		(end -1.6 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "5578c6d6-378e-4848-8776-a533b54185bf")
+	)
+	(fp_line
+		(start 1.9 0.3)
+		(end 1.9 1.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "448fc7b6-ce67-4d9f-a848-8c68c45896b5")
+	)
+	(fp_line
+		(start 1.9 1.35)
+		(end 4.4 1.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "8a840e1f-2f45-4911-bbf9-192992aefef2")
+	)
+	(fp_arc
+		(start -1.9 0.3)
+		(mid -1.812132 0.087868)
+		(end -1.6 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "d93ffea9-f114-4b9c-bd57-162e86b64a9f")
+	)
+	(fp_arc
+		(start 1.6 0)
+		(mid 1.812132 0.087868)
+		(end 1.9 0.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Cmts.User")
+		(uuid "fffda603-4e06-4586-970a-f1fca1a61063")
+	)
+	(fp_rect
+		(start -2.99 -1.9)
+		(end 3 1.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "33c66404-90e6-4034-b58c-d59ea921679f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.06 4.98 0)
+		(layer "F.Fab")
+		(uuid "afca9f50-42e2-49dd-90ad-032694d606d2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd rect
+		(at -2.475 0.7 180)
+		(size 0.65 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4d56627b-5d35-4aeb-9fba-0848b9e9d8f6")
+	)
+	(pad "" smd rect
+		(at 2.475 0.7 180)
+		(size 0.65 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d937d310-39ea-40f2-8b93-077df8e6eb87")
+	)
+	(pad "1" smd rect
+		(at -1.15 -1.025 180)
+		(size 0.8 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cf2ee7d8-b9a1-4bed-9d50-810027ec49ed")
+	)
+	(pad "1" smd rect
+		(at 1.15 -1.025 180)
+		(size 0.8 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c3fe5ebd-bef8-4564-b565-b7591637f11c")
+	)
+	(pad "2" smd rect
+		(at 0 -1.025 180)
+		(size 0.8 1.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "294ae927-9fcd-404a-9b21-3982e83a570c")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/Panasonic_EVQPUK_EVQPUB.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
