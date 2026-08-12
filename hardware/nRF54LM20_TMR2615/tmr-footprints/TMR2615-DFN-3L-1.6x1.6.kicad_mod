@@ -1,14 +1,14 @@
 (footprint "TMR2615-DFN-3L-1.6x1.6"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "SOT, 3 Pin (JEDEC MO-178 inferred 3-pin variant https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 	(tags "SOT TO_SOT_SMD")
 	(property "Reference" "REF**"
 		(at 0.05 2.15 0)
 		(layer "Eco2.User")
-		(uuid "423a65fa-ad88-4b07-aa0e-e605d175f312")
+		(uuid "24132129-01b9-43eb-a330-611ee9aac327")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "TMR2615-DFN-3L-1.6x1.6"
 		(at 0 3.7 0)
 		(layer "F.Fab")
-		(uuid "658d44f6-75af-479e-9f3a-b38cd21efb77")
+		(uuid "da90ea10-2f92-472a-a428-fda2295c241d")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "38ba64eb-6daa-44de-ad8c-57fc1aff2a95")
+		(uuid "8596b6c9-3938-4f5f-a991-167f50515dae")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "92f476b2-8700-40f0-a3d3-784bc9105eb6")
+		(uuid "d2b1ae13-54b4-4f33-b268-38d044ade71c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -52,6 +52,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -0.95 -0.94)
 		(end -0.75 -0.94)
@@ -60,7 +61,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "ddfc32bb-495e-4fe8-8a74-d90c336f0152")
+		(uuid "f3fd62f8-c106-44ae-a15a-7778252593a7")
 	)
 	(fp_line
 		(start -0.95 -0.74)
@@ -70,7 +71,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "cdb686b3-72e1-40d6-9294-13a86edd27f3")
+		(uuid "4bec07eb-43ac-4ad6-848a-fd895bd360bb")
 	)
 	(fp_line
 		(start -0.95 0.79)
@@ -80,7 +81,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "f0def380-6e68-44d1-8a44-1641aa19fe95")
+		(uuid "531fecf3-f7cb-4b89-b410-3e054da10246")
 	)
 	(fp_line
 		(start -0.4 -0.95)
@@ -90,7 +91,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "37a0ebfd-6674-4eee-9120-fafb444f8a95")
+		(uuid "8a666a0f-75c3-43ab-9a55-81f9c29ddd8c")
 	)
 	(fp_line
 		(start 0.91 0.95)
@@ -100,7 +101,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "c8a09c7a-dc56-4a64-bf84-ae0ae73296ef")
+		(uuid "f0350ef6-0216-4c1d-a78a-1f223e3e48fd")
 	)
 	(fp_line
 		(start 0.95 -0.8)
@@ -110,7 +111,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8eabb5f8-c026-4c16-9109-34b8afef9952")
+		(uuid "7ec185ed-f0b7-4921-99dd-7e5cbdbdb3be")
 	)
 	(fp_rect
 		(start -1.05 -1.05)
@@ -121,7 +122,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "a24ec9a4-de56-44f3-9600-c281c2a68fe9")
+		(uuid "95ba6d4b-800d-4d69-867b-5504f7a5d1da")
 	)
 	(fp_rect
 		(start -0.8 -0.8)
@@ -132,7 +133,7 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "39aaba46-af96-44f2-822f-b62d9c87d914")
+		(uuid "76df466b-5efe-4af8-9094-2e94fc61cf32")
 	)
 	(fp_rect
 		(start 0.05 -0.15)
@@ -143,35 +144,36 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "84cd4956-bcb6-4b31-91b2-3df4c9ca8970")
+		(uuid "3be6f976-be76-467c-99c3-ba9859dd6237")
 	)
 	(pad "1" smd roundrect
 		(at -0.65 -0.5)
 		(size 0.4 0.35)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
-		(uuid "cbeed0c9-d103-48bc-b1ec-f71b851f9237")
+		(uuid "c996ab15-bee3-4106-be90-527f95cfcfee")
 	)
 	(pad "2" smd roundrect
 		(at -0.65 0.5)
 		(size 0.4 0.35)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
-		(uuid "28a96200-54b2-4979-b101-3262aace452e")
+		(uuid "cce5ab74-b608-4022-8d8d-7082f7462f5b")
 	)
 	(pad "3" smd roundrect
 		(at 0.65 0)
 		(size 0.4 0.35)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
-		(uuid "c3f6289e-451a-4606-bb6d-05e7c39bfa88")
+		(uuid "e4f39a8d-fa4e-4839-97eb-2da99f30a95f")
 	)
 	(pad "4" smd roundrect
 		(at 0 0)
 		(size 0.45 1.3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
-		(uuid "43e3c91d-b25d-41fd-a84f-42f82b06183a")
+		(solder_paste_margin_ratio -0.25)
+		(uuid "dc790c9f-a46d-4b75-b2c0-6419a30b4111")
 	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-3.step"

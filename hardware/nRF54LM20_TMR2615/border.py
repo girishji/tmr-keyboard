@@ -401,11 +401,12 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     C2, C3 = 15, 6.5
     Q1 = E = VECTOR2I(mil(65.5) - reveal, mil(125) + reveal)
     angleQ = 38
+    Layer_save = LAYER
     if proj != "wristrest":
         LAYER = pcbnew.User_6
     S = draw_bezier(*right(S, N), *left(E, mil(C2), angleQ))
     if proj != "wristrest":
-        LAYER = pcbnew.Edge_Cuts
+        LAYER = Layer_save
     E = T2 + VECTOR2I(-reveal, M)
     draw_bezier(*right(S, mil(C3), angleQ), *up(E, mil(C3)))
     draw_line(E, Start)
@@ -427,7 +428,7 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     E = T1 + VECTOR2I(-reveal, M)
     S = draw_line(S, E)
 
-    P2 = E = VECTOR2I(A.x + (A.x - P1.x) + WRIST_right_X_extra - reveal, P1.y + reveal)
+    P2 = E = VECTOR2I(A.x + (A.x - P1.x) + WRIST_right_X_extra - reveal, P1.y)
     S = draw_bezier(*up(S, N), *right(E, mil(C1)))
 
     E = S + VECTOR2I(-WRIST_right_X_extra, 0)
@@ -435,15 +436,15 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
         LAYER = pcbnew.User_6
     S = draw_line(S, E)
     if proj != "wristrest":
-        LAYER = pcbnew.Edge_Cuts
+        LAYER = Layer_save
 
     # 20-deg tangential intermediate point
-    Q2 = E = VECTOR2I(A.x + (A.x - Q1.x) + reveal, Q1.y + reveal)
+    Q2 = E = VECTOR2I(A.x + (A.x - Q1.x), Q1.y)
     if proj != "wristrest":
         LAYER = pcbnew.User_6
     S = draw_bezier(*left(S, N), *right(E, mil(C2), -angleQ))
     if proj != "wristrest":
-        LAYER = pcbnew.Edge_Cuts
+        LAYER = Layer_save
     E = T2 + VECTOR2I(reveal, M)
     draw_bezier(*left(S, mil(C3), -angleQ), *up(E, mil(C3)))
 
@@ -476,7 +477,7 @@ def draw_border_bezier(proj="", reveal=0):
 
     # LEFT SIDE
 
-    # Segment connecting wrist rest to main body
+    # Segment connecting left wrist rest to main body
     S = P1
     A = switches[65].GetPosition() + VECTOR2I(0, half)
     C4, C4a = 35, 17
@@ -487,36 +488,41 @@ def draw_border_bezier(proj="", reveal=0):
     E = VECTOR2I(switches[65].GetPosition().x - WRIST_x_offset - WRIST_x_length + reveal, switches[45].GetPosition().y + half)
     S = draw_bezier(*left(S, mil(11)), *down(E, mil(20)))
 
-    E = switches[1].GetPosition() + VECTOR2I(-half + int(0.5*offset) + reveal, -half - offset - mil(2.2) + reveal)
+    E = switches[1].GetPosition() + VECTOR2I(-half + int(0.5*offset), -half - offset - mil(3.3) + reveal)
     S = draw_bezier(*up(S, mil(28)), *left(E, mil(17)))
 
     # draw usb cutout
-    Ux = 20
-    # XXX:: make rectagular hole
+    width_usb = mil(10.6)
+    usb_start = mil(1.9)
     if proj == "swplate":
-        E = S + VECTOR2I(mil(1.5), 0)
+        usb_depth = mil(9)
+        E = S + VECTOR2I(usb_start, 0)
         S = draw_line(S, E)
-        E = S + VECTOR2I(mil(10.5), mil(8.1) - reveal)
+        E = S + VECTOR2I(width_usb, usb_depth - reveal)
         S = draw_line_arc(down(S), left(E), fillet_radius_half)
-        E = E + VECTOR2I(0, -mil(8.1) + reveal)
+        E = E + VECTOR2I(0, -usb_depth + reveal)
         S = draw_line_arc(right(S), down(E), fillet_radius_half)
-        S = draw_line(S, E)
-        E = S + VECTOR2I(mil(Ux - 1.5 - 10.5), 0)
         S = draw_line(S, E)
 
     else:
-        E = S + VECTOR2I(mil(Ux), 0)
+        E = S + VECTOR2I(usb_start + width_usb, 0)
         S = draw_line(S, E)
 
-    Cn, Cm = mil(6), mil(36)
-    E = VECTOR2I(switches[3].GetPosition() + VECTOR2I(half, -half-offset+reveal))
-    S = draw_bezier(*right(S, Cn), *left(E, Cm))
+    Cn, Cm = mil(6), mil(30)
 
-    E = VECTOR2I(switches[5].GetPosition() + VECTOR2I(half, -half-offset-mil(3.5) + reveal))
-    S = draw_bezier(*right(S, Cm), *left(E, Cn))
+    top_max_thickness = offset + mil(3.6) - reveal
+    top_min_thickness = offset + mil(2) - reveal
 
-    E = VECTOR2I(switches[8].GetPosition() + VECTOR2I(0, -half-offset+ reveal))
+    H2x = board.FindFootprintByReference('H2').GetPosition().x
+    H3x = board.FindFootprintByReference('H3').GetPosition().x
+    H4x = board.FindFootprintByReference('H4').GetPosition().x
+    Sw5topY = switches[5].GetPosition().y - half
+
+    E = VECTOR2I(int((S.x + H2x) / 2), Sw5topY-top_min_thickness)
     S = S_save = draw_bezier(*right(S, Cn), *left(E, Cm))
+
+    E = VECTOR2I(H2x, Sw5topY-top_max_thickness)
+    S = S_save = draw_bezier(*right(S, Cm), *left(E, Cn))
 
     # cutout for ble antenna
     if proj == "botcover":
@@ -530,13 +536,30 @@ def draw_border_bezier(proj="", reveal=0):
         E = S + VECTOR2I(-mil(11), 0)
         S = draw_line(S, E)
         S = S_save
+    elif proj == "swplate":
+        # BLE module b/w sw8 & sw9
+        S = switches[8].GetPosition() + VECTOR2I(mil(-5), -half-top_min_thickness+reveal+mil(2))
+        E = S + VECTOR2I(0, mil(5))
+        S = draw_line(S, E)
+        E = S + VECTOR2I(half+half+mil(10), 0)
+        S = draw_line(S, E)
+        E = S + VECTOR2I(0, -mil(5))
+        S = draw_line(S, E)
+        E = S + VECTOR2I(-half-half-mil(10), 0)
+        S = draw_line(S, E)
+        S = S_save
 
+    E = VECTOR2I(int((H3x + H2x) / 2), Sw5topY-top_min_thickness)
+    S = draw_bezier(*right(S, Cn), *left(E, Cm))
 
-    E = VECTOR2I(switches[10].GetPosition() + VECTOR2I(half, -half-offset-mil(3.5) + reveal))
+    E = VECTOR2I(H3x, Sw5topY-top_max_thickness)
     S = draw_bezier(*right(S, Cm), *left(E, Cn))
 
-    E = switches[15].GetPosition() + VECTOR2I(half, -half - offset + reveal)
-    L_end = S = draw_bezier(*right(S, Cn + mil(2)), *left(E, mil(95)))
+    E = VECTOR2I(int((H4x + H3x) / 2), Sw5topY-top_min_thickness)
+    S = draw_bezier(*right(S, Cn), *left(E, Cm))
+
+    E = VECTOR2I(H4x, Sw5topY-top_max_thickness)
+    L_end = S = draw_bezier(*right(S, Cm), *left(E, Cn))
 
     # Segment connecting wrist rest (right edge of left side)
     S = Q1
@@ -578,20 +601,22 @@ def draw_border_bezier(proj="", reveal=0):
     E = S + rotate(VECTOR2I(0, -int(2*half) + reveal), angle)
     S = draw_line(S, E)
 
-    # Segment connecting wrist rest to main body
+    # Segment connecting right wrist rest to main body
     S = P2
-    Cr1, Cr2 = 48, 36.5
-    E = switches[71].GetPosition() + VECTOR2I(half - reveal, half+offset - reveal)
+    Cr1, Cr2 = 38, 29
+    E = switches[72].GetPosition() + VECTOR2I(0, half+offset - reveal)
     S = draw_bezier(*left(S, mil(Cr1)), *left(E, mil(Cr2)))
 
+    E = S + VECTOR2I(half-reveal, 0)
+    S = draw_line(S, E)
+
     # Right side wall
-    E = switches[72].GetPosition() + VECTOR2I(half+offset - reveal, 0)
-    S = draw_bezier(*right(S, mil(10)), *down(E, mil(20)))
+    E = switches[72].GetPosition() + VECTOR2I(half+offset-reveal, half)
+    S = draw_bezier(*right(S, offset-reveal), *down(E, offset-reveal))
 
-    E = switches[15].GetPosition() + VECTOR2I(half + int(0.3*offset) - reveal, -half - offset + reveal)
-    S = draw_bezier(*up(S, mil(24)), *right(E, mil(8)))
-
-    draw_line(S, L_end)
+    E = switches[15].GetPosition() + VECTOR2I(half+offset-reveal, 0)
+    S = draw_line(S, E)
+    S = draw_bezier(*up(S, mil(10)), *right(L_end, mil(9)))
 
     # Second curve connecting right wrist rest
     S = Q2
@@ -692,7 +717,7 @@ def draw_border(proj, offset=0):
     # Draw usb pcb extension
     USB_WIDTH = mil(11)
     if ispcb:
-        S = switches[1].GetPosition() + VECTOR2I(-half + mil(3.5), -half - mil(6.5))
+        S = switches[1].GetPosition() + VECTOR2I(-half + mil(3.5), -half - mil(6.6))
 
         R = draw_line_arc(right(R), down(S))
         R = draw_line(R, S)
@@ -968,12 +993,11 @@ def main():
 
     if projname() == "pcb":
         draw_border(projname())
-        # LAYER = pcbnew.User_6
-        # draw_border_bezier(projname())
     elif projname() == "swplate":
         draw_border_bezier(projname(), reveal=mil(0.2))
         draw_wrist_cavity()
         LAYER = pcbnew.User_6
+        draw_border_bezier(projname())
         draw_border(projname(), offset=GAP)
         draw_border(projname(), offset=SIDE_WALL)
         draw_wrist()
@@ -1005,7 +1029,9 @@ def main():
         draw_wrist_cavity()
 
     pcbnew.Refresh()
-    pcbnew.Refresh()  # Bezier curves need Refresh() twice (bug)
+    # bug: Bezier curves don't show up for layers other than Edge_Cuts (this
+    # layer needs Refresh() twice twice)
+    pcbnew.Refresh()
 
 
 main()

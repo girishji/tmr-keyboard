@@ -46,11 +46,11 @@ HOLES_H = [
     (3, 2.25),
     (104.5, -14.25),
     (199.5, -14.25),
-    (300, -4),
+    (291, -14.25),
     (-9.7, 71),
     (94.25, 102.25),
     (181.25, 102.25),
-    (309, 55),
+    (295, 61),
 ]
 
 # Rivet holes
@@ -65,7 +65,7 @@ HOLES_R = [(10, -12.5), (57, -12.5), (95, -12.5), (142.5, -12.5), (190, -12.5), 
 # Dowells
 HOLES_D = [
     (4.55, -4.45),
-    (262, 72),
+    (295, 52),
 ]
 
 # Support screws for bottom cover
@@ -85,7 +85,7 @@ COMPONENTS = [
     ("MUXB8", 146, 63, 180, True),
     ("LEDDR1", 139.5, 32.0, 180, True),
     ("PMIC1", KEY_SPACING * 1.875 - 1, KEY_SPACING, 180, True),
-    ("Jusb1", 19.5, -13.6, 180, False),  # usb receptacle
+    ("Jusb1", 19.5, -13.7, 180, False),  # usb receptacle
     ("SW1", 199.4, -3.52, 90, True),
     ("SW2", 14.11, 26.33, -90, True),
     ("JTAG1", 180.5, -4.5, -90, True),
@@ -369,7 +369,7 @@ def place_components(is_pcb):
 
     for i, (fpname, x, y, deg, flip) in enumerate(COMPONENTS):
         if not is_pcb:
-            if fpname not in ['Jusb1', 'SW1', 'SW2']:
+            if fpname not in ['Jusb1', 'SW1', 'SW2', 'M1']:
                 continue
             fp = board.FindFootprintByReference(fpname)
             if not fp:
