@@ -11455,7 +11455,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:Switch_Cutout"
+		(property "Footprint" "tmr-lib:Switch_Cutout_1.25u"
 			(at 67.31 76.2 0)
 			(hide yes)
 			(show_name no)

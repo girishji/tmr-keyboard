@@ -34,7 +34,7 @@ HOLES_Hs = [
     (KEY_SPACING * 7.25, KEY_SPACING * 2.47),
     # (KEY_SPACING * 4.545, KEY_SPACING * 4.4),
     # (KEY_SPACING * 9.955, KEY_SPACING * 4.4),
-    (KEY_SPACING * 5.5, KEY_SPACING * 4),
+    (KEY_SPACING * 5.5, 75),
     (KEY_SPACING * 9, KEY_SPACING * 4),
     (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
@@ -173,13 +173,16 @@ def calculate_switch_positions():
     # --- Row 3 ---
     offs = (1 - 1 / 4) * dim
     positions[30] = (offs - dim * 1 / 8, 2 * dim)
-    for i in range(31, 43):
+    for i in range(31, 42):
         positions[i] = (offs + (i - 30) * dim, 2 * dim)
 
-    offs += (13 + 1/8) * dim
-    positions[43] = (offs, 2 * dim)
+    offs += (12 + 1/8) * dim
+    positions[42] = (offs, 2 * dim)
 
     offs += (1 + 1/8) * dim
+    positions[43] = (offs, 2 * dim)
+
+    offs += dim
     positions[44] = (offs, 2 * dim)
 
     # --- Row 4 ---
@@ -210,7 +213,8 @@ def calculate_switch_positions():
     positions[62] = (offs + dim / 2 - 1.15, 4 * dim + 4.7)
 
     offs += dim * (1 + 1 / 4 + 1 / 8)
-    positions[63] = (offs + 0.1, 4 * dim + 11.25)
+    positions[63] = (95.88, 84.96)
+    # positions[63] = (offs + 0.1, 4 * dim + 11.25)
 
     offs += dim
     positions[64] = (offs - 0.6, 4.5 * dim + 7)
@@ -261,7 +265,7 @@ def place_switches_and_stabs(is_pcb):
 
     # Specific rotations for layout
     if switches[62]: switches[62].SetOrientationDegrees(-angle)
-    if switches[63]: switches[63].SetOrientationDegrees(-angle)
+    if switches[63]: switches[63].SetOrientationDegrees(-angle + 90)
 
     # Complex Logic for Switch 64 & Stab 1
     if is_pcb:

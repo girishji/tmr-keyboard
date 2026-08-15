@@ -2288,14 +2288,14 @@
 			)
 		)
 	)
-	(footprint "tmr-lib:Switch_Cutout"
+	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
 		(uuid "0c0e5640-aaf6-47db-9458-8d1f0bff5ef9")
-		(at 95.1 87.25 -20)
+		(at 95.88 84.96 70)
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S63"
-			(at 0.1 -6.1 340)
+			(at 0.1 -6.1 70)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "50afa33d-350b-4412-809b-274f7268245d")
@@ -2307,7 +2307,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 340)
+			(at 0.1 8.5 70)
 			(layer "F.Fab")
 			(uuid "9f6c1415-7b74-4279-992e-fc9175745c52")
 			(effects
@@ -2318,7 +2318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 340)
+			(at 0 0 70)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f9185341-662e-4e73-bcfd-36af09b75dee")
@@ -2330,7 +2330,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 340)
+			(at 0 0 70)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a6f44594-cd2b-4c0b-a454-2f1b1c6918db")
@@ -2353,14 +2353,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -6.6 7)
-			(end 6.6 7)
+			(start -6.6 -7)
+			(end 6.6 -7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "27b9baac-a436-4441-a30e-4bf7a1db8e00")
+			(uuid "24f375c3-5814-43f7-b9ea-8439ad678bdb")
 		)
 		(fp_line
 			(start -7 -6.6)
@@ -2373,16 +2373,6 @@
 			(uuid "36431048-ed1e-47ed-af9d-c3cc3fc18b21")
 		)
 		(fp_line
-			(start -6.6 -7)
-			(end 6.6 -7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "24f375c3-5814-43f7-b9ea-8439ad678bdb")
-		)
-		(fp_line
 			(start 7 -6.6)
 			(end 7 6.6)
 			(stroke
@@ -2392,16 +2382,15 @@
 			(layer "Edge.Cuts")
 			(uuid "f6484d1a-18af-4bb8-8b07-8bfd59be9379")
 		)
-		(fp_arc
+		(fp_line
 			(start -6.6 7)
-			(mid -6.882843 6.882843)
-			(end -7 6.6)
+			(end 6.6 7)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9646b493-694d-4d1e-b3fb-db9f67300c5a")
+			(uuid "27b9baac-a436-4441-a30e-4bf7a1db8e00")
 		)
 		(fp_arc
 			(start -7 -6.6)
@@ -2415,6 +2404,28 @@
 			(uuid "1f8424b8-30fd-400b-86d6-a9f573281bb9")
 		)
 		(fp_arc
+			(start 6.6 -7)
+			(mid 6.882843 -6.882843)
+			(end 7 -6.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "023e54a1-d392-45ea-84d8-449fcce81cbd")
+		)
+		(fp_arc
+			(start -6.6 7)
+			(mid -6.882843 6.882843)
+			(end -7 6.6)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "9646b493-694d-4d1e-b3fb-db9f67300c5a")
+		)
+		(fp_arc
 			(start 7 6.6)
 			(mid 6.882843 6.882843)
 			(end 6.6 7)
@@ -2425,16 +2436,17 @@
 			(layer "Edge.Cuts")
 			(uuid "95a919b3-1131-4a74-8c8f-547847a49e90")
 		)
-		(fp_arc
-			(start 6.6 -7)
-			(mid 6.882843 -6.882843)
-			(end 7 -6.6)
+		(fp_poly
+			(pts
+				(xy -11.875 -9.5) (xy 11.875 -9.5) (xy 11.875 9.5) (xy -11.875 9.5)
+			)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
-			(layer "Edge.Cuts")
-			(uuid "023e54a1-d392-45ea-84d8-449fcce81cbd")
+			(fill no)
+			(layer "User.2")
+			(uuid "ca9a2940-292d-42d6-a740-72479215c192")
 		)
 		(fp_poly
 			(pts
@@ -2449,7 +2461,7 @@
 			(uuid "6de35207-00bc-4e97-8ad4-a83eb228c147")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.199999 340)
+			(at 0 -8.199999 70)
 			(layer "F.Fab")
 			(uuid "2dadf1b7-0d98-4648-9d3b-1df1ae7ffd81")
 			(effects
@@ -2460,18 +2472,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -6115,7 +6115,7 @@
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S62"
-			(at 0.1 -6.1 340)
+			(at 0.100001 -6.1 340)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "38068594-df1d-4d27-a2c9-d7419735b37a")
@@ -6296,13 +6296,13 @@
 	(footprint "tmr-lib:MountingHole_1.8mm_M1.6"
 		(layer "F.Cu")
 		(uuid "50caf39e-a0b4-4608-89d9-78592186d2a5")
-		(at 104.5 76)
+		(at 104.5 75)
 		(descr "Mounting Hole 2.2mm, no annular, M2")
 		(tags "mounting hole 2.2mm no annular m2")
 		(property "Reference" "Hs6"
 			(at 0 -3.2 0)
 			(layer "F.Fab")
-			(uuid "52b2836e-8299-4b8f-acaa-41b9453eeb8f")
+			(uuid "de5fe189-7fc2-4805-a7ab-d1a26f0c7b71")
 			(effects
 				(font
 					(size 1 1)
@@ -6313,7 +6313,7 @@
 		(property "Value" "MountingHole"
 			(at 0 3.2 0)
 			(layer "F.Fab")
-			(uuid "23063005-7c00-4560-ba64-029850829fc1")
+			(uuid "9d42e7e5-8722-4629-882d-023eb644d2e2")
 			(effects
 				(font
 					(size 1 1)
@@ -6325,7 +6325,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "77428acd-8a31-448e-a42a-22cc92026749")
+			(uuid "5309fd55-f73b-412a-8d6f-50a3e2e8a88c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6337,7 +6337,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cab33577-58a7-4d2f-b790-59fc8c2c53e7")
+			(uuid "cf66a09b-3d17-43f0-a863-27cf98fa8561")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11032,7 +11032,7 @@
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S30"
-			(at 0.1 -6.1 0)
+			(at 0.099999 -6.099999 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8b150a0f-d596-479e-bac1-b030021bca4e")
@@ -11044,7 +11044,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 0)
+			(at 0.099999 8.5 0)
 			(layer "F.Fab")
 			(uuid "d4ebe603-2c81-4028-a0bc-bdc9710c1cb8")
 			(effects
@@ -11090,7 +11090,7 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -7 -6.6)
+			(start -7 -6.600001)
 			(end -7 6.6)
 			(stroke
 				(width 0.12)
@@ -11100,17 +11100,7 @@
 			(uuid "d420b3ae-e278-4ab1-935a-d70a2902c6be")
 		)
 		(fp_line
-			(start -6.6 -7)
-			(end 6.6 -7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "Edge.Cuts")
-			(uuid "509b49b7-58a6-44fa-8025-2d8304fadb32")
-		)
-		(fp_line
-			(start -6.6 7)
+			(start -6.600001 7)
 			(end 6.6 7)
 			(stroke
 				(width 0.12)
@@ -11120,8 +11110,18 @@
 			(uuid "3cfa0178-9870-46fb-b59c-f3b2ea883035")
 		)
 		(fp_line
+			(start -6.6 -7)
+			(end 6.600001 -7)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "Edge.Cuts")
+			(uuid "509b49b7-58a6-44fa-8025-2d8304fadb32")
+		)
+		(fp_line
 			(start 7 -6.6)
-			(end 7 6.6)
+			(end 7 6.600001)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -11130,8 +11130,8 @@
 			(uuid "53f7334d-d55e-49a3-b5d5-49315ed2c7ce")
 		)
 		(fp_arc
-			(start -7 -6.6)
-			(mid -6.882843 -6.882843)
+			(start -7 -6.600001)
+			(mid -6.882844 -6.882843)
 			(end -6.6 -7)
 			(stroke
 				(width 0.12)
@@ -11141,8 +11141,8 @@
 			(uuid "065baa9b-b406-4482-9a95-8ad40f5ab916")
 		)
 		(fp_arc
-			(start -6.6 7)
-			(mid -6.882843 6.882843)
+			(start -6.600001 7)
+			(mid -6.882843 6.882844)
 			(end -7 6.6)
 			(stroke
 				(width 0.12)
@@ -11152,8 +11152,8 @@
 			(uuid "3ef5aaa1-54d4-4c32-931f-60358eff8d75")
 		)
 		(fp_arc
-			(start 6.6 -7)
-			(mid 6.882843 -6.882843)
+			(start 6.600001 -7)
+			(mid 6.882843 -6.882844)
 			(end 7 -6.6)
 			(stroke
 				(width 0.12)
@@ -11163,8 +11163,8 @@
 			(uuid "dff31365-6b1e-4513-b6ec-64a0bdc44159")
 		)
 		(fp_arc
-			(start 7 6.6)
-			(mid 6.882843 6.882843)
+			(start 7 6.600001)
+			(mid 6.882844 6.882843)
 			(end 6.6 7)
 			(stroke
 				(width 0.12)
@@ -11173,9 +11173,10 @@
 			(layer "Edge.Cuts")
 			(uuid "bdde650b-9b68-44a0-8059-dfc76fc1aa0e")
 		)
-		(fp_rect
-			(start 11.875 -9.5)
-			(end -11.875 9.5)
+		(fp_poly
+			(pts
+				(xy -11.875001 -9.5) (xy 11.875 -9.5) (xy 11.875001 9.5) (xy -11.875 9.5)
+			)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -11184,9 +11185,10 @@
 			(layer "User.2")
 			(uuid "b4f28959-b2a0-4e84-b59c-32c7ebb65966")
 		)
-		(fp_rect
-			(start 9.5 -9.5)
-			(end -9.5 9.5)
+		(fp_poly
+			(pts
+				(xy -9.499998 -9.500001) (xy 9.500001 -9.499998) (xy 9.499998 9.500001) (xy -9.500001 9.499998)
+			)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -11196,7 +11198,7 @@
 			(uuid "f2574c94-375f-4221-b7cb-f225e24c462b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.2 0)
+			(at -0.000001 -8.200001 0)
 			(layer "F.Fab")
 			(uuid "9253c3af-dbd0-4250-b949-320f03fa220a")
 			(effects
@@ -12080,7 +12082,7 @@
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "a32f1a97-146d-4162-ae0e-970946db5c64")
-		(at 242.25 38)
+		(at 244.625 38)
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S42"
@@ -15558,7 +15560,7 @@
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
 		(uuid "dd37a647-2d6a-4687-9023-d847063590ed")
-		(at 263.625 38)
+		(at 266 38)
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S43"
