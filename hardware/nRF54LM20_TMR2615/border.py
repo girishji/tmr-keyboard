@@ -407,12 +407,12 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     C2, C3 = 15, 6.5
     Q1 = E = VECTOR2I(mil(65.5) - reveal, mil(125) + reveal)
     angleQ = 38
-    Layer_save = LAYER
-    if proj != "wristrest":
-        LAYER = pcbnew.User_6
+    edge_cuts = (LAYER == pcbnew.Edge_Cuts)
+    if edge_cuts:
+        LAYER = pcbnew.User_3
     S = draw_bezier(*right(S, N), *left(E, mil(C2), angleQ))
-    if proj != "wristrest":
-        LAYER = Layer_save
+    if edge_cuts:
+        LAYER = pcbnew.Edge_Cuts
     E = T2 + VECTOR2I(-reveal, M)
     draw_bezier(*right(S, mil(C3), angleQ), *up(E, mil(C3)))
     draw_line(E, Start)
@@ -438,19 +438,19 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     S = draw_bezier(*up(S, N), *right(E, mil(C1)))
 
     E = S + VECTOR2I(-WRIST_right_X_extra, 0)
-    if proj != "wristrest":
-        LAYER = pcbnew.User_6
+    if edge_cuts:
+        LAYER = pcbnew.User_3
     S = draw_line(S, E)
-    if proj != "wristrest":
-        LAYER = Layer_save
+    if edge_cuts:
+        LAYER = pcbnew.Edge_Cuts
 
     # 20-deg tangential intermediate point
     Q2 = E = VECTOR2I(A.x + (A.x - Q1.x), Q1.y)
-    if proj != "wristrest":
-        LAYER = pcbnew.User_6
+    if edge_cuts:
+        LAYER = pcbnew.User_3
     S = draw_bezier(*left(S, N), *right(E, mil(C2), -angleQ))
-    if proj != "wristrest":
-        LAYER = Layer_save
+    if edge_cuts:
+        LAYER = pcbnew.Edge_Cuts
     E = T2 + VECTOR2I(reveal, M)
     draw_bezier(*left(S, mil(C3), -angleQ), *up(E, mil(C3)))
 
@@ -459,7 +459,7 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     return (P1, Q1, P2, Q2, angleQ)
 
 
-def draw_border_bezier(proj="", reveal=0):
+def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
     """Draw outer wall using Bezier curves."""
     # 'reveal': when two layers meet (one on top of another), they are never perfectly
     # flush because the human eye is good at spotting a 0.1mm misalignment. By
@@ -500,7 +500,7 @@ def draw_border_bezier(proj="", reveal=0):
     # draw usb cutout
     width_usb = mil(10.6)
     usb_start = mil(1.9)
-    if proj == "swplate":
+    if usb_cutout:
         usb_depth = mil(9)
         E = S + VECTOR2I(usb_start, 0)
         S = draw_line(S, E)
@@ -509,7 +509,6 @@ def draw_border_bezier(proj="", reveal=0):
         E = E + VECTOR2I(0, -usb_depth + reveal)
         S = draw_line_arc(right(S), down(E), fillet_radius_half)
         S = draw_line(S, E)
-
     else:
         E = S + VECTOR2I(usb_start + width_usb, 0)
         S = draw_line(S, E)
@@ -635,7 +634,7 @@ def draw_border_bezier(proj="", reveal=0):
     S = draw_bezier(*left(S, mil(C7), angle), *up(E, mil(C8), angle2))
 
     # cutout for wires
-    if proj == "botcase":
+    if wire_cutout:
         def wire_cutout(S):
             W, L = mil(2), mil(33)
             E = S + VECTOR2I(W, 0)
@@ -956,7 +955,8 @@ def draw_hexagon_mesh():
 def remove_border():
     board = pcbnew.GetBoard()
     for t in board.GetDrawings():
-        if t.GetLayer() in [pcbnew.User_4, pcbnew.User_5, pcbnew.User_6, pcbnew.Edge_Cuts]:
+        if t.GetLayer() in [pcbnew.User_4, pcbnew.User_5, pcbnew.User_6, \
+                            pcbnew.User_7, pcbnew.User_8, pcbnew.Edge_Cuts]:
             board.Delete(t)
 
 
@@ -1004,13 +1004,15 @@ def main():
     elif projname() == "swplate":
         draw_border_bezier(projname(), reveal=mil(0.2))
         draw_wrist_cavity()
-        LAYER = pcbnew.User_6
-        draw_border_bezier(projname())
-        draw_border(projname(), offset=GAP)
+        LAYER = pcbnew.User_4
+        draw_border(projname(), offset=SIDE_WALL)
         draw_wrist()
         LAYER = pcbnew.User_5
-        draw_border(projname(), offset=SIDE_WALL)
-        LAYER = pcbnew.User_4
+        draw_border_bezier(projname(), reveal=0, usb_cutout=False, wire_cutout=True)
+        draw_wrist_cavity()
+        LAYER = pcbnew.User_6
+        draw_border(projname(), offset=GAP)
+        LAYER = pcbnew.User_7
         draw_border(projname(), offset=GAP, cutout=True)
         draw_cutout_plate()
     elif projname() == "topcase":
