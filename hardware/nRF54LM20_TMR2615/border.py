@@ -217,6 +217,12 @@ def draw_cutout_plate():
     S = switches[64].GetPosition() + rotate(VECTOR2I(int(half * 1.75), -half - GAP), angle)
     R = draw_line_arc(up(R, angle), right(S, angle))
 
+    S = switches[63].GetPosition() + rotate(VECTOR2I(int(half * 1.25) + GAP, 0), angle)
+    R = draw_line_arc(left(R, angle), down(S, angle))
+
+    S = switches[63].GetPosition() + rotate(VECTOR2I(half, -half-GAP), angle)
+    R = draw_line_arc(up(R, angle), right(S, angle))
+
     angle2 = -switches[62].GetOrientationDegrees()
     S = switches[62].GetPosition() + rotate(VECTOR2I(0, -half - GAP), angle2)
     R = draw_line_arc(left(R, angle), right(S, angle2))
@@ -646,7 +652,7 @@ def draw_border_bezier(proj="", reveal=0):
         wire_cutout(S)
 
 
-def draw_border(proj, offset=0):
+def draw_border(proj, offset=0, cutout=False):
     """Draw border."""
     global LAYER
 
@@ -659,18 +665,20 @@ def draw_border(proj, offset=0):
     R = switches[65].GetPosition() + VECTOR2I(0, half+offset)
     if ispcb:
         angle = -switches[64].GetOrientationDegrees()
-        S = switches[64].GetPosition() + rotate(VECTOR2I(half, 0), angle)
-        R = draw_line_arc(left(R), up(S, angle))
+        S = switches[64].GetPosition() + rotate(VECTOR2I(0, half), angle)
+        R = draw_line_arc(left(R), right(S, angle))
 
-        S = switches[64].GetPosition() + rotate(VECTOR2I(0, half-mil(0.65)), angle)
-        R = draw_line_arc(down(R, angle), right(S, angle))
+        S = switches[64].GetPosition() + rotate(VECTOR2I(-half+mil(0.65), 0), angle)
+        R = draw_line_arc(left(R, angle), down(S, angle))
 
-        S = switches[64].GetPosition() + rotate(VECTOR2I(-half-mil(0.4), half), angle)
-        R = draw_line_arc(left(R, angle), up(S, angle), fillet_radius_half)
+        S = switches[64].GetPosition() + rotate(VECTOR2I(-half, -half-mil(0.4)), angle)
+        R = draw_line_arc(up(R, angle), left(S, angle), fillet_radius_half)
 
         angle2 = -switches[63].GetOrientationDegrees()
-        S = switches[63].GetPosition() + rotate(VECTOR2I(half-mil(0.4), half-mil(0.5)), angle2)
+        S = switches[63].GetPosition() + rotate(VECTOR2I(-int(half * 5/4)+mil(0.5), half-mil(0.4)), angle2)
         R = draw_line(R, S)
+
+        angle2 = -switches[62].GetOrientationDegrees()
     else:
         angle = -switches[64].GetOrientationDegrees()
         S = switches[64].GetPosition() + rotate(VECTOR2I(0, half+offset), angle)
@@ -682,13 +690,13 @@ def draw_border(proj, offset=0):
         S = switches[64].GetPosition() + rotate(VECTOR2I(0, -half-offset), angle)
         R = draw_line_arc(up(R, angle), left(S, angle))
 
-        angle2 = -switches[63].GetOrientationDegrees()
-        S = switches[63].GetPosition() + rotate(VECTOR2I(0, half+offset), angle2)
+        angle2 = -switches[62].GetOrientationDegrees()
+        S = switches[62].GetPosition() + rotate(VECTOR2I(0, half+offset), angle2)
         R = draw_line_arc(right(R, angle), right(S, angle2))
 
     angle = angle2
 
-    if proj == "topcase" and offset == GAP:
+    if cutout and offset == GAP:
         S = switches[62].GetPosition() + rotate(VECTOR2I(0, half + GAP), angle2)
         draw_line(R, S)
         R = switches[61].GetPosition() + VECTOR2I(0, half+offset)
@@ -756,14 +764,14 @@ def draw_border(proj, offset=0):
     R = switches[65].GetPosition() + VECTOR2I(0, half+offset)
     if ispcb:
         angle = -switches[66].GetOrientationDegrees()
-        S = switches[66].GetPosition() + rotate(VECTOR2I(-half, 0), angle)
-        R = draw_line_arc(right(R), up(S, angle))
+        S = switches[66].GetPosition() + rotate(VECTOR2I(0, half), angle)
+        R = draw_line_arc(right(R), left(S, angle))
 
-        S = switches[66].GetPosition() + rotate(VECTOR2I(0, half-mil(0.65)), angle)
-        R = draw_line_arc(down(R, angle), left(S, angle))
+        S = switches[66].GetPosition() + rotate(VECTOR2I(half-mil(0.65), 0), angle)
+        R = draw_line_arc(right(R, angle), down(S, angle))
 
-        S = switches[66].GetPosition() + rotate(VECTOR2I(half+mil(0.4), half), angle)
-        R = draw_line_arc(right(R, angle), up(S, angle), fillet_radius_half)
+        S = switches[66].GetPosition() + rotate(VECTOR2I(half, -half-mil(0.4)), angle)
+        R = draw_line_arc(up(R, angle), left(S, angle), fillet_radius_half)
 
         angle2 = -switches[67].GetOrientationDegrees()
         S = switches[67].GetPosition() + rotate(VECTOR2I(-half+mil(0.4), half - mil(0.5)), angle2)
@@ -786,11 +794,11 @@ def draw_border(proj, offset=0):
 
     angle = angle2
 
-    if proj == "topcase" and offset == GAP:
+    if cutout and offset == GAP:
         S = switches[68].GetPosition() + rotate(VECTOR2I(0, half + GAP), angle2)
         draw_line(R, S)
         R = switches[69].GetPosition() + VECTOR2I(0, half+offset)
-        S = switches[70].GetPosition() + VECTOR2I(0, half+offset)
+        S = switches[72].GetPosition() + VECTOR2I(0, half+offset)
         R = draw_line(R, S)
     else:
         S = switches[72].GetPosition() + VECTOR2I(0, half+offset)
@@ -948,7 +956,7 @@ def draw_hexagon_mesh():
 def remove_border():
     board = pcbnew.GetBoard()
     for t in board.GetDrawings():
-        if t.GetLayer() in [pcbnew.User_5, pcbnew.User_6, pcbnew.Edge_Cuts]:
+        if t.GetLayer() in [pcbnew.User_4, pcbnew.User_5, pcbnew.User_6, pcbnew.Edge_Cuts]:
             board.Delete(t)
 
 
@@ -999,10 +1007,14 @@ def main():
         LAYER = pcbnew.User_6
         draw_border_bezier(projname())
         draw_border(projname(), offset=GAP)
-        draw_border(projname(), offset=SIDE_WALL)
         draw_wrist()
+        LAYER = pcbnew.User_5
+        draw_border(projname(), offset=SIDE_WALL)
+        LAYER = pcbnew.User_4
+        draw_border(projname(), offset=GAP, cutout=True)
+        draw_cutout_plate()
     elif projname() == "topcase":
-        draw_border(projname(), offset=GAP)
+        draw_border(projname(), offset=GAP, cutout=True)
         draw_border_bezier(projname())
         draw_wrist_cavity()
         draw_cutout_plate()

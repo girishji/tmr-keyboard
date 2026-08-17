@@ -32,10 +32,8 @@ HOLES_Hs = [
     (KEY_SPACING * 14.5, KEY_SPACING * 0.45),
     (KEY_SPACING * 1.125, KEY_SPACING * 4 - 15),
     (KEY_SPACING * 7.25, KEY_SPACING * 2.47),
-    # (KEY_SPACING * 4.545, KEY_SPACING * 4.4),
-    # (KEY_SPACING * 9.955, KEY_SPACING * 4.4),
-    (KEY_SPACING * 5.5, 75),
-    (KEY_SPACING * 9, KEY_SPACING * 4),
+    (104, 70.5),
+    (174, 72),
     (KEY_SPACING * 5, KEY_SPACING * 1.47),
     (KEY_SPACING * 11, KEY_SPACING * 1.47),
     (KEY_SPACING * 14 + 2.35, KEY_SPACING * 3),
@@ -267,23 +265,19 @@ def place_switches_and_stabs(is_pcb):
     if switches[62]: switches[62].SetOrientationDegrees(-angle)
     if switches[63]: switches[63].SetOrientationDegrees(-angle + 90)
 
-    # Complex Logic for Switch 64 & Stab 1
     if is_pcb:
-        if switches[64]: switches[64].SetOrientationDegrees(-angle)
         if stabs[1]:
             set_position_mm(stabs[1], *positions[64])
             stabs[1].SetOrientationDegrees(-angle + 90)
-    else:
-        if switches[64]: switches[64].SetOrientationDegrees(-angle + 90)
 
-    # Complex Logic for Switch 66 & Stab 2
+    if switches[64]: switches[64].SetOrientationDegrees(-angle + 90)
+
     if is_pcb:
-        if switches[66]: switches[66].SetOrientationDegrees(angle)
         if stabs[2]:
             set_position_mm(stabs[2], *positions[66])
             stabs[2].SetOrientationDegrees(angle - 90)
-    else:
-        if switches[66]: switches[66].SetOrientationDegrees(angle - 90)
+
+    if switches[66]: switches[66].SetOrientationDegrees(angle - 90)
 
     if switches[67]: switches[67].SetOrientationDegrees(angle)
     if switches[68]: switches[68].SetOrientationDegrees(angle)
