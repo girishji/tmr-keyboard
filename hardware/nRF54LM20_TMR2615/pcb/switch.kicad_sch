@@ -726,7 +726,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09bef3d7-da84-416c-97b0-50b86ac1d2ba")
-		(property "Reference" "Cvout1"
+		(property "Reference" "Cvout2"
 			(at 143.51 68.5862 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1093,7 +1093,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14603c89-9ee4-4aa3-a866-f53fb7c85886")
-		(property "Reference" "TMR1"
+		(property "Reference" "TMR2"
 			(at 123.19 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1466,7 +1466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1eb14936-2d00-4618-bae5-22590934bd36")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR056"
 			(at 127 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -1828,7 +1828,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "214ade24-d69b-4c25-a049-d87a971098cf")
-		(property "Reference" "Cvcc1"
+		(property "Reference" "Cvcc2"
 			(at 114.3 58.4262 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2194,7 +2194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2eddb291-4868-46d7-91e8-df37a7850eee")
-		(property "Reference" "S1"
+		(property "Reference" "S2"
 			(at 104.14 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)

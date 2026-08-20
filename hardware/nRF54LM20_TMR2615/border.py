@@ -368,7 +368,7 @@ def draw_bezier(start_pt, controll, end_pt, control2):
     bezier_shape.SetWidth(mil(0.1))
     board.Add(bezier_shape)
 
-    Bezier_Curves.append([start_pt, controll, control2, end_pt])
+    Bezier_Curves.append((start_pt, controll, control2, end_pt))
     return end_pt
 
 
