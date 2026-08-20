@@ -1,0 +1,44 @@
+{
+  "$schema": "https://go.kicad.org/api/schemas/v1",
+  "identifier": "com.example.kicad-version",
+  "name": "KiCad Version",
+  "description": "Place footprints and draw border",
+  "runtime": {
+    "type": "python",
+    "min_version": "3.9"
+  },
+  "actions": [
+    {
+      "identifier": "place-footprints",
+      "name": "Place footprints",
+      "description": "Place footprints",
+      "show-button": true,
+      "scopes": [
+        "pcb"
+      ],
+      "entrypoint": "placefp.py",
+      "icons-light": [
+         "icon1.png"
+      ],
+      "icons-dark": [
+         "icon1.png"
+      ]
+    },
+    {
+      "identifier": "draw-border",
+      "name": "Draw border",
+      "description": "Draw border",
+      "show-button": true,
+      "scopes": [
+        "pcb"
+      ],
+      "entrypoint": "border.py",
+      "icons-light": [
+         "icon2.png"
+      ],
+      "icons-dark": [
+         "icon2.png"
+      ]
+    }
+  ]
+}

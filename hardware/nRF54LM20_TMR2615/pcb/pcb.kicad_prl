@@ -17,17 +17,17 @@
     },
     "prototype_zone_fills": false,
     "selection_filter": {
-      "dimensions": true,
+      "dimensions": false,
       "footprints": true,
       "graphics": true,
-      "keepouts": true,
+      "keepouts": false,
       "lockedItems": false,
       "otherItems": true,
-      "pads": true,
+      "pads": false,
       "text": true,
-      "tracks": true,
-      "vias": true,
-      "zones": true
+      "tracks": false,
+      "vias": false,
+      "zones": false
     },
     "visible_items": [
       "vias",
