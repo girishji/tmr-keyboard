@@ -78,7 +78,7 @@ BOTTOM_SUPPORT_HOLES = [
 
 # XXX: Keep synchronized with border.py if that file uses the same geometry.
 WRIST_X_OFFSET_MM = 64
-WRIST_Y_OFFSET_MM = 28 + 2  # XXX: Used to be 28
+WRIST_Y_OFFSET_MM = 30  # XXX: Used to be 28
 WRIST_X_LENGTH_MM = 88
 WRIST_Y_LENGTH_MM = 65
 WRIST_RIGHT_X_EXTRA_MM = 5

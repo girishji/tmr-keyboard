@@ -9,7 +9,7 @@
   },
   "actions": [
     {
-      "identifier": "place-footprints",
+      "identifier": "1-place-footprints",
       "name": "Place footprints",
       "description": "Place footprints",
       "show-button": true,
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "identifier": "draw-border",
+      "identifier": "2-draw-border",
       "name": "Draw border",
       "description": "Draw border",
       "show-button": true,

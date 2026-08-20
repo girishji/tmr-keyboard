@@ -986,7 +986,7 @@ def save_bezier_curves():
         with open(file_path, "w", newline="") as f:
             writer = csv.writer(f)
             for s, c1, c2, e in Bezier_Curves:
-                writer.writerow([s.x, s.y, c1.x, c2.y, c2.x, c2.y, e.x, e.y])
+                writer.writerow([s.x, s.y, c1.x, c1.y, c2.x, c2.y, e.x, e.y])
         print(f"Successfully saved {len(Bezier_Curves)} curves to {file_path}")
     except IOError as e:
         print(f"Error saving file at {file_path}: {e}")
