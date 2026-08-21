@@ -4250,180 +4250,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_DIP_x01"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_DIP_x01"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "dip switch"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SW?DIP?x1*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_DIP_x01_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0.127) (xy 2.3622 1.1684)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_DIP_x01_0_1"
-				(rectangle
-					(start -3.81 2.54)
-					(end 3.81 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "SW_DIP_x01_1_1"
-				(pin passive line
-					(at -7.62 0 0)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "USB_TYPE_C_Receptacle_16P_1"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -9046,6 +8872,237 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "tmr-lib:SW_CK_PTS530"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_CK_PTS530"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "tmr-lib:SW_CK_PTS530_4.5x4.5x0.55mm"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/C221860.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=Q1daXwEEQlBfBAVTFVcKAVBSEQILUgdQRgMIBlRRFFQxVlNeQFJdVlRRQlJaUjtW"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "PTS 530 Series Ultra Low Profile SMT Top Actuated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SW*MEC*5G*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_CK_PTS530_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 2.54) (xy -2.286 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 3.81) (xy 2.286 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.778 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.778 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 2.54) (xy 2.286 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "tmr-lib:TMR_switch_stab_2.0u"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -9298,6 +9355,12 @@
 		(uuid "08a55faf-2520-4240-857f-47a85d958ae2")
 	)
 	(junction
+		(at 402.59 303.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09a7a87e-6cfd-4100-8289-92c5168cc985")
+	)
+	(junction
 		(at 123.19 364.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9476,6 +9539,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30ce1431-74f5-4d61-9fbf-567c32ea2691")
+	)
+	(junction
+		(at 494.03 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "319d203a-ea34-4831-8170-89f08a612001")
 	)
 	(junction
 		(at 132.08 373.38)
@@ -9898,6 +9967,12 @@
 		(uuid "a8cb9501-f02d-4b1a-8a59-e21a698b6a14")
 	)
 	(junction
+		(at 389.89 306.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a930f526-db41-4677-a6d7-1576d0f50332")
+	)
+	(junction
 		(at 140.97 346.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10112,6 +10187,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d7d3bf85-9be9-48ee-9c61-3392d1443f59")
+	)
+	(junction
+		(at 504.19 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d905dd80-45dd-4a5f-97eb-d489d3f7d88f")
 	)
 	(junction
 		(at 66.04 375.92)
@@ -10498,6 +10579,16 @@
 			(type default)
 		)
 		(uuid "00d7775e-a0cd-48d8-a327-b1d4616ab589")
+	)
+	(wire
+		(pts
+			(xy 504.19 113.03) (xy 510.54 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00ff84ec-73d3-476d-89ae-9180e7c720d7")
 	)
 	(wire
 		(pts
@@ -11198,6 +11289,16 @@
 			(type default)
 		)
 		(uuid "1dc3c807-e54c-485a-9324-27bcbe49dc08")
+	)
+	(wire
+		(pts
+			(xy 402.59 303.53) (xy 405.13 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dd9eddc-9a39-4dea-9a7c-9990f2690539")
 	)
 	(wire
 		(pts
@@ -12068,6 +12169,16 @@
 			(type default)
 		)
 		(uuid "453fbcd1-bf2d-486d-b2a2-9c847430fbe7")
+	)
+	(wire
+		(pts
+			(xy 504.19 113.03) (xy 504.19 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45dd0d99-697e-42eb-85e6-213ff7e991de")
 	)
 	(wire
 		(pts
@@ -13311,16 +13422,6 @@
 	)
 	(wire
 		(pts
-			(xy 506.73 113.03) (xy 510.54 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7aae8d8c-86ed-4e04-a917-fc3e140ae7ab")
-	)
-	(wire
-		(pts
 			(xy 426.72 233.68) (xy 426.72 232.41)
 		)
 		(stroke
@@ -13561,7 +13662,7 @@
 	)
 	(wire
 		(pts
-			(xy 389.89 303.53) (xy 389.89 308.61)
+			(xy 389.89 303.53) (xy 389.89 306.07)
 		)
 		(stroke
 			(width 0)
@@ -13978,6 +14079,16 @@
 			(type default)
 		)
 		(uuid "98f08b6c-22ca-466f-82b4-122b62b5aa02")
+	)
+	(wire
+		(pts
+			(xy 402.59 303.53) (xy 402.59 306.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ee95d6-387b-4e1e-9179-fb5748d6f00f")
 	)
 	(wire
 		(pts
@@ -14441,6 +14552,16 @@
 	)
 	(wire
 		(pts
+			(xy 389.89 306.07) (xy 389.89 308.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afdd2599-7dbb-4b16-a712-de1c247f2b28")
+	)
+	(wire
+		(pts
 			(xy 405.13 295.91) (xy 372.11 295.91)
 		)
 		(stroke
@@ -14551,7 +14672,7 @@
 	)
 	(wire
 		(pts
-			(xy 491.49 113.03) (xy 488.95 113.03)
+			(xy 488.95 113.03) (xy 494.03 113.03)
 		)
 		(stroke
 			(width 0)
@@ -15011,6 +15132,16 @@
 	)
 	(wire
 		(pts
+			(xy 494.03 113.03) (xy 494.03 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c73ea368-3b85-4af7-ad35-b00ea850eeac")
+	)
+	(wire
+		(pts
 			(xy 162.56 55.88) (xy 162.56 58.42)
 		)
 		(stroke
@@ -15098,6 +15229,16 @@
 			(type default)
 		)
 		(uuid "caed5d12-bad3-4d43-9eff-b0ce1645b2b2")
+	)
+	(wire
+		(pts
+			(xy 389.89 306.07) (xy 392.43 306.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb32cd40-b6c8-4793-8966-66a808276d08")
 	)
 	(wire
 		(pts
@@ -15678,6 +15819,16 @@
 			(type default)
 		)
 		(uuid "e7549d19-ee8f-4480-ae60-6878a781223f")
+	)
+	(wire
+		(pts
+			(xy 389.89 303.53) (xy 392.43 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e792a595-0ed4-47c5-a7c9-41e8414c6005")
 	)
 	(wire
 		(pts
@@ -22507,6 +22658,92 @@
 		)
 	)
 	(symbol
+		(lib_id "tmr-lib:SW_CK_PTS530")
+		(at 499.11 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37f49303-b19a-4d81-9216-1bd4b1daf58d")
+		(property "Reference" "SW1"
+			(at 499.11 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_CK_PTS530"
+			(at 499.11 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "tmr-lib:SW_CK_PTS530_4.5x4.5x0.55mm"
+			(at 499.11 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C221860.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=Q1daXwEEQlBfBAVTFVcKAVBSEQILUgdQRgMIBlRRFFQxVlNeQFJdVlRRQlJaUjtW"
+			(at 499.11 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTS 530 Series Ultra Low Profile SMT Top Actuated"
+			(at 499.11 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4f8cd3d-6a4d-4971-9e29-da747ce9f1f1")
+		)
+		(pin "2"
+			(uuid "4131f936-eae8-49b3-ac5f-6506132a7989")
+		)
+		(pin "4"
+			(uuid "cbba921c-93a0-482e-9f06-cef042791cf5")
+		)
+		(pin "3"
+			(uuid "b789f30b-54b3-468b-829a-edfb3add7a87")
+		)
+		(instances
+			(project "pcb"
+				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 389.89 308.61 0)
 		(unit 1)
@@ -22670,85 +22907,6 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "D46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 397.51 303.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "39ffcd50-d59b-4153-b7e7-c6d07036aec6")
-		(property "Reference" "SW2"
-			(at 397.764 299.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DIP_x01"
-			(at 398.018 307.848 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:Aliexpress_SW_TACT_4x4x1.5mm"
-			(at 397.51 303.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 397.51 303.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 397.51 303.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f6d76e1b-f2c3-482e-b10f-a6a276175da3")
-		)
-		(pin "2"
-			(uuid "55d86174-0538-46f7-8a3c-fe4d32894935")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -31772,6 +31930,91 @@
 		)
 	)
 	(symbol
+		(lib_id "tmr-lib:SW_CK_PTS530")
+		(at 397.51 306.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba66f300-1762-4912-9eef-f3c575d6a769")
+		(property "Reference" "SW2"
+			(at 397.51 299.466 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_CK_PTS530"
+			(at 398.272 308.356 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "tmr-lib:SW_CK_PTS530_4.5x4.5x0.55mm"
+			(at 397.51 298.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C221860.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=Q1daXwEEQlBfBAVTFVcKAVBSEQILUgdQRgMIBlRRFFQxVlNeQFJdVlRRQlJaUjtW"
+			(at 397.51 298.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PTS 530 Series Ultra Low Profile SMT Top Actuated"
+			(at 397.51 306.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "afe547ad-fbf7-4379-92dc-452b7802d871")
+		)
+		(pin "1"
+			(uuid "43a30078-752a-499b-9d5e-b85a3192c581")
+		)
+		(pin "2"
+			(uuid "9f05a6b5-4070-4031-8687-800e012c7b29")
+		)
+		(pin "3"
+			(uuid "3097c0c5-cd3c-4538-bd8f-9874337381ac")
+		)
+		(instances
+			(project "pcb"
+				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_Small_Filled")
 		(at 36.83 389.89 180)
 		(unit 1)
@@ -32163,85 +32406,6 @@
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
 					(reference "MUXA2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_DIP_x01")
-		(at 499.11 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c0f3696c-aad4-401e-a397-e68246c9b471")
-		(property "Reference" "SW1"
-			(at 499.364 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_DIP_x01"
-			(at 499.618 117.348 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "tmr-lib:Aliexpress_SW_TACT_4x4x1.5mm"
-			(at 499.11 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 499.11 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
-			(at 499.11 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "130600aa-7414-47f9-854a-7648b94fe037")
-		)
-		(pin "2"
-			(uuid "a1618b87-66b2-4cdb-a9bb-2756fa4befff")
-		)
-		(instances
-			(project "pcb"
-				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
-					(reference "SW1")
 					(unit 1)
 				)
 			)

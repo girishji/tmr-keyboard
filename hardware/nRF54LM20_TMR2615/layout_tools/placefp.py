@@ -85,7 +85,7 @@ WRIST_RIGHT_X_EXTRA_MM = 5
 
 # (reference, x_mm, y_mm, orientation_degrees, flip_to_back_if_on_front)
 COMPONENTS = [
-    ("M1", 167.59, 3.2, 180, True),  # MCU module
+    ("M1", 167.59, 4.2, 180, True),  # MCU module
     ("MUXA1", 154.7, 13.75, 180, True),
     ("MUXA2", 166.75, 9.5, 0, True),
     ("MUXB1", 122.5, 4.5, 180, True),
@@ -99,11 +99,11 @@ COMPONENTS = [
     ("LEDDR1", 139.5, 32.0, 180, True),
     ("PMIC1", KEY_SPACING_MM * 1.875 - 1, KEY_SPACING_MM, 180, True),
     ("Jusb1", 19.5, -13.7, 180, False),  # USB receptacle
-    ("SW1", 199.4, -3.52, 90, True),
+    ("SW1", 199.4, -2.52, 90, True),
     ("SW2", 14.11, 26.33, -90, True),
-    ("JTAG1", 180.5, -4.5, -90, True),
-    ("BAT1", 23 - KEY_SPACING_MM / 4, 80, 0, False),
-    ("BAT2", 234, 80, 0, False),
+    ("JTAG1", 180.5, -3.5, -90, True),
+    ("BAT1", 23 - KEY_SPACING_MM / 4, 79, 0, False),
+    ("BAT2", 234, 79, 0, False),
 ]
 
 # Components placed relative to each switch:
@@ -222,20 +222,49 @@ class Placement:
 
         commit = self.board.begin_commit()
 
-        if self.changed:
-            self.board.update_items(list(self.changed.values()))
+        try:
+            if self.changed:
+                self.board.update_items(list(self.changed.values()))
 
-        # A true footprint flip must use Board.flip_items().  Merely assigning
-        # footprint.layer does not mirror pads, graphics, text, etc.
-        to_flip = [
-            self.footprints[ref]
-            for ref in self.flip_to_back
-            if ref in self.footprints
-        ]
-        if to_flip:
-            self.board.flip_items(to_flip)
+            # KiCad 10's IPC API has no footprint-flip operation. Assigning
+            # FootprintInstance.layer is not a valid substitute because it
+            # does not correctly mirror all footprint children. Newer API
+            # versions provide Board.flip_items(), so use it when available
+            # and fall back to a manual native flip on KiCad 10.
+            to_flip = [
+                self.footprints[ref]
+                for ref in self.flip_to_back
+                if ref in self.footprints
+            ]
 
-        self.board.push_commit(commit, "Place keyboard footprints")
+            manual_flip = []
+            if to_flip:
+                flip_items = getattr(self.board, "flip_items", None)
+                if flip_items is not None:
+                    flip_items(to_flip)
+                else:
+                    manual_flip = to_flip
+
+            self.board.push_commit(commit, "Place keyboard footprints")
+
+        except Exception:
+            self.board.drop_commit(commit)
+            raise
+
+        if manual_flip:
+            # Select only the still-front-side footprints. Pressing F once in
+            # PCB Editor performs KiCad's native, complete footprint flip.
+            self.board.clear_selection()
+            self.board.add_to_selection(manual_flip)
+            refs = ", ".join(
+                sorted(fp.reference_field.text.value for fp in manual_flip)
+            )
+            print(
+                "KiCad 10 placed the footprints but its IPC API cannot flip "
+                "them. The required footprints are selected in PCB Editor. "
+                f"Press F once to flip them to B.Cu: {refs}",
+                flush=True,
+            )
 
 
 # =============================================================================

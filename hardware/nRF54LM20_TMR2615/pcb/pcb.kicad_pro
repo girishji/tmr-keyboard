@@ -689,10 +689,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "./jlcpcb/",
+      "plot": "~/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "pcb.step",
+      "step": "../../../../../pcb.step",
       "svg": "",
       "vrml": ""
     },
@@ -848,7 +848,7 @@
         "uuid": "672ae9a0-2ac9-4023-9977-e9626ff99f32"
       }
     ],
-    "used_designators": "#FLG1,Rvset1-2,JTAG1,JLC1,PMIC1,M1,LEDDR1,S1-72,L1-2,Cvcc1-72,R1-5,Jusb1-3,Stb1-2,Cvout1-72,MUXA1-2,#PWR1-126,D1-72,BAT1-2,Hs1-10,TMR1-72,MUXB1-9,C1-26,SW1-2,U1",
+    "used_designators": "#FLG1,Rvset1-2,JTAG1,JLC1,PMIC1,M1,LEDDR1,S1-72,L1-2,Cvcc1-72,R1-5,Jusb1-3,Stb1-2,Cvout1-72,MUXA1-2,#PWR1-126,D1-72,BAT1-2,Hs1-10,TMR1-72,MUXB1-9,C1-26,SW1-4,U1",
     "variants": []
   },
   "sheets": [

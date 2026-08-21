@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(general
-		(thickness 1.2)
+		(thickness 1.29)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -56,7 +56,7 @@
 			(layer "dielectric 1"
 				(type "core")
 				(color "Aluminum")
-				(thickness 1.11)
+				(thickness 1.2)
 				(material "Al")
 				(epsilon_r 8.7)
 				(loss_tangent 0.001)
@@ -94,6 +94,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
