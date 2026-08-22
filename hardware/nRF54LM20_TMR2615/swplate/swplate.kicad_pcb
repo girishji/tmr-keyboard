@@ -94,7 +94,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -188,12 +187,6 @@
 		(path "/30d61618-5c7c-429f-a9f5-942845e9f921")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -371,12 +364,6 @@
 		(path "/128846b0-e413-4c01-89fa-f7aa07d7d96d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -477,12 +464,6 @@
 		(path "/46d4dd50-a735-42c5-9126-3d36cd8fc066")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -592,18 +573,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
@@ -661,12 +630,6 @@
 		(path "/d6261ec1-1e78-42d6-9fe8-2b3141d9f168")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -718,7 +681,7 @@
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S64"
-			(at 0.1 -6.1 70)
+			(at 0.099998 -6.099998 70)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3e1d5b69-4916-4536-9676-cd6bf20c4119")
@@ -730,7 +693,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 70)
+			(at 0.1 8.499999 70)
 			(layer "F.Fab")
 			(uuid "5f41d9b3-3055-40cb-b7cc-fc96623f8e18")
 			(effects
@@ -767,17 +730,11 @@
 		(path "/151546c7-68e3-4ce7-afae-71a19eef9663")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -12.45 -8.3)
-			(end -11.55 -8.299999)
+			(start -12.449999 -8.3)
+			(end -11.549999 -8.299998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -787,7 +744,7 @@
 		)
 		(fp_line
 			(start -12.85 -7.9)
-			(end -12.85 -6.77)
+			(end -12.849999 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -796,8 +753,8 @@
 			(uuid "aac9e7b4-ef61-4706-89c4-609c4a471bd0")
 		)
 		(fp_line
-			(start -11.15 -7.899999)
-			(end -11.15 -6.77)
+			(start -11.149999 -7.899998)
+			(end -11.149999 -6.77)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -806,8 +763,8 @@
 			(uuid "3a70f9e7-d59a-4031-94c6-dce83cbd8307")
 		)
 		(fp_line
-			(start -15 -6.37)
-			(end -15 5.330001)
+			(start -14.999998 -6.369998)
+			(end -14.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -816,8 +773,8 @@
 			(uuid "b9155685-6afc-4dc5-8705-eb8654af6e81")
 		)
 		(fp_line
-			(start -12.85 -6.77)
-			(end -14.6 -6.77)
+			(start -12.849999 -6.769999)
+			(end -14.6 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -826,8 +783,8 @@
 			(uuid "b36b8a99-0541-466a-8c6b-fa1274737254")
 		)
 		(fp_line
-			(start -9.4 -6.77)
-			(end -11.15 -6.77)
+			(start -9.399998 -6.769999)
+			(end -11.149999 -6.77)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -836,8 +793,8 @@
 			(uuid "72de6a1b-1d1a-4312-9bc5-278d897d2962")
 		)
 		(fp_line
-			(start -9 -6.37)
-			(end -9 -2.3)
+			(start -8.999998 -6.369999)
+			(end -8.999998 -2.299999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -846,8 +803,8 @@
 			(uuid "0a780855-743b-4fa8-a2ad-2045987ad96d")
 		)
 		(fp_line
-			(start -6.6 -7)
-			(end 6.6 -7)
+			(start -6.599998 -6.999999)
+			(end 6.599999 -6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -856,8 +813,8 @@
 			(uuid "aebe97e4-d765-4507-8756-e8e0b1ddb952")
 		)
 		(fp_line
-			(start -7 -6.6)
-			(end -7 -2.3)
+			(start -6.999998 -6.599999)
+			(end -6.999998 -2.299998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -866,8 +823,8 @@
 			(uuid "79ed5bcd-54c5-4b84-abff-2131b4417d7e")
 		)
 		(fp_line
-			(start -7 -2.3)
-			(end -9 -2.3)
+			(start -6.999998 -2.299998)
+			(end -8.999998 -2.299999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -876,8 +833,8 @@
 			(uuid "fe2a9915-2106-4d88-b70b-e969b6e6b0b0")
 		)
 		(fp_line
-			(start 11.55 -8.3)
-			(end 12.45 -8.3)
+			(start 11.549999 -8.299999)
+			(end 12.449999 -8.299999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -886,8 +843,8 @@
 			(uuid "f59ddf3d-b48b-446b-a8a9-31f78f243bc8")
 		)
 		(fp_line
-			(start 7 -6.6)
-			(end 7 -2.3)
+			(start 6.999999 -6.599998)
+			(end 6.999999 -2.300001)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -896,8 +853,8 @@
 			(uuid "c1e3d397-4e98-4e0b-8ccc-b4688d523571")
 		)
 		(fp_line
-			(start 11.15 -7.9)
-			(end 11.15 -6.77)
+			(start 11.15 -7.899999)
+			(end 11.149999 -6.769998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -906,8 +863,8 @@
 			(uuid "23684c85-7197-4798-b7b5-30670cee981b")
 		)
 		(fp_line
-			(start -9 0)
-			(end -9 5.33)
+			(start -8.999999 0)
+			(end -9 5.329998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -916,8 +873,8 @@
 			(uuid "5f5a91cc-14e1-483d-ac0b-65464d845cf1")
 		)
 		(fp_line
-			(start 12.85 -7.9)
-			(end 12.85 -6.77)
+			(start 12.849999 -7.9)
+			(end 12.85 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -926,8 +883,8 @@
 			(uuid "d694ec1c-459b-490c-8cb7-ecb0052e66e2")
 		)
 		(fp_line
-			(start 9 -6.37)
-			(end 9 -2.3)
+			(start 8.999998 -6.37)
+			(end 8.999998 -2.300001)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -936,8 +893,8 @@
 			(uuid "0407cc4b-39e8-4a71-897a-e7374988d1e0")
 		)
 		(fp_line
-			(start 11.15 -6.77)
-			(end 9.4 -6.77)
+			(start 11.149999 -6.769998)
+			(end 9.399999 -6.77)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -946,8 +903,8 @@
 			(uuid "75fe69a3-b821-4226-8b2b-432a027afc25")
 		)
 		(fp_line
-			(start -7 0)
-			(end -9 0)
+			(start -6.999998 0)
+			(end -8.999999 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -956,8 +913,8 @@
 			(uuid "23d6c780-829e-4d92-9d86-7040765b8ece")
 		)
 		(fp_line
-			(start 14.6 -6.77)
-			(end 12.85 -6.77)
+			(start 14.6 -6.769999)
+			(end 12.85 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -966,8 +923,8 @@
 			(uuid "86e7797f-7cab-4c49-a9af-7ca917137819")
 		)
 		(fp_line
-			(start 15 -6.37)
-			(end 15 5.33)
+			(start 15 -6.369999)
+			(end 14.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -976,8 +933,8 @@
 			(uuid "5216eae7-f8fb-4fce-be9d-ff8834d20e27")
 		)
 		(fp_line
-			(start -14.6 5.73)
-			(end -9.4 5.73)
+			(start -14.6 5.729999)
+			(end -9.399999 5.729998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -986,8 +943,8 @@
 			(uuid "c03dbffc-1d5e-4e16-be18-b17e395a6736")
 		)
 		(fp_line
-			(start 9 -2.3)
-			(end 7 -2.3)
+			(start 8.999998 -2.300001)
+			(end 6.999999 -2.300001)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -996,8 +953,8 @@
 			(uuid "6bf2b2a3-87e1-47b3-8195-5fffeca96fd2")
 		)
 		(fp_line
-			(start 7 0)
-			(end 7 6.6)
+			(start 6.999998 0)
+			(end 6.999998 6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1006,8 +963,8 @@
 			(uuid "bb927a53-c68a-4d6e-91d1-c95f7e8abc5c")
 		)
 		(fp_line
-			(start 9 0)
-			(end 7 0)
+			(start 8.999999 0)
+			(end 6.999998 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1016,8 +973,8 @@
 			(uuid "31f6342e-edbc-45f4-98ca-1b5416460c94")
 		)
 		(fp_line
-			(start 9 0)
-			(end 9 5.33)
+			(start 8.999999 0)
+			(end 8.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1026,8 +983,8 @@
 			(uuid "91d8c7ed-7e68-42ef-b181-c506ab58452b")
 		)
 		(fp_line
-			(start -7 6.6)
-			(end -7 0)
+			(start -6.999999 6.599998)
+			(end -6.999998 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1036,8 +993,8 @@
 			(uuid "348e6b8a-553a-44a8-a8af-3f74e36c2ab3")
 		)
 		(fp_line
-			(start -6.6 7)
-			(end 6.6 7)
+			(start -6.599999 6.999998)
+			(end 6.599998 6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1046,8 +1003,8 @@
 			(uuid "f788bb86-b4b4-4a99-bf36-dabc6ae0085e")
 		)
 		(fp_line
-			(start 9.4 5.73)
-			(end 14.6 5.73)
+			(start 9.399998 5.729999)
+			(end 14.599999 5.73)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1057,8 +1014,8 @@
 		)
 		(fp_arc
 			(start -12.85 -7.9)
-			(mid -12.732843 -8.182843)
-			(end -12.45 -8.3)
+			(mid -12.732841 -8.182843)
+			(end -12.449999 -8.3)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1067,9 +1024,9 @@
 			(uuid "85b530bd-0468-4384-9427-2d603ace1fb3")
 		)
 		(fp_arc
-			(start -11.55 -8.299999)
-			(mid -11.267157 -8.182842)
-			(end -11.15 -7.899999)
+			(start -11.549999 -8.299998)
+			(mid -11.267155 -8.182842)
+			(end -11.149999 -7.899998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1078,9 +1035,9 @@
 			(uuid "5fb5450d-90f4-4e62-bdcf-e4b12cf98aa9")
 		)
 		(fp_arc
-			(start -15 -6.37)
+			(start -14.999998 -6.369998)
 			(mid -14.882843 -6.652844)
-			(end -14.6 -6.77)
+			(end -14.6 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1089,9 +1046,9 @@
 			(uuid "7b81c2e1-9aa4-4dab-9835-f688126f006d")
 		)
 		(fp_arc
-			(start -9.4 -6.77)
-			(mid -9.117157 -6.652843)
-			(end -9 -6.37)
+			(start -9.399998 -6.769999)
+			(mid -9.117156 -6.652843)
+			(end -8.999998 -6.369999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1100,9 +1057,9 @@
 			(uuid "19e15d9b-0b5c-4cd3-b9be-3415fa4e3ca0")
 		)
 		(fp_arc
-			(start -7 -6.6)
-			(mid -6.882843 -6.882843)
-			(end -6.6 -7)
+			(start -6.999998 -6.599999)
+			(mid -6.882842 -6.882843)
+			(end -6.599998 -6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1111,9 +1068,9 @@
 			(uuid "b722bc8e-11af-4bd5-ba2f-83bc6c56a2c9")
 		)
 		(fp_arc
-			(start 6.6 -7)
-			(mid 6.882843 -6.882843)
-			(end 7 -6.6)
+			(start 6.599999 -6.999998)
+			(mid 6.882843 -6.882842)
+			(end 6.999999 -6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1122,9 +1079,9 @@
 			(uuid "636cde30-df02-4928-9449-f2823702b20c")
 		)
 		(fp_arc
-			(start 11.15 -7.9)
-			(mid 11.267156 -8.182843)
-			(end 11.55 -8.3)
+			(start 11.15 -7.899999)
+			(mid 11.267155 -8.182842)
+			(end 11.549999 -8.299999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1133,9 +1090,9 @@
 			(uuid "8e3e074c-ad8b-44f0-b7cb-4891f517fbd0")
 		)
 		(fp_arc
-			(start 12.45 -8.3)
-			(mid 12.732843 -8.182843)
-			(end 12.85 -7.9)
+			(start 12.449999 -8.299999)
+			(mid 12.732843 -8.182841)
+			(end 12.849999 -7.9)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1144,9 +1101,9 @@
 			(uuid "a5100116-5c23-4681-94d2-4eb6aa44c7c8")
 		)
 		(fp_arc
-			(start 9 -6.37)
-			(mid 9.117157 -6.652843)
-			(end 9.4 -6.77)
+			(start 8.999998 -6.37)
+			(mid 9.117156 -6.652841)
+			(end 9.399999 -6.77)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1155,9 +1112,9 @@
 			(uuid "a120c7ef-f4d3-4dee-8d9e-794acdf53ed8")
 		)
 		(fp_arc
-			(start 14.6 -6.77)
-			(mid 14.882843 -6.652843)
-			(end 15 -6.37)
+			(start 14.6 -6.769999)
+			(mid 14.882842 -6.652841)
+			(end 15 -6.369999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1166,9 +1123,9 @@
 			(uuid "cf3e4366-9dd9-45f9-a29f-4c263b1fe1db")
 		)
 		(fp_arc
-			(start -14.6 5.73)
-			(mid -14.882843 5.612843)
-			(end -15 5.330001)
+			(start -14.6 5.729999)
+			(mid -14.882841 5.612841)
+			(end -14.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1177,9 +1134,9 @@
 			(uuid "75f65685-0749-45b9-a76b-97aca7401aff")
 		)
 		(fp_arc
-			(start -9 5.33)
-			(mid -9.117157 5.612843)
-			(end -9.4 5.73)
+			(start -9 5.329998)
+			(mid -9.117157 5.612842)
+			(end -9.399999 5.729998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1188,9 +1145,9 @@
 			(uuid "504c0750-501d-4cbd-ad5f-87b0b4be92fe")
 		)
 		(fp_arc
-			(start -6.6 7)
-			(mid -6.882843 6.882843)
-			(end -7 6.6)
+			(start -6.599999 6.999998)
+			(mid -6.882843 6.882842)
+			(end -6.999999 6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1199,9 +1156,9 @@
 			(uuid "fc377d0c-3c04-40c0-9638-1a16884bebd9")
 		)
 		(fp_arc
-			(start 7 6.6)
-			(mid 6.882843 6.882843)
-			(end 6.6 7)
+			(start 6.999998 6.599999)
+			(mid 6.882842 6.882843)
+			(end 6.599998 6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1210,9 +1167,9 @@
 			(uuid "e661b7b6-7ad1-4c9e-b4c1-362b671b9242")
 		)
 		(fp_arc
-			(start 9.4 5.73)
+			(start 9.399998 5.729999)
 			(mid 9.117157 5.612842)
-			(end 9 5.33)
+			(end 8.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1221,9 +1178,9 @@
 			(uuid "a814a919-4238-4c16-9e68-ac8b509ed73a")
 		)
 		(fp_arc
-			(start 15 5.33)
-			(mid 14.882843 5.612843)
-			(end 14.6 5.73)
+			(start 14.999999 5.33)
+			(mid 14.882841 5.612841)
+			(end 14.599999 5.73)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1233,11 +1190,11 @@
 		)
 		(fp_poly
 			(pts
-				(xy -19 -9.500001) (xy 19 -9.5) (xy 19 9.500001) (xy -19 9.5)
+				(xy -19 -9.500001) (xy 18.999998 -9.499998) (xy 19 9.500001) (xy -18.999998 9.499998)
 			)
 			(stroke
 				(width 0.1)
-				(type default)
+				(type solid)
 			)
 			(fill no)
 			(layer "User.2")
@@ -1245,7 +1202,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -9.5 -9.5) (xy 9.5 -9.5) (xy 9.5 9.5) (xy -9.5 9.5)
+				(xy -9.499999 -9.499999) (xy 9.499999 -9.499999) (xy 9.499999 9.499999) (xy -9.499999 9.499999)
 			)
 			(stroke
 				(width 0.12)
@@ -1256,7 +1213,7 @@
 			(uuid "e97cf46d-8ee5-420e-a694-87ecbc27c00a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.199999 70)
+			(at -0.000001 -8.199998 70)
 			(layer "F.Fab")
 			(uuid "792ad3bd-763c-4a3d-b216-e3f4f839604f")
 			(effects
@@ -1324,12 +1281,6 @@
 		(path "/81d3a89c-301c-4be8-bda5-487a2b64be70")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1439,18 +1390,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:DowelHole_3.1mm_M3_lasercut"
 		(layer "F.Cu")
@@ -1508,12 +1447,6 @@
 		(path "/ddb6b142-692a-4c92-a202-56de9c35ffd0")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -1565,7 +1498,7 @@
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S67"
-			(at 0.1 -6.1 20)
+			(at 0.099999 -6.099999 20)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7ceb8801-cbed-430e-944e-3ef9a59e1579")
@@ -1577,7 +1510,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 20)
+			(at 0.099999 8.499998 20)
 			(layer "F.Fab")
 			(uuid "468cb503-c5f2-4eb0-9b15-51cc42492a11")
 			(effects
@@ -1614,17 +1547,11 @@
 		(path "/54f4ec00-15e4-4d02-8504-27818e855b4d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -7 -6.6)
-			(end -7 6.6)
+			(start -6.999999 -6.599998)
+			(end -6.999998 6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1633,8 +1560,8 @@
 			(uuid "2a1c96bf-5a28-4866-ad3b-c8e828995628")
 		)
 		(fp_line
-			(start -6.6 -7)
-			(end 6.6 -7)
+			(start -6.599999 -6.999998)
+			(end 6.599998 -6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1643,8 +1570,8 @@
 			(uuid "17c4e49f-f7b3-4a64-b033-44c9f80934d8")
 		)
 		(fp_line
-			(start -6.6 7)
-			(end 6.6 7)
+			(start -6.599998 6.999999)
+			(end 6.599999 6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1653,8 +1580,8 @@
 			(uuid "f7da66ab-98fc-4bcf-b282-10e0d78574e5")
 		)
 		(fp_line
-			(start 7 -6.6)
-			(end 7 6.6)
+			(start 6.999998 -6.599999)
+			(end 6.999999 6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1663,9 +1590,9 @@
 			(uuid "1c69a3f5-1da4-46bc-a8b3-2f774f16f342")
 		)
 		(fp_arc
-			(start -7 -6.6)
-			(mid -6.882843 -6.882843)
-			(end -6.6 -7)
+			(start -6.999999 -6.599998)
+			(mid -6.882843 -6.882842)
+			(end -6.599999 -6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1674,9 +1601,9 @@
 			(uuid "05aac7ca-a30e-4c61-95b8-dc3c521e275d")
 		)
 		(fp_arc
-			(start -6.6 7)
-			(mid -6.882843 6.882843)
-			(end -7 6.6)
+			(start -6.599998 6.999999)
+			(mid -6.882842 6.882843)
+			(end -6.999998 6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1685,9 +1612,9 @@
 			(uuid "b0c84e25-35e2-4af5-9eb1-1bdf14314eab")
 		)
 		(fp_arc
-			(start 6.6 -7)
-			(mid 6.882843 -6.882843)
-			(end 7 -6.6)
+			(start 6.599998 -6.999999)
+			(mid 6.882842 -6.882843)
+			(end 6.999998 -6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1696,9 +1623,9 @@
 			(uuid "4ae7dd2d-5ad9-4d07-b44a-9d2530febea2")
 		)
 		(fp_arc
-			(start 7 6.6)
-			(mid 6.882843 6.882843)
-			(end 6.6 7)
+			(start 6.999999 6.599998)
+			(mid 6.882843 6.882842)
+			(end 6.599999 6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -1708,7 +1635,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -9.5 -9.5) (xy 9.5 -9.5) (xy 9.5 9.5) (xy -9.5 9.5)
+				(xy -9.499999 -9.499999) (xy 9.499999 -9.499999) (xy 9.499999 9.499999) (xy -9.499999 9.499999)
 			)
 			(stroke
 				(width 0.12)
@@ -1719,7 +1646,7 @@
 			(uuid "73134b2a-4e75-42df-82bd-82be1be5b6d5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.199999 20)
+			(at 0.000001 -8.199998 20)
 			(layer "F.Fab")
 			(uuid "433f96aa-cc6a-4224-8ac4-5a1b5ce3a1bc")
 			(effects
@@ -1730,18 +1657,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11"
 		(layer "F.Cu")
@@ -1905,14 +1820,6 @@
 		(path "/5c28bbfb-df9d-4f69-9dbe-768b68379dba")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "A6" "A7" "B6" "B7" "A4" "A9" "B4" "B9" "A5" "B5" "A8" "B8" "A1"
-					"A12" "B1" "B12" "SH"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2234,7 +2141,6 @@
 			(at -4.32 -3.105 180)
 			(size 1 2.1)
 			(drill oval 0.6 1.7)
-			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(Jusb1-SHIELD-PadSH)_1")
@@ -2246,7 +2152,6 @@
 			(at -4.32 1.075 180)
 			(size 1 1.6)
 			(drill oval 0.6 1.2)
-			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(Jusb1-SHIELD-PadSH)_2")
@@ -2258,7 +2163,6 @@
 			(at 4.32 -3.105 180)
 			(size 1 2.1)
 			(drill oval 0.6 1.7)
-			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(Jusb1-SHIELD-PadSH)_3")
@@ -2270,7 +2174,6 @@
 			(at 4.32 1.075 180)
 			(size 1 1.6)
 			(drill oval 0.6 1.2)
-			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(Jusb1-SHIELD-PadSH)")
@@ -2279,17 +2182,6 @@
 			(uuid "36f63daa-c6aa-4e5f-aed0-65c01445654b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_XKB_U262-16XN-4BVC11.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
@@ -2298,7 +2190,7 @@
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S63"
-			(at 0.1 -6.1 70)
+			(at 0.099998 -6.099998 70)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "50afa33d-350b-4412-809b-274f7268245d")
@@ -2310,7 +2202,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 70)
+			(at 0.1 8.499999 70)
 			(layer "F.Fab")
 			(uuid "9f6c1415-7b74-4279-992e-fc9175745c52")
 			(effects
@@ -2347,17 +2239,11 @@
 		(path "/f46d47ac-6374-4391-8088-0400875285b5")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -6.6 -7)
-			(end 6.6 -7)
+			(start -6.599998 -6.999999)
+			(end 6.599999 -6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2366,8 +2252,8 @@
 			(uuid "24f375c3-5814-43f7-b9ea-8439ad678bdb")
 		)
 		(fp_line
-			(start -7 -6.6)
-			(end -7 6.6)
+			(start -6.999998 -6.599999)
+			(end -6.999999 6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2376,8 +2262,8 @@
 			(uuid "36431048-ed1e-47ed-af9d-c3cc3fc18b21")
 		)
 		(fp_line
-			(start 7 -6.6)
-			(end 7 6.6)
+			(start 6.999999 -6.599998)
+			(end 6.999998 6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2386,8 +2272,8 @@
 			(uuid "f6484d1a-18af-4bb8-8b07-8bfd59be9379")
 		)
 		(fp_line
-			(start -6.6 7)
-			(end 6.6 7)
+			(start -6.599999 6.999998)
+			(end 6.599998 6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2396,9 +2282,9 @@
 			(uuid "27b9baac-a436-4441-a30e-4bf7a1db8e00")
 		)
 		(fp_arc
-			(start -7 -6.6)
-			(mid -6.882843 -6.882843)
-			(end -6.6 -7)
+			(start -6.999998 -6.599999)
+			(mid -6.882842 -6.882843)
+			(end -6.599998 -6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2407,9 +2293,9 @@
 			(uuid "1f8424b8-30fd-400b-86d6-a9f573281bb9")
 		)
 		(fp_arc
-			(start 6.6 -7)
-			(mid 6.882843 -6.882843)
-			(end 7 -6.6)
+			(start 6.599999 -6.999998)
+			(mid 6.882843 -6.882842)
+			(end 6.999999 -6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2418,9 +2304,9 @@
 			(uuid "023e54a1-d392-45ea-84d8-449fcce81cbd")
 		)
 		(fp_arc
-			(start -6.6 7)
-			(mid -6.882843 6.882843)
-			(end -7 6.6)
+			(start -6.599999 6.999998)
+			(mid -6.882843 6.882842)
+			(end -6.999999 6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2429,9 +2315,9 @@
 			(uuid "9646b493-694d-4d1e-b3fb-db9f67300c5a")
 		)
 		(fp_arc
-			(start 7 6.6)
-			(mid 6.882843 6.882843)
-			(end 6.6 7)
+			(start 6.999998 6.599999)
+			(mid 6.882842 6.882843)
+			(end 6.599998 6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -2441,7 +2327,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -11.875 -9.5) (xy 11.875 -9.5) (xy 11.875 9.5) (xy -11.875 9.5)
+				(xy -11.874999 -9.499999) (xy 11.874999 -9.5) (xy 11.874999 9.499999) (xy -11.874999 9.5)
 			)
 			(stroke
 				(width 0.12)
@@ -2453,7 +2339,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -9.5 -9.5) (xy 9.5 -9.5) (xy 9.5 9.5) (xy -9.5 9.5)
+				(xy -9.499999 -9.499999) (xy 9.499999 -9.499999) (xy 9.499999 9.499999) (xy -9.499999 9.499999)
 			)
 			(stroke
 				(width 0.12)
@@ -2464,7 +2350,7 @@
 			(uuid "6de35207-00bc-4e97-8ad4-a83eb228c147")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.199999 70)
+			(at -0.000001 -8.199998 70)
 			(layer "F.Fab")
 			(uuid "2dadf1b7-0d98-4648-9d3b-1df1ae7ffd81")
 			(effects
@@ -2532,12 +2418,6 @@
 		(path "/1babe4f6-fafc-4421-add3-aeecffe45313")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2647,18 +2527,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_1.8mm_M1.6"
 		(layer "F.Cu")
@@ -2716,12 +2584,6 @@
 		(path "/45a15d85-c745-4b0b-8f04-83e5ad503ae8")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -2822,12 +2684,6 @@
 		(path "/cb305910-0805-497b-9bc5-54f586669051")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2937,18 +2793,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -3006,12 +2850,6 @@
 		(path "/d05e963c-57eb-45c4-855f-ad0265e7a4cc")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3121,18 +2959,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
@@ -3190,12 +3016,6 @@
 		(path "/2360c230-93b0-4950-9926-9b545286a321")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -3237,6 +3057,138 @@
 			(drill 2.7)
 			(layers "*.Cu" "*.Mask")
 			(uuid "955f9b14-886a-426c-bd29-15f428ff7fc8")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "tmr-lib:SW_CK_PTS530_4.5x4.5x0.55mm_holeonly"
+		(layer "F.Cu")
+		(uuid "17cdb823-d09a-4821-8178-a321ea9ef7b1")
+		(at 15 27.2 -90)
+		(descr "1x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x4.1mm")
+		(tags "DIP Switch SPST Piano 7.62mm 300mil")
+		(property "Reference" "SW2"
+			(at 0 -4.85 -90)
+			(layer "F.SilkS")
+			(uuid "8e70fc9b-30fd-47e2-add4-1a75d7bcbc53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Hole"
+			(at 3.549999 4.3 -90)
+			(layer "F.Fab")
+			(uuid "aa6c9d2c-e0a0-482e-92dd-bb770624968b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 -90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef5d14e8-257e-4bbe-bb0d-996bef1d73c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 -90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec82cb75-bab2-4adf-95e5-9b9a7c0e2a2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/610b8596-a616-477b-9e01-3f2662a9d464")
+		(sheetname "/")
+		(sheetfile "swplate.kicad_sch")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -2.589999 -2.73)
+			(end 2.599999 2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "b9e3d79b-066e-491e-8ec6-2c3765a12a04")
+		)
+		(fp_rect
+			(start 1.414999 1.4)
+			(end 2.384999 2.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "c6891534-c677-47db-acec-aa7c48ea11ac")
+		)
+		(fp_rect
+			(start -2.36 1.379999)
+			(end -1.39 2.079999)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "5fbe7bd6-dd59-4ebe-8c38-cdbeddbf0c3c")
+		)
+		(fp_rect
+			(start -2.359999 -2.14)
+			(end -1.389999 -1.44)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "f1a4de3e-4fae-477b-a120-2d9a0725f9b6")
+		)
+		(fp_rect
+			(start 1.42 -2.209999)
+			(end 2.39 -1.509999)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "cfdfb068-c1ae-42e7-9c45-d0df94f84efd")
+		)
+		(fp_rect
+			(start -2.289999 -2.43)
+			(end 2.299999 2.44)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "7ef30bda-dedb-4265-b5ee-960f556fbbc5")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0 -90)
+			(size 1.2 1.2)
+			(drill 1.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "2609c736-65d0-4826-9cc4-a39091afb488")
 		)
 		(embedded_fonts no)
 	)
@@ -3296,12 +3248,6 @@
 		(path "/7a27603a-65bc-47cf-9c44-5f14b64130e1")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -3402,12 +3348,6 @@
 		(path "/68d633b1-2311-49a3-a6f6-88034db82007")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3517,18 +3457,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
@@ -3586,12 +3514,6 @@
 		(path "/cd492fa1-cb55-4c65-a793-34019fdbaa2d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -3692,12 +3614,6 @@
 		(path "/3b828ab9-d058-4c8d-8032-5433dd8460dd")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3807,18 +3723,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
@@ -3876,12 +3780,6 @@
 		(path "/f0591a4f-e7a7-4cc9-8145-80a0425f5ba6")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -3982,12 +3880,6 @@
 		(path "/e287d330-0e99-4699-b98a-5ced59ce9753")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -4088,12 +3980,6 @@
 		(path "/75bd6942-df4f-4de2-bc63-af83dabdc6cf")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4203,18 +4089,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -4272,12 +4146,6 @@
 		(path "/00fc826d-16c0-4be1-970f-488621064c4b")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4387,18 +4255,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -4456,12 +4312,6 @@
 		(path "/30b381da-1d30-4e81-9dc2-95eb665bc4e9")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4571,18 +4421,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
@@ -4640,12 +4478,6 @@
 		(path "/ef7df1cb-fc5a-4511-bb5e-b47112f920b9")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -4746,12 +4578,6 @@
 		(path "/b456b255-07dc-44f2-9a11-4ddb806c4a44")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4861,18 +4687,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_1.8mm_M1.6"
 		(layer "F.Cu")
@@ -4930,12 +4744,6 @@
 		(path "/233f3e44-7deb-424a-a17b-172dffe52981")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -5036,12 +4844,6 @@
 		(path "/08602082-53ad-41ae-9730-c3bf748b6271")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5151,18 +4953,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -5220,12 +5010,6 @@
 		(path "/d07c7df1-45ca-483b-9d3a-96c712fdb832")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5335,18 +5119,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -5404,12 +5176,6 @@
 		(path "/b8ccda54-c396-4af9-b3c3-4a0115de29b0")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5519,18 +5285,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -5588,12 +5342,6 @@
 		(path "/d3bd6c27-8188-46b6-857c-a6d635d87f3d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5703,18 +5451,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
@@ -5772,12 +5508,6 @@
 		(path "/ef1d81f9-2bc4-4486-a9cc-8bb96f03f26e")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5955,12 +5685,6 @@
 		(path "/664d2af6-d83e-413f-bcae-9d2427e6d8da")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -6061,12 +5785,6 @@
 		(path "/5913b5f1-ba2f-4acd-b7ee-a2b4fb59d9c4")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -6118,7 +5836,7 @@
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S62"
-			(at 0.100001 -6.1 340)
+			(at 0.1 -6.099999 340)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "38068594-df1d-4d27-a2c9-d7419735b37a")
@@ -6130,7 +5848,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 340)
+			(at 0.1 8.499999 340)
 			(layer "F.Fab")
 			(uuid "9c17270d-5e31-4724-bf13-2ef97c6fb5b8")
 			(effects
@@ -6167,17 +5885,11 @@
 		(path "/afbaba6d-84ea-4f32-a77e-9d05585d033b")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -6.6 7)
-			(end 6.6 7)
+			(start -6.599999 6.999998)
+			(end 6.599998 6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6186,8 +5898,8 @@
 			(uuid "e707ecbd-1646-4980-9544-0fbcb6366296")
 		)
 		(fp_line
-			(start -7 -6.6)
-			(end -7 6.6)
+			(start -6.999998 -6.599999)
+			(end -6.999999 6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6196,8 +5908,8 @@
 			(uuid "0a19a096-0e19-4e17-b9d4-0066ac4a83c4")
 		)
 		(fp_line
-			(start -6.6 -7)
-			(end 6.6 -7)
+			(start -6.599998 -6.999999)
+			(end 6.599999 -6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6206,8 +5918,8 @@
 			(uuid "57654e1e-c2c2-4ccf-a7c2-4b4e186ac0e5")
 		)
 		(fp_line
-			(start 7 -6.6)
-			(end 7 6.6)
+			(start 6.999999 -6.599998)
+			(end 6.999998 6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6216,9 +5928,9 @@
 			(uuid "4b935055-3b1c-4f33-b88a-ef90de3ef20e")
 		)
 		(fp_arc
-			(start -6.6 7)
-			(mid -6.882843 6.882843)
-			(end -7 6.6)
+			(start -6.599999 6.999998)
+			(mid -6.882843 6.882842)
+			(end -6.999999 6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6227,9 +5939,9 @@
 			(uuid "5841fba0-f9cf-493e-a1b5-3c402ba68d75")
 		)
 		(fp_arc
-			(start -7 -6.6)
-			(mid -6.882843 -6.882843)
-			(end -6.6 -7)
+			(start -6.999998 -6.599999)
+			(mid -6.882842 -6.882843)
+			(end -6.599998 -6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6238,9 +5950,9 @@
 			(uuid "927c3a75-27fd-4106-9be1-74136c5aed15")
 		)
 		(fp_arc
-			(start 7 6.6)
-			(mid 6.882843 6.882843)
-			(end 6.6 7)
+			(start 6.999998 6.599999)
+			(mid 6.882842 6.882843)
+			(end 6.599998 6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6249,9 +5961,9 @@
 			(uuid "c6ec6aeb-c6db-4b64-a2f8-5d0e67166481")
 		)
 		(fp_arc
-			(start 6.6 -7)
-			(mid 6.882843 -6.882843)
-			(end 7 -6.6)
+			(start 6.599999 -6.999998)
+			(mid 6.882843 -6.882842)
+			(end 6.999999 -6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6261,7 +5973,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -9.5 -9.5) (xy 9.5 -9.5) (xy 9.5 9.5) (xy -9.5 9.5)
+				(xy -9.499999 -9.499999) (xy 9.499999 -9.499999) (xy 9.499999 9.499999) (xy -9.499999 9.499999)
 			)
 			(stroke
 				(width 0.12)
@@ -6272,7 +5984,7 @@
 			(uuid "b814d9c4-0f63-477e-97cc-a65cc8b4461c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.199999 340)
+			(at -0.000001 -8.199998 340)
 			(layer "F.Fab")
 			(uuid "c309241a-fe2d-47c1-9fda-d9c5661bb2c5")
 			(effects
@@ -6283,18 +5995,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_1.8mm_M1.6"
 		(layer "F.Cu")
@@ -6352,12 +6052,6 @@
 		(path "/09bc6051-b041-4cb7-a5d1-f9bc0fcd706c")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -6458,12 +6152,6 @@
 		(path "/137788a7-acc0-4b7f-9f76-d291eb4d458c")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6573,18 +6261,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -6593,7 +6269,7 @@
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S68"
-			(at 0.1 -6.1 20)
+			(at 0.099999 -6.099999 20)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "37133036-805b-4f1b-91db-da449524c40f")
@@ -6605,7 +6281,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 20)
+			(at 0.099999 8.499998 20)
 			(layer "F.Fab")
 			(uuid "29a8f212-4824-4556-b964-c09b3ec9c9fc")
 			(effects
@@ -6642,17 +6318,11 @@
 		(path "/c57b8bce-f522-46b3-bfb7-8c7d99a98b10")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -7 -6.6)
-			(end -7 6.6)
+			(start -6.999999 -6.599998)
+			(end -6.999998 6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6661,8 +6331,8 @@
 			(uuid "7a3eabcd-bf1e-4a5c-81c2-4f056a7cabdf")
 		)
 		(fp_line
-			(start -6.6 -7)
-			(end 6.6 -7)
+			(start -6.599999 -6.999998)
+			(end 6.599998 -6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6671,8 +6341,8 @@
 			(uuid "ea9c853f-16e5-43a1-a88f-095bfe6b53ea")
 		)
 		(fp_line
-			(start -6.6 7)
-			(end 6.6 7)
+			(start -6.599998 6.999999)
+			(end 6.599999 6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6681,8 +6351,8 @@
 			(uuid "01e5bc77-c38c-490a-b04c-c5a5e9fa0fb4")
 		)
 		(fp_line
-			(start 7 -6.6)
-			(end 7 6.6)
+			(start 6.999998 -6.599999)
+			(end 6.999999 6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6691,9 +6361,9 @@
 			(uuid "88734b6b-80ac-4085-8c67-c394ff6230b2")
 		)
 		(fp_arc
-			(start -7 -6.6)
-			(mid -6.882843 -6.882843)
-			(end -6.6 -7)
+			(start -6.999999 -6.599998)
+			(mid -6.882843 -6.882842)
+			(end -6.599999 -6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6702,9 +6372,9 @@
 			(uuid "75ad40cc-7df0-42d3-abf7-a42f5fb54c01")
 		)
 		(fp_arc
-			(start -6.6 7)
-			(mid -6.882843 6.882843)
-			(end -7 6.6)
+			(start -6.599998 6.999999)
+			(mid -6.882842 6.882843)
+			(end -6.999998 6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6713,9 +6383,9 @@
 			(uuid "d0e51f1d-701f-4a50-a387-8f1b6d49a96e")
 		)
 		(fp_arc
-			(start 6.6 -7)
-			(mid 6.882843 -6.882843)
-			(end 7 -6.6)
+			(start 6.599998 -6.999999)
+			(mid 6.882842 -6.882843)
+			(end 6.999998 -6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6724,9 +6394,9 @@
 			(uuid "58a45f06-fddb-461f-b37b-f8563e6a0937")
 		)
 		(fp_arc
-			(start 7 6.6)
-			(mid 6.882843 6.882843)
-			(end 6.6 7)
+			(start 6.999999 6.599998)
+			(mid 6.882843 6.882842)
+			(end 6.599999 6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -6736,7 +6406,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -9.5 -9.5) (xy 9.5 -9.5) (xy 9.5 9.5) (xy -9.5 9.5)
+				(xy -9.499999 -9.499999) (xy 9.499999 -9.499999) (xy 9.499999 9.499999) (xy -9.499999 9.499999)
 			)
 			(stroke
 				(width 0.12)
@@ -6747,7 +6417,7 @@
 			(uuid "a193f227-6b80-4cef-a0c8-def07f962ab6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.199999 20)
+			(at 0.000001 -8.199998 20)
 			(layer "F.Fab")
 			(uuid "4e8b7e38-2bd0-4046-b074-d6eb53ff3b0e")
 			(effects
@@ -6758,18 +6428,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -6827,12 +6485,6 @@
 		(path "/54e58d08-fc71-4679-aff3-2cea4def41ee")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6942,18 +6594,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -7011,12 +6651,6 @@
 		(path "/0092a3e3-1bef-4e6c-83c9-3e6f9eceeca1")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7126,18 +6760,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -7195,12 +6817,6 @@
 		(path "/51590ee7-5443-434e-93d0-44408837de48")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7310,18 +6926,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -7379,12 +6983,6 @@
 		(path "/e81b8557-6904-48e9-8eab-2d4fdf99db86")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7494,18 +7092,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -7563,12 +7149,6 @@
 		(path "/b3b65bce-8f74-42e5-bfd0-b00745cfdba0")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7678,18 +7258,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -7747,12 +7315,6 @@
 		(path "/4ad43f9c-384a-45dd-b856-5898d0ceae57")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7862,18 +7424,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -7931,12 +7481,6 @@
 		(path "/7e3689ea-4f54-4192-949f-c52a7851a2c3")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8046,18 +7590,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -8115,12 +7647,6 @@
 		(path "/93ca1910-5a4f-4347-bbd4-f1bc008cf52d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8230,18 +7756,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -8299,12 +7813,6 @@
 		(path "/e6709681-6831-4d5a-ae1a-e7b9ae9126e6")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8414,18 +7922,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -8483,12 +7979,6 @@
 		(path "/67c87d0b-5cce-420f-b134-3ada7d5b4ddb")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8598,18 +8088,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_1.8mm_M1.6"
 		(layer "F.Cu")
@@ -8667,12 +8145,6 @@
 		(path "/69f64487-5100-47d9-be6f-93a87e566bb8")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -8773,12 +8245,6 @@
 		(path "/c6c7b671-05b2-46f7-b088-be8eb49cf3fa")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8888,18 +8354,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
@@ -8957,12 +8411,6 @@
 		(path "/06e2d3a3-794c-455e-9f93-78754ea4beca")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9140,12 +8588,6 @@
 		(path "/842dd4cf-98ed-4f5e-aa65-ca7cee178914")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9255,18 +8697,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -9324,12 +8754,6 @@
 		(path "/9575e82a-cc98-4075-a802-145762b4ece9")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9439,18 +8863,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -9508,12 +8920,6 @@
 		(path "/5c0a577e-8680-4dbc-acbc-3243d8e4a441")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9623,18 +9029,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -9692,12 +9086,6 @@
 		(path "/bfbce1ee-268c-4b8d-878f-7fb719f7f73f")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9807,18 +9195,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_1.8mm_M1.6"
 		(layer "F.Cu")
@@ -9876,12 +9252,6 @@
 		(path "/ad2ce1fe-38d7-4e6d-ac27-8664991a5e7a")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -9982,12 +9352,6 @@
 		(path "/6f6d1802-c02b-4e7c-bfb8-a4d1aa8daabe")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -10088,12 +9452,6 @@
 		(path "/b126e8e9-e39f-4b34-a1ca-c7a559d02604")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10203,18 +9561,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -10272,12 +9618,6 @@
 		(path "/1876f9b1-1426-4ea7-9a9b-f4957529d4a4")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10387,18 +9727,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
@@ -10456,12 +9784,6 @@
 		(path "/61a93337-b32b-413c-acba-e2299920b4d1")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10639,12 +9961,6 @@
 		(path "/d234269c-b19e-481d-aeb9-b8f62de6c833")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10754,18 +10070,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:JLC_Order_Num"
 		(layer "F.Cu")
@@ -10900,12 +10204,6 @@
 		(path "/9000fb53-0f42-4051-bac6-02c4ec453f96")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11015,18 +10313,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout_1.25u"
 		(layer "F.Cu")
@@ -11084,12 +10370,6 @@
 		(path "/b88aa9da-99fa-46f9-8d14-0ba25742a5fe")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11269,12 +10549,6 @@
 		(path "/73a7287e-c1d5-453b-9fba-1db878769638")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -11316,6 +10590,138 @@
 			(drill 2.7)
 			(layers "*.Cu" "*.Mask")
 			(uuid "11c4a6ba-4e92-4c4c-bceb-ccc3b72ec5f1")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "tmr-lib:SW_CK_PTS530_4.5x4.5x0.55mm_holeonly"
+		(layer "F.Cu")
+		(uuid "979195d6-ab75-4398-81b0-05dc0b46343a")
+		(at 199.4 -2.52 90)
+		(descr "1x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x4.1mm")
+		(tags "DIP Switch SPST Piano 7.62mm 300mil")
+		(property "Reference" "SW1"
+			(at 0 -4.85 90)
+			(layer "F.SilkS")
+			(uuid "c002f521-90e6-4875-9c22-6587479fde8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "SW_Hole"
+			(at 3.549999 4.3 90)
+			(layer "F.Fab")
+			(uuid "a01096f9-2cd2-4f5f-a6e7-fc9f62870894")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e0534d7-f3c9-49e2-881d-a82d9952c3ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d609a5f-1212-43c3-bd72-6b8cb5b0c94f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/2b3937d7-0b9e-4647-846d-b4dd46fac35d")
+		(sheetname "/")
+		(sheetfile "swplate.kicad_sch")
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -2.59 -2.73)
+			(end 2.6 2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "d442d943-c995-4c0d-95f4-9696b3a245e5")
+		)
+		(fp_rect
+			(start -2.29 -2.43)
+			(end 2.3 2.44)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "fe671438-245f-4abb-b902-589e96da5a44")
+		)
+		(fp_rect
+			(start 1.42 -2.21)
+			(end 2.39 -1.509999)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "1a6bcd44-a8e8-4380-88b9-42fd135c3454")
+		)
+		(fp_rect
+			(start -2.36 -2.14)
+			(end -1.39 -1.44)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "0a5317c6-b7df-482b-80c3-20fca3fa6fd6")
+		)
+		(fp_rect
+			(start -2.36 1.379999)
+			(end -1.39 2.08)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "e94ba759-4d21-4072-af22-3a51936b989d")
+		)
+		(fp_rect
+			(start 1.415 1.4)
+			(end 2.385 2.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "d5b16633-822b-489c-9655-477a83b92dd8")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0 90)
+			(size 1.2 1.2)
+			(drill 1.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "86e65707-263c-42d0-987a-b7a8fcef321e")
 		)
 		(embedded_fonts no)
 	)
@@ -11375,12 +10781,6 @@
 		(path "/c6faa738-a4c9-439a-876c-92a10296d483")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -11481,12 +10881,6 @@
 		(path "/eedf0928-991b-4d0f-861d-088c0d82488a")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -11587,12 +10981,6 @@
 		(path "/8815ddd5-9dda-431a-bd24-6a8bd66d1fa6")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11702,18 +11090,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout_1.75u"
 		(layer "F.Cu")
@@ -11771,12 +11147,6 @@
 		(path "/48e2fb2f-e073-410b-86cc-ccb7cd1ecd53")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11954,12 +11324,6 @@
 		(path "/827d4960-dd03-43bc-b13c-1689fdb10e90")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12069,18 +11433,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -12138,12 +11490,6 @@
 		(path "/38f2c448-e4dc-4634-af8e-d73d54064ac8")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12253,18 +11599,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -12322,12 +11656,6 @@
 		(path "/39e5dd99-91a3-49bc-ae1c-0222ddb57f74")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12437,18 +11765,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -12506,12 +11822,6 @@
 		(path "/cfb1a8f0-e1da-4a78-8987-4aa56664bf2c")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12621,18 +11931,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -12690,12 +11988,6 @@
 		(path "/fcbc0add-ff56-4906-a6bd-b73c996fd91d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12805,18 +12097,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout_2u"
 		(layer "F.Cu")
@@ -12825,7 +12105,7 @@
 		(descr "Cherry MX keyswitch PCB Mount with 1.00u keycap")
 		(tags "Cherry MX Keyboard Keyswitch Switch PCB Cutout 1.00u")
 		(property "Reference" "S66"
-			(at 0.1 -6.1 290)
+			(at 0.099999 -6.099999 290)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a580d15c-4d30-4e42-9f70-eb455c9a5b99")
@@ -12837,7 +12117,7 @@
 			)
 		)
 		(property "Value" "SWHole"
-			(at 0.1 8.5 290)
+			(at 0.099999 8.499998 290)
 			(layer "F.Fab")
 			(uuid "989e0c5d-8d8f-4bfb-b239-857bfbce2930")
 			(effects
@@ -12874,17 +12154,11 @@
 		(path "/612ed094-81f0-4d75-afae-618df9dd7e82")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -14.6 5.73)
-			(end -9.4 5.73)
+			(start -14.599999 5.73)
+			(end -9.399998 5.729999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12893,8 +12167,8 @@
 			(uuid "8ffcaf94-500b-4ba8-803b-6138125491d2")
 		)
 		(fp_line
-			(start -6.6 7)
-			(end 6.6 7)
+			(start -6.599998 6.999999)
+			(end 6.599999 6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12903,8 +12177,8 @@
 			(uuid "4c6d094b-fe0e-40d5-b801-fe717be1c84f")
 		)
 		(fp_line
-			(start -7 6.6)
-			(end -7 0)
+			(start -6.999998 6.599999)
+			(end -6.999998 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12913,8 +12187,8 @@
 			(uuid "aed531b0-0fa2-4956-8527-a385cb747703")
 		)
 		(fp_line
-			(start -9 0)
-			(end -9 5.33)
+			(start -8.999999 0)
+			(end -8.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12923,8 +12197,8 @@
 			(uuid "9585eac7-2298-4498-b98f-91202cb1b89b")
 		)
 		(fp_line
-			(start -7 0)
-			(end -9 0)
+			(start -6.999998 0)
+			(end -8.999999 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12933,8 +12207,8 @@
 			(uuid "086405d4-789a-48d7-894f-0d921963ee87")
 		)
 		(fp_line
-			(start 9.4 5.73)
-			(end 14.6 5.73)
+			(start 9.399999 5.729998)
+			(end 14.6 5.729999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12943,8 +12217,8 @@
 			(uuid "a9131660-1fee-4a20-9b9c-cd00c77f710e")
 		)
 		(fp_line
-			(start -7 -2.3)
-			(end -9 -2.3)
+			(start -6.999999 -2.300001)
+			(end -8.999998 -2.300001)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12953,8 +12227,8 @@
 			(uuid "2c185d2c-f9ee-4e1d-91bc-47103aa60177")
 		)
 		(fp_line
-			(start -15 -6.37)
-			(end -15 5.33)
+			(start -15 -6.369999)
+			(end -14.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12963,8 +12237,8 @@
 			(uuid "ec0282ea-3a89-4906-a27d-0dba3167fd64")
 		)
 		(fp_line
-			(start -12.85 -6.77)
-			(end -14.6 -6.77)
+			(start -12.85 -6.769999)
+			(end -14.6 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12973,8 +12247,8 @@
 			(uuid "781d520c-93af-4b14-8bbd-b1be433b115a")
 		)
 		(fp_line
-			(start 7 0)
-			(end 7 6.6)
+			(start 6.999998 0)
+			(end 6.999999 6.599998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12983,8 +12257,8 @@
 			(uuid "260db6b8-bf0a-4f79-a0de-3f5a42879b14")
 		)
 		(fp_line
-			(start -9 -6.37)
-			(end -9 -2.3)
+			(start -8.999998 -6.37)
+			(end -8.999998 -2.300001)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -12993,8 +12267,8 @@
 			(uuid "e302041e-c491-4b14-8d21-3ac9edb66131")
 		)
 		(fp_line
-			(start -12.85 -7.900001)
-			(end -12.85 -6.77)
+			(start -12.85 -7.9)
+			(end -12.85 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13003,8 +12277,8 @@
 			(uuid "cb1b409e-165c-417b-bb79-6fecf251042f")
 		)
 		(fp_line
-			(start 9 0)
-			(end 9 5.33)
+			(start 8.999999 0)
+			(end 9 5.329998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13013,8 +12287,8 @@
 			(uuid "f767ab66-1540-4f0f-975c-b832a5c7ea7e")
 		)
 		(fp_line
-			(start 9 0)
-			(end 7 0)
+			(start 8.999999 0)
+			(end 6.999998 0)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13023,8 +12297,8 @@
 			(uuid "11dfbcdc-ca1b-4ee5-8028-ff958491c39b")
 		)
 		(fp_line
-			(start -9.4 -6.77)
-			(end -11.15 -6.77)
+			(start -9.399999 -6.77)
+			(end -11.149999 -6.769998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13033,8 +12307,8 @@
 			(uuid "d41e3e11-82b2-4900-b294-42c91b61463c")
 		)
 		(fp_line
-			(start -12.45 -8.3)
-			(end -11.55 -8.3)
+			(start -12.449999 -8.299999)
+			(end -11.549999 -8.299999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13043,8 +12317,8 @@
 			(uuid "5990b1a1-c307-4d21-a419-8870d01861db")
 		)
 		(fp_line
-			(start -11.150001 -7.899999)
-			(end -11.15 -6.77)
+			(start -11.15 -7.899999)
+			(end -11.149999 -6.769998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13053,8 +12327,8 @@
 			(uuid "014d7676-47db-42ec-9819-c2884f740ac9")
 		)
 		(fp_line
-			(start -7 -6.6)
-			(end -7 -2.3)
+			(start -6.999999 -6.599998)
+			(end -6.999999 -2.300001)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13063,8 +12337,8 @@
 			(uuid "aa96551e-b0d2-46e9-9b6a-b3f119ffee7b")
 		)
 		(fp_line
-			(start -6.6 -7)
-			(end 6.6 -7)
+			(start -6.599999 -6.999998)
+			(end 6.599998 -6.999999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13073,8 +12347,8 @@
 			(uuid "3a541010-f235-41eb-b80b-98266e8e2f80")
 		)
 		(fp_line
-			(start 9 -2.3)
-			(end 7 -2.3)
+			(start 8.999998 -2.299999)
+			(end 6.999998 -2.299998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13083,8 +12357,8 @@
 			(uuid "4418b560-adec-4c85-b878-b7cd05711656")
 		)
 		(fp_line
-			(start 7 -6.6)
-			(end 7 -2.3)
+			(start 6.999998 -6.599999)
+			(end 6.999998 -2.299998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13093,8 +12367,8 @@
 			(uuid "64a341fd-e9e8-4ee9-aeaa-c1c35b696219")
 		)
 		(fp_line
-			(start 9 -6.37)
-			(end 9 -2.3)
+			(start 8.999998 -6.369999)
+			(end 8.999998 -2.299999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13103,8 +12377,8 @@
 			(uuid "b98b3c58-ca18-47cc-ad31-a2b1145317a0")
 		)
 		(fp_line
-			(start 11.15 -6.77)
-			(end 9.4 -6.77)
+			(start 11.149999 -6.77)
+			(end 9.399998 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13113,8 +12387,8 @@
 			(uuid "5dd6dbc4-3785-444b-a565-6cae4b340a89")
 		)
 		(fp_line
-			(start 15 -6.37)
-			(end 15 5.330001)
+			(start 14.999998 -6.369998)
+			(end 14.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13123,8 +12397,8 @@
 			(uuid "718a1249-f190-455d-b85c-d76374ac8c4f")
 		)
 		(fp_line
-			(start 11.15 -7.9)
-			(end 11.15 -6.77)
+			(start 11.149999 -7.899999)
+			(end 11.149999 -6.77)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13133,8 +12407,8 @@
 			(uuid "d918992f-faf4-46f4-b466-6ed4a39e4627")
 		)
 		(fp_line
-			(start 14.6 -6.77)
-			(end 12.85 -6.77)
+			(start 14.6 -6.769999)
+			(end 12.849999 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13143,8 +12417,8 @@
 			(uuid "74ef40ef-16e8-42c8-8753-88fed631451a")
 		)
 		(fp_line
-			(start 11.55 -8.299999)
-			(end 12.45 -8.3)
+			(start 11.549999 -8.299998)
+			(end 12.449999 -8.3)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13154,7 +12428,7 @@
 		)
 		(fp_line
 			(start 12.85 -7.9)
-			(end 12.85 -6.77)
+			(end 12.849999 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13163,9 +12437,9 @@
 			(uuid "cc681bb1-1759-472a-8919-0306c0d004ce")
 		)
 		(fp_arc
-			(start -14.6 5.73)
-			(mid -14.882843 5.612843)
-			(end -15 5.33)
+			(start -14.599999 5.73)
+			(mid -14.882841 5.612841)
+			(end -14.999999 5.33)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13174,9 +12448,9 @@
 			(uuid "d01c754f-037c-40ba-b0fc-bcabb841635e")
 		)
 		(fp_arc
-			(start -6.6 7)
-			(mid -6.882843 6.882843)
-			(end -7 6.6)
+			(start -6.599998 6.999999)
+			(mid -6.882842 6.882843)
+			(end -6.999998 6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13185,9 +12459,9 @@
 			(uuid "6f99e9ab-f609-4b50-ab4e-0a58bf81ac1f")
 		)
 		(fp_arc
-			(start -9 5.33)
+			(start -8.999999 5.33)
 			(mid -9.117157 5.612842)
-			(end -9.4 5.73)
+			(end -9.399998 5.729999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13196,9 +12470,9 @@
 			(uuid "50aae0f7-47f9-4248-b7fe-71859d19f019")
 		)
 		(fp_arc
-			(start 7 6.6)
-			(mid 6.882843 6.882843)
-			(end 6.6 7)
+			(start 6.999999 6.599998)
+			(mid 6.882843 6.882842)
+			(end 6.599999 6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13207,9 +12481,9 @@
 			(uuid "5d384d58-b079-4f3f-89c1-cb1b514c7aea")
 		)
 		(fp_arc
-			(start 9.4 5.73)
-			(mid 9.117157 5.612843)
-			(end 9 5.33)
+			(start 9.399999 5.729998)
+			(mid 9.117157 5.612842)
+			(end 9 5.329998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13218,9 +12492,9 @@
 			(uuid "15ca4189-7228-4346-8730-23cd5f67bf0a")
 		)
 		(fp_arc
-			(start 15 5.330001)
-			(mid 14.882843 5.612843)
-			(end 14.6 5.73)
+			(start 14.999999 5.33)
+			(mid 14.882841 5.612841)
+			(end 14.6 5.729999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13229,9 +12503,9 @@
 			(uuid "fc88efc2-628e-4707-aad0-cbcf9fe954e0")
 		)
 		(fp_arc
-			(start -15 -6.37)
-			(mid -14.882843 -6.652843)
-			(end -14.6 -6.77)
+			(start -15 -6.369999)
+			(mid -14.882842 -6.652841)
+			(end -14.6 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13240,9 +12514,9 @@
 			(uuid "0bb07d38-b080-43af-8360-55094d4098dd")
 		)
 		(fp_arc
-			(start -12.85 -7.9)
-			(mid -12.732843 -8.182843)
-			(end -12.45 -8.3)
+			(start -12.849999 -7.9)
+			(mid -12.732843 -8.182841)
+			(end -12.449999 -8.299999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13251,9 +12525,9 @@
 			(uuid "1b9c8cc8-4d41-438b-9520-bad8e7baab14")
 		)
 		(fp_arc
-			(start -9.4 -6.77)
-			(mid -9.117157 -6.652843)
-			(end -9 -6.37)
+			(start -9.399999 -6.77)
+			(mid -9.117156 -6.652841)
+			(end -8.999998 -6.37)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13262,9 +12536,9 @@
 			(uuid "bd4a90cb-86fb-49b4-991a-9a4e027368a5")
 		)
 		(fp_arc
-			(start -7 -6.6)
-			(mid -6.882843 -6.882843)
-			(end -6.6 -7)
+			(start -6.999999 -6.599998)
+			(mid -6.882843 -6.882842)
+			(end -6.599999 -6.999998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13273,9 +12547,9 @@
 			(uuid "c408508c-5807-4d0c-8a41-4cea8b92dfa8")
 		)
 		(fp_arc
-			(start -11.55 -8.3)
-			(mid -11.267157 -8.182842)
-			(end -11.150001 -7.899999)
+			(start -11.549999 -8.299999)
+			(mid -11.267156 -8.182841)
+			(end -11.15 -7.899999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13284,9 +12558,9 @@
 			(uuid "52fd46c5-8f08-4b52-aa15-0d3da49eca06")
 		)
 		(fp_arc
-			(start 6.6 -7)
-			(mid 6.882843 -6.882843)
-			(end 7 -6.6)
+			(start 6.599998 -6.999999)
+			(mid 6.882842 -6.882843)
+			(end 6.999998 -6.599999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13295,9 +12569,9 @@
 			(uuid "a2e3a59d-f572-4e69-8e4e-836facf7867c")
 		)
 		(fp_arc
-			(start 9 -6.37)
-			(mid 9.117157 -6.652843)
-			(end 9.4 -6.77)
+			(start 8.999998 -6.369999)
+			(mid 9.117156 -6.652843)
+			(end 9.399998 -6.769999)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13306,9 +12580,9 @@
 			(uuid "eeaaf2c7-7eb4-4bbd-a083-791d2120ecd7")
 		)
 		(fp_arc
-			(start 11.15 -7.9)
-			(mid 11.267157 -8.182843)
-			(end 11.55 -8.299999)
+			(start 11.149999 -7.899999)
+			(mid 11.267156 -8.182843)
+			(end 11.549999 -8.299998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13317,9 +12591,9 @@
 			(uuid "0b33de7a-e7c8-4d28-914a-915e1dfe46d8")
 		)
 		(fp_arc
-			(start 14.6 -6.77)
+			(start 14.6 -6.769999)
 			(mid 14.882843 -6.652844)
-			(end 15 -6.37)
+			(end 14.999998 -6.369998)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -13328,8 +12602,8 @@
 			(uuid "6924e316-81b3-43ec-9f7d-49f58b85bd23")
 		)
 		(fp_arc
-			(start 12.45 -8.3)
-			(mid 12.732843 -8.182843)
+			(start 12.449999 -8.3)
+			(mid 12.732841 -8.182843)
 			(end 12.85 -7.9)
 			(stroke
 				(width 0.12)
@@ -13340,11 +12614,11 @@
 		)
 		(fp_poly
 			(pts
-				(xy -19 -9.5) (xy 19 -9.500001) (xy 19 9.5) (xy -19 9.500001)
+				(xy -18.999998 -9.499998) (xy 19 -9.500001) (xy 18.999998 9.499998) (xy -19 9.500001)
 			)
 			(stroke
 				(width 0.1)
-				(type default)
+				(type solid)
 			)
 			(fill no)
 			(layer "User.2")
@@ -13352,7 +12626,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -9.5 -9.5) (xy 9.5 -9.5) (xy 9.5 9.5) (xy -9.5 9.5)
+				(xy -9.499999 -9.499999) (xy 9.499999 -9.499999) (xy 9.499999 9.499999) (xy -9.499999 9.499999)
 			)
 			(stroke
 				(width 0.12)
@@ -13363,7 +12637,7 @@
 			(uuid "1737d766-acd7-4104-a3a8-ee09ec28c59e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -8.199999 290)
+			(at 0.000001 -8.199998 290)
 			(layer "F.Fab")
 			(uuid "dbc46c7d-2281-4ff5-86db-e3f9dbfe0f0e")
 			(effects
@@ -13431,12 +12705,6 @@
 		(path "/0c4f91bd-74ed-4dc4-a652-a1fac2a92ed8")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13546,18 +12814,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
@@ -13615,12 +12871,6 @@
 		(path "/6d3e9859-f094-4da3-bbae-aad3f40f2746")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -13721,12 +12971,6 @@
 		(path "/206c8d27-6d6a-49d5-bbb2-8385567aaa87")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -13827,12 +13071,6 @@
 		(path "/47268810-df7b-4043-a27c-5b9dbee08e6d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13942,18 +13180,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -14011,12 +13237,6 @@
 		(path "/c015f546-ba6e-44b8-b732-eb20a6a32924")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14126,18 +13346,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -14195,12 +13403,6 @@
 		(path "/6c4ba7ad-b7b7-47b6-a494-da6643acd438")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14310,18 +13512,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
@@ -14379,12 +13569,6 @@
 		(path "/06a5563f-4f51-4b08-b72a-41dcbe39f7f8")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -14485,12 +13669,6 @@
 		(path "/e57bc49b-bd74-42cd-9ae7-3ca8143c716d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14600,18 +13778,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -14669,12 +13835,6 @@
 		(path "/502f0f08-f705-4a86-bd5d-b7ccb909b55d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14784,18 +13944,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -14853,12 +14001,6 @@
 		(path "/fbe91f20-fac4-438c-ba97-51bba18ae229")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14968,18 +14110,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")
@@ -15037,12 +14167,6 @@
 		(path "/ae05e71e-bff1-4321-93d1-21b338a7e0f3")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -15143,12 +14267,6 @@
 		(path "/a2a54776-2a51-43a7-a059-6d736338f666")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -15249,12 +14367,6 @@
 		(path "/439c4b75-b84a-4e3a-a517-7dbf4ce14ed5")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15432,12 +14544,6 @@
 		(path "/a2bcdbea-3471-4252-a6bc-190605593867")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15547,18 +14653,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -15616,12 +14710,6 @@
 		(path "/92a2da1e-fa93-492e-b551-82fdd66adbbb")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15731,18 +14819,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -15800,12 +14876,6 @@
 		(path "/19b36040-4d0f-4940-b889-8438cba46dae")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15915,18 +14985,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -15984,12 +15042,6 @@
 		(path "/12942a3e-ccbc-4f12-bbee-133e36a4527d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16099,18 +15151,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:MountingHole_1.8mm_M1.6"
 		(layer "F.Cu")
@@ -16168,12 +15208,6 @@
 		(path "/8520f8f8-2b20-4cb4-ad94-b5ec6139001d")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -16274,12 +15308,6 @@
 		(path "/7a3be40b-b49f-43d9-9841-5ec79958f126")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -16380,12 +15408,6 @@
 		(path "/c322556a-d4d1-4296-b04b-dc7cee2da035")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -16486,12 +15508,6 @@
 		(path "/c076358c-84ad-44c2-895d-c1a0908b8a43")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16601,18 +15617,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -16670,12 +15674,6 @@
 		(path "/5d11859f-4a62-4ef4-8935-35097d3c5265")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16785,18 +15783,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -16854,12 +15840,6 @@
 		(path "/4752b3f0-df20-4b75-91b5-89bd17b674b5")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16969,18 +15949,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -17038,12 +16006,6 @@
 		(path "/8e36fbe2-3d82-4e60-889c-e2fb4ceeeb22")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17153,18 +16115,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -17222,12 +16172,6 @@
 		(path "/59f98c71-946a-49d5-b3d3-ff6da05ee72f")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17337,18 +16281,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -17406,12 +16338,6 @@
 		(path "/f8f7e78e-c4d5-4d6b-8b56-3b87497bd898")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17521,18 +16447,6 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Switch_Cutout"
 		(layer "F.Cu")
@@ -17590,12 +16504,6 @@
 		(path "/46f81232-1c00-49a7-8c4c-529edfddab5b")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17705,23 +16613,11 @@
 			)
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/KS33-low profile switch and stabilzier.stp"
-			(hide yes)
-			(offset
-				(xyz 0 0 -3)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -0 -0 -0)
-			)
-		)
 	)
 	(footprint "tmr-lib:Minew_ME54BS13"
 		(layer "B.Cu")
 		(uuid "374e96ad-7b1b-4f9c-a5a8-ac678035ad09")
-		(at 167.59 3.2 180)
+		(at 167.59 4.2 180)
 		(property "Reference" "M1"
 			(at 5.95 17.65 0)
 			(unlocked yes)
@@ -17781,18 +16677,6 @@
 		(path "/a7bed124-ca38-4512-96d6-f8a1c6774947")
 		(sheetname "/")
 		(sheetfile "swplate.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "D0" "A0" "D1" "A1" "D2"
-					"A2" "D3" "A3" "D4" "A4" "D5" "A5" "D6" "A6" "D7" "A7" "D8" "A8" "D9"
-					"A9" "E0" "B0" "E1" "B1" "E2" "B2" "E3" "B3" "E4" "B4" "E5" "B5" "E6"
-					"B6" "E7" "B7" "E8" "B8" "E9" "B9" "F0" "C0" "F1" "C1" "F2" "C2" "F3"
-					"C3" "F4" "C4" "F5" "C5" "F6" "C6" "F7" "C7" "F8" "C8" "F9" "C9" "20"
-					"19" "18" "17" "16" "15" "14" "13" "12" "11"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18617,17 +17501,6 @@
 			(uuid "5120846e-d9bf-4273-a3ae-632e8685c147")
 		)
 		(embedded_fonts no)
-		(model "/Users/gp/Downloads/ME54BS13_PCB.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(gr_curve
 		(pts

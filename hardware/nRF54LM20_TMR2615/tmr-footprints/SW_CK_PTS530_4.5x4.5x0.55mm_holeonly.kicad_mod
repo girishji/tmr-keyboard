@@ -1,0 +1,130 @@
+(footprint "SW_CK_PTS530_4.5x4.5x0.55mm_holeonly"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "1x-dip-switch SPST , Piano, row spacing 7.62 mm (300 mils), body size 10.8x4.1mm")
+	(tags "DIP Switch SPST Piano 7.62mm 300mil")
+	(property "Reference" "REF**"
+		(at 0 -4.85 0)
+		(layer "F.SilkS")
+		(uuid "234ca24d-2724-4989-9bfa-5d910491d4f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_CK_PTS530_4.5x4.5x0.55mm_holeonly"
+		(at 3.55 4.3 0)
+		(layer "F.Fab")
+		(uuid "aeed1b81-05bc-4685-bcbb-f927da8b4f32")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/C221860.pdf?spm=wm.sxq.inf.ggs&lcsc_vid=Q1daXwEEQlBfBAVTFVcKAVBSEQILUgdQRgMIBlRRFFQxVlNeQFJdVlRRQlJaUjtW"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42fe3ef7-d52e-472d-b457-d60c590d2c30")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "C&K PTS530GM055SMTRLFS tact switch"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f951c328-dee9-4b0c-94e1-f91f21383f9a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.59 -2.73)
+		(end 2.6 2.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "cfea734b-f196-49a7-84cf-f657913bdf52")
+	)
+	(fp_rect
+		(start -2.36 -2.14)
+		(end -1.39 -1.44)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6cfe9552-bd0e-4b49-86d8-2914fd93789f")
+	)
+	(fp_rect
+		(start -2.36 1.38)
+		(end -1.39 2.08)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "55cda23f-0b01-452e-90f4-263d03bdeaad")
+	)
+	(fp_rect
+		(start -2.29 -2.43)
+		(end 2.3 2.44)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f85fe472-241e-4ad4-bcf9-da5f085849d4")
+	)
+	(fp_rect
+		(start 1.415 1.4)
+		(end 2.385 2.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "41729948-41f1-421d-ac3d-5f2c6f25f790")
+	)
+	(fp_rect
+		(start 1.42 -2.21)
+		(end 2.39 -1.51)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0070ea6a-3c06-4bad-82eb-689ffc26b7db")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 1.2 1.2)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(uuid "212fefc9-9dc4-4e74-af28-28ac31bac0dc")
+	)
+	(embedded_fonts no)
+)
