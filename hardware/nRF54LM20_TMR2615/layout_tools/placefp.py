@@ -8,6 +8,16 @@
 All layout dimensions in this file are expressed in millimeters.
 Conversion to KiCad's internal coordinate representation happens only when a
 kipy Vector2 is created.
+
+XXX:
+KiCad 10 version does not perform the flip automatically. KiCad 10’s IPC API
+has no working footprint-flip operation.
+This script's intended behavior is:
+1. Position and rotate footprints.
+2. Select footprints that must move to B.Cu.
+3. You press F once in PCB Editor to execute KiCad’s native flip.
+The message is printed in the plugin output, but it may be easy to miss.
+
 """
 
 import math
@@ -100,7 +110,7 @@ COMPONENTS = [
     ("PMIC1", KEY_SPACING_MM * 1.875 - 1, KEY_SPACING_MM, 180, True),
     ("Jusb1", 19.5, -13.7, 180, False),  # USB receptacle
     ("SW1", 199.4, -2.52, 90, True),
-    ("SW2", 14.11, 26.33, -90, True),
+    ("SW2", 15, 27.2, -90, True),
     ("JTAG1", 180.5, -3.5, -90, True),
     ("BAT1", 23 - KEY_SPACING_MM / 4, 79, 0, False),
     ("BAT2", 234, 79, 0, False),

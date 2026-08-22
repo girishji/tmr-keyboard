@@ -26,8 +26,9 @@ from kipy.geometry import Vector2
 KEY_SPACING_MM = 19.0
 SWITCH_COUNT = 72
 
-GAP_MM = 0.5
+GAP_MM = 0.5  # gap between edge keys and housing
 SIDE_WALL_MM = 5.0 + GAP_MM
+CLEARANCE_MM = 1.0  # gap between edges of pcb and housing (for corner fillet in cnc/3dp)
 
 FILLET_RADIUS_MM = 1.0
 FILLET_RADIUS_HALF_MM = 0.5
@@ -123,6 +124,7 @@ switches = [None] + [footprint(f"S{i}") for i in range(1, SWITCH_COUNT + 1)]
 # intersections, fillets, and shape endpoints operate on Vector2 objects.
 GAP = nm(GAP_MM)
 SIDE_WALL = nm(SIDE_WALL_MM)
+CLEARANCE = nm(CLEARANCE_MM)
 fillet_radius = nm(FILLET_RADIUS_MM)
 fillet_radius_half = nm(FILLET_RADIUS_HALF_MM)
 fillet_radius_macbook = nm(FILLET_RADIUS_MACBOOK_MM)
@@ -750,15 +752,12 @@ def draw_border(proj, offset=0, cutout=False):
     global LAYER
 
     ispcb = proj == "pcb"
-    if ispcb and offset != 0:
-        print("Error: pcb has non-zero offset")
-        return
 
     # (R, S) are start and end points.
     R = switches[65].position + vec_nm(0, half+offset)
     if ispcb:
         angle = -switches[64].orientation.degrees
-        S = switches[64].position + rotate(vec_nm(0, half), angle)
+        S = switches[64].position + rotate(vec_nm(0, half+offset), angle)
         R = draw_line_arc(left(R), right(S, angle))
 
         S = switches[64].position + rotate(vec_nm(-half+nm(0.65), 0), angle)
@@ -768,7 +767,7 @@ def draw_border(proj, offset=0, cutout=False):
         R = draw_line_arc(up(R, angle), left(S, angle), fillet_radius_half)
 
         angle2 = -switches[63].orientation.degrees
-        S = switches[63].position + rotate(vec_nm(-int(half * 5/4)+nm(0.5), half-nm(0.4)), angle2)
+        S = switches[63].position + rotate(vec_nm(-int(half * 5/4)+nm(1), half-nm(0.4)), angle2)
         R = draw_line(R, S)
 
         angle2 = -switches[62].orientation.degrees
@@ -826,7 +825,7 @@ def draw_border(proj, offset=0, cutout=False):
         S = R + vec_nm(nm(13), 0)
         R = draw_line(R, S)
 
-        S = switches[3].position + vec_nm(0, -half)
+        S = switches[3].position + vec_nm(0, -half-offset)
         R = draw_line_arc(down(R), left(S))
 
     # draw cutout for pcb extension holding usb receptacle
@@ -857,7 +856,7 @@ def draw_border(proj, offset=0, cutout=False):
     R = switches[65].position + vec_nm(0, half+offset)
     if ispcb:
         angle = -switches[66].orientation.degrees
-        S = switches[66].position + rotate(vec_nm(0, half), angle)
+        S = switches[66].position + rotate(vec_nm(0, half+offset), angle)
         R = draw_line_arc(right(R), left(S, angle))
 
         S = switches[66].position + rotate(vec_nm(half-nm(0.65), 0), angle)
@@ -867,7 +866,7 @@ def draw_border(proj, offset=0, cutout=False):
         R = draw_line_arc(up(R, angle), left(S, angle), fillet_radius_half)
 
         angle2 = -switches[67].orientation.degrees
-        S = switches[67].position + rotate(vec_nm(-half+nm(0.4), half - nm(0.5)), angle2)
+        S = switches[67].position + rotate(vec_nm(-half+nm(0.4), half - nm(1)), angle2)
         R = draw_line(R, S)
 
     else:
@@ -1098,7 +1097,8 @@ def build_project_border(project: str):
     LAYER = BoardLayer.BL_Edge_Cuts
 
     if project == "pcb":
-        draw_border(project)
+        draw_border(project, offset=-CLEARANCE)
+        # draw_border(project)
 
     elif project == "swplate":
         draw_border_bezier(project, reveal=nm(0.2))
