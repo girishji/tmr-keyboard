@@ -1100,7 +1100,6 @@ def build_project_border(project: str):
 
     if project == "pcb":
         draw_border(project, offset=-CLEARANCE)
-        # draw_border(project)
 
     elif project == "swplate":
         draw_border_bezier(project, reveal=nm(0.2))
