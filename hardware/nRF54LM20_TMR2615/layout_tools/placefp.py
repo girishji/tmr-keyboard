@@ -51,13 +51,13 @@ PCB_HOLES = [
 # Housing screws: (x_mm, y_mm)
 HOUSING_HOLES = [
     (3, 2.25),
-    (104.5, -14.25),
-    (199.5, -14.25),
-    (291, -14.25),
-    (-9.7, 71),
-    (94.25, 102.25),
-    (181.25, 102.25),
-    (295, 61),
+    (104.5, -15.25),
+    (199.5, -15.25),
+    (291, -15.25),
+    (-10.3, 71),
+    (93.5, 102.75),
+    (182, 102.75),
+    (295.5, 61),
 ]
 
 # Rivet holes: (x_mm, y_mm)
@@ -76,7 +76,7 @@ RIVET_HOLES = [
 
 # Dowels: (x_mm, y_mm)
 DOWEL_HOLES = [
-    (4.55, -4.45),
+    (4.55, -5.2),
     (295, 52),
 ]
 
@@ -468,15 +468,15 @@ def place_mounting_holes(layout, is_pcb):
         return
 
     l1, l2, l3, l4, r1, r2, r3, r4 = wrist_rest_corners(layout)
-    d = 8
+    d = 7.3
 
     wrist_holes = {
         "H9": l1 + mm(d, d),
-        "H10": l2 + mm(-d, 15.5),
+        "H10": l2 + mm(-d, 12),
         "H11": l3 + mm(-d, -d),
         "H12": l4 + mm(d, -d),
         "H13": r1 + mm(-d, d),
-        "H14": r2 + mm(d, 15.5),
+        "H14": r2 + mm(d, 12),
         "H15": r3 + mm(d, -d),
         "H16": r4 + mm(-d, -d),
     }

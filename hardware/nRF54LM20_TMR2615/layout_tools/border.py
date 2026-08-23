@@ -419,7 +419,7 @@ def draw_wrist_cavity():
 
     L1, L2, L3, L4, R1, R2, R3, R4 = wrist_rest_corners()
     d, s = nm(20), SIDE_WALL-GAP
-    d2, d3, d4 = nm(30), nm(20), nm(18)
+    d2, d3, d4 = nm(30-5), nm(20), nm(18+2)
     A, B = L1 + vec_nm(s, d), L4 + vec_nm(s, -d)
     C, D = L3 + vec_nm(-d, -s), L4 + vec_nm(d, -s)
     E, F = L3 + vec_nm(-s, -d), L2 + vec_nm(-s, d2)
@@ -427,7 +427,7 @@ def draw_wrist_cavity():
     draw_line(A, B)
     draw_line(C, D)
     draw_line(E, F)
-    angle = 7
+    angle = 4
     GH = H - G
     H = G + rotate(GH, angle)
     draw_line(G, H)
@@ -444,9 +444,7 @@ def draw_wrist_cavity():
     draw_line(A, B)
     draw_line(C, D)
     draw_line(E, F)
-    angle = 10
     GH = H - G
-    angle = 6
     H = G + rotate(GH, -angle)
     draw_line(G, H)
     draw_bezier(*down(B, p), *right(D, p))
@@ -479,7 +477,7 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     # Left wrist rest
     A = switches[65].position + vec_nm(0, half)
     T1, T2, B2, B1 = wrist_rest_corners()[:4]
-    M, N = nm(24), nm(19)
+    M, N = nm(24), nm(22.3)
 
     S = Start = B2 + vec_nm(-reveal, -M)
     E = B2 + vec_nm(-M, -reveal)
@@ -495,14 +493,15 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     S = draw_line(S, E)
 
     # left side top corner of wrist rest
-    C1 = 12
+    C1 = 15
     P1 = E = vec_nm(switches[59].position.x - nm(3) + reveal, T1.y + reveal)
     S = draw_bezier(*up(S, N), *left(E, nm(C1)))
 
     # angled tangential pt
-    C2, C3 = 15, 6.5
-    Q1 = E = vec_nm(nm(65.5) - reveal, nm(125) + reveal)
-    angleQ = 38
+    C2, C3 = 11.5, 14
+    # Q1 = E = vec_nm(nm(65.5) - reveal, nm(125) + reveal)
+    Q1 = E = vec_nm(nm(69.5-10) - reveal, nm(123-3.5) + reveal)
+    angleQ = 38-24
     edge_cuts = (LAYER == BoardLayer.BL_Edge_Cuts)
     if edge_cuts:
         LAYER = BoardLayer.BL_User_8
@@ -540,7 +539,7 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     if edge_cuts:
         LAYER = BoardLayer.BL_Edge_Cuts
 
-    # 20-deg tangential intermediate point
+    # tangential intermediate point
     Q2 = E = vec_nm(A.x + (A.x - Q1.x), Q1.y)
     if edge_cuts:
         LAYER = BoardLayer.BL_User_8
@@ -582,12 +581,13 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
     # Segment connecting left wrist rest to main body
     S = P1
     A = switches[65].position + vec_nm(0, half)
-    C4, C4a = 35, 17
+    C4, C4a = 20+2, 17+3
     E = vec_nm(S.x - nm(7), A.y + offset - reveal)
     S = draw_bezier(*right(S, nm(C4)), *right(E, nm(C4a)))
 
     # Left wall and top
-    E = vec_nm(switches[65].position.x - WRIST_x_offset - WRIST_x_length + reveal, switches[45].position.y + half)
+    nut_clearance = nm(1.75)
+    E = vec_nm(switches[65].position.x - WRIST_x_offset - WRIST_x_length - nut_clearance + reveal, switches[45].position.y + half)
     S = draw_bezier(*left(S, nm(11)), *down(E, nm(20)))
 
     E = switches[1].position + vec_nm(-half + int(0.5*offset), -half - offset - nm(3.3) + reveal)
@@ -611,7 +611,7 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
 
     Cn, Cm = nm(6), nm(30)
 
-    top_max_thickness = offset + nm(3.6) - reveal
+    top_max_thickness = offset + nm(5.5) - reveal
     top_min_thickness = offset + nm(2) - reveal
 
     H2x = footprint('H2').position.x
@@ -664,13 +664,13 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
 
     # Segment connecting wrist rest (right edge of left side)
     S = Q1
-    C5, C6 = 52, 24
+    C5, C6 = 26, 44
     angle = -switches[62].orientation.degrees
     E = switches[62].position + rotate(vec_nm(-reveal, half + offset - reveal), angle)
     S = draw_bezier(*left(S, nm(C5), angleQ), *left(E, nm(C6), angle))
 
     # Draw curves to the middle key
-    C7, C8 = 30, 12
+    C7, C8 = 24, 12
     angle2 = -switches[64].orientation.degrees
     E = switches[64].position + rotate(vec_nm(-int(2*half) - offset + reveal, -half), angle2)
     S = draw_bezier(*right(S, nm(C7), angle), *up(E, nm(C8), angle2))
@@ -704,7 +704,7 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
 
     # Segment connecting right wrist rest to main body
     S = P2
-    Cr1, Cr2 = 38, 29
+    Cr1, Cr2 = 26, 29
     E = switches[72].position + vec_nm(0, half+offset - reveal)
     S = draw_bezier(*left(S, nm(Cr1)), *left(E, nm(Cr2)))
 
@@ -712,10 +712,11 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
     S = draw_line(S, E)
 
     # Right side wall
-    E = switches[72].position + vec_nm(half+offset-reveal, half)
+    nut_clearance = nm(.75)
+    E = switches[72].position + vec_nm(half+offset+nut_clearance-reveal, half)
     S = draw_bezier(*right(S, offset-reveal), *down(E, offset-reveal))
 
-    E = switches[15].position + vec_nm(half+offset-reveal, 0)
+    E = switches[15].position + vec_nm(half+offset+nut_clearance-reveal, 0)
     S = draw_line(S, E)
     S = draw_bezier(*up(S, nm(10)), *right(L_end, nm(9)))
 
@@ -741,9 +742,10 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
             S = draw_line(S, E)
             E = S + vec_nm(0, -L)
             S = draw_line(S, E)
-        S = S_save = switches[60].position + vec_nm(0, half+GAP+nm(2))
+        dist = nm(3)
+        S = S_save = switches[60].position + vec_nm(0-dist, half+GAP+nm(2))
         wire_cutout(S)
-        S = S_save = switches[70].position + vec_nm(-nm(2), half+GAP+nm(2))
+        S = S_save = switches[70].position + vec_nm(-nm(2)+dist, half+GAP+nm(2))
         wire_cutout(S)
 
 
