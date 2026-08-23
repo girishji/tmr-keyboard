@@ -3844,7 +3844,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 76.2 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -4221,7 +4221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 38.1 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -4747,7 +4747,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 19.05 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -4899,7 +4899,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 38.1 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -7152,7 +7152,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 76.2 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -7529,7 +7529,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 19.05 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -7681,7 +7681,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 57.15 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -7832,7 +7832,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 38.1 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -9350,7 +9350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 19.05 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -10101,7 +10101,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 57.15 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -10327,7 +10327,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 57.15 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -10478,7 +10478,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 38.1 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -10929,7 +10929,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 76.2 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -11081,7 +11081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 57.15 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -11533,7 +11533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 19.05 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -11609,7 +11609,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "tmr-lib:MountingHole_2.7mm_M2.5"
+		(property "Footprint" "tmr-lib:MountingHole_3.2mm_M3_Heatsink_3.6mm"
 			(at 76.2 160.02 0)
 			(hide yes)
 			(show_name no)
