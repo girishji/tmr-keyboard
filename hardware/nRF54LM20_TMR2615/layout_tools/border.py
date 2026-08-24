@@ -554,7 +554,7 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     return (P1, Q1, P2, Q2, angleQ)
 
 
-def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
+def draw_border_bezier(proj="", reveal=0, usb_cutout=True):
     """Draw outer wall using Bezier curves."""
     # 'reveal': when two layers meet (one on top of another), they are never perfectly
     # flush because the human eye is good at spotting a 0.1mm misalignment. By
@@ -730,23 +730,24 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True, wire_cutout=False):
     E = switches[66].position + rotate(vec_nm(int(2*half) + offset - reveal, -half), angle2)
     S = draw_bezier(*left(S, nm(C7), angle), *up(E, nm(C8), angle2))
 
-    # cutout for wires
-    if wire_cutout:
-        def wire_cutout(S):
-            W, L = nm(2), nm(33)
-            E = S + vec_nm(W, 0)
-            S = draw_line(S, E)
-            E = S + vec_nm(0, L)
-            S = draw_line(S, E)
-            E = S + vec_nm(-W, 0)
-            S = draw_line(S, E)
-            E = S + vec_nm(0, -L)
-            S = draw_line(S, E)
-        dist = nm(3)
-        S = S_save = switches[60].position + vec_nm(0-dist, half+GAP+nm(2))
-        wire_cutout(S)
-        S = S_save = switches[70].position + vec_nm(-nm(2)+dist, half+GAP+nm(2))
-        wire_cutout(S)
+
+def draw_wire_coutout():
+    """Cutout for wires."""
+    def wire_cutout(S):
+        W, L = nm(2), nm(33)
+        E = S + vec_nm(W, 0)
+        S = draw_line(S, E)
+        E = S + vec_nm(0, L)
+        S = draw_line(S, E)
+        E = S + vec_nm(-W, 0)
+        S = draw_line(S, E)
+        E = S + vec_nm(0, -L)
+        S = draw_line(S, E)
+    dist = nm(3)
+    S = switches[60].position + vec_nm(0-dist, half+GAP+nm(2))
+    wire_cutout(S)
+    S = switches[70].position + vec_nm(-nm(2)+dist, half+GAP+nm(2))
+    wire_cutout(S)
 
 
 def draw_border(proj, offset=0, cutout=False):
@@ -1111,12 +1112,13 @@ def build_project_border(project: str):
 
         LAYER = BoardLayer.BL_User_5
         Bezier_Curves.clear()
-        draw_border_bezier(project, reveal=0, usb_cutout=False, wire_cutout=True)
+        draw_border_bezier(project, reveal=0, usb_cutout=False)
         draw_wrist_cavity()
         save_bezier_curves()
 
         LAYER = BoardLayer.BL_User_6
         draw_border(project, offset=GAP)
+        draw_wire_coutout()
 
         LAYER = BoardLayer.BL_User_7
         draw_border(project, offset=GAP, cutout=True)
