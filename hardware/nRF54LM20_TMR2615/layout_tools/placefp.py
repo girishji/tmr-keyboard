@@ -55,8 +55,8 @@ HOUSING_HOLES = [
     (199.5, -15.25),
     (291, -15.25),
     (-10.3, 71),
-    (93.5, 102.75),
-    (182, 102.75),
+    (137.75, 91.25),
+    # (182, 102.75),
     (295.5, 61),
 ]
 
@@ -471,14 +471,14 @@ def place_mounting_holes(layout, is_pcb):
     d = 7.3
 
     wrist_holes = {
-        "H9": l1 + mm(d, d),
-        "H10": l2 + mm(-d, 12),
-        "H11": l3 + mm(-d, -d),
-        "H12": l4 + mm(d, -d),
-        "H13": r1 + mm(-d, d),
-        "H14": r2 + mm(d, 12),
-        "H15": r3 + mm(d, -d),
-        "H16": r4 + mm(-d, -d),
+        "H8": l1 + mm(d, d),
+        "H9": l2 + mm(-d, 12),
+        "H10": l3 + mm(-d, -d),
+        "H11": l4 + mm(d, -d),
+        "H12": r1 + mm(-d, d),
+        "H13": r2 + mm(d, 12),
+        "H14": r3 + mm(d, -d),
+        "H15": r4 + mm(-d, -d),
     }
 
     for reference, position in wrist_holes.items():

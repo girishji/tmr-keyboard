@@ -19867,7 +19867,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 98.9965 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -19922,6 +19922,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 99.06 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a3d7ad18-3528-4610-a35f-ffd225a45522")
 		)
@@ -19958,7 +19969,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 107.8865 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -20003,6 +20014,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 107.95 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 107.95 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -20085,6 +20107,17 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 309.88 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25100"
+			(at 309.88 111.76 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20328,6 +20361,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C25900"
+			(at 379.73 303.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1c636f57-52c0-419d-b117-6ff5667e9e8e")
 		)
@@ -20503,7 +20547,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -20564,6 +20608,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2928167"
+			(at 374.65 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
@@ -20579,7 +20634,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -20630,6 +20685,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 389.89 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2928167"
 			(at 389.89 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -20732,7 +20798,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -20783,6 +20849,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 389.89 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2928167"
 			(at 389.89 364.49 0)
 			(hide yes)
 			(show_name no)
@@ -20885,7 +20962,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -20936,6 +21013,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 359.41 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2928167"
 			(at 359.41 364.49 0)
 			(hide yes)
 			(show_name no)
@@ -21131,7 +21219,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 116.7765 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -21176,6 +21264,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 116.84 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 116.84 358.14 0)
 			(hide yes)
 			(show_name no)
@@ -21235,7 +21334,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 491.49 288.29 0)
 			(hide yes)
 			(show_name no)
@@ -21258,6 +21357,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X7R, 16 V, ±10%"
+			(at 491.49 288.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57895"
 			(at 491.49 288.29 0)
 			(hide yes)
 			(show_name no)
@@ -21349,6 +21459,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C25100"
+			(at 309.88 109.22 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "493cd291-93ef-43cc-8bb8-aef5f0916991")
 		)
@@ -21371,7 +21492,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -21473,7 +21594,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 134.5565 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -21518,6 +21639,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 134.62 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 134.62 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -21641,7 +21773,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 81.2165 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -21686,6 +21818,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 81.28 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 81.28 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -21745,7 +21888,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 464.82 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -21768,6 +21911,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 25 V, ±20%"
+			(at 464.82 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
 			(at 464.82 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -21876,7 +22030,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -21967,7 +22121,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 107.8865 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -22022,6 +22176,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 107.95 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "11a9e082-4090-40bb-8752-870b205a2c2a")
 		)
@@ -22058,7 +22223,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 107.8865 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -22103,6 +22268,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 107.95 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 107.95 358.14 0)
 			(hide yes)
 			(show_name no)
@@ -22185,6 +22361,17 @@
 			)
 		)
 		(property "Description" "Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"
+			(at 499.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C6882278"
 			(at 499.11 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -22301,6 +22488,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C14445"
+			(at 481.33 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b93baba7-73ab-4e11-b839-ce30660186e1")
 		)
@@ -22337,7 +22535,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 54.5465 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -22382,6 +22580,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 54.61 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -22505,7 +22714,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 125.6665 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -22550,6 +22759,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 125.73 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 125.73 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -22642,6 +22862,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C710873"
+			(at 236.22 340.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ec8e1903-b0b8-4d39-a483-76fae966ce94")
 		)
@@ -22712,6 +22943,17 @@
 			)
 		)
 		(property "Description" "PTS 530 Series Ultra Low Profile SMT Top Actuated"
+			(at 499.11 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C221860"
 			(at 499.11 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -22842,7 +23084,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 45.6565 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -22887,6 +23129,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 45.72 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 45.72 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -23010,7 +23263,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 54.5465 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -23055,6 +23308,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 54.61 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -23134,6 +23398,17 @@
 			)
 		)
 		(property "Description" "5V, 8:1 General Purpose Analog Multiplexer, 5 Ohm Ron, 65 Mhz, QFN-16"
+			(at 96.52 283.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2673274"
 			(at 96.52 283.21 0)
 			(hide yes)
 			(show_name no)
@@ -23284,7 +23559,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -23453,7 +23728,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 134.5565 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -23498,6 +23773,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 134.62 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 134.62 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -23820,6 +24106,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 382.27 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "578636b4-26d4-4e34-8b12-15b577a0d239")
 		)
@@ -23856,7 +24153,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 90.1065 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -23901,6 +24198,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 90.17 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 90.17 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -23990,6 +24298,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2673274"
+			(at 182.88 283.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "13"
 			(uuid "224c1cfa-3749-4ac4-99da-2ed5a684cabe")
 		)
@@ -24068,7 +24387,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 98.9965 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -24113,6 +24432,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 99.06 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 99.06 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -24203,6 +24533,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C129131"
+			(at 227.33 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c276e6b4-7945-4676-b546-f64b8ceac73f")
 		)
@@ -24272,6 +24613,17 @@
 			)
 		)
 		(property "Description" "5V, 8:1 General Purpose Analog Multiplexer, 5 Ohm Ron, 65 Mhz, QFN-16"
+			(at 139.7 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2673274"
 			(at 139.7 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -24360,7 +24712,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 36.7665 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -24415,6 +24767,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 36.83 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "94a779a7-41d0-4dc6-b155-21d271cd89a6")
 		)
@@ -24451,7 +24814,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 125.6665 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -24496,6 +24859,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 125.73 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 125.73 358.14 0)
 			(hide yes)
 			(show_name no)
@@ -24619,7 +24993,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 152.3365 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -24674,6 +25048,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 152.4 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e479b437-20d0-4ed9-b4c7-1624105b2116")
 		)
@@ -24710,7 +25095,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 72.3265 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -24765,6 +25150,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 72.39 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ca467a73-0ded-4e30-a148-07971bf87763")
 		)
@@ -24801,7 +25197,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 152.3365 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -24846,6 +25242,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 152.4 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 152.4 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -24969,7 +25376,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 36.7665 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -25024,6 +25431,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 36.83 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1fe8dc5d-8b49-4658-8f3a-9f3f8ae5b95e")
 		)
@@ -25060,7 +25478,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 63.4365 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -25105,6 +25523,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 63.5 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 63.5 358.14 0)
 			(hide yes)
 			(show_name no)
@@ -25228,7 +25657,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 45.6565 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -25283,6 +25712,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 45.72 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "093f3735-3f61-4680-a712-5d529418f214")
 		)
@@ -25321,7 +25761,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" ".1uF"
 			(at 429.26 231.1462 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25355,6 +25795,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, ±10%"
+			(at 426.72 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C129131"
 			(at 426.72 229.87 0)
 			(hide yes)
 			(show_name no)
@@ -25444,6 +25895,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C25755"
+			(at 372.11 303.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0f231f7f-7c94-482e-8504-a6e76f1d57c9")
 		)
@@ -25480,7 +25942,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 54.5465 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -25535,6 +25997,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 54.61 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ba7089ee-d8f5-4c0b-bf17-e376a967f789")
 		)
@@ -25571,7 +26044,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 72.3265 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -25616,6 +26089,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 72.39 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 72.39 358.14 0)
 			(hide yes)
 			(show_name no)
@@ -25739,7 +26223,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 63.4365 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -25784,6 +26268,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 63.5 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 63.5 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -25907,7 +26402,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 90.1065 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -25952,6 +26447,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 90.17 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 90.17 358.14 0)
 			(hide yes)
 			(show_name no)
@@ -26044,6 +26550,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C14445"
+			(at 251.46 408.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e60baf7d-e70e-45af-b015-0f31f77eed2c")
 		)
@@ -26116,6 +26633,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 10 V, ±10%"
+			(at 207.01 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14445"
 			(at 207.01 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -26316,7 +26844,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 152.3365 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -26361,6 +26889,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 152.4 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 152.4 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -26420,7 +26959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 482.6 313.69 0)
 			(hide yes)
 			(show_name no)
@@ -26443,6 +26982,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X7R, 16 V, ±10%"
+			(at 482.6 313.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C57895"
 			(at 482.6 313.69 0)
 			(hide yes)
 			(show_name no)
@@ -26532,6 +27082,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2673274"
+			(at 139.7 283.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "13"
 			(uuid "48bb5299-446d-48f5-a987-99f014d77784")
 		)
@@ -26610,7 +27171,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 98.9965 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -26655,6 +27216,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 99.06 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 99.06 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -26745,6 +27317,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C129131"
+			(at 45.72 185.42 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d910de6b-e09b-4129-8895-b451040265fd")
 		)
@@ -26766,7 +27349,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -26817,6 +27400,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 405.13 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2928167"
 			(at 405.13 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -26978,6 +27572,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C129131"
+			(at 227.33 255.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8202a1af-03db-4425-9a72-12409a91da93")
 		)
@@ -27014,7 +27619,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 125.6665 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -27059,6 +27664,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 125.73 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 125.73 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -27140,6 +27756,17 @@
 		)
 		(property "Description" "Capacitor, X5R, ±10%, at least 2xVdd (>=5V)"
 			(at 184.15 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C129131"
+			(at 184.15 186.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27406,7 +28033,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 116.7765 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -27461,6 +28088,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 116.84 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a821608d-bb6b-4027-8020-62c81da469b7")
 		)
@@ -27497,7 +28135,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 107.8865 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -27552,6 +28190,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 107.95 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "60572b1b-cff7-4c9f-926c-c80deceb7967")
 		)
@@ -27588,7 +28237,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 81.2165 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -27633,6 +28282,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 81.28 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 81.28 358.14 0)
 			(hide yes)
 			(show_name no)
@@ -27722,6 +28382,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2673274"
+			(at 226.06 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "13"
 			(uuid "5e7084e3-3fb0-49c9-9bbb-c5b632c50f2c")
 		)
@@ -27800,7 +28471,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 72.3265 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -27845,6 +28516,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 72.39 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 72.39 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -27968,7 +28650,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 125.6665 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -28013,6 +28695,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 125.73 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 125.73 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -28072,7 +28765,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 492.76 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -28095,6 +28788,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 25 V, ±20%"
+			(at 492.76 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
 			(at 492.76 274.32 0)
 			(hide yes)
 			(show_name no)
@@ -28204,7 +28908,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -28255,6 +28959,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 359.41 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2928167"
 			(at 359.41 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -28339,6 +29054,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C129131"
+			(at 140.97 255.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "434db37a-7514-49f7-8e4d-53f84b02dbb6")
 		)
@@ -28375,7 +29101,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 107.8865 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -28420,6 +29146,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 107.95 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 107.95 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -28544,7 +29281,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 54.5465 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -28599,6 +29336,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 54.61 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5f7e86a3-6b25-4046-9ad7-1b9897a58934")
 		)
@@ -28635,7 +29383,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 63.4365 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -28680,6 +29428,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 63.5 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 63.5 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -28759,6 +29518,17 @@
 			)
 		)
 		(property "Description" "5V, 8:1 General Purpose Analog Multiplexer, 5 Ohm Ron, 65 Mhz, QFN-16"
+			(at 96.52 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2673274"
 			(at 96.52 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -28882,6 +29652,17 @@
 		)
 		(property "Description" "Capacitor, X5R, ±10%, at least 2xVdd (>=5V)"
 			(at 97.79 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C129131"
+			(at 97.79 255.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29126,6 +29907,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 374.65 284.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "71f1d322-e313-4f48-93c4-08f75cd72d08")
 		)
@@ -29162,7 +29954,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 125.6665 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -29207,6 +29999,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 125.73 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 125.73 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -29364,6 +30167,17 @@
 			)
 		)
 		(property "Description" "5V, 8:1 General Purpose Analog Multiplexer, 5 Ohm Ron, 65 Mhz, QFN-16"
+			(at 182.88 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2673274"
 			(at 182.88 214.63 0)
 			(hide yes)
 			(show_name no)
@@ -29607,7 +30421,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 63.4365 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -29662,6 +30476,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 63.5 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0ed1b59d-567d-4476-9f96-0bcf62bd2692")
 		)
@@ -29698,7 +30523,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 72.3265 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -29753,6 +30578,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 72.39 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2a9abac1-a2de-41cc-952e-519b310f8f8d")
 		)
@@ -29789,7 +30625,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 143.4465 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -29834,6 +30670,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 143.51 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -29924,6 +30771,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C129131"
+			(at 184.15 255.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f5e0489f-938a-45e6-9b64-efc0193d2203")
 		)
@@ -30004,6 +30862,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C129131"
+			(at 45.72 254 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f017df26-e06b-49f2-a095-fcc068ce8916")
 		)
@@ -30053,7 +30922,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 454.66 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -30076,6 +30945,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 25 V, ±20%"
+			(at 454.66 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
 			(at 454.66 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -30199,7 +31079,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 116.7765 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -30254,6 +31134,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 116.84 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "459ba0aa-11f1-4c37-8e9f-881525554072")
 		)
@@ -30290,7 +31181,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 134.5565 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -30335,6 +31226,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 134.62 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 134.62 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -30520,7 +31422,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -30645,6 +31547,17 @@
 		)
 		(property "Description" "72-Channel 12-Bit PWM Ultra-low Quiescent Current I2C RGB LED Driver"
 			(at 245.11 405.638 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5220564"
+			(at 245.11 377.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30783,7 +31696,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 152.3365 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -30838,6 +31751,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 152.4 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9ecab924-f3ee-48c6-a16f-83559b0680a3")
 		)
@@ -30874,7 +31798,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 90.1065 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -30919,6 +31843,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 90.17 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 90.17 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -31099,6 +32034,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2049745"
+			(at 481.33 260.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1e3a2bbc-b180-46a7-b819-603549504f22")
 		)
@@ -31226,7 +32172,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 474.98 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -31249,6 +32195,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 25 V, ±20%"
+			(at 474.98 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
 			(at 474.98 223.52 0)
 			(hide yes)
 			(show_name no)
@@ -31295,7 +32252,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 36.7665 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -31340,6 +32297,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 36.83 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 36.83 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -31399,7 +32367,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 436.88 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -31422,6 +32390,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 25 V, ±20%"
+			(at 436.88 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
 			(at 436.88 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -31581,6 +32560,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 10 V, ±10%"
+			(at 259.08 353.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14445"
 			(at 259.08 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -31859,7 +32849,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 36.7665 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -31904,6 +32894,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 36.83 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 36.83 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -31993,6 +32994,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C221860"
+			(at 397.51 306.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "afe547ad-fbf7-4379-92dc-452b7802d871")
 		)
@@ -32035,7 +33047,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 36.7665 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -32090,6 +33102,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 36.83 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ab4a4deb-f189-48e8-af96-e9528085ad35")
 		)
@@ -32126,7 +33149,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 90.1065 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -32181,6 +33204,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 90.17 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a7c162f5-03e5-441a-869e-a86026b7a2a8")
 		)
@@ -32217,7 +33251,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 72.3265 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -32262,6 +33296,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 72.39 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 72.39 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -32345,6 +33390,17 @@
 		)
 		(property "Description" "Low Capacitance and low resistance 2Ω, 4-Channel, 2:1 Switch, Powered-off Protection with 1.8V logic, 1.5 - 5.5V, UQFN-16"
 			(at 49.53 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2673120"
+			(at 49.53 281.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32509,7 +33565,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 98.9965 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -32554,6 +33610,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 99.06 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 99.06 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -32613,7 +33680,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 492.76 261.62 0)
 			(hide yes)
 			(show_name no)
@@ -32636,6 +33703,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 25 V, ±20%"
+			(at 492.76 261.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96446"
 			(at 492.76 261.62 0)
 			(hide yes)
 			(show_name no)
@@ -32725,6 +33803,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2673274"
+			(at 226.06 283.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "13"
 			(uuid "178ada32-e2e7-4907-9f3c-a7afd2c9a0c8")
 		)
@@ -32803,7 +33892,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 152.3365 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -32858,6 +33947,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 152.4 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "86b48aeb-1549-4089-9cf9-fe923c1dc864")
 		)
@@ -32894,7 +33994,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 143.4465 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -32939,6 +34039,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 143.51 375.92 0)
 			(hide yes)
 			(show_name no)
@@ -33139,7 +34250,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 134.5565 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -33194,6 +34305,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 134.62 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7d0cfc51-983a-46df-91f2-db9b622f147c")
 		)
@@ -33230,7 +34352,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 134.5565 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -33285,6 +34407,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 134.62 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ee335435-5155-490a-af1b-9819297c5b1b")
 		)
@@ -33321,7 +34454,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 143.4465 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -33376,6 +34509,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 143.51 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "be5a9daf-8d79-43f4-9e62-4771cc09c683")
 		)
@@ -33397,7 +34541,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -33448,6 +34592,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 420.37 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2928167"
 			(at 420.37 364.49 0)
 			(hide yes)
 			(show_name no)
@@ -33523,6 +34678,17 @@
 		)
 		(property "Description" "PMIC, LED Driver, Battery Charger, QFN-32"
 			(at 440.69 328.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25346894"
+			(at 440.69 275.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33661,7 +34827,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 116.7765 379.73 0)
 			(hide yes)
 			(show_name no)
@@ -33716,6 +34882,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 116.84 375.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d80a8b4e-0ba1-421f-a6c0-37782edb64ad")
 		)
@@ -33752,7 +34929,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 45.6565 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -33797,6 +34974,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 45.72 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 45.72 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -33889,6 +35077,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2049745"
+			(at 481.33 273.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c335b03b-d51e-4adb-96bf-cf731703a8f6")
 		)
@@ -33925,7 +35124,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 116.7765 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -33980,6 +35179,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 116.84 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1a107672-d56b-4bb6-8e70-fffb1752c59a")
 		)
@@ -34001,7 +35211,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -34062,6 +35272,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2928167"
+			(at 374.65 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
@@ -34092,7 +35313,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 81.2165 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -34137,6 +35358,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 81.28 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 81.28 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -34260,7 +35492,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 143.4465 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -34305,6 +35537,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 143.51 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -34473,6 +35716,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C129131"
+			(at 140.97 186.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b77857f3-100a-4ce0-b744-e019f3691baa")
 		)
@@ -34509,7 +35763,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 143.4465 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -34564,6 +35818,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 143.51 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2401eb2e-7c3c-4fee-b41c-5f43b03ab176")
 		)
@@ -34600,7 +35865,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 45.6565 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -34645,6 +35910,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 45.72 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 45.72 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -34802,6 +36078,17 @@
 			)
 		)
 		(property "Description" "ME54BS13_GBR_V1.0，ME54BS13_V1.0，16.5*12.0*1.0mm，110.0*77.5*1.0mm，7*3 有工艺边（工艺边需铺实铜），8层三阶HDI（3+2+3）板， 板材材质 FR-4，铜厚1OZ，沉金，过孔塞孔工艺，盘中孔电镀填平，绿油白字，全测"
+			(at 323.85 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C9900300294"
 			(at 323.85 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -35082,7 +36369,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 161.2265 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -35127,6 +36414,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 161.29 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 161.29 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -35209,6 +36507,17 @@
 			)
 		)
 		(property "Description" "Capacitor, X5R, 10 V, ±10%"
+			(at 394.97 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14445"
 			(at 394.97 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -35332,7 +36641,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 63.4365 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -35377,6 +36686,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 63.5 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 63.5 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -35485,7 +36805,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -35546,6 +36866,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2928167"
+			(at 405.13 364.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "pcb"
 				(path "/672ae9a0-2ac9-4023-9977-e9626ff99f32"
@@ -35576,7 +36907,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 161.2265 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -35631,6 +36962,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 161.29 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "08d49e5d-a558-4a78-b10c-958a041c9a9a")
 		)
@@ -35667,7 +37009,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 81.2165 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -35712,6 +37054,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 81.28 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 81.28 367.03 0)
 			(hide yes)
 			(show_name no)
@@ -35913,7 +37266,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 81.2165 393.7 0)
 			(hide yes)
 			(show_name no)
@@ -35958,6 +37311,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 81.28 389.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 81.28 389.89 0)
 			(hide yes)
 			(show_name no)
@@ -36082,7 +37446,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 90.1065 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -36127,6 +37491,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 90.17 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 90.17 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -36186,7 +37561,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 312.42 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -36219,6 +37594,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C96446"
+			(at 312.42 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3c5347a9-0bfe-406d-a24b-c1b0c93faccf")
 		)
@@ -36240,7 +37626,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -36291,6 +37677,17 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 420.37 370.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2928167"
 			(at 420.37 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -36366,6 +37763,17 @@
 		)
 		(property "Description" "Capacitor, X5R, ±10%, at least 2xVdd (>=5V)"
 			(at 97.79 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C129131"
+			(at 97.79 186.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36489,7 +37897,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 45.6565 370.84 0)
 			(hide yes)
 			(show_name no)
@@ -36544,6 +37952,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 45.72 367.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9a441611-c500-49eb-bf52-01a07e16dedd")
 		)
@@ -36580,7 +37999,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 98.9965 361.95 0)
 			(hide yes)
 			(show_name no)
@@ -36635,6 +38054,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C401114"
+			(at 99.06 358.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0aea5ee8-0014-4fc5-8c18-675cb428c6d2")
 		)
@@ -36657,7 +38087,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -36759,7 +38189,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "LED"
 			(at 54.5465 353.06 0)
 			(hide yes)
 			(show_name no)
@@ -36804,6 +38234,17 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 54.61 349.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C401114"
 			(at 54.61 349.25 0)
 			(hide yes)
 			(show_name no)
@@ -36896,6 +38337,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2673120"
+			(at 49.53 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "16"
 			(uuid "a91196b7-94cd-4f99-8db8-ed4cb3a831c7")
 		)
@@ -36957,7 +38409,7 @@
 		(at 62.23 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37013,7 +38465,7 @@
 		(at 104.14 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37069,7 +38521,7 @@
 		(at 160.02 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37125,7 +38577,7 @@
 		(at 34.29 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37181,7 +38633,7 @@
 		(at 118.11 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37237,7 +38689,7 @@
 		(at 160.02 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37293,7 +38745,7 @@
 		(at 201.93 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37349,7 +38801,7 @@
 		(at 215.9 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37405,7 +38857,7 @@
 		(at 118.11 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37461,7 +38913,7 @@
 		(at 187.96 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37517,7 +38969,7 @@
 		(at 229.87 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37573,7 +39025,7 @@
 		(at 229.87 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37629,7 +39081,7 @@
 		(at 187.96 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37685,7 +39137,7 @@
 		(at 132.08 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37741,7 +39193,7 @@
 		(at 146.05 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37797,7 +39249,7 @@
 		(at 146.05 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37853,7 +39305,7 @@
 		(at 146.05 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37909,7 +39361,7 @@
 		(at 34.29 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -37965,7 +39417,7 @@
 		(at 201.93 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38021,7 +39473,7 @@
 		(at 160.02 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38077,7 +39529,7 @@
 		(at 187.96 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38133,7 +39585,7 @@
 		(at 76.2 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38189,7 +39641,7 @@
 		(at 118.11 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38245,7 +39697,7 @@
 		(at 146.05 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38301,7 +39753,7 @@
 		(at 173.99 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38357,7 +39809,7 @@
 		(at 48.26 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38413,7 +39865,7 @@
 		(at 173.99 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38469,7 +39921,7 @@
 		(at 104.14 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38525,7 +39977,7 @@
 		(at 201.93 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38581,7 +40033,7 @@
 		(at 173.99 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38637,7 +40089,7 @@
 		(at 76.2 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38693,7 +40145,7 @@
 		(at 34.29 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38749,7 +40201,7 @@
 		(at 62.23 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38805,7 +40257,7 @@
 		(at 48.26 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38861,7 +40313,7 @@
 		(at 76.2 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38917,7 +40369,7 @@
 		(at 34.29 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -38973,7 +40425,7 @@
 		(at 76.2 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39029,7 +40481,7 @@
 		(at 146.05 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39085,7 +40537,7 @@
 		(at 215.9 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39141,7 +40593,7 @@
 		(at 90.17 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39197,7 +40649,7 @@
 		(at 187.96 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39253,7 +40705,7 @@
 		(at 132.08 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39309,7 +40761,7 @@
 		(at 201.93 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39365,7 +40817,7 @@
 		(at 90.17 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39421,7 +40873,7 @@
 		(at 62.23 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39477,7 +40929,7 @@
 		(at 62.23 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39533,7 +40985,7 @@
 		(at 34.29 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39589,7 +41041,7 @@
 		(at 90.17 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39645,7 +41097,7 @@
 		(at 215.9 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39701,7 +41153,7 @@
 		(at 187.96 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39757,7 +41209,7 @@
 		(at 104.14 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39813,7 +41265,7 @@
 		(at 201.93 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39869,7 +41321,7 @@
 		(at 132.08 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39925,7 +41377,7 @@
 		(at 132.08 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -39981,7 +41433,7 @@
 		(at 62.23 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40037,7 +41489,7 @@
 		(at 160.02 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40093,7 +41545,7 @@
 		(at 76.2 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40149,7 +41601,7 @@
 		(at 90.17 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40205,7 +41657,7 @@
 		(at 48.26 100.33)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40261,7 +41713,7 @@
 		(at 104.14 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40317,7 +41769,7 @@
 		(at 173.99 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40373,7 +41825,7 @@
 		(at 104.14 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40429,7 +41881,7 @@
 		(at 173.99 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40485,7 +41937,7 @@
 		(at 48.26 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40541,7 +41993,7 @@
 		(at 118.11 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40597,7 +42049,7 @@
 		(at 132.08 43.18)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40653,7 +42105,7 @@
 		(at 215.9 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40709,7 +42161,7 @@
 		(at 48.26 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40765,7 +42217,7 @@
 		(at 215.9 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40821,7 +42273,7 @@
 		(at 118.11 119.38)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40877,7 +42329,7 @@
 		(at 90.17 81.28)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke
@@ -40933,7 +42385,7 @@
 		(at 160.02 62.23)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(stroke

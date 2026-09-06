@@ -682,19 +682,20 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True):
     E = S + rotate(vec_nm(offset-reveal, offset-reveal), angle)
     S = draw_bezier(*down(S, int(offset/2), angle), *left(E, int(offset/2), angle))
 
-    E = S + rotate(vec_nm(half+reveal, 0), angle)
-    S = draw_line(S, E)
+    # E = S + rotate(vec_nm(half+reveal, 0), angle)
+    # S = draw_line(S, E)
 
     angle2 = -switches[66].orientation.degrees
-    E = switches[66].position + rotate(vec_nm(half - reveal, half + offset - reveal), angle2)
-    C = nm(22)
+    # E = switches[66].position + rotate(vec_nm(half - reveal, half + offset - reveal), angle2)
+    E = switches[66].position + rotate(vec_nm(int(2*half) - reveal, half + offset - reveal), angle2)
+    C = nm(26.5)
     S = draw_bezier(*right(S, C, angle), *left(E, C, angle2))
 
     # RIGHT SIDE
 
     angle = angle2
-    E = S + rotate(vec_nm(half, 0), angle)
-    S = draw_line(S, E)
+    # E = S + rotate(vec_nm(half, 0), angle)
+    # S = draw_line(S, E)
 
     E = S + rotate(vec_nm(offset, -offset), angle)
     S = draw_bezier(*right(S, int(offset/2), angle), *down(E, int(offset/2), angle))
