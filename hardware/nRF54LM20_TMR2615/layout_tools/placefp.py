@@ -111,7 +111,7 @@ COMPONENTS = [
     ("Jusb1", 19.5, -13.7, 180, False),  # USB receptacle
     ("SW1", 199.4, -2.52, 90, True),
     ("SW2", 15, 27.2, -90, True),
-    ("JTAG1", 180.5, -3.5, -90, True),
+    ("JTAG1", 180.5, -12, 180, False),
     ("BAT1", 23 - KEY_SPACING_MM / 4, 79, 0, False),
     ("BAT2", 234, 79, 0, False),
 ]
@@ -489,7 +489,7 @@ def place_mounting_holes(layout, is_pcb):
 # FIXED COMPONENTS
 # =============================================================================
 def place_fixed_components(layout, is_pcb):
-    non_pcb_components = {"Jusb1", "SW1", "SW2", "M1"}
+    non_pcb_components = {"Jusb1", "SW1", "SW2", "M1", "JTAG1"}
 
     for reference, x_mm, y_mm, degrees, flip in COMPONENTS:
         if not is_pcb and reference not in non_pcb_components:

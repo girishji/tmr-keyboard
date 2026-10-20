@@ -554,7 +554,7 @@ def draw_wristrest_border_bezier(proj="", reveal=0):
     return (P1, Q1, P2, Q2, angleQ)
 
 
-def draw_border_bezier(proj="", reveal=0, usb_cutout=True):
+def draw_border_bezier(proj="", reveal=0, usb_cutout=True, ble_cutout=True):
     """Draw outer wall using Bezier curves."""
     # 'reveal': when two layers meet (one on top of another), they are never perfectly
     # flush because the human eye is good at spotting a 0.1mm misalignment. By
@@ -626,29 +626,30 @@ def draw_border_bezier(proj="", reveal=0, usb_cutout=True):
     S = S_save = draw_bezier(*right(S, Cm), *left(E, Cn))
 
     # cutout for ble antenna
-    if proj == "botcover":
-        S = switches[8].position + vec_nm(nm(5), -half + nm(4.5))
-        E = S + vec_nm(0, -nm(5))
-        S = draw_line(S, E)
-        E = S + vec_nm(nm(11), 0)
-        S = draw_line(S, E)
-        E = S + vec_nm(0, nm(5))
-        S = draw_line(S, E)
-        E = S + vec_nm(-nm(11), 0)
-        S = draw_line(S, E)
-        S = S_save
-    elif proj == "swplate":
-        # BLE module b/w sw8 & sw9
-        S = switches[8].position + vec_nm(nm(-5), -half-top_min_thickness+reveal+nm(2))
-        E = S + vec_nm(0, nm(5))
-        S = draw_line(S, E)
-        E = S + vec_nm(half+half+nm(10), 0)
-        S = draw_line(S, E)
-        E = S + vec_nm(0, -nm(5))
-        S = draw_line(S, E)
-        E = S + vec_nm(-half-half-nm(10), 0)
-        S = draw_line(S, E)
-        S = S_save
+    if ble_cutout:
+        if proj == "botcover":
+            S = switches[8].position + vec_nm(nm(5), -half + nm(4.5))
+            E = S + vec_nm(0, -nm(5))
+            S = draw_line(S, E)
+            E = S + vec_nm(nm(11), 0)
+            S = draw_line(S, E)
+            E = S + vec_nm(0, nm(5))
+            S = draw_line(S, E)
+            E = S + vec_nm(-nm(11), 0)
+            S = draw_line(S, E)
+            S = S_save
+        elif proj == "swplate":
+            # BLE module b/w sw8 & sw9
+            S = switches[8].position + vec_nm(nm(-5), -half-top_min_thickness+reveal+nm(2))
+            E = S + vec_nm(0, nm(5))
+            S = draw_line(S, E)
+            E = S + vec_nm(half+half+nm(20), 0)
+            S = draw_line(S, E)
+            E = S + vec_nm(0, -nm(5))
+            S = draw_line(S, E)
+            E = S + vec_nm(-half-half-nm(20), 0)
+            S = draw_line(S, E)
+            S = S_save
 
     E = vec_nm(int((H3x + H2x) / 2), Sw5topY-top_min_thickness)
     S = draw_bezier(*right(S, Cn), *left(E, Cm))
@@ -818,7 +819,7 @@ def draw_border(proj, offset=0, cutout=False):
     S = switches[1].position + vec_nm(0, -half-offset)
     R = draw_line_arc(up(R), left(S))
 
-    # Draw usb pcb extension
+    # Draw usb pcb and jtag extension
     USB_WIDTH = nm(11)
     if ispcb:
         S = switches[1].position + vec_nm(-half + nm(3.5), -half - nm(6.6))
@@ -830,6 +831,23 @@ def draw_border(proj, offset=0, cutout=False):
         R = draw_line(R, S)
 
         S = switches[3].position + vec_nm(0, -half-offset)
+        R = draw_line_arc(down(R), left(S))
+
+        # jtag
+        jtag_x, jtag_y = nm(5), nm(6.5)
+        S = switches[9].position + vec_nm(0, -half-offset)
+        R = draw_line(R, S)
+
+        S = S + vec_nm(half-jtag_x, -jtag_y)
+        R = draw_line_arc(right(R), down(S))
+
+        S = S + vec_nm(int(2*jtag_x), 0)
+        R = draw_line_arc(up(R), left(S))
+
+        S = S + vec_nm(0, jtag_y)
+        R = draw_line_arc(right(R), up(S))
+
+        S = switches[10].position + vec_nm(0, -half-offset)
         R = draw_line_arc(down(R), left(S))
 
     # draw cutout for pcb extension holding usb receptacle
@@ -1113,7 +1131,7 @@ def build_project_border(project: str):
 
         LAYER = BoardLayer.BL_User_5
         Bezier_Curves.clear()
-        draw_border_bezier(project, reveal=0, usb_cutout=False)
+        draw_border_bezier(project, reveal=0, usb_cutout=False, ble_cutout=False)
         draw_wrist_cavity()
         save_bezier_curves()
 

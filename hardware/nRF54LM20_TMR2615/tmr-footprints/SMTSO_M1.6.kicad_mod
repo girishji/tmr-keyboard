@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -3.2 0)
 		(layer "Dwgs.User")
-		(uuid "7ba94c50-7f05-4af6-be1f-c2f54ceb9d02")
+		(uuid "b98cad0f-8e31-4333-9eac-1d6794d8f4fd")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "SMTSO_M1.6"
 		(at 0 3.2 0)
 		(layer "F.Fab")
-		(uuid "a45906f6-6425-4c0a-bc78-554c628d7dd8")
+		(uuid "7be8ffc7-a01d-47b1-a321-899660ce54e8")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "73958f02-e3ff-4ab7-9423-0cda9defeedc")
+		(uuid "8aa1d0ea-c94a-498f-8dbd-cf112809270d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bc7d8ec3-edd4-4e70-b206-08b7da648de1")
+		(uuid "efebab00-7f08-4b06-9005-55ed32f4421b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -62,7 +62,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "265014ed-e3f8-46f8-96dc-7b1795c7f50d")
+		(uuid "ef8e2036-5871-4552-9c6a-ab768149043b")
 	)
 	(fp_circle
 		(center 0 0)
@@ -73,12 +73,23 @@
 		)
 		(fill no)
 		(layer "B.Fab")
-		(uuid "74e9f443-d21b-41ab-a2ad-6731f7eae04f")
+		(uuid "c9d73c2c-dcb6-4dd2-97c9-0b40ec74a016")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.3 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "User.3")
+		(uuid "6a14763f-8ddd-46b3-8fa5-3202608fd058")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "4f663a54-ba93-49a3-8f06-0ef7474834bf")
+		(uuid "4ea34208-70ef-4aea-a126-8174adfeb610")
 		(effects
 			(font
 				(size 1 1)
@@ -92,7 +103,7 @@
 		(drill 2.5)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "f7dea28c-49a6-42f9-9779-8d76c678ae79")
+		(uuid "a019c76f-48dd-4cad-9455-d60cdc0e683c")
 	)
 	(embedded_fonts no)
 )
